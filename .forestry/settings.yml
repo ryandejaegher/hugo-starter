@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
+  label: Config
+- type: heading
+  label: Data
+- type: heading
   label: Content
 - type: directory
   path: content
