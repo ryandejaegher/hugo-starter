@@ -4,16 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: config/_default
-  label: Hugo Config
-  create: all
-  match: "**/*"
-  new_doc_ext: yaml
-- type: heading
-  label: Config
-- type: heading
-  label: Data
 - type: heading
   label: Content
 - type: directory
@@ -31,6 +21,10 @@ sections:
   label: Articles
   create: all
   match: "**/*"
+- type: heading
+  label: Config
+- type: heading
+  label: Data
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
