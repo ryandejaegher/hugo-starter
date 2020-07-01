@@ -23,12 +23,10 @@ sections:
   match: "**/*"
 - type: heading
   label: Config
-- type: directory
-  path: config/_default
+- type: document
+  path: config/_default/config.yaml
   label: Site Settings
-  create: all
   match: "**/*"
-  new_doc_ext: ".yaml"
 - type: heading
   label: Data
 upload_dir: static/uploads
