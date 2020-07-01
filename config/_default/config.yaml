@@ -1,53 +1,28 @@
-# hostname (and path) to the root
-baseURL: "http://your-domain.com"
-
-# Customer parameters
+---
+baseURL: http://your-domain.com
 params:
-  description: "A starter repo for Hugo"
+  description: A starter repo for Hugo
   rssURL:
-    main: "https://gomakethings.com/feed/index.xml"
-  rssLimit: 7
-
-# Caches
+    main: https://gomakethings.com/feed/index.xml
+  rssLimit: "7"
 caches:
   getjson:
-    maxAge: "5m"
-
-# The language code for the site
-languageCode: "en-us"
-
-# Site title
-title: "My Hugo Site"
-
-# theme to use (located by default in /themes/THEMENAME/)
-theme: "my-theme"
-
-# Permalinks
-# See "content-management/permalinks"
+    maxAge: 5m
+languageCode: en-us
+title: Ryan Dejaegher
+theme: my-theme
 permalinks:
-  articles: /:title/
-
-# Use absolute URLs
+  articles: "/:title/"
 canonifyURLs: true
-
-# Allows you to disable all page types and will render nothing related to 'kind';
-# values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
-disableKinds: ["RSS", "hugoGeneratorInject", "404"]
-
-# Files to ignore while rendering
+disableKinds:
+- RSS
+- hugoGeneratorInject
+- '404'
 ignoreFiles: []
-
-# the length of text to show in a .Summary
-summaryLength: 70
-
-# Pagination
-paginate: 35
-paginatePath: "page"
-
-# Markdown Options
+summaryLength: "70"
+paginate: "35"
+paginatePath: page
 blackfriday:
   fractions: false
-
-# Syntax Highlighting
 pygmentsCodefences: true
 pygmentsUseClasses: true

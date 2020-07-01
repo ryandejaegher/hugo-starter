@@ -26,7 +26,6 @@ sections:
 - type: document
   path: config/_default/config.yaml
   label: Site Settings
-  match: "**/*"
 - type: heading
   label: Data
 upload_dir: static/uploads
