@@ -1,25 +1,33 @@
 ---
 baseURL: http://your-domain.com
+title: Ryan Dejaegher
+
 params:
   description: A starter repo for Hugo
   rssURL:
     main: https://gomakethings.com/feed/index.xml
   rssLimit: "7"
+
+
 caches:
   getjson:
     maxAge: 5m
 languageCode: en-us
-title: Ryan Dejaegher
 theme: my-theme
+
 permalinks:
   articles: "/:title/"
 canonifyURLs: true
+
 disableKinds:
 - RSS
 - hugoGeneratorInject
 - '404'
 ignoreFiles: []
+
 summaryLength: "70"
+
+# Pagination
 paginate: "35"
 paginatePath: page
 blackfriday:
