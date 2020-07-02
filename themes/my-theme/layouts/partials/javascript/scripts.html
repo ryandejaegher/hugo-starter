@@ -1,0 +1,13 @@
+{{/*  Add your JS scripts that will go before the </body> tag  */}}
+
+{{/*  Enables code highlighting with prism.js  */}}
+{{ with .Params.showCodeHighlighting }}
+<script>console.log('code highlighting active')</script>
+{{ $script := resources.Get "js/prism.js" }}
+<script src="{{ $script.RelPermalink }}"></script>
+{{end}}
+
+{{/*  Displays   */}}
+{{with .Site.Params.siteDebug }}
+   {{ partial "javascript/hugoDebug.html" . }}
+{{end}}

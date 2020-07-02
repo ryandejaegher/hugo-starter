@@ -1,7 +1,7 @@
 +++
 articleBannerImage = ""
 description = "This will be the SEO Description"
-draft = true
+draft = false
 excerpt = ""
 publishdate = 2020-07-02T16:01:00Z
 seo_title = ""
@@ -19,6 +19,8 @@ This is what my custom stuff look likes
 
 ### This is an example of adding more content here. 
 
+```css
     .amazing {
     	background-color: red;
     }
+```
