@@ -6,7 +6,18 @@ caches:
   getjson:
     maxAge: "5m"
 
-
+menu:
+  main:
+  - identifier: about
+    name: about hugo
+    pre: <i class='fa fa-heart'></i>
+    url: /about/
+    weight: -110
+  - name: getting started
+    post: <span class='alert'>New!</span>
+    pre: <i class='fa fa-road'></i>
+    url: /getting-started/
+    weight: -100
 
 # The language code for the site
 languageCode: "en-us"
