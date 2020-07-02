@@ -1,6 +1,5 @@
 
 # Customer parameters
-params:
   description: "A starter repo for Hugo"
   rssURL:
     main: "https://gomakethings.com/feed/index.xml"
