@@ -1,0 +1,30 @@
+#articleContent {
+    & > * + *,  & li + li, & li > p + p {
+      @apply mt-6 leading-normal;
+    }
+
+    & h2 {
+      @apply leading-tight text-xl font-bold text-black mb-2 mt-10 max-w-xl uppercase;
+    }
+    & h3 {
+      @apply leading-tight text-lg font-bold text-black mt-8 -mb-2 max-w-xl uppercase;
+    }
+
+    & strong {
+        @apply text-black font-bold;
+    }
+
+    & a {
+        @apply font-semibold;
+    }
+
+    & strong a {
+        @apply font-bold;
+    }
+    & ul, & ol {
+      @apply pl-5;
+      @screen sm {
+        @apply pl-10;
+      }
+    }
+  }
