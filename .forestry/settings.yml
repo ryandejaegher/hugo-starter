@@ -25,9 +25,6 @@ sections:
   - article
 - type: heading
   label: Config
-- type: document
-  path: config/_default/config.yaml
-  label: Site Settings
 - type: heading
   label: Data
 upload_dir: static/uploads
