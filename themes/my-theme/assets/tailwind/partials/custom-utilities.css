@@ -1,0 +1,53 @@
+/* Add your own utility classes here */
+
+.debug-grid {
+  background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=) repeat top left;
+}
+
+.debug-grid-16 {
+  background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=) repeat top left;
+}
+
+.debug-grid-8-solid {
+  background:white url(data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==) repeat top left;
+}
+
+.debug-grid-16-solid {
+  background:white url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7) repeat top left;
+}
+
+.breakout {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+  
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.resp-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.resp-container > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
