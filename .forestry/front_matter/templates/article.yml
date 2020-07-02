@@ -1,4 +1,68 @@
 ---
 label: Article
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Article Title
+- name: draft
+  type: boolean
+  label: Draft
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: SEO Description
+- name: seo_title
+  type: text
+  config:
+    required: false
+  label: SEO title
+  description: "(optional) Set a title specifically for SEO"
+- name: excerpt
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Excerpt
+  description: "(optional) Write a brief article teaser/intro"
+- name: publishdate
+  type: datetime
+  label: Publish Date
+  description: "(optional) Set a future date to publish article."
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: show_table_of_contents
+  type: boolean
+  label: Show Table Of Contents
+- name: showCodeHighlighting
+  type: boolean
+  label: Show Code Highlighting
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: "(optional) Set tags for article"
+- name: articleBannerImage
+  type: file
+  config:
+    maxSize: 64
+  label: Article Banner Image
+- name: showPrevNext
+  type: boolean
+  label: Show Prev/Next Article
+  description: "(optional) Display navigation to previous/next article. "
