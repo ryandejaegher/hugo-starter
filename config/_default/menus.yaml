@@ -1,6 +1,0 @@
-main:
-- identifier: articles
-  name: about hugo
-  pre: <i class='fa fa-heart'></i>
-  url: /about/
-  weight: -110
