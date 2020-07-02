@@ -71,3 +71,5 @@ fields:
   type: boolean
   label: Show Read Time
   description: "(optional) Display article reading time"
+pages:
+- content/articles/this-is-ryan-s-custom-article.md
