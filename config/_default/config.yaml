@@ -8,15 +8,15 @@ caches:
 
 menu:
   main:
-  - name: getting started
-    post: <span class='alert'>New!</span>
-    pre: <i class='fa fa-road'></i>
-    url: /getting-started/
-  footer:
-  - name: getting started
-    post: <span class='alert'>New!</span>
-    pre: <i class='fa fa-road'></i>
-    url: /getting-started/
+  - url: "/articles/"
+    name: Articles
+    title: Articles
+    weight: 1
+    identifier: "articles"
+  - url: "/squarespace-tutorials"
+    name: "Squarespace Tutorials"
+    title: "Squarespace Tutorials"
+    identifier: "squarespace-tutorials"
 
 # The language code for the site
 languageCode: "en-us"
