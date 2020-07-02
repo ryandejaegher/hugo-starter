@@ -1,0 +1,10 @@
+{{/*  Add CSS  */}}
+
+{{/*  Prism CSS  */}}
+{{ $prism := resources.Get "css/prism.css" | minify }}
+
+{{/*  Tailwind CSS  */}}
+{{ $tailwind := resources.Get "css/styles.css" |  }}
+<link rel="stylesheet" href="{{ $tailwind.RelPermalink}}">
+
+

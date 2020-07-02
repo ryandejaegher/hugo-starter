@@ -11,3 +11,5 @@ categories:
 ---
 
 It's true
+
+{{% embed/mailerlite form="css" %}}

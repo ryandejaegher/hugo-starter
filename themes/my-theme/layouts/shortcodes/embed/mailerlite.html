@@ -1,0 +1,36 @@
+{{/*  
+    
+    Embeds a form from Mailerlite
+    
+    Example {{% embed/mailerlite form="shopify" %}}
+    */}}
+
+    {{ $form := .Get "form" }}   
+
+
+{{ if eq $form "squarespace"}}    
+squarespace
+{{"<!--Squarespace Form-->" | safeHTML}}
+<div class="ml-form-embed"
+  data-account="1940864:r4l1s1g0j7"
+  data-form="1980410:l2v5u2">
+</div>
+{{end}}
+
+{{ if eq $form "css"}}
+css
+{{"<!--CSS Form-->" | safeHTML}}
+<div class="ml-form-embed"
+  data-account="1940864:r4l1s1g0j7"
+  data-form="2269577:s8s8n0">
+</div>
+{{end}}
+
+{{ if eq $form "shopify" }}
+shopify
+{{"<!--Shopify Form-->" | safeHTML}}
+<div class="ml-form-embed"
+  data-account="1940864:r4l1s1g0j7"
+  data-form="2269573:b0j3q8">
+</div>
+{{end}}

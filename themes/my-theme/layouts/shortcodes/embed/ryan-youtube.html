@@ -1,0 +1,9 @@
+{{/*
+    Embed a video from YouTube. All you need is the video id
+    Link: https://www.youtube.com/watch?v=8IB7JcKJEeI
+    Example {{% embed/ryan-youtube 8IB7JcKJEeI %}}
+*/}}
+
+<div class='resp-container max-w-2xl'>
+    <iframe src="https://www.youtube.com/embed/{{index .Params 0}}" frameborder='0' allowfullscreen></iframe>
+</div>
