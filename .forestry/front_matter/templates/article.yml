@@ -8,9 +8,6 @@ fields:
     required: false
   label: Title
   description: Article Title
-- name: draft
-  type: boolean
-  label: Draft
 - name: description
   type: textarea
   default: ''
@@ -21,6 +18,9 @@ fields:
       format: markdown
   label: Description
   description: SEO Description
+- name: draft
+  type: boolean
+  label: Draft
 - name: seo_title
   type: text
   config:
@@ -46,12 +46,6 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: show_table_of_contents
-  type: boolean
-  label: Show Table Of Contents
-- name: showCodeHighlighting
-  type: boolean
-  label: Show Code Highlighting
 - name: tags
   type: tag_list
   default: []
@@ -66,3 +60,13 @@ fields:
   type: boolean
   label: Show Prev/Next Article
   description: "(optional) Display navigation to previous/next article. "
+- name: show_table_of_contents
+  type: boolean
+  label: Show Table Of Contents
+- name: showCodeHighlighting
+  type: boolean
+  label: Show Code Highlighting
+- name: showReadTime
+  type: boolean
+  label: Show Read Time
+  description: "(optional) Display article reading time"
