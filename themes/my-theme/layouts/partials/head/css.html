@@ -1,7 +1,10 @@
 {{/*  Add CSS  */}}
 
 {{/*  Prism CSS  */}}
+{{ with .Params.showCodeHighlighting}}
 {{ $prism := resources.Get "css/prism.css" | minify }}
+<link rel="stylesheet" href="{{ $prism.RelPermalink }}" />
+{{ end }}
 
 {{/*  Tailwind CSS  */}}
 {{ $tailwind := resources.Get "css/styles.css" |  }}
