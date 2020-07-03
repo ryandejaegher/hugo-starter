@@ -1,2 +1,4 @@
 ---
-menu_item: []
+menu_item:
+- menu_title: Home
+  menu_url: "/"
