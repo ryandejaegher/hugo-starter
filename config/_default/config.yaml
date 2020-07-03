@@ -11,6 +11,7 @@ menu:
   - url: https://apple.com
     name: Wow
     weight: 1
+    
 
 # The language code for the site
 languageCode: "en-us"
@@ -47,3 +48,6 @@ paginatePath: "page"
 # Syntax Highlighting
 pygmentsCodefences: true
 pygmentsUseClasses: true
+
+# Enable to get file modification date from Github
+enableGitInfo: true
