@@ -6,4 +6,4 @@ fields:
   type: boolean
   label: Show Menu
 pages:
-- data/Theme Options.yaml
+- data/theme-options.yaml
