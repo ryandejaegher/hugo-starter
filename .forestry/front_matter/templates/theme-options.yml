@@ -12,6 +12,7 @@ fields:
     required: false
     options:
     - Horizontal
+    - Centered
     source:
       type: simple
       section: 
