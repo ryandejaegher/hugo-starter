@@ -30,4 +30,4 @@ fields:
     labelField: 
   label: Authors
 pages:
-- data/test.yaml
+- data/authors.yaml
