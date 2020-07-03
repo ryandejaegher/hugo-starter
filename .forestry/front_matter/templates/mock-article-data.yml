@@ -1,4 +1,44 @@
 ---
 label: Mock Article Data
 hide_body: true
-fields: []
+fields:
+- name: articles
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: excerpt
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Excerpt
+  - name: date
+    type: datetime
+    label: Date
+    description: ''
+    config:
+      required: false
+      date_format: 
+      time_format: 
+      display_utc: false
+  - name: author
+    type: text
+    config:
+      required: false
+    label: Author
+  - name: tags
+    type: tag_list
+    default: []
+    label: Tags
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Articles
