@@ -8,9 +8,9 @@ caches:
 
 menu:
   main:
-    url: https://apple.com
+  - url: 'https://apple.com'
     name: Wow
-    weight: 1
+    weight: 10
     
 
 # The language code for the site
