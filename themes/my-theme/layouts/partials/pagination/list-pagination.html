@@ -2,13 +2,17 @@
 
 {{ $paginator := .Paginate (.RegularPagesRecursive) }}
 
-<div class="article-list-container container"></div>
-{{ range $paginator.Pages }}
-    <article class="border-2">
-        <h3 class="text-gray-900"><a class="hover:underline" href="{{.Permalink}}">{{.Title}}</a></h3>        
-        <time datetime="{{.Date}}">{{.Date.Format "January 1, 2006" }}</time>
-    </article>
-    {{ end }}
+<div class="article-list-container container mx-auto space-y-8 mt-12">
+    {{ range $paginator.Pages }}
+        <article class="space-y-2 max-w-lg">
+            <h3 class="text-black text-xl"><a class="hover:underline" href="{{.Permalink}}">{{.Title}}</a></h3>
+            <p class="text-gray-900">
+                {{.Summary}}        
+            </p>
+            <time class="inline-block text-sm tracking-tight text-gray-700" datetime="{{.Date}}">{{.Date.Format "January 1, 2006" }}</time>
+        </article>
+        {{ end }}
+        
+        
+        {{ partial "pagination/nav-pagination.html" . }}
 </div>
-
-{{ partial "pagination/nav-pagination.html" . }}

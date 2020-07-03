@@ -1,9 +1,9 @@
-<header class="bg-gray-500 -mx-4 py-4">
-	<nav class="container mx-auto flex px-4 justify-between">
+<header class="border-t-8 border-indigo-500 -mx-4 py-8">
+	<nav class="container mx-auto flex px-4 lg:px-0 justify-between items-baseline">
 		<a href="{{ .Site.BaseURL }}">
-			<strong>{{ .Site.Title }}</strong>
+			<strong class="text-xl">{{ .Site.Title }}</strong>
 		</a>
-		<ul class="flex">
+		<ul class="flex space-x-4">
 			{{ partial "navigation/nav-items.html" . }}
 		</ul>
 	</nav>

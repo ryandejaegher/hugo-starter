@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-Page Title: {{.Title}}
+{{/*  Page Title: {{.Title}}
 Page Kind: {{.Kind}}
 Page Type: {{.Type}}
 {{/*  {{ range .Pages  }}
@@ -20,6 +20,15 @@ Page Type: {{.Type}}
 
 {{ end }}  */}}
 
-{{ partial "pagination/list-pagination.html" . }}
+<main class="">
+	<div class="container mx-auto mt-8 md:mt-24">
+		<h1 class="text-2xl font-bold text-black">{{.Title}}</h1>
+		<div class="text-gray-900">
+			{{.Content}}
+		</div>
+	</div>
+	{{/*  display pagination  */}}
+	{{ partial "pagination/list-pagination.html" . }}
+</main>
 
 {{ end }}

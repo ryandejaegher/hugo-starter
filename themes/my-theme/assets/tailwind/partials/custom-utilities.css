@@ -61,12 +61,26 @@ html {
   --secondary: #dbe1e8;
   --text-main: #0d0106;
   --text-secondary: #454e56;
+  /* --text-link: #fff */
+  /* --text */
   --accent: #009ffd;
+
 }
 .theme-dark {
   --primary: #12181b;
   --secondary: #2a2e35;
   --text-main: #eaeaea;
   --text-secondary: #b8b8b9;
+  /* --text-link: */
   --accent: #fc7753;
 }
+
+/* .theme-brand {
+  --primary: #12181b;
+  --secondary: #2a2e35;
+  --text-main: #eaeaea;
+  --text-secondary: #b8b8b9;
+  --text-link:
+  --accent: #fc7753;
+} */
+

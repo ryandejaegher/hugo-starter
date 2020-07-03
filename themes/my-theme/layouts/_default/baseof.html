@@ -44,7 +44,7 @@
 
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ block "footer" . }}
-
+        {{ partial "footer.html" . }}
     {{ end }}
 
     {{/*  Adds JavaScript  */}}

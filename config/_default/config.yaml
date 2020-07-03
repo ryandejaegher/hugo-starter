@@ -17,7 +17,8 @@ menu:
 languageCode: "en-us"
 
 # Site title
-title: "My Hugo Site"
+title: "Ryan Dejaegher"
+
 
 # theme to use (located by default in /themes/THEMENAME/)
 theme: "my-theme"
