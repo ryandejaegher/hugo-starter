@@ -51,3 +51,5 @@ pygmentsUseClasses: true
 
 # Enable to get file modification date from Github
 enableGitInfo: true
+
+metaDataFormat: "yaml"
