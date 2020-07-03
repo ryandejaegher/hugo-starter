@@ -2,8 +2,13 @@
 
 {{ $paginator := .Paginate (.RegularPagesRecursive) }}
 
+<div class="article-list-container container"></div>
 {{ range $paginator.Pages }}
-    {{.Title}}
-{{ end }}
+    <article class="border-2">
+        <h3 class="text-gray-900"><a class="hover:underline" href="{{.Permalink}}">{{.Title}}</a></h3>        
+        <time datetime="{{.Date}}">{{.Date.Format "January 1, 2006" }}</time>
+    </article>
+    {{ end }}
+</div>
 
-{{ template "_internal/pagination.html" . }}
+{{ partial "pagination/nav-pagination.html" . }}

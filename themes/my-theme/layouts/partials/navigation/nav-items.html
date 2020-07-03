@@ -1,3 +1,4 @@
 {{ range .Site.Data.menus.menu_item}}
-    <li><a href="{{.menu_url}}">{{.menu_title}}</a></li>
+
+    <li><a class="hover:underline" href="{{.menu_url}}">{{.menu_title}}</a></li>
 {{ end }}

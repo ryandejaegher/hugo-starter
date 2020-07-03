@@ -16,6 +16,10 @@
   background:white url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7) repeat top left;
 }
 
+.debug {
+  outline: 1px solid red;
+}
+
 .breakout {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -50,4 +54,19 @@ html {
 	html {
 		scroll-behavior: auto;
 	}
+}
+
+.theme-light {
+  --primary: #f8f8f8;
+  --secondary: #dbe1e8;
+  --text-main: #0d0106;
+  --text-secondary: #454e56;
+  --accent: #009ffd;
+}
+.theme-dark {
+  --primary: #12181b;
+  --secondary: #2a2e35;
+  --text-main: #eaeaea;
+  --text-secondary: #b8b8b9;
+  --accent: #fc7753;
 }
