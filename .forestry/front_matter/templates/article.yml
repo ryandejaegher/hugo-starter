@@ -71,3 +71,5 @@ fields:
   type: boolean
   label: Show Read Time
   description: "(optional) Display article reading time"
+pages:
+- content/articles/Forestry Test/forestry-test.md
