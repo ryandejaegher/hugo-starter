@@ -37,6 +37,11 @@ fields:
     type: tag_list
     default: []
     label: Tags
+  - name: cta
+    type: text
+    config:
+      required: false
+    label: CTA
   config:
     min: 
     max: 
