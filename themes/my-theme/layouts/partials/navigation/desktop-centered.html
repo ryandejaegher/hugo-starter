@@ -8,3 +8,29 @@
 		</ul>
 	</nav>
 </header>
+
+<ul class="list-none">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                <a class="sidebar-nav-item p-2 text-indigo-400" href="#">
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            <ul class="sub-menu list-none">
+                {{ range .Children }}
+                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                        <a class="sidebar-nav-item p-2 text-indigo-400" href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        {{ else }}
+            <li>
+                <a href="{{ .URL }}">
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>
