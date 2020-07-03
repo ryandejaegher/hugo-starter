@@ -26,6 +26,7 @@ theme: "my-theme"
 # See "content-management/permalinks"
 permalinks:
   articles: /:title/
+  pages: /:title/
 
 # Use absolute URLs
 canonifyURLs: true
