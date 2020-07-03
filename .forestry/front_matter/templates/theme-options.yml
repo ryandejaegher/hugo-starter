@@ -19,5 +19,8 @@ fields:
       file: 
       path: 
   label: Menu Style
+  showOnly:
+    field: show_menu
+    value: true
 pages:
 - data/theme.yaml
