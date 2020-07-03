@@ -1,10 +1,10 @@
-<header>
-	<nav>
+<header class="bg-gray-500">
+	<nav class="flex">
 		<a href="{{ .Site.BaseURL }}">
 			<strong>{{ .Site.Title }}</strong>
 		</a>
-		<ul class="nav list-inline">
-			{{ partial "nav-items.html" . }}
+		<ul class="flex">
+			{{ partial "navigation/nav-items.html" . }}
 		</ul>
 	</nav>
 </header>
