@@ -1,8 +1,8 @@
 
-# Customer parameters
-  description: "A starter repo for Hugo"
-  rssURL:
-    main: "https://gomakethings.com/feed/index.xml"
-  rssLimit: 7
-  test: "Friend"
+# Custom parameters
+description: "A starter repo for Hugo"
+rssURL:
+  main: "https://gomakethings.com/feed/index.xml"
+rssLimit: 7
+test: "Friend"
 
