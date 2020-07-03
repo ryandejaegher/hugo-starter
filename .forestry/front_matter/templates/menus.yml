@@ -1,4 +1,22 @@
 ---
 label: Menus
 hide_body: true
-fields: []
+fields:
+- name: menu_item
+  type: field_group_list
+  fields:
+  - name: menu_title
+    type: text
+    config:
+      required: false
+    label: Menu Title
+  - name: menu_url
+    type: text
+    config:
+      required: false
+    label: Menu URL
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Menu Item
