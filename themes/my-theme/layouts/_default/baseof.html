@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ block "title" . }}
-      <!-- Blocks may include default content. -->
-      {{ .Site.Title }}
-    {{ end }}</title>
+        <!-- Blocks may include default content. -->
+        {{ .Site.Title }}
+        {{ end }}</title>
 
     {{ partial "head/css.html" . }}
-  </head>
-  <body class="line-numbers">
-    
-    {{ block "header" . }}
-        
-    {{ end }}
+</head>
 
-    
-    {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
+<body class="line-numbers">
+    {{ with .Site.Params.enableGoogleTagManager}}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F3VZW7" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{end}}
 
-    {{ block "footer" . }}
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ block "header" . }}
+
+    {{ end }}
+
+
+    {{ block "main" . }}
+    <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ block "footer" . }}
+    {{ partial "footer" . }}
     {{ end }}
 
     {{/*  Adds JavaScript  */}}
     {{ partial "javascript/scripts.html" . }}
-  </body>
+</body>
+
 </html>

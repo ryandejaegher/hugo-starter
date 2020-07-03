@@ -1,0 +1,9 @@
+{{/*  This will create pagination for list pages  */}}
+
+{{ $paginator := .Paginate (.RegularPagesRecursive) }}
+
+{{ range $paginator.Pages }}
+    {{.Title}}
+{{ end }}
+
+{{ template "_internal/pagination.html" . }}

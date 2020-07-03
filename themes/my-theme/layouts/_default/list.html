@@ -1,5 +1,24 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
-	{{ partial "content-page.html" . }}
+Page Title: {{.Title}}
+Page Kind: {{.Kind}}
+Page Type: {{.Type}}
+{{/*  {{ range .Pages  }}
 
-{{ partial "footer.html" . }}
+{{$articleTitle := .Title}}
+
+	Title: {{$articleTitle}}
+	URL: {{.URL}}
+	Date: {{.Date}}
+	Date Formatted: {{.Date.Format "Jan 1, 2006" }}
+	Date Formatted: {{.Date.Format "2006-01-02" }}
+	
+	Date Modified: {{.Lastmod}}
+	ReadTime: {{.ReadingTime}}
+	Word Count: {{.WordCount}}
+	Next:{{.NextInSection}}
+
+{{ end }}  */}}
+{{ partial "range/latest-posts.html" . }}
+{{/*  {{ partial "pagination/list-pagination.html" . }}  */}}
+{{ end }}

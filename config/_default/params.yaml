@@ -5,4 +5,8 @@ rssURL:
   main: "https://gomakethings.com/feed/index.xml"
 rssLimit: 7
 test: "Friend"
+mainSections:
+  - "articles"
+enableGoogleTagManager: false
+
 

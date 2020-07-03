@@ -8,7 +8,7 @@ caches:
 
 menu:
   main:
-  - url: https://apple.com
+    url: https://apple.com
     name: Wow
     weight: 1
     
@@ -42,9 +42,8 @@ ignoreFiles: []
 summaryLength: 70
 
 # Pagination
-paginate: 35
-paginatePath: "page"
-
+paginate: 5
+paginatePath: "/"
 
 # Syntax Highlighting
 pygmentsCodefences: true
@@ -54,3 +53,4 @@ pygmentsUseClasses: true
 enableGitInfo: true
 
 metaDataFormat: "yaml"
+
