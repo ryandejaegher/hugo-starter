@@ -27,12 +27,14 @@
     {{ block "header" . }}
     {{ if .Site.Data.theme.show_menu }}
         {{ if eq .Site.Data.theme.menu_style "Centered" }}
-        {{ partial "navigation/desktop-centered.html" . }}
-        {{end}}
+            {{ partial "navigation/desktop-centered.html" . }}
+        {{ end }}
+
         {{ if eq .Site.Data.theme.menu_style  "Horizontal" }}
-        {{ partial "navigation/desktop.html" . }}
-        {{end}}
-    {{end}}
+            {{ partial "navigation/desktop.html" . }}
+        {{ end }}
+
+        {{ end }}
     {{ end }}
 
 
