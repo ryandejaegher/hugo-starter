@@ -1,13 +1,14 @@
 {{ define "main" }}
 
-	<article class="markdown">
+	<article>
 
 		<header>
 			<h1>{{ .Title }}</h1>
 			<time datetime="{{ .Date }}" pubdate>{{ dateFormat "January 2, 2006" .Date }}</time>
 		</header>
-
+	<div class="markdown">
 		{{ .Content }}
+	</div>
 
 	</article>
 

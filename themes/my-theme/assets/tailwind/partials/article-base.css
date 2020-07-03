@@ -1,7 +1,7 @@
 .markdown {
   @apply text-lg leading-normal;
   & > * + *,  & li + li, & li > p + p {
-    @apply mt-6;
+    @apply mt-6 max-w-xl;
   }
   & strong {
     @apply text-black font-bold;

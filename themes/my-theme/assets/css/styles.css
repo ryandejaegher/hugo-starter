@@ -598,6 +598,7 @@ video {
 
 .markdown > * + *,  .markdown li + li,  .markdown li > p + p {
     margin-top: 1.5rem;
+    max-width: 36rem;
   }
 
 .markdown strong {
