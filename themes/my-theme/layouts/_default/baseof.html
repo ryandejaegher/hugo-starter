@@ -25,9 +25,14 @@
 
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ block "header" . }}
-    {{if .Site.Data.theme.show_menu }}
+    {{ if .Site.Data.theme.show_menu }}
+        {{ if eq .Site.Data.theme.menu_style "Centered" }}
+        {{ partial "navigation/desktop-centered.html" . }}
+        {{end}}
+        {{ if eq .Site.Data.theme.menu_style  "Horizontal" }}
         {{ partial "navigation/desktop.html" . }}
         {{end}}
+    {{end}}
     {{ end }}
 
 
