@@ -591,12 +591,34 @@ video {
   height: auto;
 }
 
-#articleContent > * + *,  #articleContent li + li,  #articleContent li > p + p {
+.markdown {
+  font-size: 1.125rem;
+  line-height: 1.5
+}
+
+.markdown > * + *,  .markdown li + li,  .markdown li > p + p {
     margin-top: 1.5rem;
-    line-height: 1.5;
   }
 
-#articleContent h2 {
+.markdown strong {
+    --text-opacity: 1;
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+    font-weight: 700;
+  }
+
+.markdown a {
+    --text-opacity: 1;
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+    font-weight: 600;
+  }
+
+.markdown strong a {
+    font-weight: 700;
+  }
+
+.markdown h2 {
     line-height: 1.25;
     font-size: 1.25rem;
     font-weight: 700;
@@ -605,11 +627,9 @@ video {
     color: rgba(0, 0, 0, var(--text-opacity));
     margin-bottom: 0.5rem;
     margin-top: 2.5rem;
-    max-width: 36rem;
-    text-transform: uppercase;
   }
 
-#articleContent h3 {
+.markdown h3 {
     line-height: 1.25;
     font-size: 1.125rem;
     font-weight: 700;
@@ -618,32 +638,38 @@ video {
     color: rgba(0, 0, 0, var(--text-opacity));
     margin-top: 2rem;
     margin-bottom: -0.5rem;
-    max-width: 36rem;
-    text-transform: uppercase;
   }
 
-#articleContent strong {
-    --text-opacity: 1;
-    color: #000;
-    color: rgba(0, 0, 0, var(--text-opacity));
-    font-weight: 700;
+.markdown code {
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.875rem;
+    display: inline;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
-#articleContent a {
-    font-weight: 600;
+.markdown pre code {
+    display: block;
+    --bg-opacity: 1;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+    padding: 1rem;
+    border-radius: 0.25rem;
   }
 
-#articleContent strong a {
-    font-weight: 700;
+.markdown blockquote {
+    border-left-width: 4px;
+    padding-left: 1rem;
+    font-style: italic;
   }
 
-#articleContent ul, #articleContent ol {
+.markdown ul, .markdown ol {
     padding-left: 1.25rem
   }
 
 @media (min-width: 640px) {
 
-#articleContent ul, #articleContent ol {
+.markdown ul, .markdown ol {
       padding-left: 2.5rem
   }
     }
