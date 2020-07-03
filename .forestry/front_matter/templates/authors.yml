@@ -70,4 +70,4 @@ fields:
   config:
     labelField: fullName
 pages:
-- hugo/data/authors.yml
+- data/authors.yaml

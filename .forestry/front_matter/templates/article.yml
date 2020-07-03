@@ -71,10 +71,17 @@ fields:
   type: boolean
   label: Show Read Time
   description: "(optional) Display article reading time"
-- name: authors
-  type: include
-  config: {}
-  template: authors
-  label: authors
+- name: cool
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: data
+      file: data/authors.yaml
+      path: map
+  label: Cool
 pages:
 - content/articles/Forestry Test/forestry-test.md
