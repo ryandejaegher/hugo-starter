@@ -5,5 +5,18 @@ fields:
 - name: show_menu
   type: boolean
   label: Show Menu
+- name: menu_style
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Horizontal
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Menu Style
 pages:
 - data/theme.yaml
