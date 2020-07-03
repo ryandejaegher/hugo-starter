@@ -72,5 +72,4 @@ fields:
   label: Show Read Time
   description: "(optional) Display article reading time"
 pages:
-- content/articles/teest.md
-- content/articles/this-is-ryan-s-custom-article.md
+- content/articles/Forestry Test/forestry-test.md
