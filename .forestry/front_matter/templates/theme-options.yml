@@ -1,4 +1,7 @@
 ---
 label: Theme Options
 hide_body: true
-fields: []
+fields:
+- name: show_menu
+  type: boolean
+  label: Show Menu
