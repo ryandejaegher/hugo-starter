@@ -2,6 +2,7 @@
 title: "Pirates are still awesome"
 date: 2019-10-07T10:30:00-04:00
 draft: false
+showCodeHighlighting: true
 categories:
 - Code
 - Design and UX
@@ -21,3 +22,10 @@ To capture a hint of retro wonderment while still subverting expectations, Lanie
 ## The Story of the VHS Player
 
 “Everything’s kind of centered around this VHS videotape player,” Lanier says, referring to this free ensemble from the User Library. “It becomes almost a—I don’t want to say character—but certainly a central object within the story.”. Lanier was inspired by that wobbly pitch-altering quality familiar to anyone who can remember reaching over and adjusting the tracking on their video. He goes on: “I wanted to create something that sounded like the musical equivalent of an emotionally upset stomach. I recorded cello, and then used Reaktor to create a sound that blends with it, to create this kind of VHS warbly pad, if you will.”
+
+```css
+.amazing {
+    background: red;
+    font-size: 16px;
+}
+```

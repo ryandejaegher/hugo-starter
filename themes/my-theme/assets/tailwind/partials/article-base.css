@@ -1,7 +1,7 @@
 .markdown {
   @apply text-lg leading-normal;
   & > * + *,  & li + li, & li > p + p {
-    @apply mt-6 max-w-xl;
+    @apply mt-6 max-w-2xl;
   }
   & strong {
     @apply text-black font-bold;
@@ -19,10 +19,10 @@
     @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
   }
   & code {
-    @apply font-mono text-sm inline px-1;
+    @apply text-sm inline px-1;
   }
   & pre code {
-    @apply block bg-black p-4 rounded;
+    @apply block rounded;
   }
   & blockquote {
     @apply border-l-4 pl-4 italic;

@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "A barebones starter project and theme for learning Hugo. https://gohugo.io",
   "main": "index.js",
+  
   "scripts": {
-    "build:css": "postcss themes/my-theme/assets/tailwind/tailwind.css -o themes/my-theme/assets/css/styles.css"
+    "build:css": "postcss themes/my-theme/assets/tailwind/tailwind.css -o themes/my-theme/assets/css/styles.css",
+    "watch": "watch 'npm run build:css' themes/my-theme/assets/tailwind"
   },
   "repository": {
     "type": "git",

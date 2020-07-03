@@ -598,7 +598,7 @@ video {
 
 .markdown > * + *,  .markdown li + li,  .markdown li > p + p {
     margin-top: 1.5rem;
-    max-width: 36rem;
+    max-width: 42rem;
   }
 
 .markdown strong {
@@ -642,7 +642,6 @@ video {
   }
 
 .markdown code {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.875rem;
     display: inline;
     padding-left: 0.25rem;
@@ -651,10 +650,6 @@ video {
 
 .markdown pre code {
     display: block;
-    --bg-opacity: 1;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, var(--bg-opacity));
-    padding: 1rem;
     border-radius: 0.25rem;
   }
 
