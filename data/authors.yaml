@@ -2,5 +2,9 @@
 name: Test
 bio: ''
 authors:
+- name: Mr. Dejaegher
+  bio: The Coolest
+  author_image: ''
 - name: Ryan
   bio: Wow So Cool
+  author_image: ''
