@@ -38,10 +38,10 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: yaml
-upload_dir: static/uploads
-public_path: "/uploads"
+upload_dir: ''
+public_path: https://res.cloudinary.com/damfsuupo/image/upload/f_auto,q_auto,c_scale,w_auto:100,dpr_auto
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_env:

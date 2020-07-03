@@ -13,33 +13,6 @@ fields:
     name: Chris Macrae
     label: Chris Macrae
   - type: text
-    name: Scott Gallant
-    label: Scott Gallant
-  - type: text
-    name: Jordan Patterson
-    label: Jordan Patterson
-  - type: text
-    name: Colin Garvey
-    label: Colin Garvey
-  - type: text
-    name: Michael Soolee
-    label: Michael Soolee
-  - type: text
-    name: Matt Duffy
-    label: Matt Duffy
-  - type: text
-    name: Sebastian Engels
-    label: Sebastian Engels
-  - type: text
-    name: DJ Walker
-    label: DJ Walker
-  - type: text
-    name: Régis Philibert
-    label: Régis Philibert
-  - type: text
-    name: Josh Dzielak
-    label: Josh Dzielak
-  - type: text
     name: Nolan Phillips
     label: Nolan Phillips
 - type: field_group_list
