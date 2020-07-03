@@ -20,3 +20,5 @@ fields:
     max: 
     labelField: 
   label: Menu Item
+pages:
+- data/menus.yaml
