@@ -10,7 +10,7 @@ menu:
   main:
   - url: https://apple.com
     name: Wow
-    weight: 3
+    weight: 1
 
 # The language code for the site
 languageCode: "en-us"
