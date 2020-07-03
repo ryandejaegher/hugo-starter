@@ -2,24 +2,14 @@
 label: Authors
 hide_body: true
 fields:
-- name: author
-  type: field_group
-  config: {}
+- name: authors
+  type: field_group_list
   fields:
   - name: name
     type: text
     config:
       required: false
     label: Name
-  - name: author_info
-    type: include
-    config: {}
-    template: authors
-    label: Author info
-  label: Author
-- name: authors
-  type: field_group_list
-  fields:
   - name: bio
     type: textarea
     default: ''
