@@ -29,6 +29,6 @@ fields:
     max: 
     labelField: name
   label: Authors
-  hidden: true
+  hidden: false
 pages:
 - data/authors.yaml
