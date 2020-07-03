@@ -27,7 +27,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: name
   label: Authors
 pages:
 - data/authors.yaml
