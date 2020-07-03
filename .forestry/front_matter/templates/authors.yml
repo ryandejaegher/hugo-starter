@@ -11,6 +11,7 @@ fields:
     source:
       type: pages
       section: data
+      file: data/authors.yaml
   label: map
 - name: authors
   type: field_group_list
