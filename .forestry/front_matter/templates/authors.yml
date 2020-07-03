@@ -2,19 +2,27 @@
 label: Authors
 hide_body: true
 fields:
-- name: name
-  type: text
+- name: authors
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: bio
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Bio
   config:
-    required: false
-  label: Name
-- name: bio
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Bio
+    min: 
+    max: 
+    labelField: 
+  label: Authors
 pages:
 - data/test.yaml
