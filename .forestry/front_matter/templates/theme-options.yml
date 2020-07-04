@@ -41,5 +41,8 @@ fields:
       file: 
       path: 
   label: Theme Color
+- name: show_article_preview
+  type: boolean
+  label: Show Article Preview
 pages:
 - data/theme.yaml
