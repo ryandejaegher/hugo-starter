@@ -8,6 +8,9 @@ test: "Friend"
 mainSections:
   - "articles"
 enableGoogleTagManager: false
-
+author: Ryan Dejaegher
+tagline: Web Developer · Web Designer
+debugGrid: false
+siteDebug: false
 
 

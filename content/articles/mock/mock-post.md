@@ -1,5 +1,5 @@
 ---
-title: "Mock Post"
+title: "Mock PSSSost"
 date: 2019-10-07T10:30:00-04:00
 draft: false
 showCodeHighlighting: true
@@ -13,7 +13,8 @@ Nathan sounds bright and full of energy on the phone from his home in LA, where 
 
 “One of the things that the creators Dana Fox, John M. Chu and Dara Resnik really liked about that era was a lot of the movies were shown through the eyes of children. We wanted to capture that magic in the music but also it needed a modern hybrid twist.”
 
-### A Hint Of Wonderment
+### A Hint Of WOS {class="text-3xl text-red-500"}
+
 
 To capture a hint of retro wonderment while still subverting expectations, Lanier turned to his sonic pallet. He mixed his background in classical orchestration with subtle touches associated more readily with electronic producers. This is how Native Instruments’ Reaktor found its way into the mix.
 
