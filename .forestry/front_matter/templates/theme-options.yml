@@ -22,5 +22,24 @@ fields:
   showOnly:
     field: show_menu
     value: true
+- name: theme_color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - indigo
+    - red
+    - blue
+    - teal
+    - pink
+    - orange
+    - purple
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme Color
 pages:
 - data/theme.yaml
