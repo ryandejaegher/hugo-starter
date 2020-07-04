@@ -593,7 +593,8 @@ video {
 
 .markdown {
   font-size: 1.125rem;
-  line-height: 1.5
+  line-height: 1.5;
+  font-family: Arial
 }
 
 .markdown > * + *,  .markdown li + li,  .markdown li > p + p {
@@ -621,7 +622,7 @@ video {
 
 .markdown h2 {
     line-height: 1.25;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     font-weight: 700;
     --text-opacity: 1;
     color: #000;
@@ -6252,6 +6253,10 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-body {
+  font-family: Arial;
 }
 
 .font-hairline {
@@ -23888,6 +23893,10 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-body {
+    font-family: Arial;
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -41435,6 +41444,10 @@ html {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-body {
+    font-family: Arial;
   }
 
   .md\:font-hairline {
@@ -58986,6 +58999,10 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-body {
+    font-family: Arial;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -76533,6 +76550,10 @@ html {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-body {
+    font-family: Arial;
   }
 
   .xl\:font-hairline {

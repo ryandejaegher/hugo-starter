@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-normal;
+  @apply text-lg leading-normal font-body;
   & > * + *,  & li + li, & li > p + p {
     @apply mt-6 max-w-2xl;
   }
@@ -13,7 +13,7 @@
     @apply font-bold;
   }
   & h2 {
-    @apply leading-tight text-xl font-bold text-black mb-2 mt-10;
+    @apply leading-tight text-4xl font-bold text-black mb-2 mt-10;
   }
   & h3 {
     @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;

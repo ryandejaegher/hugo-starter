@@ -6,11 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
+        'primary': 'var(--primary)',
+        'secondary': 'var(--secondary)',
         'main-text': 'var(--text-main)',
         'secondary-text': 'var(--text-secondary)',
-      }
+      },
+      fontFamily: {
+      'body': ['Arial'],
+      },
     },
   },
   variants: {},
