@@ -1,11 +1,10 @@
 {{/*  This will create pagination for list pages  */}}
-
 {{ $paginator := .Paginate (.RegularPagesRecursive) }}
-
+{{$themeText := .Site.Data.theme.theme_color}}
 <div class="article-list-container container mx-auto space-y-8 mt-12">
     {{ range $paginator.Pages }}
         <article class="space-y-2 max-w-lg">
-            <h3 class="text-black text-xl"><a class="hover:underline" href="{{.Permalink}}">{{.Title}}</a></h3>
+            <h3 class="text-black text-xl"><a class="hover:border-b-2 border-{{$themeText}}-400" href="{{.Permalink}}">{{.Title}}</a></h3>
             <p class="text-gray-900">
                 {{.Summary}}        
             </p>

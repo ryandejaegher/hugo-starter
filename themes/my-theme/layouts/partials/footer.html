@@ -1,5 +1,5 @@
-{{$themeText := .Site.Params.themeText}}
+{{$themeText := .Site.Data.theme.theme_color}}
 
 <footer class="py-12">
-	<p class="text-center text-{{$themeText}}-700">&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+	<p class="text-center text-{{$themeText}}-600 font-medium">&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>
