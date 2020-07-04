@@ -40,7 +40,7 @@ disableKinds: ["RSS", "hugoGeneratorInject", "404"]
 ignoreFiles: []
 
 # the length of text to show in a .Summary
-summaryLength: 70
+summaryLength: 5
 
 # Pagination
 paginate: 5

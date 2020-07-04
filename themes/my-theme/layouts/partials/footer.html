@@ -1,3 +1,5 @@
+{{$themeText := .Site.Params.themeText}}
+
 <footer class="py-12">
-	<p class="text-center">&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+	<p class="text-center text-{{$themeText}}-700">&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>

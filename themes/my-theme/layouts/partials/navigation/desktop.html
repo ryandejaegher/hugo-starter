@@ -1,5 +1,6 @@
-<header class="border-t-8 border-indigo-500 -mx-4 py-8">
-	<nav class="container mx-auto flex px-4 lg:px-0 justify-between items-baseline">
+{{$themeText := .Site.Params.themeText}}
+<header class="border-t-8 border-{{$themeText}}-500 -mx-4 py-8">
+	<nav class="container mx-auto flex flex-col px-4 sm:px-0 space-y-4 items-baseline">
 		<a href="{{ .Site.BaseURL }}">
 			<strong class="text-xl">{{ .Site.Title }}</strong>
 		</a>

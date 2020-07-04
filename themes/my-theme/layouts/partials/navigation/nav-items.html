@@ -1,4 +1,5 @@
-{{ range .Site.Data.menus.menu_item}}
 
-    <li><a class="text-indigo-500 uppercase font-medium hover:underline" href="{{.menu_url}}">{{.menu_title}}</a></li>
+{{$themeText := .Site.Params.themeText}}
+{{ range .Site.Data.menus.menu_item}}
+    <li><a class="text-{{$themeText}}-500 uppercase font-medium hover:underline" href="{{.menu_url}}">{{.menu_title}}</a></li>
 {{ end }}
