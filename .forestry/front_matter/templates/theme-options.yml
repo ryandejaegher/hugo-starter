@@ -11,9 +11,10 @@ fields:
   config:
     required: false
     options:
-    - Horizontal
     - Centered
     - Stacked-Left
+    - Horizontal-Left
+    - Horizontal-Split
     source:
       type: simple
       section: 
