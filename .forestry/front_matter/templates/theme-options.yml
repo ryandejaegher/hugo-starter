@@ -46,5 +46,8 @@ fields:
 - name: show_article_preview
   type: boolean
   label: Show Article Preview
+- name: show_article_date
+  type: boolean
+  label: Show Article Date
 pages:
 - data/theme.yaml
