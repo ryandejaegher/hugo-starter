@@ -1,15 +1,14 @@
 ---
-title: "Pirates are still awesome"
-date: 2019-10-07T10:30:00-04:00
-draft: false
+title: Pirates are still awesome
+date: '2019-10-07T10:30:00.000-04:00'
 showCodeHighlighting: true
-layout: single-center
 categories:
 - Code
 - Design and UX
 - JavaScript
----
+layout: single-center
 
+---
 Nathan sounds bright and full of energy on the phone from his home in LA, where he’s enthusing about scoring Apple TV+’s new show Home Before Dark, an atmospheric mystery thriller that combines the sharp edge of a contemporary web-series while harking back to those great Amblin films of the 80s. I tell him certain elements reminded me of a John Williams score.
 
 “One of the things that the creators Dana Fox, John M. Chu and Dara Resnik really liked about that era was a lot of the movies were shown through the eyes of children. We wanted to capture that magic in the music but also it needed a modern hybrid twist.”
