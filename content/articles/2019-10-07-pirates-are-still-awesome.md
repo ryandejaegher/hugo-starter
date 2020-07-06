@@ -2,11 +2,11 @@
 title: Pirates are still awesome
 date: '2019-10-07T10:30:00.000-04:00'
 showCodeHighlighting: true
+layout: single-left
 categories:
 - Code
 - Design and UX
 - JavaScript
-layout: single-center
 
 ---
 Nathan sounds bright and full of energy on the phone from his home in LA, where he’s enthusing about scoring Apple TV+’s new show Home Before Dark, an atmospheric mystery thriller that combines the sharp edge of a contemporary web-series while harking back to those great Amblin films of the 80s. I tell him certain elements reminded me of a John Williams score.
