@@ -27,7 +27,7 @@ sections:
   create: all
   match: "**/*"
   templates:
-  - article
+  - list-page
 - type: heading
   label: Config
 - type: heading
