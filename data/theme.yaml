@@ -2,4 +2,4 @@
 show_menu: true
 menu_style: Horizontal
 theme_color: blue
-show_article_preview: false
+show_article_preview: true
