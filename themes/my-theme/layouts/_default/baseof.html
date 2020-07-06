@@ -32,12 +32,16 @@
             {{ partial "navigation/desktop-centered.html" . }}
         {{ end }}
 
-        {{ if eq .Site.Data.theme.menu_style  "Horizontal" }}
-            {{ partial "navigation/nav-inline.html" . }}
+        {{ if eq .Site.Data.theme.menu_style  "Horizontal-Left" }}
+            {{ partial "navigation/nav-inline-left.html" . }}
         {{ end }}
 
-        {{ if eq .Site.Data.theme.menu_style  "Stacked" }}
-        {{ partial "navigation/nav-inline.html" . }}
+        {{ if eq .Site.Data.theme.menu_style  "Horizontal-Split" }}
+        {{ partial "navigation/nav-inline-split.html" . }}
+        {{ end }}
+
+        {{ if eq .Site.Data.theme.menu_style  "Stacked-Left" }}
+        {{ partial "navigation/nav-stacked-left.html" . }}
     {{ end }}
 
         {{ end }}
