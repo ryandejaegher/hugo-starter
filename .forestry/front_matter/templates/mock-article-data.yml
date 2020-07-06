@@ -48,4 +48,4 @@ fields:
     labelField: 
   label: Articles
 pages:
-- data/Wow this is amazing.yaml
+- data/mock-articles.yaml
