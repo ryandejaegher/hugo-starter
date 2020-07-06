@@ -11,9 +11,10 @@ fields:
   config:
     required: false
     options:
-    - Horizontal
     - Centered
     - Stacked-Left
+    - Horizontal-Left
+    - Horizontal-Split
     source:
       type: simple
       section: 
@@ -45,5 +46,8 @@ fields:
 - name: show_article_preview
   type: boolean
   label: Show Article Preview
+- name: show_article_date
+  type: boolean
+  label: Show Article Date
 pages:
 - data/theme.yaml
