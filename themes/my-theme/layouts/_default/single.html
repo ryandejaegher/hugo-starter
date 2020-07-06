@@ -1,11 +1,16 @@
 {{ define "main" }}
+{{$themeText := .Site.Data.theme.theme_color}}
+
 {{  "<!-- Begin _default/single.html -->" | safeHTML   }}
-<main class="">
-	<article>
-		<header>
-			<h1>{{ .Title }}</h1>
-			<time datetime="{{ .Date }}" pubdate>{{ dateFormat "January 2, 2006" .Date }}</time>
+<main class="container mx-auto mt-8">
+	<article class="space-y-6">
+		<header class="space-y-1">
+			<h1 class="text-2xl sm:text-4xl font-black">{{ .Title }}</h1>
+			<time class="block text-sm font-medium uppercase text-{{$themeText}}-400" datetime="{{ .Date }}"
+				pubdate>{{ dateFormat "January 2, 2006" .Date }}</time>
 		</header>
+
+		{{/*  Content  */}}
 		<div class="markdown container mx-auto">
 			{{ .Content }}
 		</div>

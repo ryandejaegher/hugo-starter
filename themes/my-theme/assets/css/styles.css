@@ -592,9 +592,16 @@ video {
 }
 
 .markdown {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5
 }
+
+@media (min-width: 640px) {
+
+.markdown {
+    font-size: 1.125rem
+}
+  }
 
 .markdown > * + *,  .markdown li + li,  .markdown li > p + p {
     margin-top: 1.5rem;
@@ -625,9 +632,8 @@ video {
 
 .markdown h2 {
     line-height: 1.25;
-    font-size: 2.25rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: currentColor;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem;
   }
@@ -636,7 +642,6 @@ video {
     line-height: 1.25;
     font-size: 1.125rem;
     font-weight: 700;
-    color: currentColor;
     margin-top: 2rem;
     margin-bottom: -0.5rem;
   }
