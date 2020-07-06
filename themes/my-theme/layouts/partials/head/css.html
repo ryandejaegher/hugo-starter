@@ -6,8 +6,11 @@
 <link rel="stylesheet" href="{{ $prism.RelPermalink }}" />
 {{ end }}
 
+{{/*  Adobe Fonts  */}}
+{{/*  <link rel="stylesheet" href="https://use.typekit.net/sje5zgk.css">  */}}
+
+
 {{/*  Tailwind CSS  */}}
 {{ $tailwind := resources.Get "css/styles.css" |  }}
 <link rel="stylesheet" href="{{ $tailwind.RelPermalink}}">
-
 
