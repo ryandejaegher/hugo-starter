@@ -2,11 +2,13 @@
 {{ $paginator := .Paginate (.RegularPagesRecursive) }}
 {{ $themeText := .Site.Data.theme.theme_color }}
 <div class="article-list-container container mx-auto space-y-8 mt-12">
+    
     {{ range $paginator.Pages }}
+
         <article class="space-y-1 max-w-lg">
             <h3 class="text-black text-xl"><a class="hover:border-b-2 border-{{$themeText}}-400" href="{{.Permalink}}">{{.Title}}</a></h3>
             
-            {{ if .Site.Data.theme.show_article_preview }}    
+            {{ if .Site.Data.theme.show_article_preview | default $.Params.show_summary }}    
             <p class="text-gray-900">
                 {{.Summary}}        
             </p>

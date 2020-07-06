@@ -2,5 +2,5 @@
 show_menu: true
 menu_style: Stacked-Left
 theme_color: indigo
-show_article_preview: false
+show_article_preview: true
 show_article_date: false
