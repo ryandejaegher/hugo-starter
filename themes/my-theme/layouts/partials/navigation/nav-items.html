@@ -1,3 +1,4 @@
+
 {{$themeText := .Site.Data.theme.theme_color}}
 {{ range .Site.Data.menus.menu_item}}
     <li><a class="text-{{$themeText}}-500 uppercase font-medium hover:underline" href="{{.menu_url}}">{{.menu_title}}</a></li>
