@@ -47,5 +47,3 @@ fields:
     max: 
     labelField: 
   label: Articles
-pages:
-- data/mock-articles.yaml
