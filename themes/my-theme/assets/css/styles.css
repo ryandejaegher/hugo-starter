@@ -605,11 +605,13 @@ video {
 
 .markdown > * + *,  .markdown li + li,  .markdown li > p + p {
     margin-top: 1.5rem;
-    max-width: 42rem;
   }
 
 .markdown p {
-    max-width: 42rem;
+    max-width: 36rem;
+    --text-opacity: 1;
+    color: #1a202c;
+    color: rgba(26, 32, 44, var(--text-opacity));
   }
 
 .markdown strong {
@@ -6508,6 +6510,30 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-neue {
+  font-family: "neue-haas-unica";
+}
+
+.font-aktiv {
+  font-family: "aktiv-grotesk";
+}
+
+.font-kabel {
+  font-family: "neue-kabel";
+}
+
+.font-franklin {
+  font-family: "franklin-gothic-urw";
+}
+
+.font-minion {
+  font-family: "minion-pro";
+}
+
+.font-sofia {
+  font-family: "sofia-pro";
 }
 
 .font-hairline {
@@ -24386,6 +24412,30 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-neue {
+    font-family: "neue-haas-unica";
+  }
+
+  .sm\:font-aktiv {
+    font-family: "aktiv-grotesk";
+  }
+
+  .sm\:font-kabel {
+    font-family: "neue-kabel";
+  }
+
+  .sm\:font-franklin {
+    font-family: "franklin-gothic-urw";
+  }
+
+  .sm\:font-minion {
+    font-family: "minion-pro";
+  }
+
+  .sm\:font-sofia {
+    font-family: "sofia-pro";
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -42173,6 +42223,30 @@ html {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-neue {
+    font-family: "neue-haas-unica";
+  }
+
+  .md\:font-aktiv {
+    font-family: "aktiv-grotesk";
+  }
+
+  .md\:font-kabel {
+    font-family: "neue-kabel";
+  }
+
+  .md\:font-franklin {
+    font-family: "franklin-gothic-urw";
+  }
+
+  .md\:font-minion {
+    font-family: "minion-pro";
+  }
+
+  .md\:font-sofia {
+    font-family: "sofia-pro";
   }
 
   .md\:font-hairline {
@@ -59964,6 +60038,30 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-neue {
+    font-family: "neue-haas-unica";
+  }
+
+  .lg\:font-aktiv {
+    font-family: "aktiv-grotesk";
+  }
+
+  .lg\:font-kabel {
+    font-family: "neue-kabel";
+  }
+
+  .lg\:font-franklin {
+    font-family: "franklin-gothic-urw";
+  }
+
+  .lg\:font-minion {
+    font-family: "minion-pro";
+  }
+
+  .lg\:font-sofia {
+    font-family: "sofia-pro";
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -77751,6 +77849,30 @@ html {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-neue {
+    font-family: "neue-haas-unica";
+  }
+
+  .xl\:font-aktiv {
+    font-family: "aktiv-grotesk";
+  }
+
+  .xl\:font-kabel {
+    font-family: "neue-kabel";
+  }
+
+  .xl\:font-franklin {
+    font-family: "franklin-gothic-urw";
+  }
+
+  .xl\:font-minion {
+    font-family: "minion-pro";
+  }
+
+  .xl\:font-sofia {
+    font-family: "sofia-pro";
   }
 
   .xl\:font-hairline {

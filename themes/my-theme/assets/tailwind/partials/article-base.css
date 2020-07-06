@@ -4,10 +4,10 @@
       @apply text-lg;
     }
   & > * + *,  & li + li, & li > p + p {
-    @apply mt-6 max-w-2xl;
+    @apply mt-6;
   }
   & p {
-    @apply max-w-2xl text-gray-900;
+    @apply max-w-xl text-gray-900;
   }
   & strong {
     @apply text-black font-bold;

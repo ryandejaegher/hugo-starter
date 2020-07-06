@@ -12,7 +12,12 @@ module.exports = {
         'secondary-text': 'var(--text-secondary)',
       },
       fontFamily: {
-      // 'body': '"p22-underground"',
+      'neue': '"neue-haas-unica"',
+      'aktiv': '"aktiv-grotesk"',
+      'kabel': '"neue-kabel"',
+      'franklin': '"franklin-gothic-urw"',
+      'minion': '"minion-pro"',
+      'sofia': '"sofia-pro"'
       },
     },
   },
