@@ -1,5 +1,5 @@
 ---
 show_menu: true
-menu_style: Horizontal
+menu_style: Stacked-Left
 theme_color: indigo
 show_article_preview: true
