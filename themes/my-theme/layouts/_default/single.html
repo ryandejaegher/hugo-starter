@@ -1,14 +1,15 @@
 {{ define "main" }}
-<!-- Begin _default/single.html --> 
-<article>
-	<header>
-		<h1>{{ .Title }}</h1>
-		<time datetime="{{ .Date }}" pubdate>{{ dateFormat "January 2, 2006" .Date }}</time>
-	</header>
-<div class="markdown">
-	{{ .Content }}
-</div>
-
-</article>
+{{  "<!-- Begin _default/single.html -->" | safeHTML   }}
+<main class="">
+	<article>
+		<header>
+			<h1>{{ .Title }}</h1>
+			<time datetime="{{ .Date }}" pubdate>{{ dateFormat "January 2, 2006" .Date }}</time>
+		</header>
+		<div class="markdown container mx-auto">
+			{{ .Content }}
+		</div>
+	</article>
+</main>
 
 {{ end }}

@@ -3,6 +3,9 @@
   & > * + *,  & li + li, & li > p + p {
     @apply mt-6 max-w-2xl;
   }
+  & p {
+    @apply max-w-2xl;
+  }
   & strong {
     @apply text-black font-bold;
   }
@@ -13,10 +16,10 @@
     @apply font-bold;
   }
   & h2 {
-    @apply leading-tight text-4xl font-bold text-black mb-2 mt-10;
+    @apply leading-tight text-4xl font-bold text-current mb-2 mt-10;
   }
   & h3 {
-    @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
+    @apply leading-tight text-lg font-bold text-current mt-8 -mb-2;
   }
   & code {
     @apply text-sm inline px-1;
