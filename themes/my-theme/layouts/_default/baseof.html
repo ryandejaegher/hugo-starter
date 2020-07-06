@@ -23,6 +23,8 @@
     <!-- End Google Tag Manager (noscript) -->
     {{end}}
 
+    {{range .Site.Data.mockarticles.articles}}
+    {{end}}
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ block "header" . }}
     {{ if .Site.Data.theme.show_menu }}
