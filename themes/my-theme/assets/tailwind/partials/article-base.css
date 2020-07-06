@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-normal;
+  @apply text-lg leading-normal font-body;
   & > * + *,  & li + li, & li > p + p {
     @apply mt-6 max-w-2xl;
   }

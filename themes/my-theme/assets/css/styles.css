@@ -593,7 +593,8 @@ video {
 
 .markdown {
   font-size: 1.125rem;
-  line-height: 1.5
+  line-height: 1.5;
+  font-family: "Access-Regular"
 }
 
 .markdown > * + *,  .markdown li + li,  .markdown li > p + p {
@@ -672,6 +673,14 @@ video {
       padding-left: 2.5rem
   }
     }
+
+@font-face {
+  font-family: Access Regular;
+
+  font-weight: 400;
+
+  src: url(/fonts/Access-Regular.ttf) format("ttf");
+}
 
 .container {
   width: 100%;
@@ -6495,6 +6504,10 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-body {
+  font-family: "Access-Regular";
 }
 
 .font-hairline {
@@ -24371,6 +24384,10 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-body {
+    font-family: "Access-Regular";
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -42158,6 +42175,10 @@ html {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-body {
+    font-family: "Access-Regular";
   }
 
   .md\:font-hairline {
@@ -59949,6 +59970,10 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-body {
+    font-family: "Access-Regular";
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -77736,6 +77761,10 @@ html {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-body {
+    font-family: "Access-Regular";
   }
 
   .xl\:font-hairline {

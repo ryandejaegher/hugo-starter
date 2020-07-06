@@ -12,7 +12,7 @@ module.exports = {
         'secondary-text': 'var(--text-secondary)',
       },
       fontFamily: {
-      // 'body': ['Georgia'],
+      'body': '"Access-Regular"',
       },
     },
   },

@@ -1,2 +1,8 @@
 @import './article-base.css';
 
+
+@font-face {
+    font-family: Access Regular;
+    font-weight: 400;
+    src: url(/fonts/Access-Regular.ttf) format("ttf");
+  }
