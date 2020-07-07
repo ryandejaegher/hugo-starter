@@ -58,22 +58,25 @@ html {
 
 /* Theme Colors */
 .theme-light {
-  --primary: #f8f8f8;
-  --secondary: #dbe1e8;
-  --text-main: #0d0106;
+  --primary-100: theme("colors.pink.500");
+  --secondary: red;
+  --text-main: theme("colors.black");
   --text-secondary: #454e56;
   /* --text-link: #fff */
   /* --text */
   --accent: #009ffd;
+  --foreground: white;
+  --background: black;
 
 }
 .theme-dark {
-  --primary: #12181b;
+  --primary: theme("colors.blue.500");
   --secondary: #2a2e35;
   --text-main: #eaeaea;
   --text-secondary: #b8b8b9;
   /* --text-link: */
   --accent: #fc7753;
+  
 }
 
 /* .theme-brand {

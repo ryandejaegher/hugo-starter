@@ -13,8 +13,10 @@
 		{{/*  Content  */}}
 		<div class="markdown container mx-auto">
 			{{ .Content }}
-		</div>
+        </div>
 	</article>
+	{{ partial "articles/articleRelated.html" . }}
+	{{/*  {{ partial "articles/articlePrevNext.html" . }}  */}}
 </main>
 
 {{ end }}

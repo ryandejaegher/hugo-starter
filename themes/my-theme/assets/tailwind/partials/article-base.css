@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-base leading-normal;
+  @apply text-base leading-relaxed;
     @screen sm {
       @apply text-lg;
     }
@@ -7,7 +7,7 @@
     @apply mt-6;
   }
   & p {
-    @apply max-w-xl text-gray-900;
+    @apply max-w-2xl text-gray-800;
   }
   & strong {
     @apply text-black font-bold;
@@ -19,16 +19,16 @@
     @apply font-bold;
   }
   & h2 {
-    @apply leading-tight text-xl font-bold mb-2 mt-10;
+    @apply leading-tight text-2xl font-bold mb-2 mt-10;
   }
   & h3 {
-    @apply leading-tight text-lg font-bold mt-8 -mb-2;
+    @apply leading-tight text-xl font-bold mt-8 -mb-2;
   }
   & code {
     @apply text-sm inline px-1;
   }
   & pre {
-    @apply rounded;
+    @apply rounded max-w-3xl;
   }
   & pre code {
     @apply block;

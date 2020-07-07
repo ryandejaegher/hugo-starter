@@ -1,5 +1,5 @@
 # hostname (and path) to the root
-baseURL: "http://your-domain.com"
+baseURL: "https://ryandejaegher.com"
 
 # Caches
 caches:
@@ -43,7 +43,7 @@ ignoreFiles: []
 summaryLength: 5
 
 # Pagination
-paginate: 5
+paginate: 3
 paginatePath: "/"
 
 # Syntax Highlighting

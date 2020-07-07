@@ -8,8 +8,11 @@ categories:
 - HTML
 - JavaScript
 - Web Performance
+layout: single-left
 ---
 
 It's true
 
 {{% embed/mailerlite form="css" %}}
+
+What else could go here I wonder?
