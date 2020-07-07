@@ -1,5 +1,5 @@
 {{$themeText := .Site.Data.theme.theme_color}}
 
 <footer class="py-12 md:py-20">
-	<p class="text-center uppercase tracking-wide text-{{$themeText}}-600 font-medium">&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+	<p class="text-center text-xs md:text-base uppercase tracking-wide text-{{$themeText}}-600 font-medium">&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>

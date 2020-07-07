@@ -29,5 +29,3 @@ To capture a hint of retro wonderment while still subverting expectations, Lanie
     font-size: 16px;
 }
 ```
-
-![](https://source.unsplash.com/random?skateboard)

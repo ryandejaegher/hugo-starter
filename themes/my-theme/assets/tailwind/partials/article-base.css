@@ -1,7 +1,7 @@
 .markdown {
   @apply text-base leading-relaxed;
     @screen sm {
-      @apply text-lg;
+      @apply text-base;
     }
   & > * + *,  & li + li, & li > p + p {
     @apply mt-6;
