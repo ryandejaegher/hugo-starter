@@ -43,7 +43,7 @@ ignoreFiles: []
 summaryLength: 5
 
 # Pagination
-paginate: 3
+paginate: 10
 paginatePath: "/"
 
 # Syntax Highlighting
