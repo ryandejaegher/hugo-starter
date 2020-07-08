@@ -1,4 +1,4 @@
-{{/*  Changes the markdown output for images  */}}
+{{/*  Changes the markdown output for images. Source: https://gohugo.io/getting-started/configuration-markup  */}}
 
 <figure class="md__image">
     <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
