@@ -13,13 +13,13 @@ Nathan sounds bright and full of energy on the phone from his home in LA, where 
 
 “One of the things that the creators Dana Fox, John M. Chu and Dara Resnik really liked about that era was a lot of the movies were shown through the eyes of children. We wanted to capture that magic in the music but also it needed a modern hybrid twist.”
 
-### A Hint Of Wonderment
+## A Hint Of Wonderment
 
 To capture a hint of retro wonderment while still subverting expectations, Lanier turned to his sonic pallet. He mixed his background in classical orchestration with subtle touches associated more readily with electronic producers. This is how Native Instruments’ Reaktor found its way into the mix.
 
 > “I wanted to create something that sounded like the musical equivalent of an emotionally upset stomach.
 
-## The Story of the VHS Player
+### The Story of the VHS Player
 
 “Everything’s kind of centered around this VHS videotape player,” Lanier says, referring to this free ensemble from the User Library. “It becomes almost a—I don’t want to say character—but certainly a central object within the story.”. Lanier was inspired by that wobbly pitch-altering quality familiar to anyone who can remember reaching over and adjusting the tracking on their video. He goes on: “I wanted to create something that sounded like the musical equivalent of an emotionally upset stomach. I recorded cello, and then used Reaktor to create a sound that blends with it, to create this kind of VHS warbly pad, if you will.”
 
