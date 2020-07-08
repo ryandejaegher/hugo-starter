@@ -50,7 +50,7 @@ fields:
   showOnly:
     field: customize_seo
     value: true
-- name: description
+- name: seo_description
   type: textarea
   default: ''
   config:
@@ -58,7 +58,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Description
+  label: SEO Description
   description: SEO Description
   showOnly:
     field: customize_seo
