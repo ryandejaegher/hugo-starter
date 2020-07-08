@@ -1,7 +1,11 @@
     {{  "<!-- Start of Open Graph -->" | safeHTML  }}
     
-    <meta property="og:title" content="{{ .Title }}">
-    
+    {{/*  Facebook Title  */}}
+    {{if .Params.facebook_title}}
+    <meta property="og:title" content="{{ .Params.facebook_title }}">
+    {{else}}
+    <meta property="og:title" content="{{ .Params.title }}">
+    {{end}}
 
     {{ if .IsPage }}
     <meta property="og:type" content="article">
@@ -9,13 +13,21 @@
     {{ else }}
     <meta property="og:type" content="website">
     {{ end }}
-    
-    <meta property="og:description" content="{{ .Description }}">
+
+    {{/*  Facebook Description   */}}
+    {{if .Params.facebook_description}}
+    <meta property="og:description" content="{{ .Params.facebook_description }}">
+    {{else}}
+    <meta property="og:description" content="{{ .Params.excerpt }}">
+    {{end}}
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
 
-    {{ if .Params.thumbnail }}
-    <meta property="og:image" content="{{ .Params.thumbnail }}">
+    {{/*  Facebook Image  */}}
+    {{ if .Params.facebook_image }}
+    <meta property="og:image" content="{{ .Params.facebook_image }}">
+    {{else}}
+    <meta property="og:image" content="{{ .Params.articleFeatureImage }}">
     {{ end }}
 
     {{ range .Params.tags }}

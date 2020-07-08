@@ -1,26 +1,37 @@
-    {{ "<!-- Start of Twitter -->" | safeHTML }}
-    
+{{ "<!-- Start of Twitter -->" | safeHTML }}
 
-    {{ if .Site.Params.twitter_card_whitelisted }}
-        {{ if .Params.twitter_summary }}
-    <meta property="twitter:card" content="{{ .Params.twitter_summary }}">
-        {{ else if .Description }}
+
+
+{{ if .Params.twitter_description }}
+    <meta property="twitter:card" content="{{ .Params.twitter_description }}">
+{{ else if .Params.excerpt }}
     <meta property="twitter:card" content="{{ .Description }}">
-        {{ else }}
+{{ else }}
     <meta property="twitter:card" content="{{ .Title }}">
-        {{ end }}
-    {{ end }}
+{{ end }}
 
-    {{/*  Twitter Title And Description  */}}
-    <meta property="twitter:description" content="{{ .Description }}">
-    <meta property="twitter:title" content="{{ .Title }}">
-    
-    {{ if .Params.thumbnail }}
-    <meta property="twitter:image" content="{{ .Params.thumbnail }}">
-    {{ end }}
-  {{ "<!-- End of Twitter -->" | safeHTML }}
 
-  {{/*  
+{{/*  Twitter Title And Description  */}}
+{{ if .Params.twitter_description }}
+    <meta property="twitter:description" content="{{ .Params.twitter_description }}">
+{{else}}
+    <meta property="twitter:description" content="{{ .Params.excerpt }}">
+{{end}}
+
+{{ if .Params.twitter_title }}
+<meta property="twitter:title" content="{{ .Params.twitter_title }}">
+{{else}}
+<meta property="twitter:title" content="{{ .Title }}">
+{{end}}
+
+{{ if .Params.twitter_image }}
+    <meta property="twitter:image" content="{{ .Params.twitter_image }}">
+{{else}}
+<meta property="twitter:image" content="{{ .Params.articlefeatureimage }}">
+{{ end }}
+{{ "<!-- End of Twitter -->" | safeHTML }}
+
+{{/*  
 Source: https://github.com/joshbuchea/HEAD#recommended-minimum
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
