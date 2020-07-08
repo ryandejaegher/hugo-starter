@@ -6,9 +6,9 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
-  description: Article Title
+  description: Article Title (should be around 60 characters)
 - name: excerpt
   type: textarea
   default: ''
@@ -58,6 +58,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
+    max: 150
   label: SEO Description
   description: SEO Description
   showOnly:
