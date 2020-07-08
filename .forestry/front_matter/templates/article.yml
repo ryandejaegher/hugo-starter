@@ -72,7 +72,6 @@ fields:
   type: boolean
   label: Show Code Highlighting
   showOnly:
-    field: show_article_options
     value: false
 - name: show_article_options
   type: boolean
@@ -89,6 +88,9 @@ fields:
 - name: show_table_of_contents
   type: boolean
   label: Show Table Of Contents
+  showOnly:
+    field: show_article_options
+    value: true
 - name: showReadTime
   type: boolean
   label: Show Read Time
