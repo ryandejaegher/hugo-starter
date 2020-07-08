@@ -12,3 +12,8 @@ fields:
   config:
     required: false
   label: Hero Subhead
+- name: cta_button
+  type: text
+  config:
+    required: false
+  label: CTA Button
