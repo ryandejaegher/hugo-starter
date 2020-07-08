@@ -1,6 +1,7 @@
 +++
 articleFeatureImage = "https://res.cloudinary.com/damfsuupo/image/upload/f_auto,q_auto,c_scale,w_auto:100,dpr_auto/v1593540102/Ryan%20Test/Facebook_Profile_Picture_hpjie3.png"
 customize_seo = true
+author = "Jeff"
 date = ""
 excerpt = "What's so cool is how much stuff I can fit here. Then it will show up. "
 facebook_description = ""
