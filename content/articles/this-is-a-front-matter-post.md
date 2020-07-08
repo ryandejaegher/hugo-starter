@@ -25,3 +25,5 @@ twitter_title = "This is a Twitter Title"
 
 +++
 What the heck is this going to look like?
+
+![](https://res.cloudinary.com/damfsuupo/image/upload/f_auto,q_auto,c_scale,w_auto:100,dpr_auto/v1566567514/TheEverydayKitchen_Logo-05_g58s7c.png)
