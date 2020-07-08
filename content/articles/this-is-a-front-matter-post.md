@@ -20,7 +20,7 @@ show_table_of_contents = false
 tags = ["css", "squarespace"]
 title = "This is a front matter post"
 twitter_description = ""
-twitter_image = "https://res.cloudinary.com/damfsuupo/image/upload/f_auto,q_auto,c_scale,w_auto:100,dpr_auto/v1566567514/TheEverydayKitchen_Logo-07_aybntf.png"
+twitter_image = "/v1566567514/TheEverydayKitchen_Logo-04_uv0u4i.png"
 twitter_title = "This is a Twitter Title"
 
 +++
