@@ -177,6 +177,17 @@ fields:
   showOnly:
     field: show_custom_social
     value: true
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
 pages:
 - content/articles/Forestry Test/forestry-test.md
 - content/articles/this-is-a-front-matter-post.md
