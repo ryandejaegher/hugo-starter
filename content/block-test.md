@@ -1,5 +1,11 @@
 +++
-blocks = []
 title = "Block Test"
+[[blocks]]
+cta_button = ""
+hero_headline = "Hello"
+hero_image = ""
+hero_size = ""
+hero_subhead = ""
+template = "hero-block"
 
 +++
