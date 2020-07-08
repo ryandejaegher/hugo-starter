@@ -1,4 +1,4 @@
-    {{/*  "<!-- Start of Twitter -->" | safeHTML  */}}
+    {{ "<!-- Start of Twitter -->" | safeHTML }}
     
 
     {{ if .Site.Params.twitter_card_whitelisted }}
@@ -18,7 +18,7 @@
     {{ if .Params.thumbnail }}
     <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
     {{ end }}
-  {{/*  "<!-- End of Twitter -->" | safeHTML  */}}
+  {{ "<!-- End of Twitter -->" | safeHTML }}
 
   {{/*  
 Source: https://github.com/joshbuchea/HEAD#recommended-minimum

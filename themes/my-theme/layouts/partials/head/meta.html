@@ -2,12 +2,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-<meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .description }}{{ end }}">
+<title>
+    {{- if eq .Params.type "home" -}}
+        {{ .Site.Title }} | {{.Site.Params.tagline}}
+    {{- else -}} 
+        {{.Title}} | {{.Site.Title}} 
+    {{- end -}}
+</title>
+
+<meta name="description" content="
+    {{- if eq .Params.type "home" -}}
+        {{ $.Site.Params.description }}
+    {{- else if .Params.description -}}
+        {{.Params.description}}
+    {{- else -}}
+        {{.Summary}}
+    {{- end -}}">
 
 
-
-
-
-
-{{ partial "rss.html" . }}
+{{ partial "head/seo/ryan-seo.html" . }}
+{{ partial "head/rss.html" . }}

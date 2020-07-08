@@ -1,5 +1,6 @@
 {{$themeText := .Site.Data.theme.theme_color}}
-
+{{ "<!-- Begin footer.html -->" | safeHTML }}
 <footer class="py-12 md:py-20">
 	<p class="text-center text-xs md:text-base uppercase tracking-wide text-{{$themeText}}-600 font-medium">&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>
+{{ "<!-- End footer.html -->" | safeHTML }}

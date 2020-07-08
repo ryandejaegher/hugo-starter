@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{$themeText := .Site.Data.theme.theme_color}}
 
-{{  "<!-- Begin _default/single.html -->" | safeHTML   }}
+{{ "<!-- Begin _default/single-left.html -->" | safeHTML }}
 <main class="container mx-auto mt-8">
 	<article class="space-y-6">
 		<header class="space-y-1">
@@ -18,5 +18,5 @@
 	{{ partial "articles/articleRelated.html" . }}
 	{{ partial "articles/articlePrevNext.html" . }}
 </main>
-
+{{ "<!-- End _default/single-left.html -->" | safeHTML }}
 {{ end }}

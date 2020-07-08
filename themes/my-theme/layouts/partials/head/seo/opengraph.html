@@ -1,4 +1,4 @@
-    <!-- Start of Open Graph -->
+    {{  "<!-- Start of Open Graph -->" | safeHTML  }}
     
     <meta property="og:title" content="{{ .Title }}">
     
@@ -21,7 +21,7 @@
     {{ range .Params.tags }}
     <meta property="og:tags" content="{{ . }}">
     {{ end }}
-    <!-- End of Open Graph -->
+    {{  "<!-- End of Open Graph -->" | safeHTML  }}
 
     {{/*  
 Example of options for open graph. Source: https://github.com/joshbuchea/HEAD#recommended-minimum        

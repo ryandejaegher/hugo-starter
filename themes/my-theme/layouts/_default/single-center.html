@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{$themeText := .Site.Data.theme.theme_color}}
 
-{{  "<!-- Begin _default/single.html -->" | safeHTML   }}
+{{ "<!-- Begin _default/single-center.html -->" | safeHTML }}
 <main class="container mx-auto mt-8 grid justify-center">
 	<article class="space-y-6">
 		<header class="space-y-1">
@@ -16,5 +16,5 @@
 		</div>
 	</article>
 </main>
-
+{{ "<!-- End _default/single-center.html -->" | safeHTML }}
 {{ end }}

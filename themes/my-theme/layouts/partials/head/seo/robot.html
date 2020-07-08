@@ -1,3 +1,4 @@
+{{  "<!-- Start of Robots -->" | safeHTML  }}
 {{ if and (eq .Kind "taxonomy") (eq .Type "categories")}}
 <meta name="robots" content="noindex, follow"/>
 {{ else if .Params.noIndex}}
@@ -5,3 +6,15 @@
 {{ else }}
 <meta name="robots" content="index, follow"/>
 {{ end }}
+{{  "<!-- End of Robots -->" | safeHTML  }}
+{{/* Source: https://github.com/joshbuchea/HEAD#recommended-minimum  
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Tells Google not to show the sitelinks search box -->
+<meta name="google" content="nositelinkssearchbox">
+
+<!-- Tells Google not to provide a translation for this document -->
+<meta name="google" content="notranslate">  
+*/}}

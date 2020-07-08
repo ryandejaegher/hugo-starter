@@ -2,16 +2,12 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{ partial "head/hugo-meta.html" . }}
-
-    <title>{{ .Title | default .Site.Title }}
-        {{ if not .IsHome }} - {{ .Site.Params.Shorttitle }}{{ end }}
-    </title>
-
+    {{ partial "head/meta.html" . }}
     {{ partial "head/css.html" . }}
+
+    {{ with .Site.Params.enableGoogleTagManager}}
+        {{ partial "head/google-tag-manager.html" . }}
+    {{ end }}
 </head>
 
 <body class="line-numbers px-4 xl:px-0 font-mono theme-light {{with .Site.Params.debugGrid}}debug-grid-16{{end}}">
