@@ -17,3 +17,15 @@ fields:
   config:
     required: false
   label: CTA Button
+- name: hero_size
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Hero Size
