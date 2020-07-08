@@ -17,17 +17,39 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
+    max: 150
   label: Excerpt
-  description: "(optional) Write a brief article teaser/intro"
+  description: "(optional) Write a brief article teaser/intro. This will be used for
+    article previews, SEO and Social description"
+- name: publishdate
+  type: datetime
+  label: Publish Date
+  description: "(optional) Set a future date to publish article."
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - name: draft
   type: boolean
   label: Draft
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: "(optional) Set tags for article"
+- name: customize_seo
+  type: boolean
+  label: Customize SEO
 - name: seo_title
   type: text
   config:
     required: false
   label: SEO title
   description: "(optional) Set a title specifically for SEO"
+  showOnly:
+    field: customize_seo
+    value: true
 - name: description
   type: textarea
   default: ''
@@ -38,20 +60,9 @@ fields:
       format: markdown
   label: Description
   description: SEO Description
-- name: publishdate
-  type: datetime
-  label: Publish Date
-  description: "(optional) Set a future date to publish article."
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-  description: "(optional) Set tags for article"
+  showOnly:
+    field: customize_seo
+    value: true
 - name: articleFeatureImage
   type: file
   config:
