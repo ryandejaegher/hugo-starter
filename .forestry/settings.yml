@@ -25,6 +25,7 @@ sections:
   create: all
   match: "*"
   templates:
+  - block-page
   - page
 - type: directory
   path: content/products
