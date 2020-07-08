@@ -87,7 +87,7 @@ fields:
     value: true
 - name: layout
   type: select
-  default: ''
+  default: single-left
   config:
     required: false
     options:
