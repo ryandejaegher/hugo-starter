@@ -2,7 +2,7 @@
 title: Pirates are still awesome
 date: '2019-10-07T10:30:00.000-04:00'
 showCodeHighlighting: true
-
+thumbnail: "https://source.unsplash.com/random?skateboard"
 categories:
 - Code
 - Design and UX
