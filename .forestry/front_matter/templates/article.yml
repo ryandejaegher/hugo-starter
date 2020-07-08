@@ -110,6 +110,9 @@ fields:
       file: 
       path: 
   label: Choose Layout
+  showOnly:
+    field: show_article_options
+    value: true
 - name: show_custom_social
   type: boolean
   label: Customize Social Sharing
