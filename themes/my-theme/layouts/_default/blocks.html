@@ -1,0 +1,8 @@
+{{ range .Params.page_sections }}
+  {{ if eq "hero-section" .template }}
+    {{ partial "blocks/hero" . }}
+  {{ end }}
+  {{ if eq "call-to-action" .template }}
+    {{ partial "blocks/cta" . }}
+  {{ end }}
+{{ end }}
