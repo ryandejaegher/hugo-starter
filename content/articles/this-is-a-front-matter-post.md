@@ -15,6 +15,7 @@ showPrevNext = false
 showReadTime = false
 show_article_options = false
 show_custom_social = true
+show_large_twitter_card = true
 show_table_of_contents = false
 tags = ["css", "squarespace"]
 title = "This is a front matter post"
