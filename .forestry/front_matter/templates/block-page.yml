@@ -15,5 +15,12 @@ fields:
   config:
     min: 
     max: 
+- name: layout
+  type: text
+  config:
+    required: true
+  label: layout
+  default: blocks
+  hidden: true
 pages:
 - content/block-test.md
