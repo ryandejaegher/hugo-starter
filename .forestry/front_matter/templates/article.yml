@@ -71,18 +71,6 @@ fields:
   type: boolean
   label: Show Read Time
   description: "(optional) Display article reading time"
-- name: cool
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: data
-      file: data/authors.yaml
-      path: map
-  label: Cool
 - name: layout
   type: select
   default: ''
