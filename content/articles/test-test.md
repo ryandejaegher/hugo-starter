@@ -2,7 +2,7 @@
 articleFeatureImage = ""
 customize_seo = false
 date = 2020-07-08T18:27:56Z
-draft = true
+draft = false
 excerpt = ""
 facebook_description = ""
 facebook_image = ""
@@ -11,6 +11,7 @@ layout = "single-left"
 publishdate = ""
 seo_description = ""
 seo_title = ""
+series = "Wow"
 showCodeHighlighting = false
 showPrevNext = false
 showReadTime = false
