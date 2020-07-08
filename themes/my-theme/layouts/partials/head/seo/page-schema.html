@@ -6,8 +6,11 @@
     "@type": "WebSite", 
     "url": "{{ .Permalink }}", 
     "sameAs": [
-      "{{ .Site.Params.facebook }}", 
-      "{{ .Site.Params.github }}"
+      "{{ .Site.social.facebook }}", 
+      "{{ .Site.social.github }}"
+      "{{ .Site.social.instagram }}"
+      "{{ .Site.social.twitter }}"
+      "{{ .Site.social.youtube }}"
     ], 
     "name": "{{ .Title }}", 
     "logo": "https://www.example.com/images/brand/favicon.png" 

@@ -8,6 +8,6 @@
 {{end}}
 
 {{/*  Displays   */}}
-{{with .Site.Params.siteDebug }}
+{{if .Site.Params.siteDebug }}
    {{ partial "javascript/hugoDebug.html" . }}
 {{end}}

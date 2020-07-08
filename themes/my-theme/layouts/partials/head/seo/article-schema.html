@@ -1,8 +1,8 @@
 <!-- To make sure this renders only in the article page, we check the section -->
-{{ if eq .Section "blog" }} 
+{{ if eq .Section "articles" }} 
 
   <!-- Pagination meta tags for list pages only -->
-  {{ $paginator := .Paginate (where .Pages "Section" "blog") }}
+  {{ $paginator := .Paginate (where .Pages "Section" "articles") }}
   {{ if $paginator }}
     <link rel="first" href="{{ $paginator.First.URL }}">
     <link rel="last" href="{{ $paginator.Last.URL }}">
@@ -37,7 +37,7 @@
       "headline": {{ .Title }},
       "author": {
         "@type": "Person",
-        "name": "{{ .Site.Params.github }}"
+        "name": "{{ .Site.social.github }}"
       },
       "datePublished": "{{ .Date.Format "2006-01-02" }}",
       "description": {{ .Description }},

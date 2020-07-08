@@ -7,15 +7,14 @@
 
     {{ partial "head/hugo-meta.html" . }}
 
-    <title>{{ block "title" . }}
-        <!-- Blocks may include default content. -->
-        {{ .Site.Title }}
-        {{ end }}</title>
+    <title>{{ .Title | default .Site.Title }}
+        {{ if not .IsHome }} - {{ .Site.Params.Shorttitle }}{{ end }}
+    </title>
 
     {{ partial "head/css.html" . }}
 </head>
 
-<body class="line-numbers px-4 xl:px-0 font-mono theme-light ">
+<body class="line-numbers px-4 xl:px-0 font-mono theme-light {{with .Site.Params.debugGrid}}debug-grid-16{{end}}">
 
 
 

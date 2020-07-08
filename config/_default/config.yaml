@@ -19,7 +19,6 @@ languageCode: "en-us"
 # Site title
 title: "Ryan Dejaegher"
 
-
 # theme to use (located by default in /themes/THEMENAME/)
 theme: "my-theme"
 
@@ -34,7 +33,7 @@ canonifyURLs: true
 
 # Allows you to disable all page types and will render nothing related to 'kind';
 # values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
-disableKinds: ["RSS", "hugoGeneratorInject", "404"]
+disableKinds: ["hugoGeneratorInject", "404"]
 
 # Files to ignore while rendering
 ignoreFiles: []
