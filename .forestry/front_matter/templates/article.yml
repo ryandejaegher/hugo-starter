@@ -177,6 +177,12 @@ fields:
   showOnly:
     field: show_custom_social
     value: true
+- name: show_large_twitter_card
+  type: boolean
+  label: Show Large Twitter Card
+  showOnly:
+    field: show_custom_social
+    value: true
 - name: date
   type: datetime
   label: date
