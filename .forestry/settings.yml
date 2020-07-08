@@ -12,22 +12,29 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
-  path: content/rss-feed
-  label: Rss feed
-  create: all
-  match: "**/*"
-- type: directory
   path: content/articles
   label: Articles
   create: all
   match: "**/*"
   templates:
   - list-page
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: content/products
+  label: Products
+  create: all
+  match: "**/*"
+  templates:
+  - product
+- type: directory
+  path: content/rss-feed
+  label: Rss feed
+  create: all
+  match: "**/*"
 - type: heading
   label: Config
 - type: heading
