@@ -25,9 +25,9 @@
 {{end}}
 
 {{ if .Params.twitter_image }}
-<meta property="twitter:image" content="{{ .Params.twitter_image }}">
+<meta property="twitter:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.twitter_image }}">
 {{else}}
-<meta property="twitter:image" content="{{ .Params.articlefeatureimage }}">
+<meta property="twitter:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.articlefeatureimage }}">
 {{ end }}
 {{ "<!-- End of Twitter -->" | safeHTML }}
 
