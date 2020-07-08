@@ -1,0 +1,10 @@
+
+{{ "<!-- Begin canonical.html -->" | safeHTML }}
+{{ if or (eq .Kind "home") (eq .Kind "page")}}
+{{ if isset .Params "canonical" }}
+<link rel="canonical" href="{{ .Params.Canonical}}" />
+{{ else }}
+<link rel="canonical" href="{{ .Permalink}}" />
+{{ end }}
+{{ end }}
+{{ "<!-- End canonical.html -->" | safeHTML }}
