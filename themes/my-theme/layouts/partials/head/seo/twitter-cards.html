@@ -2,13 +2,9 @@
 
 
 
-{{ if .Params.twitter_description }}
-    <meta property="twitter:card" content="{{ .Params.twitter_description }}">
-{{ else if .Params.excerpt }}
-    <meta property="twitter:card" content="{{ .Description }}">
-{{ else }}
-    <meta property="twitter:card" content="{{ .Title }}">
-{{ end }}
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@ryandejaegher" />
 
 
 {{/*  Twitter Title And Description  */}}
@@ -25,7 +21,7 @@
 {{end}}
 
 {{ if .Params.twitter_image }}
-    <meta property="twitter:image" content="{{ .Params.twitter_image }}">
+<meta property="twitter:image" content="{{ .Params.twitter_image }}">
 {{else}}
 <meta property="twitter:image" content="{{ .Params.articlefeatureimage }}">
 {{ end }}
