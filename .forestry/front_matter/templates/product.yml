@@ -1,4 +1,43 @@
 ---
 label: Product
 hide_body: true
-fields: []
+fields:
+- name: id
+  type: text
+  config:
+    required: false
+  label: Id
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: price
+  type: number
+  label: Price
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: product_url
+  type: text
+  config:
+    required: false
+  label: Product url
