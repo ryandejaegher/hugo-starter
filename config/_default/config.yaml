@@ -53,3 +53,9 @@ pygmentsUseClasses: true
 enableGitInfo: true
 
 metaDataFormat: "yaml"
+
+# Site outputs
+outputs:
+    page:
+        - HTML
+        - AMP
