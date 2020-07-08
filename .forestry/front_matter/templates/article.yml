@@ -9,25 +9,6 @@ fields:
     required: false
   label: Title
   description: Article Title
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Description
-  description: SEO Description
-- name: draft
-  type: boolean
-  label: Draft
-- name: seo_title
-  type: text
-  config:
-    required: false
-  label: SEO title
-  description: "(optional) Set a title specifically for SEO"
 - name: excerpt
   type: textarea
   default: ''
@@ -38,6 +19,25 @@ fields:
       format: markdown
   label: Excerpt
   description: "(optional) Write a brief article teaser/intro"
+- name: draft
+  type: boolean
+  label: Draft
+- name: seo_title
+  type: text
+  config:
+    required: false
+  label: SEO title
+  description: "(optional) Set a title specifically for SEO"
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: SEO Description
 - name: publishdate
   type: datetime
   label: Publish Date
@@ -52,25 +52,39 @@ fields:
   default: []
   label: Tags
   description: "(optional) Set tags for article"
-- name: articleBannerImage
+- name: articleFeatureImage
   type: file
   config:
     maxSize: 64
-  label: Article Banner Image
+  label: Article Feature Image
+- name: showCodeHighlighting
+  type: boolean
+  label: Show Code Highlighting
+  showOnly:
+    field: show_article_options
+    value: false
+- name: show_article_options
+  type: boolean
+  label: Show Article Options
+  description: "(Optional) Control additional article options (show read time, show
+    prev/next article etc.)"
 - name: showPrevNext
   type: boolean
   label: Show Prev/Next Article
   description: "(optional) Display navigation to previous/next article. "
+  showOnly:
+    field: show_article_options
+    value: true
 - name: show_table_of_contents
   type: boolean
   label: Show Table Of Contents
-- name: showCodeHighlighting
-  type: boolean
-  label: Show Code Highlighting
 - name: showReadTime
   type: boolean
   label: Show Read Time
   description: "(optional) Display article reading time"
+  showOnly:
+    field: show_article_options
+    value: true
 - name: layout
   type: select
   default: ''
@@ -85,5 +99,66 @@ fields:
       file: 
       path: 
   label: Choose Layout
+- name: show_custom_social
+  type: boolean
+  label: Customize Social Sharing
+  description: "(Optional) Set custom title, description, and image for Facebook and
+    Twitter"
+- name: twitter_title
+  type: text
+  config:
+    required: false
+  label: Twitter Title
+  showOnly:
+    field: show_custom_social
+    value: true
+- name: facebook_title
+  type: text
+  config:
+    required: false
+  label: Facebook Title
+  showOnly:
+    field: show_custom_social
+    value: true
+- name: facebook_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Facebook Description
+  showOnly:
+    field: show_custom_social
+    value: true
+- name: twitter_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Twitter Description
+  showOnly:
+    field: show_custom_social
+    value: true
+- name: facebook_image
+  type: file
+  config:
+    maxSize: 64
+  label: Facebook Image
+  showOnly:
+    field: show_custom_social
+    value: true
+- name: twitter_image
+  type: file
+  config:
+    maxSize: 64
+  label: Twitter Image
+  showOnly:
+    field: show_custom_social
+    value: true
 pages:
 - content/articles/Forestry Test/forestry-test.md
