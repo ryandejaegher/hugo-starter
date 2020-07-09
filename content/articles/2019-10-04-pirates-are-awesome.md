@@ -9,6 +9,10 @@ categories:
 - JavaScript
 - Web Performance
 layout: single-left
+tags:
+- Yo
+- css
+- test
 ---
 
 It's true

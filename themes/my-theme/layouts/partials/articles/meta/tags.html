@@ -1,3 +1,6 @@
+{{$themeText := .Site.Data.theme.theme_color}}
+<ul class="flex">
     {{ range (.GetTerms "tags") }}
-        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-   {{ end }}
+            <li><a class="bg-{{$themeText}}-300 inline-block px-2" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+       {{ end }}
+</ul>

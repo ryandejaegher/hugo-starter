@@ -6,6 +6,7 @@
     {{ range $paginator.Pages }}
 
         <article class="space-y-1 max-w-xl">
+            {{ partial "articles/meta/tags.html" . }}
             <h3 class="text-black text-xl"><a class="hover:border-b-2 border-{{$themeText}}-400" href="{{.Permalink}}">{{.Title}}</a></h3>
 
             {{ if $.Params.show_summary }}    
