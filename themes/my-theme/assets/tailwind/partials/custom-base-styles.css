@@ -2,7 +2,7 @@
 
 
 h1,h2,h3,h4,h5,h6,a,p,div,span,strong,body {
-  @apply transition-colors text-current;
+  @apply transition-colors;
   transition-duration: .5s;
 
 }
