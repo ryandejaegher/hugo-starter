@@ -18,15 +18,12 @@
 {{$themeFont := .Site.Data.theme.theme_font}}
 <body class="line-numbers px-4 xl:px-0 {{$themeFont}} theme-light {{with .Site.Params.debugGrid}}debug-grid-16{{end}}">
 
-
-
     {{ with .Site.Params.enableGoogleTagManager}}
     {{/*  <!-- Google Tag Manager (noscript) -->  */}}
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F3VZW7" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     {{/*  <!-- End Google Tag Manager (noscript) -->  */}}
     {{end}}
-
 
     {{ block "header" . }}
     {{ if .Site.Data.theme.show_menu }}
