@@ -1,17 +1,22 @@
-{{/*  Source: https://discourse.gohugo.io/t/previous-in-series-and-next-in-series-links/2654/6  */}}
+{{/*  
+    Can be used to add prev/next links to posts in the same series 
+    Source: https://discourse.gohugo.io/t/previous-in-series-and-next-in-series-links/2654/6  
+*/}}
 
 {{ range where .Site.Pages.ByDate "Params.series" .Params.series }}
-    {{ if gt $.Date.Unix .Date.Unix }}
-      {{ $.Scratch.Set "previous" .Permalink }}
-    {{ end }}
+{{ if gt $.Date.Unix .Date.Unix }}
+{{ $.Scratch.Set "previous" .Permalink }}
+{{ end }}
 {{ end }}
 {{ range where .Site.Pages.ByDate.Reverse "Params.series" .Params.series }}
-    {{ if lt $.Date.Unix .Date.Unix }}
-      {{ $.Scratch.Set "next" .Permalink }}
-    {{ end }}
+{{ if lt $.Date.Unix .Date.Unix }}
+{{ $.Scratch.Set "next" .Permalink }}
+{{ end }}
 {{ end }}
 
 <ul class="actions pagination">
-<li><a href="{{ if $.Scratch.Get "previous" }}{{ $.Scratch.Get "previous" }} {{ end }}" class="{{ if not ($.Scratch.Get "previous") }}disabled {{ end }}button big previous">Next</a></li>
-<li><a href="{{ if $.Scratch.Get "next" }}{{ $.Scratch.Get "next" }} {{ end }}" class="{{ if not ($.Scratch.Get "next") }}disabled {{ end }}button big next">Previous</a></li>
+    <li><a href="{{ if $.Scratch.Get "previous" }}{{ $.Scratch.Get "previous" }} {{ end }}"
+            class="{{ if not ($.Scratch.Get "previous") }}disabled {{ end }}button big previous">Next</a></li>
+    <li><a href="{{ if $.Scratch.Get "next" }}{{ $.Scratch.Get "next" }} {{ end }}"
+            class="{{ if not ($.Scratch.Get "next") }}disabled {{ end }}button big next">Previous</a></li>
 </ul>
