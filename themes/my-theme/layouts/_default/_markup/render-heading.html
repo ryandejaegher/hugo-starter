@@ -1,0 +1,2 @@
+{{/*  Changes the markdown output for headings  */}}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }} <a href="#{{ .Anchor | safeURL }}">#</a></h{{ .Level }}>
