@@ -21,13 +21,13 @@
 
 
     {{ with .Site.Params.enableGoogleTagManager}}
-    <!-- Google Tag Manager (noscript) -->
+    {{/*  <!-- Google Tag Manager (noscript) -->  */}}
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F3VZW7" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    {{/*  <!-- End Google Tag Manager (noscript) -->  */}}
     {{end}}
 
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+
     {{ block "header" . }}
     {{ if .Site.Data.theme.show_menu }}
         {{ if eq .Site.Data.theme.menu_style "Centered" }}
@@ -51,10 +51,10 @@
 
 
     {{ block "main" . }}
-    <!-- The part of the page that begins to differ between templates -->
+    {{/*  <!-- The part of the page that begins to differ between templates -->  */}}
     {{ end }}
 
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{/*  <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->  */}}
     {{ block "footer" . }}
         {{ partial "footer.html" . }}
     {{ end }}
