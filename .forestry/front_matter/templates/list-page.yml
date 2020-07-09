@@ -11,3 +11,5 @@ fields:
 - name: show_summary
   type: boolean
   label: Show Summary
+pages:
+- content/articles/Test Section/_index.md
