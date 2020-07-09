@@ -5,6 +5,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      spacing: {
+        "16/9": "56.25%",
+      },
       colors: {
         // 'primary': 'var(--primary)',
         'secondary-text': 'var(--secondary)',

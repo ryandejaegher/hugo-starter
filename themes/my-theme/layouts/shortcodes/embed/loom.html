@@ -1,0 +1,12 @@
+{{/*
+    Embed a video from Loom. All you need is the video id
+    Link: https://www.loom.com/share/6811bffc83a64330923fa472008fd23f
+    Example {{% embed/loom 6811bffc83a64330923fa472008fd23f %}}
+*/}}
+<div style="position: relative; padding-bottom: 52.7086383601757%; height: 0;">
+    <iframe
+        src="https://www.loom.com/embed/{{index .Params 0}}" frameborder="0" webkitallowfullscreen
+        mozallowfullscreen allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+</div>

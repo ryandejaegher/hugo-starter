@@ -29,3 +29,7 @@ twitter_title = "This is a Twitter Title"
 
 {{<gist ryandejaegher 515b43b8f5a66cc77a96d6b52db1b9f6>}}
 {{< embed/ryan-youtube OvKWtCvkftw >}}
+
+{{< embed/figma "https://www.figma.com/file/p9oqLcA0YLEhNWjvn23lKb/Hugo" >}}
+
+{{< embed/gumroad ezJzH>}}

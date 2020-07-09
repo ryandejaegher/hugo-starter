@@ -32,7 +32,6 @@
 }
 
 .resp-container::after {
-  padding-top: 56.25%;
   display: block;
   content: '';
 }
