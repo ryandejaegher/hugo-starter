@@ -26,3 +26,6 @@ twitter_title = "This is a Twitter Title"
 
 +++
 ![](/v1566567514/TheEverydayKitchen_Logo-07_aybntf.png)
+
+{{<gist ryandejaegher 515b43b8f5a66cc77a96d6b52db1b9f6>}}
+{{< embed/ryan-youtube OvKWtCvkftw >}}
