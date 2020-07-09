@@ -1,0 +1,11 @@
+<div class="social-icon-outer">
+    <div class="flex space-x-4 -mx-4 debug justify-center md:justify-start">
+        {{ range $index, $component := .Site.Social }}
+            {{ with $component }}
+                {{ $path := print "icons/social/" $index }}
+                <a href="{{ . }}" class="p-4 text-pink-600" name="{{ $index }}">{{ partial $path $ }}</a>
+                <span class="hidden">{{ $component }}</span>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
