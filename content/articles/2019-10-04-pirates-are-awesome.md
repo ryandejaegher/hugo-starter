@@ -9,6 +9,7 @@ categories:
 - JavaScript
 - Web Performance
 layout: single-left
+series: "fun"
 tags:
 - Yo
 - css

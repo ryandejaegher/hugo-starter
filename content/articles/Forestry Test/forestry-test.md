@@ -11,5 +11,6 @@ showReadTime = false
 show_table_of_contents = false
 tags = []
 title = "Forestry Test"
+series = "fun"
 
 +++

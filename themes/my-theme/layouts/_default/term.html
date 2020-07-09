@@ -30,5 +30,7 @@ Page Type: {{.Type}}
 	</div>
 	{{/*  display pagination  */}}
 	{{ partial "pagination/list-pagination.html" . }}
+
+	{{range where .Site.RegularPages.ByDate "Params.series" .Params.series}} {{.Permalink}} {{end}}
 </main>
 {{ end }}
