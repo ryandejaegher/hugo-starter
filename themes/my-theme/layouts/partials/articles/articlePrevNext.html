@@ -3,14 +3,21 @@
 <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between -mx-4 px-4 py-12 mt-16">
     {{with .PrevInSection}}
     <div class="text-center md:text-left">
-        <span class="text-gray-700 text-sm block">previous</span>
-        <a class="hover:border-b-2 border-{{$themeText}}-400  self-start box-border font-medium" href="{{.Permalink}}">{{.Title}}</a>
+        <span class="text-secondary-text text-sm block">previous</span>
+        <a class="hover:border-b-2 border-{{$themeText}}-400 self-start box-border font-medium text-main-text" href="{{.Permalink}}">{{.Title}}</a>
     </div>
     {{end}}
+    
     {{with .NextInSection}}
-    <div class="text-center md:text-right">
-        <span class="text-gray-700 text-sm block">next</span>
-        <a class="hover:border-b-2 border-{{$themeText}}-400 self-start box-border font-medium" href="{{.Permalink}}">{{.Title }}</a>
+    {{$align := "" }}
+    {{if eq $.PrevInSection nil}}
+    {{$align = "text-left" }}
+    {{else}}
+    {{$align = "text-right" }}
+    {{end}}
+    <div class="text-center md:{{$align}}">
+        <span class="text-secondary-text text-sm block">next</span>
+        <a class="hover:border-b-2 border-{{$themeText}}-400 self-start box-border font-medium text-main-text" href="{{.Permalink}}">{{.Title }}</a>
     </div>
     {{end}}
 </div>

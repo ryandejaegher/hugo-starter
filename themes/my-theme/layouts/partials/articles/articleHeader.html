@@ -1,7 +1,6 @@
-
 {{$themeText := .Site.Data.theme.theme_color}}
 <header class="space-y-1">
-    <h1 class="text-2xl sm:text-4xl font-black">{{ .Title }}</h1>
+    <h1 class="text-2xl sm:text-4xl font-black text-main-text">{{ .Title }}</h1>
     <time class="block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Date }}"
         pubdate>{{ dateFormat "January 2, 2006" .Date }}</time>
 </header>

@@ -7,7 +7,7 @@
     @apply mt-6;
   }
   & p {
-    @apply max-w-2xl text-gray-800;
+    @apply max-w-2xl text-main-text;
   }
   & strong {
     @apply text-black font-bold;

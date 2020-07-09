@@ -11,7 +11,8 @@ module.exports = {
         "3/2": "66.7%"
       },
       colors: {
-        // 'primary': 'var(--primary)',
+        'primary': 'var(--primary)',
+        'primary-bg': 'var(--primary-bg)',
         'secondary-text': 'var(--secondary)',
         'main-text': 'var(--text-main)',
         'secondary-text': 'var(--text-secondary)',

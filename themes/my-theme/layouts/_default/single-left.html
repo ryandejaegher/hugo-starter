@@ -4,12 +4,12 @@
 {{ "<!-- Begin _default/single-left.html -->" | safeHTML }}
 <main class="container mx-auto mt-8">
 	<article class="space-y-6">
-{{ partial "articles/articleHeader.html" . }}
+		{{ partial "articles/articleHeader.html" . }}
 
-{{/*  Content  */}}
-<div class="markdown container mx-auto">
-	{{- .Content -}}
-        </div>
+		{{/*  Content  */}}
+		<div class="markdown container mx-auto">
+			{{- .Content -}}
+		</div>
 	</article>
 
 	{{ partial "articles/articleRelated.html" . }}

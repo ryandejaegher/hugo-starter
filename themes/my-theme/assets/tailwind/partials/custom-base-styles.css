@@ -1,6 +1,11 @@
 @import './article-base.css';
 
 
+h1,h2,h3,h4,h5,h6,a,p,div,span,strong,body {
+  @apply transition-colors text-current;
+  transition-duration: .5s;
+
+}
 @font-face {
     font-family: Access Regular;
     font-weight: 400;

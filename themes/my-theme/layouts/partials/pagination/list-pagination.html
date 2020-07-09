@@ -7,7 +7,7 @@
 
         <article class="space-y-1 max-w-xl">
             {{ partial "articles/meta/tags.html" . }}
-            <h3 class="text-black text-xl"><a class="hover:border-b-2 border-{{$themeText}}-400" href="{{.Permalink}}">{{.Title}}</a></h3>
+            <h3 class="text-main-text text-xl"><a class="hover:border-b-2 border-{{$themeText}}-400" href="{{.Permalink}}">{{.Title}}</a></h3>
 
             {{ if $.Params.show_summary }}    
             <p class="text-gray-900">
@@ -19,7 +19,7 @@
             </p>
             {{ end }}
 
-            <time class="inline-block text-sm tracking-tight text-gray-700" datetime="{{.Date}}">{{.Date.Format "January 1, 2006" }}</time>
+            <time class="inline-block text-sm tracking-tight text-secondary-text" datetime="{{.Date}}">{{.Date.Format "January 1, 2006" }}</time>
         </article>
         {{ end }}
         
