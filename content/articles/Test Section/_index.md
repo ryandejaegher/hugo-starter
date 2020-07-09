@@ -1,5 +1,5 @@
 +++
 show_summary = false
-title = "_index"
+title = "Amazing"
 
 +++
