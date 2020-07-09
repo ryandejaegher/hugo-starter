@@ -49,5 +49,21 @@ fields:
 - name: show_article_date
   type: boolean
   label: Show Article Date
+- name: theme_font
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - font-sans
+    - font-serif
+    - font-mono
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme Font
+  description: Choose font family for theme
 pages:
 - data/theme.yaml
