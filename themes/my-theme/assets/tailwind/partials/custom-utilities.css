@@ -69,6 +69,7 @@ html {
   --background: black;
 
 }
+/*
 .theme-dark {
   --primary: theme("colors.blue.500");
   --secondary: #2a2e35;
@@ -76,7 +77,34 @@ html {
   --text-secondary: #b8b8b9;
   --primary-bg: theme("colors.gray.900");
   --accent: #fc7753;
-  
+}
+*/
+
+@media (prefers-color-scheme: light) {
+.theme-dark {
+  --primary-100: theme("colors.pink.500");
+  --secondary: red;
+  --text-main: theme("colors.black");
+  --text-secondary: #454e56;
+  /* --text-link: #fff */
+  /* --text */
+  --accent: #009ffd;
+  --primary-bg: theme("colors.white");
+  --foreground: white;
+  --background: black;
+
+}
+}
+
+@media (prefers-color-scheme: dark){
+.theme-dark {
+  --primary: theme("colors.blue.500");
+  --secondary: #2a2e35;
+  --text-main: #eaeaea;
+  --text-secondary: #b8b8b9;
+  --primary-bg: theme("colors.gray.900");
+  --accent: #fc7753;
+}
 }
 
 /* .theme-brand {
