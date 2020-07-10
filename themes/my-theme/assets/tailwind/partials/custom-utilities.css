@@ -69,7 +69,7 @@ html {
   --background: black;
 
 }
-/*
+
 .theme-dark {
   --primary: theme("colors.blue.500");
   --secondary: #2a2e35;
@@ -78,10 +78,10 @@ html {
   --primary-bg: theme("colors.gray.900");
   --accent: #fc7753;
 }
-*/
+
 
 @media (prefers-color-scheme: light) {
-.theme-dark {
+[class*='theme'] {
   --primary-100: theme("colors.pink.500");
   --secondary: red;
   --text-main: theme("colors.black");
@@ -97,7 +97,7 @@ html {
 }
 
 @media (prefers-color-scheme: dark){
-.theme-dark {
+[class*='theme'] {
   --primary: theme("colors.blue.500");
   --secondary: #2a2e35;
   --text-main: #eaeaea;

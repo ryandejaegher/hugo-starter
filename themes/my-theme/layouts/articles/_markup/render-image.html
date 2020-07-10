@@ -21,7 +21,6 @@
 {{ $medium := $image.Resize "1024x jpg" }}
 {{ $large := $image.Resize "1500x jpg" }}
 
-{{$image.Width}}
 {{$extraTinywURL := $extraTiny.Permalink }}
 {{$tinywURL := $tiny.Permalink }}
 {{$smallwURL := $small.Permalink }}
@@ -30,7 +29,7 @@
 
 <figure class="md__image">
         <img 
-        sizes="100vw" width={{$image.Width}}
+        sizes="100vw"
         srcset="
         {{ if ge $image.Width "320" }}
         {{$extraTinywURL}} 320w,
