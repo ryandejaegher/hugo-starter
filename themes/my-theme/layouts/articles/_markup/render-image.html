@@ -36,10 +36,10 @@
         {{ if ge $image.Width "320" }}
         {{$extraTinywURL}} 320w,
         {{ end }}
-        
+{{/*          
         {{ if ge $image.Width "512" }}
         {{$tinywURL}} 512w,
-        {{end}}
+        {{end}}  */}}
         {{ if ge $image.Width "640" }}
         {{$tinywURL}} 640w,
         {{end}}
