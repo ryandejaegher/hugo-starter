@@ -54,7 +54,7 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: yaml
-upload_dir: content/uploads
+upload_dir: assets/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: 
