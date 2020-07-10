@@ -1,3 +1,6 @@
+{{/*  Hugo Variables  */}}
+{{$themeFont := .Site.Data.theme.theme_font}}
+
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +18,6 @@
         {{ partial "head/google-tag-manager.html" . }}
     {{ end }}
 </head>
-{{$themeFont := .Site.Data.theme.theme_font}}
 <body class="line-numbers {{$themeFont}} theme-dark bg-primary-bg delay-100 {{with .Site.Params.debugGrid}}debug-grid-16{{end}}">
 
     {{ with .Site.Params.enableGoogleTagManager}}

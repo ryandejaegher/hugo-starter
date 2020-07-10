@@ -9,7 +9,7 @@ mainSections:
 enableGoogleTagManager: false
 author: Ryan Dejaegher
 tagline: Web Developer · Web Designer
-debugGrid: false
+debugGrid: true
 siteDebug: true
 themeText: pink
 
