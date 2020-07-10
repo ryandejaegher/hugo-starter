@@ -11,4 +11,10 @@
   src="{{$cloudinary}}/f_auto,q_80,dpr_auto,w_auto{{.Destination | safeURL }}"
   alt="{{ .Text}}" {{ with .Title}} title="{{.}}" {{end}} />
   </figure>
- 
+
+{{$image := resources.Get .Destination}}
+{{$image}}
+{{$resized := $image.Fill "1200x200"}}
+{{$resized.RelPermalink}}
+
+<img src="{{$resized.RelPermalink}}" alt="">
