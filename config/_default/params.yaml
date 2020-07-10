@@ -3,13 +3,12 @@ description: Front End Web Developer
 rssURL:
   main: https://ryandejaegher.com/feed/index.xml
 rssLimit: "7"
-test: Friend
 mainSections:
 - articles
 enableGoogleTagManager: false
 author: Ryan Dejaegher
 tagline: Web Developer · Web Designer
-debugGrid: true
+debugGrid: false
 siteDebug: true
 themeText: pink
 cloudinary_url: https://res.cloudinary.com/damfsuupo/image/upload
