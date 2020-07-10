@@ -2,6 +2,9 @@ module.exports = {
   purge: {
     enabled: true,
     content: ['./themes/my-theme/layouts/**/*.html'],
+    options: {
+      whitelist: ['font-mono', 'font-sans','font-serif'],
+    }
   },
   theme: {
     container: {
