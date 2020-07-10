@@ -1,14 +1,28 @@
-{{/*  Changes the markdown output for images. Source: https://gohugo.io/getting-started/configuration-markup  */}}
-{{$cloudinary := "https://res.cloudinary.com/damfsuupo/image/upload"}}
+{{$image := resources.Get .Destination}}
+
+{{ $extraTiny := $image.Resize "256x" }}
+{{ $tiny := $image.Resize "512x" }}
+{{ $small := $image.Resize "768x" }}
+{{ $medium := $image.Resize "1024x" }}
+{{ $large := $image.Resize "1500x" }}
+
+
+{{$extraTinywURL := $extraTiny.Permalink }}
+{{$tinywURL := $tiny.Permalink }}
+{{$smallwURL := $small.Permalink }}
+{{$mediumwURL := $medium.Permalink }}
+{{$largewURL := $large.Permalink }}
+
 <figure class="md__image">
-  <img
-  sizes="(min-width: 30em) 28em, 100vw"
-  srcset="{{$cloudinary}}/f_auto,q_80,dpr_auto,w_256{{.Destination | safeURL }} 256w,
-          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_512{{.Destination | safeURL }} 512w,
-          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_768{{.Destination | safeURL }} 768w,
-          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_1024{{.Destination | safeURL }} 1024w,
-          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_1280{{.Destination | safeURL }} 1280w"
-  src="{{$cloudinary}}/f_auto,q_80,dpr_auto,w_auto{{.Destination | safeURL }}"
-  alt="{{ .Text}}" {{ with .Title}} title="{{.}}" {{end}} />
-  </figure>
- 
+        <img 
+        sizes="(min-width:30em) 28em, 100vw" 
+        srcset="
+        {{$extraTinywURL}} 256w,
+        {{$tinywURL}} 512w,
+        {{$smallwURL}} 768w,
+        {{$mediumwURL}} 1024w,
+        {{$largewURL}} 1280w
+        "
+        src="{{$largewURL}}"
+        alt="{{ .Text}}" {{with .Title }} title="{{.}}" {{end}}>
+</figure>

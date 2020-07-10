@@ -1,5 +1,6 @@
-{{/*  Changes the markdown output for images. Source: https://gohugo.io/getting-started/configuration-markup  */}}
+{{/*  Changes the markdown output for images. Source: https://gohugo.io/getting-started/configuration-markup
 {{$cloudinary := "https://res.cloudinary.com/damfsuupo/image/upload"}}
+{{$image := resources.Get .Destination}}
 <figure class="md__image">
   <img
   sizes="(min-width: 30em) 28em, 100vw"
@@ -10,11 +11,47 @@
           {{$cloudinary}}/f_auto,q_80,dpr_auto,w_1280{{.Destination | safeURL }} 1280w"
   src="{{$cloudinary}}/f_auto,q_80,dpr_auto,w_auto{{.Destination | safeURL }}"
   alt="{{ .Text}}" {{ with .Title}} title="{{.}}" {{end}} />
-  </figure>
+  </figure>  */}}
 
 {{$image := resources.Get .Destination}}
-{{$image}}
-{{$resized := $image.Fill "1200x200"}}
-{{$resized.RelPermalink}}
 
-<img src="{{$resized.RelPermalink}}" alt="">
+{{ $extraTiny := $image.Resize "320x jpg" }}
+{{ $tiny := $image.Resize "512x jpg" }}
+{{ $small := $image.Resize "768x jpg" }}
+{{ $medium := $image.Resize "1024x jpg" }}
+{{ $large := $image.Resize "1500x jpg" }}
+
+{{$image.Width}}
+{{$extraTinywURL := $extraTiny.Permalink }}
+{{$tinywURL := $tiny.Permalink }}
+{{$smallwURL := $small.Permalink }}
+{{$mediumwURL := $medium.Permalink }}
+{{$largewURL := $large.Permalink }}
+
+<figure class="md__image">
+        <img 
+        sizes="100vw" width={{$image.Width}}
+        srcset="
+        {{ if ge $image.Width "320" }}
+        {{$extraTinywURL}} 320w,
+        {{ end }}
+        
+        {{ if ge $image.Width "512" }}
+        {{$tinywURL}} 512w,
+        {{end}}
+
+        {{ if ge $image.Width "768" }}
+        {{$smallwURL}} 768w,
+        {{end}}
+
+        {{ if ge $image.Width "1024" }}
+        {{$mediumwURL}} 1024w,
+        {{end}}
+
+        {{ if ge $image.Width "1280" }}
+        {{$largewURL}} 1280w
+        {{end}}
+        "
+        src="{{$largewURL}}"
+        alt="{{ .Text}}" {{with .Title }} title="{{.}}" {{end}}>
+</figure>

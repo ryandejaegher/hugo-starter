@@ -54,3 +54,8 @@ enableGitInfo: true
 
 metaDataFormat: "yaml"
 
+# Image Processing Options
+imaging:
+  quality: 80
+  anchor: "smart"
+  resampleFilter: "box"
