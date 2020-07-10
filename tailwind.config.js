@@ -4,7 +4,7 @@ module.exports = {
     content: ['./themes/my-theme/layouts/**/*.html'],
     options: {
       whitelist: ['font-mono', 'font-sans','font-serif'],
-      whitelistPatterns: [/^text/,/^bg/],
+      whitelistPatterns: [/^text/,/^bg/,/border/,],
     }
   },
   theme: {

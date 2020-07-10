@@ -58,4 +58,4 @@ metaDataFormat: "yaml"
 imaging:
   quality: 80
   anchor: "smart"
-  resampleFilter: "box"
+  resampleFilter: "Gaussian"
