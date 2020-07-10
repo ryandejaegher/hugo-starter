@@ -24,6 +24,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
+
 What happens when you have this here?
 
-![](/uploads/pixelsnap-2020-07-10-at-11-26-51-2x.png)![](/uploads/screen-shot-2020-06-30-at-8-56-22-am.png)
+![](/uploads/pixelsnap-2020-07-10-at-11-26-51-2x.png)
