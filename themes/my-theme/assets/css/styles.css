@@ -694,6 +694,8 @@ h1,h2,h3,h4,h5,h6,a,p,div,span,strong,body {
 
 .container {
   width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -20495,13 +20497,41 @@ html {
   --background: black;
 }
 
+/*
 .theme-dark {
-  --primary: #4299e1;
+  --primary: theme("colors.blue.500");
   --secondary: #2a2e35;
   --text-main: #eaeaea;
   --text-secondary: #b8b8b9;
-  --primary-bg: #1a202c;
+  --primary-bg: theme("colors.gray.900");
   --accent: #fc7753;
+}
+*/
+
+@media (prefers-color-scheme: light) {
+  .theme-dark {
+    --primary-100: #ed64a6;
+    --secondary: red;
+    --text-main: #000;
+    --text-secondary: #454e56;
+    /* --text-link: #fff */
+    /* --text */
+    --accent: #009ffd;
+    --primary-bg: #fff;
+    --foreground: white;
+    --background: black;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  .theme-dark {
+    --primary: #4299e1;
+    --secondary: #2a2e35;
+    --text-main: #eaeaea;
+    --text-secondary: #b8b8b9;
+    --primary-bg: #1a202c;
+    --accent: #fc7753;
+  }
 }
 
 /* .theme-brand {

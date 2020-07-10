@@ -4,6 +4,11 @@ module.exports = {
     content: ['./themes/my-theme/layouts/**/*.html'],
   },
   theme: {
+    container: {
+      padding: {
+        default: "1rem"
+      },
+    },
     extend: {
       spacing: {
         "16/9": "56.25%",
