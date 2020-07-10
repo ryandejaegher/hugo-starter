@@ -17,12 +17,14 @@
 
 {{ $extraTiny := $image.Resize "320x jpg" }}
 {{ $tiny := $image.Resize "512x jpg" }}
+{{ $extraSmall := $image.Resize "640x jpg" }}
 {{ $small := $image.Resize "768x jpg" }}
 {{ $medium := $image.Resize "1024x jpg" }}
 {{ $large := $image.Resize "1500x jpg" }}
 
 {{$extraTinywURL := $extraTiny.Permalink }}
 {{$tinywURL := $tiny.Permalink }}
+{{$extraSmallwURL := $extraSmall.Permalink }}
 {{$smallwURL := $small.Permalink }}
 {{$mediumwURL := $medium.Permalink }}
 {{$largewURL := $large.Permalink }}
@@ -37,6 +39,9 @@
         
         {{ if ge $image.Width "512" }}
         {{$tinywURL}} 512w,
+        {{end}}
+        {{ if ge $image.Width "640" }}
+        {{$tinywURL}} 640w,
         {{end}}
 
         {{ if ge $image.Width "768" }}
