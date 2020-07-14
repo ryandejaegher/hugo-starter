@@ -34,7 +34,7 @@ This also means you don't have to rewrite an entirely new post for a small updat
 
 In the process of setting up my own personal site with Hugo I wanted to have this same feature.
 
-Hugo makes it really easy to added a modified date by giving you variables for **Git revisions** and one of those variables is **{{ .Lastmod }}**.
+Hugo makes it really easy to added a modified date by giving you variables for **Git revisions** and one of those variables is **`{{ .Lastmod }}`**
 
 Whenever you edit an existing post and commit it to Git, the {{.Lastmod}} variable will reflect the date of the commit.
 
@@ -77,6 +77,6 @@ Hugo gives
     </time>
 
 {{end}}
- ```
+```
 
 ### Result
