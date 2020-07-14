@@ -19,8 +19,9 @@
             </p>
             {{ end }}
 
-            <time class="inline-block text-sm tracking-tight text-secondary-text" datetime="{{.Date}}">{{.Date.Format "January 1, 2006" }}</time>
+            <time class="inline-block text-sm tracking-tight text-secondary-text" datetime="{{.Date}}">{{.Page.Date.Format "January 1, 2006" }}</time>
         </article>
+
         {{ end }}
         
         {{ partial "pagination/nav-pagination.html" . }}
