@@ -36,7 +36,7 @@ In the process of setting up my own personal site with Hugo I wanted to have thi
 
 Hugo makes it really easy to added a modified date by giving you variables for **Git revisions** and one of those variables is **`{{ .Lastmod }}`**
 
-Whenever you edit an existing post and commit it to Git, the `{{.Lastmod }}` variable will reflect the date of the commit.
+Whenever you edit an existing post and commit it to Git, the `{{ .Lastmod }}` variable will reflect the date of the commit.
 
 ## Questions/Problems:
 
