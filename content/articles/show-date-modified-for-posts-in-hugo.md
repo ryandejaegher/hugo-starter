@@ -10,7 +10,7 @@ layout = "single-left"
 publishdate = ""
 seo_description = ""
 seo_title = ""
-showCodeHighlighting = false
+showCodeHighlighting = true
 showPrevNext = false
 showReadTime = false
 show_article_options = false
@@ -69,12 +69,14 @@ Hugo gives
 
 ### Code Snippet
 
-    {{if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod)}}
+```css
+{{if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod)}}
     
-    	<time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}"
-    
-         pubdate>Updated: {{ dateFormat "January 2, 2006" .Lastmod }}</time>
-    
-     {{end}}
+    <time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}" pubdate>
+    Updated: {{ dateFormat "January 2, 2006" .Lastmod }}
+    </time>
+
+{{end}}
+ ```
 
 ### Result
