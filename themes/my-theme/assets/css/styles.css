@@ -607,7 +607,7 @@ video {
     margin-top: 1.5rem;
   }
 
-.markdown p {
+.markdown p, .markdown li {
     max-width: 42rem;
     color: var(--text-main);
   }

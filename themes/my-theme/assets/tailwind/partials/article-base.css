@@ -6,7 +6,7 @@
   & > * + *,  & li + li, & li > p + p {
     @apply mt-6;
   }
-  & p, li {
+  & p, & li {
     @apply max-w-2xl text-main-text;
   }
   & strong {
