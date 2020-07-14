@@ -70,13 +70,13 @@ Hugo gives
 ### Code Snippet
 
 ```go
-{{if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod)}}
+{{ if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod) }}
     
     <time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}" pubdate>
     Updated: {{ dateFormat "January 2, 2006" .Lastmod }}
     </time>
 
-{{end}}
+{{ end }}
 ```
 
 ### Result
