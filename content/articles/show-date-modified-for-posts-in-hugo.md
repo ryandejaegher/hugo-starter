@@ -69,7 +69,7 @@ Hugo gives
 
 ### Code Snippet
 
-```css
+```go
 {{if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod)}}
     
     <time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}" pubdate>
