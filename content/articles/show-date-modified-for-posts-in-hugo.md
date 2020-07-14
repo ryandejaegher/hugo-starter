@@ -70,14 +70,12 @@ Hugo gives
 
 ### Code Snippet
 
-\`\`\`css  
-{{if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod)}}
-
-	<time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}"
-
-     pubdate>Updated: {{ dateFormat "January 2, 2006" .Lastmod }}</time>
-
- {{end}}  
-\`\`\`
+    {{if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod)}}
+    
+    	<time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}"
+    
+         pubdate>Updated: {{ dateFormat "January 2, 2006" .Lastmod }}</time>
+    
+     {{end}}
 
 ### Result
