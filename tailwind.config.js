@@ -63,5 +63,7 @@ module.exports = {
     borderStyle: ['responsive', 'hover', 'focus'],
     borderColor: ['responsive', 'hover', 'focus']
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
