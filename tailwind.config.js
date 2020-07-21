@@ -7,6 +7,28 @@ module.exports = {
     }
   },
   theme: {
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.main-text'),
+          h2: {
+            color: theme('colors.main-text'),
+          },
+          h3: {
+            color: theme('colors.main-text'),
+          },
+          code: {
+            color: theme('colors.main-text'),
+          },
+          strong: {
+            color: theme('colors.main-text')
+          },
+          a: {
+            color: theme('colors.main-text')
+          }
+        }
+      }
+    }),
     container: {
       padding: {
         default: "1rem"

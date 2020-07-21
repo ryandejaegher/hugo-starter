@@ -84,7 +84,7 @@ html {
 [class*='theme'] {
   --primary-100: theme("colors.pink.500");
   --secondary: red;
-  --text-main: theme("colors.black");
+  --text-main: theme("colors.gray.900");
   --text-secondary: #454e56;
   /* --text-link: #fff */
   /* --text */
