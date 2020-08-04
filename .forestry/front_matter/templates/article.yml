@@ -195,8 +195,6 @@ fields:
   hidden: true
   default: now
 pages:
-- content/articles/Forestry Test/forestry-test.md
-- content/articles/Forestry Test/forestry-test.md
 - content/articles/show-date-modified-for-posts-in-hugo.md
 - content/articles/show-date-modified-for-posts-in-hugo.md
 - content/articles/the-context-gap-design-c.md

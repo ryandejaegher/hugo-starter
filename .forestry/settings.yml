@@ -25,25 +25,12 @@ sections:
   - article
   - list-page
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-  templates:
-  - block-page
-  - page
-- type: directory
-  path: content/products
-  label: Products
+  path: content/developer-diary
+  label: Developer Diary
   create: all
   match: "**/*"
   templates:
-  - product
-- type: directory
-  path: content/rss-feed
-  label: Rss feed
-  create: all
-  match: "**/*"
+  - article
 - type: heading
   label: Config
 - type: heading
