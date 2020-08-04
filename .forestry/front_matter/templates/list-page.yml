@@ -12,5 +12,4 @@ fields:
   type: boolean
   label: Show Summary
 pages:
-- content/articles/Developer Diary/_index.md
 - content/articles/Test Section/_index.md
