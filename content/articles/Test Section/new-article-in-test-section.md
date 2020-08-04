@@ -2,6 +2,7 @@
 articleFeatureImage = ""
 customize_seo = false
 date = 2020-07-09T19:27:46Z
+draft = true
 excerpt = ""
 facebook_description = ""
 facebook_image = ""
@@ -24,9 +25,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-
 What happens when you have this here?
 
 ![](/uploads/pixelsnap-2020-07-10-at-11-26-51-2x.png)
 ![Ryan Dejaegher](/uploads/ryan-dejaegher.jpg)
-
