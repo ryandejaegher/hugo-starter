@@ -22,5 +22,3 @@ fields:
   label: layout
   default: blocks
   hidden: true
-pages:
-- content/new-blocks.md

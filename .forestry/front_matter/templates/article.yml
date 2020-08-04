@@ -196,6 +196,4 @@ fields:
   default: now
 pages:
 - content/articles/show-date-modified-for-posts-in-hugo.md
-- content/articles/show-date-modified-for-posts-in-hugo.md
-- content/articles/the-context-gap-design-c.md
 - content/articles/the-context-gap-design-c.md
