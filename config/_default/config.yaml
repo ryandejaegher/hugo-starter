@@ -27,6 +27,7 @@ theme: "my-theme"
 permalinks:
   articles: /:title/
   pages: /:title/
+  developer-diary: /:title/
 
 # Use absolute URLs
 canonifyURLs: true
