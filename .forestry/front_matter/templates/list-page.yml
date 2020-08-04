@@ -12,5 +12,6 @@ fields:
   type: boolean
   label: Show Summary
 pages:
+- content/articles/Developer Diary/developer-diary.md
 - content/articles/Test Section/_index.md
 - content/articles/developer-diary.md
