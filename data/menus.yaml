@@ -2,5 +2,7 @@
 menu_item:
 - menu_title: Articles
   menu_url: "/"
+- menu_title: Developer Diary
+  menu_url: "/developer-diary"
 # - menu_title: Home
 #   menu_url: "/"
