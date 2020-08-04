@@ -13,3 +13,4 @@ fields:
   label: Show Summary
 pages:
 - content/articles/Test Section/_index.md
+- content/articles/developer-diary.md
