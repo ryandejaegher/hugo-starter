@@ -195,5 +195,6 @@ fields:
   hidden: true
   default: now
 pages:
+- content/articles/how-to-hide-the-header-on-squarespace.md
 - content/articles/show-date-modified-for-posts-in-hugo.md
 - content/articles/the-context-gap-design-c.md
