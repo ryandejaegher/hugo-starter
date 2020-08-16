@@ -2,7 +2,6 @@
 articleFeatureImage = ""
 customize_seo = false
 date = 2020-08-03T16:58:54Z
-draft = true
 excerpt = ""
 facebook_description = ""
 facebook_image = ""
