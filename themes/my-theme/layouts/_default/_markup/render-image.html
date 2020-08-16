@@ -1,0 +1,70 @@
+{{/*  Changes the markdown output for images. Source: https://gohugo.io/getting-started/configuration-markup
+{{$cloudinary := "https://res.cloudinary.com/damfsuupo/image/upload"}}
+{{$image := resources.Get .Destination}}
+<figure class="md__image">
+  <img
+  sizes="(min-width: 30em) 28em, 100vw"
+  srcset="{{$cloudinary}}/f_auto,q_80,dpr_auto,w_256{{.Destination | safeURL }} 256w,
+          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_512{{.Destination | safeURL }} 512w,
+          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_768{{.Destination | safeURL }} 768w,
+          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_1024{{.Destination | safeURL }} 1024w,
+          {{$cloudinary}}/f_auto,q_80,dpr_auto,w_1280{{.Destination | safeURL }} 1280w"
+  src="{{$cloudinary}}/f_auto,q_80,dpr_auto,w_auto{{.Destination | safeURL }}"
+  alt="{{ .Text}}" {{ with .Title}} title="{{.}}" {{end}} />
+  </figure>  */}}
+
+{{$image := resources.Get .Destination}}
+
+{{ $320 := $image.Resize "320x jpg" }}
+{{ $512 := $image.Resize "512x jpg" }}
+{{ $640 := $image.Resize "640x jpg" }}
+{{ $768 := $image.Resize "768x jpg" }}
+{{ $1024 := $image.Resize "1024x jpg" }}
+{{ $1280 := $image.Resize "1280x jpg" }}
+{{ $1920 := $image.Resize "1920x jpg" }}
+
+
+{{$320url := $320.Permalink}}
+{{$512url := $512.Permalink}}
+{{$640url := $640.Permalink}}
+{{$768url := $768.Permalink}}
+{{$1024url := $1024.Permalink}} 
+{{$1280url := $1280.Permalink}} 
+{{$1920url := $1920.Permalink}} 
+
+
+<figure class="md__image">
+        <img 
+        sizes="100vw"
+        srcset="
+        {{ if ge $image.Width "320" }}
+        {{$320url}} 320w,
+        {{ end }}
+        
+        {{ if ge $image.Width "512" }}
+        {{$512url}} 512w,
+        {{end}}
+
+        {{ if ge $image.Width "640" }}
+        {{$640url}} 640w,
+        {{end}}
+
+        {{ if ge $image.Width "768" }}
+        {{$768url}} 768w,
+        {{end}}
+
+        {{ if ge $image.Width "1024" }}
+        {{$1024url}} 1024w,
+        {{end}}
+
+        {{ if ge $image.Width "1280" }}
+        {{$1280url}} 1280w,
+        {{end}}
+
+        {{ if ge $image.Width "1920" }}
+        {{$1920url}} 1920w
+        {{end}}
+        "
+        src="{{$1280url}}"
+        alt="{{ .Text}}" {{with .Title }} title="{{.}}" {{end}}>
+</figure>
