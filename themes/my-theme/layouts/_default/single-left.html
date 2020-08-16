@@ -10,9 +10,10 @@
 			{{- .Content -}}
 		</div>
 	</article>
-
+ {{ if ne .Section "pages" }}
 	{{ partial "articles/articleRelated.html" . }}
 	{{ partial "articles/articlePrevNext.html" . }}
+{{end}}
 </main>
 {{ "<!-- End _default/single-left.html -->" | safeHTML }}
 {{ end }}
