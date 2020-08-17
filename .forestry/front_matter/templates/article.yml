@@ -196,6 +196,7 @@ fields:
   default: now
 pages:
 - content/articles/how-to-hide-the-header-on-squarespace.md
+- content/articles/improve-your-form-design.md
 - content/articles/show-date-modified-for-posts-in-hugo.md
 - content/articles/style-links-to-look-like-buttons.md
 - content/articles/the-context-gap-design-c.md
