@@ -195,6 +195,7 @@ fields:
   hidden: true
   default: now
 pages:
+- content/articles/fix-the-most-common-design-mistake-on-squarespace.md
 - content/articles/how-to-hide-the-header-on-squarespace.md
 - content/articles/improve-your-form-design.md
 - content/articles/show-date-modified-for-posts-in-hugo.md
