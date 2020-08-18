@@ -26,4 +26,3 @@ twitter_title = ""
 +++
 {{< embed/ryan-youtube iPDCmbaEF0Y >}}
 
-![](/uploads/ryan-dejaegher-about.jpg)

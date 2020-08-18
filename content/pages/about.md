@@ -6,8 +6,25 @@ noTitle: true
 layout: single-left
 ---
 
-I have this page setup to *not* show a heading/title by default. This let's me play with the layout a bit, and do things like add a photo above the heading.
-
-It uses the "default" template because it's not in a subdirectory and no other "Type" is specified in the front matter.
-
 ![Ryan Dejaegher](/uploads/ryan-dejaegher-about.jpg)
+
+Hi there! I'm Ryan Dejaegher a Front End Web Developer living in Philadelphia, PA. 
+
+## Start Here
+
+## What about you?
+
+## Who do I write for?
+
+## What do I do?
+
+## Who the hell am I?
+
+I write articles and tutorials about web development to help you do more with your website. 
+
+About Me, but this is really about you
+
+Platforms I work with:
+- Squarespace
+- WordPress
+- Shopify
