@@ -1,28 +1,28 @@
 +++
 articleFeatureImage = ""
-customize_seo = false
+customize\_seo = false
 date = 2020-08-17T13:00:44Z
 draft = true
 excerpt = ""
-facebook_description = ""
-facebook_image = ""
-facebook_title = ""
+facebook\_description = ""
+facebook\_image = ""
+facebook\_title = ""
 layout = "single-left"
 publishdate = ""
-seo_description = ""
-seo_title = ""
+seo\_description = ""
+seo\_title = ""
 showCodeHighlighting = false
 showPrevNext = false
 showReadTime = false
-show_article_options = false
-show_custom_social = false
-show_large_twitter_card = false
-show_table_of_contents = false
+show\_article\_options = false
+show\_custom\_social = false
+show\_large\_twitter\_card = false
+show\_table\_of\_contents = false
 tags = []
 title = "Style Links to look like buttons"
-twitter_description = ""
-twitter_image = ""
-twitter_title = ""
+twitter\_description = ""
+twitter\_image = ""
+twitter\_title = ""
 
 +++
 Recently there was a question in Squarespace forums about how to style a navigation link to look like a button.
@@ -39,16 +39,16 @@ Sometimes you have a specific action you want visitors to take and you want to h
 
 This is a very common design pattern you'll see across websites. You can see an example of this on the Squarespace homepage. Notice the **Get Started** button on the far right.
 
-![Squarespace navigation with button link](/uploads/squarespace-header.png)
+![Squarespace navigation with button link][image-1]
 
 By making the link look like a button it makes it stand out amongst the other elements in the navigation. The size and different color quickly draws peoples attention to it.
 
-How do you do this?
+How do you do this???
 
-* 
+\* 
   1. Add a link to your navigation
-  * 
-    1. This can be an existing page, an external link, or folder
+  \* 
+	1. This can be an existing page, an external link, or folder
 
 What makes the link look like a button? Background color and padding.
 
@@ -68,7 +68,7 @@ If you want to have two button links, it's important to not make them the exact 
 
 You'll often see this design pattern for web apps/tools that encouraging visitors to sign u p, but they also want to make it easy for existing users to login. Notice in the examples below --- **Sign Up** is the primary button, **Log In** the secondary button. 
 
-![](/uploads/mailchimp-header.png)![](/uploads/typeform-header.png)
+![][image-2]![][image-3]
 
 ### Styling Your Primary Button
 
@@ -81,3 +81,7 @@ The secondary button is shares a lot of design with the primary button. The main
 ### Rule Two: Button Links Should Never Be In Middle
 
 In the examples above you'll notice that these button style links are almost always on the right side of the page at the end of the navigation. 
+
+[image-1]:	/uploads/squarespace-header.png
+[image-2]:	/uploads/mailchimp-header.png
+[image-3]:	/uploads/typeform-header.png
