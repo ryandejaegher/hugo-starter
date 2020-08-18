@@ -1,28 +1,28 @@
 +++
 articleFeatureImage = ""
-customize\_seo = false
+customize_seo = false
 date = 2020-08-17T13:00:44Z
 draft = true
 excerpt = ""
-facebook\_description = ""
-facebook\_image = ""
-facebook\_title = ""
+facebook_description = ""
+facebook_image = ""
+facebook_title = ""
 layout = "single-left"
 publishdate = ""
-seo\_description = ""
-seo\_title = ""
+seo_description = ""
+seo_title = ""
 showCodeHighlighting = false
 showPrevNext = false
 showReadTime = false
-show\_article\_options = false
-show\_custom\_social = false
-show\_large\_twitter\_card = false
-show\_table\_of\_contents = false
+show_article_options = false
+show_custom_social = false
+show_large_twitter_card = false
+show_table_of_contents = false
 tags = []
 title = "Style Links to look like buttons"
-twitter\_description = ""
-twitter\_image = ""
-twitter\_title = ""
+twitter_description = ""
+twitter_image = ""
+twitter_title = ""
 
 +++
 Recently there was a question in Squarespace forums about how to style a navigation link to look like a button.
@@ -45,9 +45,9 @@ By making the link look like a button it makes it stand out amongst the other el
 
 How do you do this???
 
-\* 
+* 
   1. Add a link to your navigation
-  \* 
+  * 
 	1. This can be an existing page, an external link, or folder
 
 What makes the link look like a button? Background color and padding.
