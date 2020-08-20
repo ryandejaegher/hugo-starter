@@ -5,7 +5,7 @@ rssURL:
 rssLimit: "7"
 mainSections:
 - articles
-enableGoogleTagManager: false
+enableGoogleTagManager: true
 author: Ryan Dejaegher
 tagline: Web Developer · Web Designer
 debugGrid: false
