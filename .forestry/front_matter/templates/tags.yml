@@ -12,7 +12,7 @@ fields:
       type: documents
       section: data
       file: data/tags.yaml
-      path: tags-test
+      path: tags_test
     options:
     - squarespace
     - squarespace 7.1
