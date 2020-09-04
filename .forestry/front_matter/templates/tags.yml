@@ -2,9 +2,20 @@
 label: Tags
 hide_body: true
 fields:
-- name: tags-test
-  type: tag_list
-  default: []
-  label: Tags
+- name: select_tags
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: documents
+      section: data
+      file: data/tags.yaml
+      path: tags-test
+    options:
+    - squarespace
+    - squarespace 7.1
+  label: select tags
 pages:
 - data/tags.yaml
