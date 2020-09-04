@@ -1,13 +1,4 @@
 ---
-tags:
-- squarespace 7.1
-tags-test:
-- squarespace 7.1
-- squarespace
-select_tags: []
-tags_test:
-- squarespace
-- squarespace 7.1
 site_tags:
 - squarespace
 - squarespace 7.1
