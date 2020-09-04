@@ -8,3 +8,6 @@ select_tags: []
 tags_test:
 - squarespace
 - squarespace 7.1
+site_tags:
+- squarespace
+- squarespace 7.1
