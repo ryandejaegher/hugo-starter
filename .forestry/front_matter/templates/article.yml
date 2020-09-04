@@ -33,7 +33,7 @@ fields:
 - name: draft
   type: boolean
   label: Draft
-- name: tags
+- name: tags-old
   type: tag_list
   default: []
   label: Tags
@@ -194,7 +194,7 @@ fields:
     display_utc: false
   hidden: true
   default: now
-- name: test
+- name: tags
   type: list
   config:
     use_select: true
@@ -205,7 +205,7 @@ fields:
       section: data
       file: data/tags.yaml
       path: tags_test
-  label: test
+  label: Tags
 pages:
 - content/articles/don-t-center-everything.md
 - content/articles/fix-the-most-common-design-mistake-on-squarespace.md
