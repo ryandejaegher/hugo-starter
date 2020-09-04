@@ -33,11 +33,6 @@ fields:
 - name: draft
   type: boolean
   label: Draft
-- name: tags-old
-  type: tag_list
-  default: []
-  label: Tags
-  description: "(optional) Set tags for article"
 - name: tags
   type: list
   config:
