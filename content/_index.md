@@ -1,13 +1,17 @@
 ---
-title: Articles
-date: '2018-01-11T09:40:48.000-05:00'
-description: ''
-url: "/"
-show_summary: false
-layout: null
-cascade:
-    layout: single-left
+title: ""
+date: 2018-01-14T21:38:44-05:00
+draft: false
 
 ---
-This is a message that shows up above the articles.
+
+<div class="max-w-lg">
+
+![Ryan Dejaegher](/uploads/ryan-dejaegher-about.jpg)
+
+</div>
+
+Hi there! I'm Ryan Dejaegher a Front End Web Developer living in Philadelphia, PA. 
+
+I write articles and tutorials about web development to help you do more with your website. 
 

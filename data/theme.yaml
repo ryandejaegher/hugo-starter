@@ -4,4 +4,4 @@ menu_style: Stacked-Left
 theme_color: pink
 show_article_preview: false
 show_article_date: false
-theme_font: font-mono
+theme_font: font-sans

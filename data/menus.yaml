@@ -1,7 +1,7 @@
 ---
 menu_item:
 - menu_title: Articles
-  menu_url: "/"
+  menu_url: "/articles"
 #- menu_title: About
 #  menu_url: "/about"
 # - menu_title: Home

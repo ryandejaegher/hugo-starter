@@ -94,12 +94,12 @@ You can take the same code above and apply it to **Page Settings -> Advance -> C
 
 There's a slight adjustment you have to make to the code. You have to wrap it in a **style tag**.
 
-```css
-    <style>
-    header {
-    	display: none !important;
-    }
-    <style>
+```html
+<style>
+header {
+    display: none !important;
+}
+<style>
 ```
 
 Once you add this the header should be hidden on that page. Make a mental note that you've added this code to the page. It can be easy to forget this section which can cause confusion in the future when you wonder why your header isn't visible.
@@ -121,21 +121,21 @@ Every page in Squarespace actually has a **unique collection ID**. This collecti
 Once you have your collection IDs you can go to your custom CSS to add the code:
 
 ```css
-    #collectionID header {
-    	display: none !important;
-    }
+#collectionID header {
+    display: none !important;
+}
 ```
 
 How do you hide the header on multiple pages? You just need to get the collectionID for the other pages you want to hide.
 
 ``` css
-    #firstCollectionID header {
-    	display: none !important
-    }
+#firstCollectionID header {
+    display: none !important
+}
     
-    #secondCollectionID header {
-    	display: none !important
-    }
+#secondCollectionID header {
+    display: none !important
+}
 ```   
 
 You could write the code like this but this is repetitive, you have to keep writing `display:none;`
@@ -145,11 +145,11 @@ You can add the same rule to multiple pages/collectionIDs by grouping them toget
 You can also make it easier to read by putting each header on a new line.
 
 ```css
-    #firstCollectionID header, 
-    #secondCollectionID header, 
-    #thirdCollectionID header {
-    	display: none !important
-    }
+#firstCollectionID header, 
+#secondCollectionID header, 
+#thirdCollectionID header {
+    display: none !important
+}
 ```
 
 The benefit of this approach is that your code isn't scattered across multiple pages. You can see all the pages where this code is being applied and you can add/remove pages where you want the header hidden in one spot.
