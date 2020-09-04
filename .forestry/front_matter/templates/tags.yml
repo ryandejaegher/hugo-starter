@@ -1,0 +1,10 @@
+---
+label: Tags
+hide_body: true
+fields:
+- name: site_tags
+  type: tag_list
+  default: []
+  label: site tags
+pages:
+- data/tags.yaml
