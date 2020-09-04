@@ -2,9 +2,9 @@
 label: Tags
 hide_body: true
 fields:
-- name: tags_test
+- name: site_tags
   type: tag_list
   default: []
-  label: tags test
+  label: site tags
 pages:
 - data/tags.yaml
