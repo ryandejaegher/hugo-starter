@@ -110,7 +110,7 @@ Going back to the custom CSS section it's possible to hide the header on specifi
 
 Every page in Squarespace actually has a **unique collection ID**. This collection ID can help us target specific pages that we want to apply our code too.
 
-{{< embed/streamable rigmv1>}}
+{{<embed/streamable rigmv1>}}
 
 ??? How do you find it? (If you don't know how to find collection ID, check out this article)
 
