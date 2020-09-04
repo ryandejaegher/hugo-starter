@@ -35,6 +35,7 @@
 <a href="{{$1280url}}">
 <figure class="md__image">
         <img 
+        class="lazy"
         sizes="100vw"
         srcset="
         {{ if ge $image.Width "320" }}
@@ -66,6 +67,37 @@
         {{end}}
         "
         src="{{$1280url}}"
+        data-src="{{$1280url}}"
+        data-srcset="
+        {{ if ge $image.Width "320" }}
+        {{$320url}} 320w,
+        {{ end }}
+        
+        {{ if ge $image.Width "512" }}
+        {{$512url}} 512w,
+        {{end}}
+
+        {{ if ge $image.Width "640" }}
+        {{$640url}} 640w,
+        {{end}}
+
+        {{ if ge $image.Width "768" }}
+        {{$768url}} 768w,
+        {{end}}
+
+        {{ if ge $image.Width "1024" }}
+        {{$1024url}} 1024w,
+        {{end}}
+
+        {{ if ge $image.Width "1280" }}
+        {{$1280url}} 1280w,
+        {{end}}
+
+        {{ if ge $image.Width "1920" }}
+        {{$1920url}} 1920w
+        {{end}}
+        "
+        data-sizes="100vw"
         alt="{{ .Text}}" {{with .Title }} title="{{.}}" loading="lazy" {{end}}>
 </figure>
 </a>
