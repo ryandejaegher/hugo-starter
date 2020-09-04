@@ -108,17 +108,19 @@ This option is an improvement over hiding the header on all pages but what if yo
 
 Going back to the custom CSS section it's possible to hide the header on specific pages using the pages **collection ID.**
 
-Every page in Squarespace actually has a unique collection ID. This collection ID can help us target specific pages that we want to apply our code too.
+Every page in Squarespace actually has a **unique collection ID**. This collection ID can help us target specific pages that we want to apply our code too.
+
+{{< embed/streamable [https://streamable.com/rigmv1](https://streamable.com/rigmv1 "https://streamable.com/rigmv1") >}}
 
 ??? How do you find it? (If you don't know how to find collection ID, check out this article)
 
-Once you have your collection IDs you can go to your custom CSS to add the code
+Once you have your collection IDs you can go to your custom CSS to add the code:
 
     #collectionID header {
     	display: none !important;
     }
 
-How do you hide the header on multiple pages
+How do you hide the header on multiple pages? You just need to get the collectionID for the other pages you want to hide.
 
     #firstCollectionID header {
     	display: none !important
@@ -128,7 +130,7 @@ How do you hide the header on multiple pages
     	display: none !important
     }
 
-You could write the code like this but this is repetitive, you have to keep writing display:none;
+You could write the code like this but this is repetitive, you have to keep writing `display:none;`
 
 You can add the same rule to multiple pages/collectionIDs by grouping them together. You do this by adding a comma between each page selector.
 
