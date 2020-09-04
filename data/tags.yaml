@@ -6,7 +6,5 @@ tags-test:
 - squarespace
 select_tags: []
 tags_test:
-- test
-- " cool"
-- " wow"
-- " nice"
+- squarespace
+- squarespace 7.1
