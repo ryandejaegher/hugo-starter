@@ -32,7 +32,7 @@
 {{$1280url := $1280.Permalink}} 
 {{$1920url := $1920.Permalink}} 
 
-
+<a href="{{$1280url}}">
 <figure class="md__image">
         <img 
         sizes="100vw"
@@ -68,3 +68,4 @@
         src="{{$1280url}}"
         alt="{{ .Text}}" {{with .Title }} title="{{.}}" loading="lazy" {{end}}>
 </figure>
+</a>
