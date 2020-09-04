@@ -198,7 +198,7 @@ fields:
   type: include
   config: {}
   template: tags
-  label: tags
+  label: tags test
 pages:
 - content/articles/don-t-center-everything.md
 - content/articles/fix-the-most-common-design-mistake-on-squarespace.md
