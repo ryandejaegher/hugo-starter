@@ -194,6 +194,11 @@ fields:
     display_utc: false
   hidden: true
   default: now
+- name: tags-test
+  type: include
+  config: {}
+  template: tags
+  label: tags
 pages:
 - content/articles/don-t-center-everything.md
 - content/articles/fix-the-most-common-design-mistake-on-squarespace.md
