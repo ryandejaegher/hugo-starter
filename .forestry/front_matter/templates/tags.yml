@@ -2,7 +2,7 @@
 label: Tags
 hide_body: true
 fields:
-- name: tags
+- name: tags-test
   type: tag_list
   default: []
   label: Tags
