@@ -17,5 +17,9 @@ fields:
     - squarespace
     - squarespace 7.1
   label: select tags
+- name: tags_test
+  type: tag_list
+  default: []
+  label: tags test
 pages:
 - data/tags.yaml
