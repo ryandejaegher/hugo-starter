@@ -131,6 +131,6 @@ Another note is that you'll want to limit the links to 4-6 max. If you go beyond
 
 ### Questions/Feeback?
 
-If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger!](https://m.me/dejaegherryan) or [email me!](mailto:ryan@ryandejaegher.com).
+If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
 
 {{% embed/mailerlite form="squarespace" %}}
