@@ -2,7 +2,6 @@
 articleFeatureImage = "/uploads/pixelsnap-2020-09-15-at-12-01-40-2x.png"
 customize_seo = false
 date = 2020-09-15T16:46:52Z
-draft = true
 excerpt = "Add a simple script to your Squarespace site to get a vertical navigation on your site. "
 facebook_description = ""
 facebook_image = ""
