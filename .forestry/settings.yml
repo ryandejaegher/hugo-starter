@@ -34,7 +34,7 @@ sections:
   label: Config
   create: all
   match: "**/*"
-upload_dir: themes/my-theme/assets/uploads
+upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: 
