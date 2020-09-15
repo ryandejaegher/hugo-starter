@@ -29,13 +29,15 @@ Looking for an easy way to add a fixed vertical navigation to your Squarespace s
 
 ### Installation Instructions
 
-To get the vertical nav element you'll need to add this script through Code Injection
+To get the vertical nav element you'll need to add this script through Code Injection. This is what will allow you to use the `<vertical-nav>` element in Squarespace.
 
 _Add this code to Settings -> Advanced -> Code Injection -> Footer_
 
 ![](/uploads/script-install-2x.png)
 
 Want to get notified when the script is updated? Join the mailing list
+
+{{% embed/mailerlite form="vertical-nav" %}}
 
 ### Benefits
 
@@ -45,28 +47,32 @@ Get an additional menu without interfering with the default menu
 
 Add <vertical-nav> and then add your links in between. Here's what the code snippet looks like.
 
-    <vertical-nav>
-    	<a href="#">First Link</a>
-        <a href="#">Second Link</a>
-        <a href="#">Third Link</a>
-        <a href="#">Fourth Link</a>
-    </vertical-nav>
+```html
+<vertical-nav>
+    <a href="#">First Link</a>
+    <a href="#">Second Link</a>
+    <a href="#">Third Link</a>
+    <a href="#">Fourth Link</a>
+</vertical-nav>
+```
 
 Set the **_side_** to specify which side the menu will remain fixed on. You can choose **left** or **right.**
 
-    <vertical-nav side="left">
-    	<a href="#">First Link</a>
-        <a href="#">Second Link</a>
-        <a href="#">Third Link</a>
-        <a href="#">Fourth Link</a>
-    </vertical-nav>
-    
-    <vertical-nav side="right">
-    	<a href="#">First Link</a>
-        <a href="#">Second Link</a>
-        <a href="#">Third Link</a>
-        <a href="#">Fourth Link</a>
-    </vertical-nav>
+```html
+<vertical-nav side="left">
+    <a href="#">First Link</a>
+    <a href="#">Second Link</a>
+    <a href="#">Third Link</a>
+    <a href="#">Fourth Link</a>
+</vertical-nav>
+
+<vertical-nav side="right">
+    <a href="#">First Link</a>
+    <a href="#">Second Link</a>
+    <a href="#">Third Link</a>
+    <a href="#">Fourth Link</a>
+</vertical-nav>
+```
 
 Now that you know what the code looks like let's look at how you can use it on your Squarespace site.
 
