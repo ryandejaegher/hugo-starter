@@ -52,13 +52,29 @@ Add <vertical-nav> and then add your links in between. Here's what the code snip
         <a href="#">Fourth Link</a>
     </vertical-nav>
 
-Set the **_side_** to specify which side the menu will remain on
+Set the **_side_** to specify which side the menu will remain fixed on. You can choose **left** or **right.**
 
-### Add Site Wide
+    <vertical-nav side="left">
+    	<a href="#">First Link</a>
+        <a href="#">Second Link</a>
+        <a href="#">Third Link</a>
+        <a href="#">Fourth Link</a>
+    </vertical-nav>
+    
+    <vertical-nav side="right">
+    	<a href="#">First Link</a>
+        <a href="#">Second Link</a>
+        <a href="#">Third Link</a>
+        <a href="#">Fourth Link</a>
+    </vertical-nav>
+
+Now that you know what the code looks like let's look at how you can use it on your Squarespace site.
+
+### Add Vertical Nav To All Squarespace Pages
 
 ![](/uploads/add-vertical-nav-2x.png)
 
-Add this code to Settings -> Advanced -> Code Injection -> Footer
+ fI
 
 ### Add To Individual Pages
 
