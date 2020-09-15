@@ -43,7 +43,14 @@ Get an additional menu without interfering with the default menu
 
 ### How does it work?
 
-Add <vertical-nav> and then add your links in between
+Add <vertical-nav> and then add your links in between. Here's what the code snippet looks like.
+
+    <vertical-nav>
+    	<a href="#">First Link</a>
+        <a href="#">Second Link</a>
+        <a href="#">Third Link</a>
+        <a href="#">Fourth Link</a>
+    </vertical-nav>
 
 Set the **_side_** to specify which side the menu will remain on
 
