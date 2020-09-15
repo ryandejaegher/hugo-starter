@@ -74,11 +74,19 @@ Now that you know what the code looks like let's look at how you can use it on y
 
 ![](/uploads/add-vertical-nav-2x.png)
 
- fI
+If you want to have a vertical navigation on all your pages you'll need to add the vertical-nav element to the Code Injection in site settings (_Settings -> Advanced -> Code Injection -> Footer)_
+
+This can be a great way to add fixed social links along the side or **add anchor links to site sections.**
+
+What if you just want to add vertical navigation to a single page. Keep reading.
 
 ### Add To Individual Pages
 
-You'll need to insert a code block into the page where you'd like to add the vertical-nav. ((does this work with page settings/code injection?))
+To add a vertical navigation to a single page you'll need to insert a code block into the page where you'd like to add the vertical-nav.
+
+It doesn't matter where the code block is located because the vertical-nav takes care of positioning itself. 
+
+ ((does this work with page settings/code injection?))
 
 ![](/uploads/vertical-nav-both-sides-on-page-2x.png)
 
