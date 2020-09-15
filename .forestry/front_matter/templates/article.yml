@@ -203,6 +203,7 @@ fields:
   hidden: true
   default: now
 pages:
+- content/articles/add-fixed-vertical-navigation-to-squarespace.md
 - content/articles/don-t-center-everything.md
 - content/articles/fix-the-most-common-design-mistake-on-squarespace.md
 - content/articles/how-to-hide-the-header-on-squarespace.md
