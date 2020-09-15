@@ -29,6 +29,10 @@ Looking for an easy way to add a fixed vertical navigation to your Squarespace s
 
 ### Installation Instructions
 
+### Benefits
+
+Get an additional menu without interfering with the default menu
+
 ### How does it work?
 
 Add <vertical-nav> and then add your links in between
@@ -51,3 +55,9 @@ You'll need to insert a code block into the page where you'd like to add the ver
 
 * Squarespace 7.0/7.1
 * Requires Business Plan
+
+### Notes
+
+Limit it to 4-6 links
+
+Menu will be hidden on mobile, the reason is that there isn't enough room on mobile to ensure that it doesn't overlap the main content. 
