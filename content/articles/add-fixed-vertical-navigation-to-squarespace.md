@@ -1,5 +1,5 @@
 +++
-articleFeatureImage = ""
+articleFeatureImage = "/uploads/pixelsnap-2020-09-15-at-12-01-40-2x.png"
 customize_seo = false
 date = 2020-09-15T16:46:52Z
 draft = true
@@ -18,10 +18,36 @@ show_article_options = false
 show_custom_social = false
 show_large_twitter_card = false
 show_table_of_contents = false
-tags = []
+tags = ["squarespace 7.1", "squarespace"]
 title = "Add Fixed Vertical Navigation To Squarespace"
 twitter_description = ""
 twitter_image = ""
 twitter_title = ""
 
 +++
+Looking for an easy way to add a fixed vertical navigation to your Squarespace site? Today I'm going to share a little script with you that you can use to easily add a vertical navigation to your entire site or to individual pages.
+
+### Installation Instructions
+
+### How does it work?
+
+Add <vertical-nav> and then add your links in between
+
+Set the **_side_** to specify which side the menu will remain on
+
+### Add Site Wide
+
+![](/uploads/add-vertical-nav-2x.png)
+
+Add this code to Settings -> Advanced -> Code Injection -> Footer
+
+### Add To Individual Pages
+
+You'll need to insert a code block into the page where you'd like to add the vertical-nav. ((does this work with page settings?))
+
+### Mix Site Wide + Individual Pages
+
+### Compatibility/Requirements
+
+* Squarespace 7.0/7.1
+* Requires Business Plan
