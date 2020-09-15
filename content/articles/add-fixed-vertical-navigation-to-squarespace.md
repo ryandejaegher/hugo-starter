@@ -3,7 +3,7 @@ articleFeatureImage = "/uploads/pixelsnap-2020-09-15-at-12-01-40-2x.png"
 customize_seo = false
 date = 2020-09-15T16:46:52Z
 draft = true
-excerpt = ""
+excerpt = "Add a simple script to your Squarespace site to get a vertical navigation on your site. "
 facebook_description = ""
 facebook_image = ""
 facebook_title = ""
@@ -103,6 +103,8 @@ You'll also need to ensure that you set the **_side_**_._ So if you want a verti
 _![](/uploads/vertical-nav-side-left-2x.png) _
 
 Then on the page where you want to have a vertical navigation on the right you'd add a code block and set the **side to right** on the <vertical-nav> element.
+
+![](/uploads/page-specific-vertical-nav-2x.png)
 
 ### Compatibility/Requirements
 
