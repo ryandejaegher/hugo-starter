@@ -35,7 +35,7 @@ _Add this code to Settings -> Advanced -> Code Injection -> Footer_
 
 ![](/uploads/script-install-2x.png)
 
-Want to get notified when the script is updated? Join the mailing list.
+Want to get notified when the script is updated? Join the mailing list
 
 ### Benefits
 
@@ -94,9 +94,9 @@ Remember how you can choose set the vertical-nav to a specific side? This opens 
 
 * You could have 2 vertical navigations across your entire site
 * You could have 2 vertical navigations on a single page
-* You can also have 1 vertical navigation across the entire site and then vertical navigation that is specific to each page. 
+* You can also have 1 vertical navigation across the entire site and then vertical navigation that is specific to each page.
 
-If that last option interests you, you'll need to add a <vertical-nav> element to the Site Code Injection and to a code block on the page you want to use. 
+If that last option interests you, you'll need to add a <vertical-nav> element to the Site Code Injection and to a code block on the page you want to use.
 
 You'll also need to ensure that you set the **_side_**_._ So if you want a vertical navigation on the left side for the entire site you'd add this to the Site Code Injection.
 
@@ -115,4 +115,4 @@ Then on the page where you want to have a vertical navigation on the right you'd
 
 Limit it to 4-6 links
 
-Menu will be hidden on mobile, the reason is that there isn't enough room on mobile to ensure that it doesn't overlap the main content. 
+Menu will be hidden on mobile, the reason is that there isn't enough room on mobile to ensure that it doesn't overlap the main content.
