@@ -25,7 +25,7 @@
 
     {{/*  Facebook Image  */}}
     {{ if .Params.facebook_image }}
-    <meta property="og:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.facebook_image }}">
+    <meta property="og:image" content="{{.Site.BaseURL}}/{{ .Params.facebook_image }}">
     {{else}}
     <meta property="og:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.articleFeatureImage }}">
     {{ end }}
