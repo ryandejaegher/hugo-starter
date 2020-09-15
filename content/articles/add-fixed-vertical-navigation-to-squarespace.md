@@ -82,15 +82,27 @@ What if you just want to add vertical navigation to a single page. Keep reading.
 
 ### Add To Individual Pages
 
-To add a vertical navigation to a single page you'll need to insert a code block into the page where you'd like to add the vertical-nav.
+To add a vertical navigation to a single page you'll need to insert a **code block** into the page where you'd like to add the vertical-nav.
 
-It doesn't matter where the code block is located because the vertical-nav takes care of positioning itself. 
-
- ((does this work with page settings/code injection?))
+It doesn't matter where the code block is located because the vertical-nav takes care of positioning itself. However to ensure you can easily update it or remove in the future, I'd recommend placing the code block at the bottom or at the top of the page to make it easier to find.
 
 ![](/uploads/vertical-nav-both-sides-on-page-2x.png)
 
-### Mix Site Wide + Individual Pages
+### Mix Site Wide + Individual Pages Vertical Navigation
+
+Remember how you can choose set the vertical-nav to a specific side? This opens up some interesting possibilities for how you can use the vertical-nav element.
+
+* You could have 2 vertical navigations across your entire site
+* You could have 2 vertical navigations on a single page
+* You can also have 1 vertical navigation across the entire site and then vertical navigation that is specific to each page. 
+
+If that last option interests you, you'll need to add a <vertical-nav> element to the Site Code Injection and to a code block on the page you want to use. 
+
+You'll also need to ensure that you set the **_side_**_._ So if you want a vertical navigation on the left side for the entire site you'd add this to the Site Code Injection.
+
+_![](/uploads/vertical-nav-side-left-2x.png) _
+
+Then on the page where you want to have a vertical navigation on the right you'd add a code block and set the **side to right** on the <vertical-nav> element.
 
 ### Compatibility/Requirements
 
