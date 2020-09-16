@@ -247,3 +247,12 @@ Now we're ready to put everything together and test it out. Since we've put all 
 ```
 
 To test out and ensure it's working go to a product page and switch between desktop and mobile view. If everything is working correctly you should have thumbnails on mobile view now :)
+
+![](/uploads/pixelsnap-2020-09-16-at-10-23-07-2x.png)
+
+### Questions or Feedback?
+
+If you have questions or are running into issues with the script feel free to send me a message on \[Facebook Messenger\](https://m.me/dejaegherryan) or \[email me\](mailto:ryan@ryandejaegher.com).
+
+  
+{{% embed/mailerlite form="squarespace" %}}
