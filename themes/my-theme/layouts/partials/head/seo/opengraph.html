@@ -25,13 +25,13 @@
 
     {{/*  Facebook Image  */}}
     {{ with .Params.facebook_image }}
-        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-
-    <meta property="og:image" content="{{ $imageResource.Permalink }}">
+        <!-- {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }} -->
+    {{- $path := resources.Get . -}}
+    <meta property="og:image" content="{{ $path }}">
     {{else}}
-    <!-- {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-    <meta property="og:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.articleFeatureImage }}"> -->
+    <meta property="og:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.articleFeatureImage }}">
     {{ end }}
+
 
     {{ range .Params.tags }}
     <meta property="og:tags" content="{{ . }}">
