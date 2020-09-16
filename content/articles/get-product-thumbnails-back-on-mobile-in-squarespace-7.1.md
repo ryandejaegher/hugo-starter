@@ -35,7 +35,7 @@ Today I’m going to show you how you can add the thumbnails back on mobile usin
 
 By default Squarespace removes the thumbnail images on mobile, so visitors have to rely on swiping through the images one by one. Visitors may not even realize other product images are present.
 
-![[Pasted image 3.png]]
+!\[\[Pasted image 3.png\]\]
 
 The other issue if you have multiple images. If you had 10 images a visitor would have to swipe through 9 times to get to the last one. If the thumbnails were present they could jump to the image they want to see with one tap.
 
@@ -49,7 +49,7 @@ We're going to write some custom code i.e. JavaScript that will get the product 
 
 This is what we're looking for
 
-![[Pasted image 5.png]]
+!\[\[Pasted image 5.png\]\]
 
 ### What This Script Will Do
 
@@ -86,7 +86,6 @@ If we don't add this the script may run before the page is loaded which could pr
 ```html
 <!-- Code Injection Footer -->
 <script>
-
 (function(){
     window.addEventListener('load', function() {
     //All the code we're going to write will go inside this function
@@ -99,7 +98,7 @@ If we don't add this the script may run before the page is loaded which could pr
 
 Next we need to create variables to grab the **product thumbnails** and the **main product image**.
 
-![[Pasted image 4.png]]
+!\[\[Pasted image 4.png\]\]
 
 We'll also add an **if statement** to check that the product gallery exists on the page. This ensures the code will only run if there's actually a product gallery on the page. If it doesn't exist, the script will stop.
 
@@ -123,43 +122,31 @@ Next we're going to write the function that will move the thumbnail on mobile an
 You can think of functions as actions. You write them once and then you can reuse them anytime. Which we'll do in later steps.
 
 ```javascript
-
 function moveThumbnailsOnMobile() {
-
     // This moves the product thumbnails after the product gallery
-    
     productGallery.insertAdjacentElement('afterend', productThumbnails);
     
-    // Add custom style to set the thumbnails to display in a row. The default display for elements with flex is a row. 
-    
+  	// Add custom style to set the thumbnails to display in a row. The default display for elements with flex is a row. 
     productThumbnails.children[0].style.display = 'flex';
-
 }
-
 ```
 
 If we didn't add the custom style the thumbnails would still be laid out as a column.
 
-![[Pasted image 2.png]]
+!\[\[Pasted image 2.png\]\]
 
 ### Step 3. Create a function that will move the thumbnails back on desktop and reset the style
 
 Next we'll write a function to handle moving the thumbnails back to their original position on desktop and reset the style so that they go back to displaying as a column instead of a row.
 
 ```javascript
-
 function addThumbnailsBackToDesktop() {
-
-    // This moves the product thumbnails after the product gallery
-    
+    // This moves the product thumbnails after the product gallery    
     productGallery.insertAdjacentElement('afterbegin', productThumbnails);
     
     // This sets the the style to '' or empty. This will remove the styling we added before to display the thumbnails in a row 
-    
     productThumbnails.children[0].style='';
-
 }
-
 ```
 
 ### Step 4. Create a function to check the viewport size
@@ -168,7 +155,7 @@ Next we need to create a function to check the viewport or window size.
 
 This is necessary for ensuring that we run the right function only when the viewport is a certain size. In this case we want to know when the viewport is larger than 767px or smaller than 767px.
 
-*_Why 767px?_*
+**_Why 767px?_**
 
 By default Squarespace shows the thumbnails when the **viewport is > 767px**, which is often the size for tablets and desktop.
 
@@ -177,29 +164,17 @@ This function will check whether the viewport/window width is greater than 767px
 If it's less than 767px, then the function runs the code to move thumbnails on mobile. This is where we'll also run our functions (`addThumbnailsBackToDesktop` and `moveThumbnailsOnMobile`) that we wrote above.
 
 ```javascript
-
 function checkViewportSize(){
-
     var viewportWidth =  Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    var viewportHeight =  Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)        
     
-    var viewportHeight =  Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-    
-    
-    
-    // if desktop (greater than 767px), add back to original location 
-    
+    // if desktop (greater than 767px), add back to original location     
     if (viewportWidth > 767) {
-    
         addThumbnailsBackToDesktop();
-    
     } else {
-    
         moveThumbnailsOnMobile()
-    
     }
-
 }
-
 ```
 
 ### Step 5. Add Event Listener for Resize on the Window
@@ -210,16 +185,12 @@ Why do we need to do this? This ensures that script will run when you’re editi
 
 If we don’t do this the script would only run once when the page is loaded initially and the code for checking the viewport size wouldn’t run again.
 
-This will ensure the code runs when the window size changes.
+This will ensure the code runs when the window size changes. Everytime the viewport resizes we run the function **checkViewportSize** which decides whether or not to move the thumbnails on mobile.
 
 ```javascript
-
 window.addEventListener('resize', function(){
-
     checkViewportSize()
-
 })
-
 ```
 
 ### Step 6. Putting it all together
@@ -227,9 +198,7 @@ window.addEventListener('resize', function(){
 Now we're ready to put everything together and test it out. Since we've put all of the code inside the the function for the **load** event listener, the code will only run once the page has fully loaded.
 
 ```html
-
 <!-- Code Inection Footer -->
-
 <script>
 
 (function(){
@@ -291,9 +260,7 @@ Now we're ready to put everything together and test it out. Since we've put all 
     })
 
 })();
-
 </script>
-
 ```
 
 To test out and ensure it's working go to a product page and switch between desktop and mobile view. If everything is working correctly you should have thumbnails on mobile view now :)
