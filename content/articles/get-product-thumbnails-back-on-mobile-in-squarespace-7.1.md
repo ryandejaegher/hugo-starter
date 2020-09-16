@@ -35,7 +35,7 @@ Today I’m going to show you how you can add the thumbnails back on mobile usin
 
 By default Squarespace removes the thumbnail images on mobile, so visitors have to rely on swiping through the images one by one. Visitors may not even realize other product images are present.
 
-!\[\[Pasted image 3.png\]\]
+![](/uploads/pixelsnap-2020-09-16-at-10-22-04-2x.png)
 
 The other issue if you have multiple images. If you had 10 images a visitor would have to swipe through 9 times to get to the last one. If the thumbnails were present they could jump to the image they want to see with one tap.
 
@@ -247,4 +247,3 @@ Now we're ready to put everything together and test it out. Since we've put all 
 ```
 
 To test out and ensure it's working go to a product page and switch between desktop and mobile view. If everything is working correctly you should have thumbnails on mobile view now :)
-
