@@ -85,23 +85,17 @@ If we don't add this the script may run before the page is loaded which could pr
 
 ```html
 <!-- Code Injection Footer -->
-
 <script>
 
 (function(){
-
     window.addEventListener('load', function() {
-    
     //All the code we're going to write will go inside this function
-
 })
-
 })()
-
 </script>
 ```
 
-\### Step 1. Get the thumbnails and the main product gallery
+### Step 1. Get the thumbnails and the main product gallery
 
 Next we need to create variables to grab the **product thumbnails** and the **main product image**.
 
@@ -109,7 +103,7 @@ Next we need to create variables to grab the **product thumbnails** and the **ma
 
 We'll also add an **if statement** to check that the product gallery exists on the page. This ensures the code will only run if there's actually a product gallery on the page. If it doesn't exist, the script will stop.
 
-\`\`\`javascript
+```javascript
 
 // The main product image
 
@@ -127,7 +121,7 @@ if (!productGallery instanceof Element) {
 
 var productThumbnails = document.querySelector('.ProductItem-gallery-scroll');
 
-\`\`\`
+```
 
 \### Step 2. Create a function that will move the thumbnails on mobile and set the style
 
