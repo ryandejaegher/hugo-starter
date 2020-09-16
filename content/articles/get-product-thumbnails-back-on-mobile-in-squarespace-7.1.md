@@ -1,10 +1,10 @@
 +++
-articleFeatureImage = "content/uploads/custom-cover-2.png"
+articleFeatureImage = "/uploads/custom-cover-2.png"
 customize_seo = false
 date = 2020-09-16T16:42:10Z
 excerpt = "Missing product thumbnails on mobile in Squarespace? Today I'm going to show you how to add some custom code to get them back.  "
 facebook_description = ""
-facebook_image = "content/uploads/custom-cover-2.png"
+facebook_image = "/uploads/custom-cover-2.png"
 facebook_title = ""
 layout = "single-left"
 publishdate = ""
@@ -24,7 +24,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-![](/uploads/custom-cover-2.png)There was a question in the Squarespace Customization Resource Group about how to get the thumbnails for products to be visible on mobile in Squarespace 7.1
+There was a question in the Squarespace Customization Resource Group about how to get the thumbnails for products to be visible on mobile in Squarespace 7.1
 
 > I am trying to display thumbnails for my products on MOBILE under the main large photo on my product details pages. It's a 7.1 version template. Right now it's just displaying one photo at a time on mobile like a carousel which is not super mobile/user friendly!
 
@@ -253,5 +253,4 @@ To test out and ensure it's working go to a product page and switch between desk
 
 If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
 
-  
 {{% embed/mailerlite form="squarespace" %}}
