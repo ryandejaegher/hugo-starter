@@ -27,10 +27,10 @@
     {{ with .Params.facebook_image }}
         {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
 
-
     <meta property="og:image" content="{{ $imageResource.Permalink }}">
     {{else}}
-    <meta property="og:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.articleFeatureImage }}">
+    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+    <meta property="og:image" content="{{ $imageResource.Permalink }}">
     {{ end }}
 
     {{ range .Params.tags }}
