@@ -252,7 +252,7 @@ To test out and ensure it's working go to a product page and switch between desk
 
 ### Questions or Feedback?
 
-If you have questions or are running into issues with the script feel free to send me a message on \[Facebook Messenger\](https://m.me/dejaegherryan) or \[email me\](mailto:ryan@ryandejaegher.com).
+If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
 
   
 {{% embed/mailerlite form="squarespace" %}}
