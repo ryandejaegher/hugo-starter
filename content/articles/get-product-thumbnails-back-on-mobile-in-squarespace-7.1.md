@@ -198,7 +198,7 @@ window.addEventListener('resize', function(){
 Now we're ready to put everything together and test it out. Since we've put all of the code inside the the function for the **load** event listener, the code will only run once the page has fully loaded.
 
 ```html
-<!-- Code Inection Footer -->
+<!-- Code Injection Footer -->
 <script>
 
 (function(){
@@ -208,51 +208,34 @@ Now we're ready to put everything together and test it out. Since we've put all 
     	var productGallery = document.querySelector('.ProductItem-gallery')
     
     	if (!productGallery instanceof Element) {
-    
     		return
-    
     	}
     
     	var productThumbnails = document.querySelector('.ProductItem-gallery-scroll');
     
     	function moveThumbnailsOnMobile() {
-    
     		productGallery.insertAdjacentElement('afterend', productThumbnails);
-    
     		productThumbnails.children[0].style.display = 'flex';
-    
     	}
     
     	function addThumbnailsBackToDesktop() {
-    
     		productGallery.insertAdjacentElement('afterbegin', productThumbnails);
-    
     		productThumbnails.children[0].style='';
-    
     	}
     
     	function checkViewportSize(){
-    
     		var viewportWidth =  Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    
     		var viewportHeight =  Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     
     		if (viewportWidth > 767) {
-    
     			addThumbnailsBackToDesktop();
-    
     		} else {
-    
     			moveThumbnailsOnMobile()
-    
     		}
-    
     	}
     
     	window.addEventListener('resize', function(){
-    
     		checkViewportSize()
-    
     	})
     
     	checkViewportSize();
