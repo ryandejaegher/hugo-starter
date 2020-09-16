@@ -35,6 +35,8 @@ Today I’m going to show you how you can add the thumbnails back on mobile usin
 
 By default Squarespace removes the thumbnail images on mobile, so visitors have to rely on swiping through the images one by one. Visitors may not even realize other product images are present.
 
+![](/uploads/pixelsnap-2020-09-16-at-10-22-04-2x.png)
+
 The other issue if you have multiple images. If you had 10 images a visitor would have to swipe through 9 times to get to the last one. If the thumbnails were present they could jump to the image they want to see with one tap.
 
 Unfortunately CSS alone won’t fix this issue because Squarespace removes the `src` on the image pointing to the thumbnail file, so even if you can display the image with CSS it’s not actually pointing to a file.
@@ -47,7 +49,7 @@ We're going to write some custom code i.e. JavaScript that will get the product 
 
 This is what we're looking for
 
-!\[\[Pasted image 5.png\]\]
+![](/uploads/pixelsnap-2020-09-16-at-10-23-07-2x.png)
 
 ### What This Script Will Do
 
@@ -71,11 +73,11 @@ Everything we’re going to be doing will take place in the **Code Injection** (
 
 The code examples below will build on each other and explain what's happening.
 
-### Create a script tag in Code Injection
+### Step 1. Create a script tag in Code Injection
 
 When you're adding JavaScript to code injection, it needs to go in between `<script></script>` tags. It's very easy to forget this.
 
-### Create an event listener to wait for the page to load
+### Step 2. Create an event listener to wait for the page to load
 
 To make sure that the script only runs once the page and images are fully loaded, we need to add an event listener. Event listener’s fire when certain actions or events take occur and one of those events is **load**.
 
@@ -92,11 +94,11 @@ If we don't add this the script may run before the page is loaded which could pr
 </script>
 ```
 
-### Step 1. Get the thumbnails and the main product gallery
+### Step 3. Get the thumbnails and the main product gallery
 
 Next we need to create variables to grab the **product thumbnails** and the **main product image**.
 
-!\[\[Pasted image 4.png\]\]
+![](/uploads/pixelsnap-2020-09-16-at-10-24-22-2x.png)
 
 We'll also add an **if statement** to check that the product gallery exists on the page. This ensures the code will only run if there's actually a product gallery on the page. If it doesn't exist, the script will stop.
 
@@ -113,7 +115,7 @@ if (!productGallery instanceof Element) {
 var productThumbnails = document.querySelector('.ProductItem-gallery-scroll');
 ```
 
-### Step 2. Create a function that will move the thumbnails on mobile and set the style
+### Step 4. Create a function that will move the thumbnails on mobile and set the style
 
 Next we're going to write the function that will move the thumbnail on mobile and give it some custom style so that it displays in a row.
 
@@ -133,7 +135,7 @@ If we didn't add the custom style the thumbnails would still be laid out as a co
 
 !\[\[Pasted image 2.png\]\]
 
-### Step 3. Create a function that will move the thumbnails back on desktop and reset the style
+### Step 5. Create a function that will move the thumbnails back on desktop and reset the style
 
 Next we'll write a function to handle moving the thumbnails back to their original position on desktop and reset the style so that they go back to displaying as a column instead of a row.
 
@@ -147,7 +149,7 @@ function addThumbnailsBackToDesktop() {
 }
 ```
 
-### Step 4. Create a function to check the viewport size
+### Step 6. Create a function to check the viewport size
 
 Next we need to create a function to check the viewport or window size.
 
@@ -175,7 +177,7 @@ function checkViewportSize(){
 }
 ```
 
-### Step 5. Add Event Listener for Resize on the Window
+### Step 7. Add Event Listener for Resize on the Window
 
 We’re not done with event listeners yet, we need to add another one to listen for **when the window/viewport resizes**.
 
@@ -191,7 +193,7 @@ window.addEventListener('resize', function(){
 })
 ```
 
-### Step 6. Putting it all together
+### Putting it all together
 
 Now we're ready to put everything together and test it out. Since we've put all of the code inside the the function for the **load** event listener, the code will only run once the page has fully loaded.
 
