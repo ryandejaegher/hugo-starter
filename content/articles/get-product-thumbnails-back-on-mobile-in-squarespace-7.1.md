@@ -98,8 +98,6 @@ If we don't add this the script may run before the page is loaded which could pr
 
 Next we need to create variables to grab the **product thumbnails** and the **main product image**.
 
-![](/uploads/pixelsnap-2020-09-16-at-10-24-22-2x.png)
-
 We'll also add an **if statement** to check that the product gallery exists on the page. This ensures the code will only run if there's actually a product gallery on the page. If it doesn't exist, the script will stop.
 
 ```javascript
@@ -114,6 +112,10 @@ if (!productGallery instanceof Element) {
 // The product thumbnails that are hidden
 var productThumbnails = document.querySelector('.ProductItem-gallery-scroll');
 ```
+
+This code will grab these elements from the page.
+
+![](/uploads/pixelsnap-2020-09-16-at-10-24-22-2x.png)
 
 ### Step 4. Create a function that will move the thumbnails on mobile and set the style
 
