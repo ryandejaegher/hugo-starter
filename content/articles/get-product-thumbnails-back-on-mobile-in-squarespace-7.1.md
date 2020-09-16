@@ -116,13 +116,13 @@ if (!productGallery instanceof Element) {
 var productThumbnails = document.querySelector('.ProductItem-gallery-scroll');
 ```
 
-\### Step 2. Create a function that will move the thumbnails on mobile and set the style
+### Step 2. Create a function that will move the thumbnails on mobile and set the style
 
 Next we're going to write the function that will move the thumbnail on mobile and give it some custom style so that it displays in a row.
 
 You can think of functions as actions. You write them once and then you can reuse them anytime. Which we'll do in later steps.
 
-\`\`\`javascript
+```javascript
 
 function moveThumbnailsOnMobile() {
 
@@ -136,17 +136,17 @@ function moveThumbnailsOnMobile() {
 
 }
 
-\`\`\`
+```
 
 If we didn't add the custom style the thumbnails would still be laid out as a column.
 
 !\[\[Pasted image 2.png\]\]
 
-\### Step 3. Create a function that will move the thumbnails back on desktop and reset the style
+### Step 3. Create a function that will move the thumbnails back on desktop and reset the style
 
 Next we'll write a function to handle moving the thumbnails back to their original position on desktop and reset the style so that they go back to displaying as a column instead of a row.
 
-\`\`\`javascript
+```javascript
 
 function addThumbnailsBackToDesktop() {
 
@@ -160,7 +160,7 @@ function addThumbnailsBackToDesktop() {
 
 }
 
-\`\`\`
+```
 
 \### Step 4. Create a function to check the viewport size
 
