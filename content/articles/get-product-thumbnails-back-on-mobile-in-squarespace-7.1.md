@@ -75,9 +75,9 @@ The code examples below will build on each other and explain what's happening.
 
 ### Create a script tag in Code Injection
 
-When you're adding JavaScript to code injection, it needs to go in between \`<script></script>\` tags. It's very easy to forget this.
+When you're adding JavaScript to code injection, it needs to go in between `<script></script>` tags. It's very easy to forget this.
 
-\### Create an event listener to wait for the page to load
+### Create an event listener to wait for the page to load
 
 To make sure that the script only runs once the page and images are fully loaded, we need to add an event listener. Event listener’s fire when certain actions or events take occur and one of those events is **load**.
 
@@ -104,23 +104,16 @@ Next we need to create variables to grab the **product thumbnails** and the **ma
 We'll also add an **if statement** to check that the product gallery exists on the page. This ensures the code will only run if there's actually a product gallery on the page. If it doesn't exist, the script will stop.
 
 ```javascript
-
 // The main product image
-
 var productGallery = document.querySelector('.ProductItem-gallery')
 
 // If there is no product gallery, end the script
-
 if (!productGallery instanceof Element) {
-
     return
-
 }
 
 // The product thumbnails that are hidden
-
 var productThumbnails = document.querySelector('.ProductItem-gallery-scroll');
-
 ```
 
 \### Step 2. Create a function that will move the thumbnails on mobile and set the style
