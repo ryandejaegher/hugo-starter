@@ -35,11 +35,11 @@ Today I’m going to show you how you can add the thumbnails back on mobile usin
 
 By default Squarespace removes the thumbnail images on mobile, so visitors have to rely on swiping through the images one by one. Visitors may not even realize other product images are present.
 
-!\[\[Pasted image 3.png\]\]
+![[Pasted image 3.png]]
 
 The other issue if you have multiple images. If you had 10 images a visitor would have to swipe through 9 times to get to the last one. If the thumbnails were present they could jump to the image they want to see with one tap.
 
-Unfortunately CSS alone won’t fix this issue because Squarespace removes the \`src\` on the image pointing to the thumbnail file, so even if you can display the image with CSS it’s not actually pointing to a file.
+Unfortunately CSS alone won’t fix this issue because Squarespace removes the `src` on the image pointing to the thumbnail file, so even if you can display the image with CSS it’s not actually pointing to a file.
 
 For this we need JavaScript.
 
@@ -49,7 +49,7 @@ We're going to write some custom code i.e. JavaScript that will get the product 
 
 This is what we're looking for
 
-!\[\[Pasted image 5.png\]\]
+![[Pasted image 5.png]]
 
 ### What This Script Will Do
 
@@ -99,7 +99,7 @@ If we don't add this the script may run before the page is loaded which could pr
 
 Next we need to create variables to grab the **product thumbnails** and the **main product image**.
 
-!\[\[Pasted image 4.png\]\]
+![[Pasted image 4.png]]
 
 We'll also add an **if statement** to check that the product gallery exists on the page. This ensures the code will only run if there's actually a product gallery on the page. If it doesn't exist, the script will stop.
 
@@ -132,7 +132,7 @@ function moveThumbnailsOnMobile() {
     
     // Add custom style to set the thumbnails to display in a row. The default display for elements with flex is a row. 
     
-    productThumbnails.children\[0\].style.display = 'flex';
+    productThumbnails.children[0].style.display = 'flex';
 
 }
 
@@ -140,7 +140,7 @@ function moveThumbnailsOnMobile() {
 
 If we didn't add the custom style the thumbnails would still be laid out as a column.
 
-!\[\[Pasted image 2.png\]\]
+![[Pasted image 2.png]]
 
 ### Step 3. Create a function that will move the thumbnails back on desktop and reset the style
 
@@ -156,27 +156,27 @@ function addThumbnailsBackToDesktop() {
     
     // This sets the the style to '' or empty. This will remove the styling we added before to display the thumbnails in a row 
     
-    productThumbnails.children\[0\].style='';
+    productThumbnails.children[0].style='';
 
 }
 
 ```
 
-\### Step 4. Create a function to check the viewport size
+### Step 4. Create a function to check the viewport size
 
 Next we need to create a function to check the viewport or window size.
 
 This is necessary for ensuring that we run the right function only when the viewport is a certain size. In this case we want to know when the viewport is larger than 767px or smaller than 767px.
 
-\*_Why 767px?_*
+*_Why 767px?_*
 
 By default Squarespace shows the thumbnails when the **viewport is > 767px**, which is often the size for tablets and desktop.
 
 This function will check whether the viewport/window width is greater than 767px. If it is, it moves the thumbnails back to their original position on desktop.
 
-If it's less than 767px, then the function runs the code to move thumbnails on mobile. This is where we'll also run our functions (\`addThumbnailsBackToDesktop\` and \`moveThumbnailsOnMobile\`) that we wrote above.
+If it's less than 767px, then the function runs the code to move thumbnails on mobile. This is where we'll also run our functions (`addThumbnailsBackToDesktop` and `moveThumbnailsOnMobile`) that we wrote above.
 
-\`\`\`javascript
+```javascript
 
 function checkViewportSize(){
 
@@ -200,9 +200,9 @@ function checkViewportSize(){
 
 }
 
-\`\`\`
+```
 
-\### Step 5. Add Event Listener for Resize on the Window
+### Step 5. Add Event Listener for Resize on the Window
 
 We’re not done with event listeners yet, we need to add another one to listen for **when the window/viewport resizes**.
 
@@ -212,7 +212,7 @@ If we don’t do this the script would only run once when the page is loaded ini
 
 This will ensure the code runs when the window size changes.
 
-\`\`\`javascript
+```javascript
 
 window.addEventListener('resize', function(){
 
@@ -220,13 +220,13 @@ window.addEventListener('resize', function(){
 
 })
 
-\`\`\`
+```
 
-\### Step 6. Putting it all together
+### Step 6. Putting it all together
 
 Now we're ready to put everything together and test it out. Since we've put all of the code inside the the function for the **load** event listener, the code will only run once the page has fully loaded.
 
-\`\`\`html
+```html
 
 <!-- Code Inection Footer -->
 
@@ -250,7 +250,7 @@ Now we're ready to put everything together and test it out. Since we've put all 
     
     		productGallery.insertAdjacentElement('afterend', productThumbnails);
     
-    		productThumbnails.children\[0\].style.display = 'flex';
+    		productThumbnails.children[0].style.display = 'flex';
     
     	}
     
@@ -258,7 +258,7 @@ Now we're ready to put everything together and test it out. Since we've put all 
     
     		productGallery.insertAdjacentElement('afterbegin', productThumbnails);
     
-    		productThumbnails.children\[0\].style='';
+    		productThumbnails.children[0].style='';
     
     	}
     
@@ -294,7 +294,7 @@ Now we're ready to put everything together and test it out. Since we've put all 
 
 </script>
 
-\`\`\`
+```
 
 To test out and ensure it's working go to a product page and switch between desktop and mobile view. If everything is working correctly you should have thumbnails on mobile view now :)
 
