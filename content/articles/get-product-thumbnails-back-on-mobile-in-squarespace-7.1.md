@@ -83,8 +83,7 @@ To make sure that the script only runs once the page and images are fully loaded
 
 If we don't add this the script may run before the page is loaded which could prevent the script from working properly.
 
-\`\`\`javascript
-
+```html
 <!-- Code Injection Footer -->
 
 <script>
@@ -100,8 +99,7 @@ If we don't add this the script may run before the page is loaded which could pr
 })()
 
 </script>
-
-\`\`\`
+```
 
 \### Step 1. Get the thumbnails and the main product gallery
 
