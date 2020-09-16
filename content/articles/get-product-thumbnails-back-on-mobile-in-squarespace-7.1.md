@@ -133,9 +133,9 @@ function moveThumbnailsOnMobile() {
 }
 ```
 
-If we didn't add the custom style the thumbnails would still be laid out as a column.
+If we didn't add the custom style the thumbnails would still be laid out as a column like the image below.
 
-!\[\[Pasted image 2.png\]\]
+![](/uploads/pixelsnap-2020-09-16-at-12-31-02-2x.png)
 
 ### Step 5. Create a function that will move the thumbnails back on desktop and reset the style
 
@@ -150,6 +150,9 @@ function addThumbnailsBackToDesktop() {
     productThumbnails.children[0].style='';
 }
 ```
+
+This code will give you the original layout on desktop.  
+![](/uploads/pixelsnap-2020-09-16-at-11-45-26-2x.png)
 
 ### Step 6. Create a function to check the viewport size
 
@@ -202,9 +205,7 @@ Now we're ready to put everything together and test it out. Since we've put all 
 ```html
 <!-- Code Injection Footer -->
 <script>
-
 (function(){
-
     window.addEventListener('load', function(){
     
     	var productGallery = document.querySelector('.ProductItem-gallery')
@@ -235,15 +236,12 @@ Now we're ready to put everything together and test it out. Since we've put all 
     			moveThumbnailsOnMobile()
     		}
     	}
-    
+        
     	window.addEventListener('resize', function(){
     		checkViewportSize()
     	})
-    
     	checkViewportSize();
-    
     })
-
 })();
 </script>
 ```
