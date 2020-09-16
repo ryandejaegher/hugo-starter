@@ -77,18 +77,6 @@ The code examples below will build on each other and explain what's happening.
 
 When you're adding JavaScript to code injection, it needs to go in between \`<script></script>\` tags. It's very easy to forget this.
 
-\`\`\`javascript
-
-<!-- Code Injection Footer -->
-
-<script>
-
-// All of your code will go in between the script tags.
-
-</script>
-
-\`\`\`
-
 \### Create an event listener to wait for the page to load
 
 To make sure that the script only runs once the page and images are fully loaded, we need to add an event listener. Event listener’s fire when certain actions or events take occur and one of those events is **load**.
