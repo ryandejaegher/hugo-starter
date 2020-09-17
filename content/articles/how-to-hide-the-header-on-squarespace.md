@@ -5,7 +5,7 @@ date = 2020-08-16T20:26:51Z
 draft = true
 excerpt = "Learn how to make a cover page (or landing page) in Squarespace 7.1"
 facebook_description = ""
-facebook_image = ""
+facebook_image = "/uploads/untitled-7-4-animated-image-large.gif"
 facebook_title = ""
 layout = "single-left"
 publishdate = ""
@@ -15,7 +15,7 @@ showCodeHighlighting = true
 showPrevNext = false
 showReadTime = false
 show_article_options = false
-show_custom_social = false
+show_custom_social = true
 show_large_twitter_card = false
 show_table_of_contents = false
 tags = ["squarespace", "squarespace 7.1"]
@@ -28,7 +28,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-A common question I see in the Squarespace Forums and Squarespace Facebook groups is:
+![](/uploads/untitled-7-4-animated-image-large.gif)A common question I see in the Squarespace Forums and Squarespace Facebook groups is:
 
 **_"How can I hide the header on a specific page?"_**
 
