@@ -3,7 +3,7 @@ articleFeatureImage = ""
 customize_seo = true
 date = 2020-08-16T20:26:51Z
 draft = true
-excerpt = ""
+excerpt = "Learn how to make a cover page (or landing page) in Squarespace 7.1"
 facebook_description = ""
 facebook_image = ""
 facebook_title = ""
@@ -118,8 +118,6 @@ Going back to the custom CSS section it's possible to hide the header on specifi
 Every page in Squarespace actually has a **unique collection ID**. This collection ID can help us target specific pages that we want to apply our code too.
 
 {{<embed/streamable rigmv1>}}
-
-??? How do you find it? (If you don't know how to find collection ID, check out this article)
 
 Once you have your collection IDs you can go to your custom CSS to add the code:
 
