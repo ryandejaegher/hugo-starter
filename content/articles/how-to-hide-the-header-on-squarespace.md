@@ -1,10 +1,10 @@
 +++
 articleFeatureImage = ""
 customize_seo = true
-date = 2020-08-16T20:26:51Z
+date = 2020-09-17T20:26:51Z
 excerpt = "Learn how to make a cover page (or landing page) in Squarespace 7.1"
 facebook_description = ""
-facebook_image = "/uploads/untitled-7-4-animated-image-large.gif"
+facebook_image = "/uploads/how-to-hide-header-squarespace-7-1.png"
 facebook_title = ""
 layout = "single-left"
 publishdate = 2020-09-17T16:00:00Z
@@ -27,7 +27,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-![](/uploads/untitled-7-4-animated-image-large.gif)A common question I see in the Squarespace Forums and Squarespace Facebook groups is:
+A common question I see in the Squarespace Forums and Squarespace Facebook groups is:
 
 **_"How can I hide the header on a specific page?"_**
 

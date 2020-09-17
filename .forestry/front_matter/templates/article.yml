@@ -200,7 +200,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-  hidden: true
+  hidden: false
   default: now
 pages:
 - content/articles/add-fixed-vertical-navigation-to-squarespace.md
