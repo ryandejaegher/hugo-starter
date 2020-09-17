@@ -128,6 +128,7 @@ Once you have your collection IDs you can go to your custom CSS to add the code:
 ```
 
 How do you hide the header on multiple pages? You just need to get the collectionID for the other pages you want to hide.
+
 ```css
 #firstCollectionID header {
 	display: none !important
@@ -143,6 +144,7 @@ You could write the code like this but this is repetitive, you have to keep writ
 You can add the same rule to multiple pages/collectionIDs by grouping them together. You do this by adding a comma between each page selector.
 
 You can also make it easier to read by putting each header on a new line.
+
 ```css
 #firstCollectionID header, 
 #secondCollectionID header, 
@@ -152,3 +154,5 @@ You can also make it easier to read by putting each header on a new line.
 ```
 
 The benefit of this approach is that your code isn't scattered across multiple pages. You can see all the pages where this code is being applied and you can add/remove pages where you want the header hidden in one spot.
+
+{{% embed/mailerlite form="squarespace" %}}
