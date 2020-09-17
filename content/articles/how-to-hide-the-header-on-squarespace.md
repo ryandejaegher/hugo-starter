@@ -27,7 +27,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-![](/uploads/untitled-7-4-animated-image-large.gif)A common question I see in the Squarespace Forums and Squarespace Facebook groups is:
+A common question I see in the Squarespace Forums and Squarespace Facebook groups is:
 
 **_"How can I hide the header on a specific page?"_**
 
