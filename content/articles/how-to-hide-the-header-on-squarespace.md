@@ -34,7 +34,7 @@ A common question I see in the Squarespace Forums and Squarespace Facebook group
 
 **_"How do I make a cover page in Squarespace 7.1?"_**
 
-A common reason for wanting to hide the header is to turn a page into a **landing page**. Today I'm going to show you 3 ways you can hide the header in Squarespace to turn any page into a landing page.
+A common reason for wanting to hide the header is to turn a page into a **landing page**. Today I'm going to show you 3 ways you can hide the header in Squarespace to turn any page into a landing page/cover page.
 
 ## What's a Landing Page?
 
@@ -70,6 +70,7 @@ There are a few different ways to hide the navigation. I'll show you how to do i
 The simplest way to hide the header in Squarespace is with custom CSS.
 
 You can add this code to the custom CSS section:
+
 ```css
 header {
     display: none !important;
