@@ -1,7 +1,7 @@
 +++
 articleFeatureImage = ""
 customize_seo = true
-date = 2020-08-16T20:26:51Z
+date = 2020-09-17T20:26:51Z
 excerpt = "Learn how to make a cover page (or landing page) in Squarespace 7.1"
 facebook_description = ""
 facebook_image = "/uploads/untitled-7-4-animated-image-large.gif"
