@@ -96,11 +96,13 @@ You can take the same code above and apply it to **Page Settings -> Advance -> C
 
 There's a slight adjustment you have to make to the code. You have to wrap it in a **style tag**.
 
-    <style>
-    header {
-    	display: none !important;
-    }
-    <style>
+```html
+<style>
+	header {
+		display: none !important;
+	}
+<style>
+```
 
 Once you add this the header should be hidden on that page. Make a mental note that you've added this code to the page. It can be easy to forget this section which can cause confusion in the future when you wonder why your header isn't visible.
 
