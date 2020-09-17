@@ -70,10 +70,11 @@ There are a few different ways to hide the navigation. I'll show you how to do i
 The simplest way to hide the header in Squarespace is with custom CSS.
 
 You can add this code to the custom CSS section:
-
-    header {
-    	display: none !important;
-    }
+```css
+header {
+    display: none !important;
+}
+```
 
 This code will hide the header (logo, navigation) on every page of your site. This will also hide the header on mobile as well.
 
