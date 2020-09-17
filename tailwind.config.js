@@ -25,6 +25,9 @@ module.exports = {
           },
           a: {
             color: theme('colors.main-text')
+          },
+          blockquote: {
+            color: theme('colors.main-text')
           }
         }
       }
