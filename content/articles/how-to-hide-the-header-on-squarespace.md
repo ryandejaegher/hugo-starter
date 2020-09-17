@@ -8,7 +8,7 @@ facebook_description = ""
 facebook_image = "/uploads/untitled-7-4-animated-image-large.gif"
 facebook_title = ""
 layout = "single-left"
-publishdate = ""
+publishdate = 2020-09-17T16:00:00Z
 seo_description = ""
 seo_title = ""
 showCodeHighlighting = true
@@ -154,5 +154,9 @@ You can also make it easier to read by putting each header on a new line.
 ```
 
 The benefit of this approach is that your code isn't scattered across multiple pages. You can see all the pages where this code is being applied and you can add/remove pages where you want the header hidden in one spot.
+
+### Questions or Feedback?
+
+If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
 
 {{% embed/mailerlite form="squarespace" %}}
