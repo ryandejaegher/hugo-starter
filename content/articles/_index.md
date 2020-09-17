@@ -10,3 +10,5 @@ cascade:
 
 ---
 I write tutorials covering front-end development and platforms (Squarespace, WordPress).
+
+[gallery-slide-animation-demo-web-720p.mp4](/uploads/gallery-slide-animation-demo-web-720p.mp4 "gallery-slide-animation-demo-web-720p.mp4")
