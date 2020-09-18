@@ -11,7 +11,8 @@
 		</div>
 	</article>
  {{ if ne .Section "pages" }}
-	{{ partial "articles/articleRelated.html" . }}
+
+{{/*	{{ partial "articles/articleRelated.html" . }} */}}
 	{{ partial "articles/articlePrevNext.html" . }}
 {{end}}
 </main>
