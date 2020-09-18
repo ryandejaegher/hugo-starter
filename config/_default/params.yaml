@@ -9,6 +9,6 @@ enableGoogleTagManager: true
 author: Ryan Dejaegher
 tagline: Web Developer · Web Designer
 debugGrid: false
-siteDebug: tr ue
+siteDebug: 'true'
 themeText: pink
 cloudinary_url: https://res.cloudinary.com/damfsuupo/image/upload
