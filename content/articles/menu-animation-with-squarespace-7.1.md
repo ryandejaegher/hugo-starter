@@ -118,7 +118,7 @@ This includes the logo, main navigation links, and social/action links if they�
 
 ### Step 3. Writing the fadeIn animation function
 
-Next we’re going to write function that will handle the animation and we'll call it **fadeIn**
+Next we’re going to write the function that will handle the animation and we'll call it **fadeIn**
 
 This will animate the opacity of the links from 0 to 1, which will cause them to “**_fade in_**”.
 
@@ -142,6 +142,12 @@ element.animate(keyframes, timing)
 What’s going on in this function?
 
 First lets talk about the parameters (**element, time, and delay**)
+
+```javascript
+function fadeIn(element, time, delay) {
+...
+}
+```
 
 Think of these as your options or settings:
 
