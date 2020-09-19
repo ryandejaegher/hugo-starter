@@ -118,6 +118,8 @@ var headerItems = document.querySelectorAll(‘header a');
 
 This will grab all the links or `<a>` in the header as a **collection** and store them in the variable `headerItems`.
 
+![](/uploads/frame-74.png)
+
 This includes the logo, main navigation links, and social/action links if they’re set. We’ll come back to this later in the tutorial.
 
 ### Step 3. Writing the fadeIn animation function
