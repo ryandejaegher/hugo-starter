@@ -1,0 +1,13 @@
+
+{{/*
+    Embed a video from Forestry Media Library. All you need is the video id
+    Link: https://www.youtube.com/watch?v=8IB7JcKJEeI
+    Example {{% embed/ryan-youtube 8IB7JcKJEeI %}}
+*/}}
+
+
+{{$shortcode:= index .Params 0 }}
+{{- $videoPath := resources.Get index .Params 0 -}}
+<video autoplay loop muted playsinline>
+     <source src="{{$videoPath.Permalink}}" type="video/mp4">
+</video>
