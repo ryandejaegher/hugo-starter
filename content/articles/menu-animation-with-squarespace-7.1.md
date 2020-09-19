@@ -269,61 +269,40 @@ Compare this to how it looks when we set the delay to 200ms.
 
 ### Putting It All Together
 
+Now that you know some of the things to watch out for with animations it's time to put it altogether and set the animation to your liking. 
+
+Here's what the final script looks. Add this code to Settings -> Advanced -> Code Injection -> Footer and you'll get a nice staggered animation effect on your menu. 
+
+Be sure to experiment :).
+
 ```html
 <script>
 (function(){
 	window.addEventListener('load', function() {
 	var headerElements = document.querySelectorAll('header a')
 
-function fadeIn(element, time, delay) {
-  var keyframes = {opacity: [0,1]};
-  var timing = {
-    duration: time,
-    fill: 'both',
-    easing: 'ease',
-    delay: delay
-  };
-  
- element.animate(keyframes, timing)
-}
-  
-function slideDown(element, time, delay) {
-	var keyframes = {transform: ['translateY(-12px)','translateY(0px)']}
-	var timing = {
-		duration: time,
-		fill: 'both',
+    function fadeIn(element, time, delay) {
+      var keyframes = {opacity: [0,1]};
+      var timing = {
+        duration: time,
+        fill: 'both',
         easing: 'ease',
         delay: delay
+      };
+  
+ 	element.animate(keyframes, timing)
 	}
-    
-    element.animate(keyframes, timing)
-}
-  
-function slideUp(element, time, delay) {
-	var keyframes = {transform: ['translateY(12px)', 'translateY(0px)']}
-    var timing = {
-		duration: time,
-      	fill: 'both',
-      	easing: 'ease',
-      	delay: delay
-}
-    element.animate(keyframes,timing)
-}
-  
 
-function animateElements(element,animation,time,delay) {
-	element.forEach((item,index) => {
-		var delays = index*delay;
-      	item.style.display = 'inline-block';
-      	animation(item,time,delays)
+    function animateElements(element,animation,time,delay) {
+        element.forEach((item,index) => {
+            var delays = index*delay;
+            item.style.display = 'inline-block';
+            animation(item,time,delays)
+        })
+    };
+	//Call animateElements function and set your timing and delay.
+	animateElements(headerElements,fadeIn,2000,300);  
 	})
-};
-  
-//animateElements(headerElements,slideUp,2000,300)
-animateElements(headerElements,fadeIn,2000,300)
-  
-})
-
 })()
 </script>
 ```
