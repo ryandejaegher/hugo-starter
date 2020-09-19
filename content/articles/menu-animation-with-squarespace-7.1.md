@@ -18,7 +18,7 @@ show_article_options = false
 show_custom_social = false
 show_large_twitter_card = false
 show_table_of_contents = false
-tags = []
+tags = ["animation", "squarespace", "squarespace 7.1"]
 title = "Stagger Menu Animation with Squarespace 7.1"
 twitter_description = ""
 twitter_image = ""
@@ -130,18 +130,18 @@ This will animate the opacity of the links from 0 to 1, which will cause them to
 
 ```javascript
 function fadeIn(element, time, delay) {
- var keyframes = {
- opacity: [0,1]
-};
+    var keyframes = {
+      opacity: [0,1]
+    };
 
-var timing = {
-duration: time,
-fill: both,
-easing: ease,
-delay: delay
-}
+	var timing = {
+      duration: time,
+      fill: both,
+      easing: ease,
+      delay: delay
+	}
 
-element.animate(keyframes, timing)
+	element.animate(keyframes, timing)
 }
 ```
 
@@ -218,7 +218,7 @@ It’d be like telling someone to count up to 10. Once they reach 10, they can s
 
 This is what we’re going to be doing with our links and animation. Our loop will apply the animation to all the header links and once it reaches the last one it will stop.
 
-Let’s create another function called **animateHeader** that will contain a loop that will take care of running the animation on all of our header links. 
+Let’s create another function called **animateHeader** that will contain a loop that will take care of running the animation on all of our header links.
 
 ```javascript
 function animateHeader(element, animation, time, delay) {
@@ -230,32 +230,52 @@ function animateHeader(element, animation, time, delay) {
 };
 
 // This is where you run the function and set your timing and delay.
-animateHeader(headerItems, fadeIn, 2000, 300)
+animateHeader(headerItems, fadeIn, 1000, 300)
 ```
 
-There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the animateHeader function. 
+There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the **animateHeader** function.
 
+If you want the fadeIn animation to take 1 second with a delay of 200ms between each you'd call the function like this.
+```javascript
+animateHeader(headerItems, fadeIn, 1000, 200)
+```
 ## Tips For Animation
 
-It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience. 
+It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience.
 
-What would be an example of interfering with the user experience? In this case if the animation is really long (i.e. 10 seconds),the visitor would have to wait 10 seconds before the last link in the menu is visible. 
+What would be an example of interfering with the user experience? In this case if the animation is really long (_i.e. 10 seconds_), the visitor would have to wait 10 seconds before the last link in the menu is visible.
 
-Here's an example of an animation that's too long. Notice how long it takes for the last item in the navigation to appear. 
+Here's an example of an animation that's too long. Notice how long it takes for the last item in the navigation to appear.
 
 {{< embed/video src="/uploads/animation-slow.mp4" >}}
 
-### Keep The delay Between Animations Short
+### Keep The Delay Between Animations Short
 
-Keeping the delay between animations short will give your animation a fluid appearance. 
+Keeping the delay between animations short will give your animation a fluid appearance.
 
-How short? A good rule of thumb is between 100-300ms. 
+How short? A good rule of thumb is between **100-300ms**.
 
-If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at 500ms. 
-
+If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at **500ms**.
+```javascript
+animateElements(headerElements,fadeIn,1000,500)
+```
 {{< embed/video src="/uploads/animation-500ms.mp4" >}}
 
+Compare this to how it looks when we set the delay to 200ms.
+
+```javascript
+animateElements(headerElements,fadeIn,1000,200)
+```
+
+{{< embed/video src="/uploads/animation-200ms.mp4" >}}
+
 ### Putting It All Together
+
+Now that you know some of the things to watch out for with animations it's time to put it altogether and set the animation to your liking.
+
+Here's what the final script looks. Add this code to Settings -> Advanced -> Code Injection -> Footer and you'll get a nice staggered animation effect on your menu.
+
+Be sure to experiment :).
 
 ```html
 <script>
@@ -263,55 +283,34 @@ If the delay is too long between animations then it can give the appearance of s
 	window.addEventListener('load', function() {
 	var headerElements = document.querySelectorAll('header a')
 
-function fadeIn(element, time, delay) {
-  var keyframes = {opacity: [0,1]};
-  var timing = {
-    duration: time,
-    fill: 'both',
-    easing: 'ease',
-    delay: delay
-  };
-  
- element.animate(keyframes, timing)
-}
-  
-function slideDown(element, time, delay) {
-	var keyframes = {transform: ['translateY(-12px)','translateY(0px)']}
-	var timing = {
-		duration: time,
-		fill: 'both',
+    function fadeIn(element, time, delay) {
+      var keyframes = {opacity: [0,1]};
+      var timing = {
+        duration: time,
+        fill: 'both',
         easing: 'ease',
         delay: delay
+      };
+  
+ 	element.animate(keyframes, timing)
 	}
-    
-    element.animate(keyframes, timing)
-}
-  
-function slideUp(element, time, delay) {
-	var keyframes = {transform: ['translateY(12px)', 'translateY(0px)']}
-    var timing = {
-		duration: time,
-      	fill: 'both',
-      	easing: 'ease',
-      	delay: delay
-}
-    element.animate(keyframes,timing)
-}
-  
 
-function animateElements(element,animation,time,delay) {
-	element.forEach((item,index) => {
-		var delays = index*delay;
-      	item.style.display = 'inline-block';
-      	animation(item,time,delays)
+    function animateElements(element,animation,time,delay) {
+        element.forEach((item,index) => {
+            var delays = index*delay;
+            item.style.display = 'inline-block';
+            animation(item,time,delays)
+        })
+    };
+	//Call animateElements function and set your timing and delay.
+	animateElements(headerElements,fadeIn,2000,300);  
 	})
-};
-  
-//animateElements(headerElements,slideUp,2000,300)
-animateElements(headerElements,fadeIn,2000,300)
-  
-})
-
 })()
 </script>
 ```
+
+### Questions or Feedback?
+
+If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
+
+{{% embed/mailerlite form="squarespace" %}}
