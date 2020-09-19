@@ -256,14 +256,16 @@ Keeping the delay between animations short will give your animation a fluid appe
 How short? A good rule of thumb is between **100-300ms**.
 
 If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at **500ms**.
-
-    animateElements(headerElements,fadeIn,1000,500)
-
+```javascript
+animateElements(headerElements,fadeIn,1000,500)
+```
 {{< embed/video src="/uploads/animation-500ms.mp4" >}}
 
 Compare this to how it looks when we set the delay to 200ms.
 
-    animateElements(headerElements,fadeIn,1000,200)
+```javascript
+animateElements(headerElements,fadeIn,1000,200)
+```
 
 {{< embed/video src="/uploads/animation-200ms.mp4" >}}
 
