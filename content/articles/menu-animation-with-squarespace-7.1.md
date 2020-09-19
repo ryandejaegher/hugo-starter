@@ -243,13 +243,13 @@ If you want the fadeIn animation to take 1 second with a delay of 200ms between 
 
 It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience.
 
-What would be an example of interfering with the user experience? In this case if the animation is really long (i.e. 10 seconds),the visitor would have to wait 10 seconds before the last link in the menu is visible.
+What would be an example of interfering with the user experience? In this case if the animation is really long (_i.e. 10 seconds_), the visitor would have to wait 10 seconds before the last link in the menu is visible.
 
 Here's an example of an animation that's too long. Notice how long it takes for the last item in the navigation to appear.
 
 {{< embed/video src="/uploads/animation-slow.mp4" >}}
 
-### Keep The delay Between Animations Short
+### Keep The Delay Between Animations Short
 
 Keeping the delay between animations short will give your animation a fluid appearance.
 
