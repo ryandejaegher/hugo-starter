@@ -214,7 +214,7 @@ We need a way to use our fadeIn function on every link in the header. We can do 
 
 Loops are a big topic but the gist of loops is that they give you the ability to repeatedly run code until a certain condition is met.
 
-It’d be like telling someone to count up to 10. Once they reach 10, they can stop counting.
+It’d be like telling someone to count up to 10. Once they reach 10, they can stop counting. 
 
 This is what we’re going to be doing with our links and animation. Our loop will apply the animation to all the header links and once it reaches the last one it will stop.
 
