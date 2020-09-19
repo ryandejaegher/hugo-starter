@@ -39,7 +39,7 @@ A common reason for wanting to hide the header is to turn a page into a **landin
 
 ## What's a Landing Page?
 
-{{< embed/video /uploads/animation-demo.mp4 >}}
+
 
 Landing pages are often used when you want a visitor to take a _specific action_ on your site.
 
