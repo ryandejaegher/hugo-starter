@@ -93,7 +93,7 @@ With that out of the way let's get started.
 
 Everything we’re doing is going to go into the Code Injection (Settings -> Advanced -> Code Injection -> Footer). We’ll add a **load** event listener to make sure that our code only runs once the page is fully loaded.
 
-```javascript
+```html
 <script>
 (function(){
 window.addEventListener('load', function() {
