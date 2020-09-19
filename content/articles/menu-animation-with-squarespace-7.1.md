@@ -235,7 +235,7 @@ animateHeader(headerItems, fadeIn, 1000, 300)
 
 There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the **animateHeader** function.
 
-If you want the fadeIn animation to take 1 second with a delay of 200ms between each you'd call the function like this. 
+If you want the fadeIn animation to take 1 second with a delay of 200ms between each you'd call the function like this.
 
     animateHeader(headerItems, fadeIn, 1000, 200)
 
@@ -269,9 +269,9 @@ Compare this to how it looks when we set the delay to 200ms.
 
 ### Putting It All Together
 
-Now that you know some of the things to watch out for with animations it's time to put it altogether and set the animation to your liking. 
+Now that you know some of the things to watch out for with animations it's time to put it altogether and set the animation to your liking.
 
-Here's what the final script looks. Add this code to Settings -> Advanced -> Code Injection -> Footer and you'll get a nice staggered animation effect on your menu. 
+Here's what the final script looks. Add this code to Settings -> Advanced -> Code Injection -> Footer and you'll get a nice staggered animation effect on your menu.
 
 Be sure to experiment :).
 
@@ -306,5 +306,9 @@ Be sure to experiment :).
 })()
 </script>
 ```
+
+### Questions or Feedback?
+
+If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
 
 {{% embed/mailerlite form="squarespace" %}}
