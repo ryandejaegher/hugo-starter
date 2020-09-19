@@ -35,6 +35,10 @@ Here's what we're going to be making:
 
 Rather than just have them fade in all at once, we’re going to add a slight transition/delay to each item in the menu so that elements animate one at a time instead of all at once. It’s a subtle effect but looks really cool.
 
+Compare this this to how it looks when they all animate in at once: 
+
+{{< embed/video src="/uploads/animation-before.mp4" >}}
+
 ### Compatibility/Requirements
 
 * Squarespace 7.1 (for best compatibility. May work with 7.0 templates but no guarantees)
