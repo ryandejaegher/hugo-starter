@@ -35,11 +35,7 @@ A common question I see in the Squarespace Forums and Squarespace Facebook group
 
 A common reason for wanting to hide the header is to turn a page into a **landing page**. Today I'm going to show you 3 ways you can hide the header in Squarespace to turn any page into a landing page/cover page.
 
-{{< embed/video src="/uploads/animation-demo.mp4" >}}
-
 ## What's a Landing Page?
-
-
 
 Landing pages are often used when you want a visitor to take a _specific action_ on your site.
 
@@ -157,6 +153,8 @@ You can also make it easier to read by putting each header on a new line.
 ```
 
 The benefit of this approach is that your code isn't scattered across multiple pages. You can see all the pages where this code is being applied and you can add/remove pages where you want the header hidden in one spot.
+
+{{< embed/video src="/uploads/animation-demo.mp4" >}}
 
 ### Questions or Feedback?
 
