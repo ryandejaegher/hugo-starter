@@ -157,7 +157,11 @@ Think of these as your options that you set when you call the fadeIn function.
 
 If we wanted to run this function on a header link it would look something like this:
 
-`fadeIn(header, 1000, 0)`
+```javascript
+fadeIn(header, 1000, 0)
+```
+
+This is saying we're going to run the fadeIn function on our header and the animation is going to run for 1s with 0 delay.
 
 Next lets look at the variables inside the function: **keyframes** and **timing**
 
@@ -165,7 +169,7 @@ Next lets look at the variables inside the function: **keyframes** and **timing*
 
 Do any reading on animation and you're bound to come across the term keyframes.
 
-**Keyframes** describe how a property (i.e. opacity) should look at a certain point in time. In our example we're defining how **opacity** should look at the **start** and **end** of our animation.
+**Keyframes** describe how a property (_i.e. opacity_) should look at a certain point in time. In our example we're defining how **opacity** should look at the **start** and **end** of our animation.
 
 ```javascript
  var keyframes = {
