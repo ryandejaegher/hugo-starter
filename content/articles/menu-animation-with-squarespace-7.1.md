@@ -249,6 +249,8 @@ Here's an example of an animation that's too long. Notice how long it takes for 
 
 Keeping the delay between animations short will give your animation a very fluid appearance. 
 
+How short? A good rule of thumb is between 100-300ms. 
+
 If the delay is too long between animations then it can give the appearance of stuttering or being slow. 
 
 ### Putting It All Together
