@@ -8,8 +8,8 @@
 
 {{with .Get "src"}}
 {{- $videoPath := resources.Get . -}}
-<video autoplay loop muted playsinline>
-     <source src="{{$videoPath.Permalink}}" type="video/mp4">
+<video autoplay loop muted playsinline class="lazy">
+     <source data-src="{{$videoPath.Permalink}}" type="video/mp4">
 </video>
 {{end}}
 
