@@ -149,7 +149,7 @@ function fadeIn(element, time, delay) {
 }
 ```
 
-Think of these as your options or settings:
+Think of these as your options that you set when you call the function.
 
 * **element**: this is the element that you want the fadeIn animation to be applied to. It could be any element but in our case we're going to be giving it a header link.
 * **time**: this is how long the animation takes to go from start to finish. The number that should be written is in ms, so if you want the animation to be 1 second, you’d write 1000 (1000ms = 1s)
