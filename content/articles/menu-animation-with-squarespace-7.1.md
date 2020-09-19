@@ -236,9 +236,9 @@ animateHeader(headerItems, fadeIn, 1000, 300)
 There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the **animateHeader** function.
 
 If you want the fadeIn animation to take 1 second with a delay of 200ms between each you'd call the function like this.
-
-    animateHeader(headerItems, fadeIn, 1000, 200)
-
+```javascript
+animateHeader(headerItems, fadeIn, 1000, 200)
+```
 ## Tips For Animation
 
 It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience.
