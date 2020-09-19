@@ -245,13 +245,13 @@ Here's an example of an animation that's too long. Notice how long it takes for 
 
 {{< embed/video src="/uploads/animation-slow.mp4" >}}
 
-### Keep the delay between animations short
+### Keep The delay Between Animations Short
 
-Keeping the delay between animations short will give your animation a very fluid appearance. 
+Keeping the delay between animations short will give your animation a fluid appearance. 
 
 How short? A good rule of thumb is between 100-300ms. 
 
-If the delay is too long between animations then it can give the appearance of stuttering or being slow. 
+If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at 500ms. 
 
 ### Putting It All Together
 
