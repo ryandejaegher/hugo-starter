@@ -2,7 +2,6 @@
 articleFeatureImage = ""
 customize_seo = false
 date = 2020-09-19T16:40:30Z
-draft = true
 excerpt = "Learn how to create a fancy menu animation with Squarespace 7.1 using JavaScript"
 facebook_description = ""
 facebook_image = "/uploads/frame-75.png"
