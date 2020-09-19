@@ -171,7 +171,7 @@ This is saying we're going to run the fadeIn function on our header and the anim
 
 Next lets look at the variables inside the function: **keyframes** and **timing**
 
-### What are keyframes?
+### What Are Keyframes?
 
 Do any reading on animation and you're bound to come across the term keyframes.
 
