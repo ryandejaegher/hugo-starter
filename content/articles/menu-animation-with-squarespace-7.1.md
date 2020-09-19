@@ -230,10 +230,14 @@ function animateHeader(element, animation, time, delay) {
 };
 
 // This is where you run the function and set your timing and delay.
-animateHeader(headerItems, fadeIn, 2000, 300)
+animateHeader(headerItems, fadeIn, 1000, 300)
 ```
 
-There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the animateHeader function.
+There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the **animateHeader** function.
+
+If you want the fadeIn animation to take 1 second with a delay of 200ms between each you'd call the function like this. 
+
+    animateHeader(headerItems, fadeIn, 1000, 200)
 
 ## Tips For Animation
 
