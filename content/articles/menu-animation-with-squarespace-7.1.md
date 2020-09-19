@@ -35,7 +35,7 @@ Here's what we're going to be making:
 
 Rather than just have them fade in all at once, we’re going to add a slight transition/delay to each item in the menu so that elements animate one at a time instead of all at once. It’s a subtle effect but looks really cool.
 
-Compare this this to how it looks when they all animate in at once: 
+Compare this this to how it looks when they all animate in at once:
 
 {{< embed/video src="/uploads/animation-before.mp4" >}}
 
@@ -214,11 +214,11 @@ We need a way to use our fadeIn function on every link in the header. We can do 
 
 Loops are a big topic but the gist of loops is that they give you the ability to repeatedly run code until a certain condition is met.
 
-It’d be like telling someone to count up to 10. Once they reach 10, they can stop counting. 
+It’d be like telling someone to count up to 10. Once they reach 10, they can stop counting.
 
 This is what we’re going to be doing with our links and animation. Our loop will apply the animation to all the header links and once it reaches the last one it will stop.
 
-Let’s create another function called **animateHeader**
+Let’s create another function called **animateHeader** that will contain a loop that will take care of running the animation on all of our header links. 
 
 ```javascript
 function animateHeader(element, animation, time, delay) {
@@ -229,10 +229,27 @@ function animateHeader(element, animation, time, delay) {
 	})
 };
 
+// This is where you run the function and set your timing and delay.
 animateHeader(headerItems, fadeIn, 2000, 300)
 ```
 
-There's a lot happening here.
+There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the animateHeader function. 
+
+## Tips For Animation
+
+It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience. 
+
+What would be an example of interfering with the user experience? In this case if the animation is really long (i.e. 10 seconds),the visitor would have to wait 10 seconds before the last link in the menu is visible. 
+
+Here's an example of an animation that's too long. Notice how long it takes for the last item in the navigation to appear. 
+
+{{< embed/video src="/uploads/animation-slow.mp4" >}}
+
+### Keep the delay between animations short
+
+Keeping the delay between animations short will give your animation a very fluid appearance. 
+
+If the delay is too long between animations then it can give the appearance of stuttering or being slow. 
 
 ### Putting It All Together
 
