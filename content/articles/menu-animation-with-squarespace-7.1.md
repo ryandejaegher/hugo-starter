@@ -11,7 +11,7 @@ layout = "single-left"
 publishdate = ""
 seo_description = ""
 seo_title = ""
-showCodeHighlighting = false
+showCodeHighlighting = true
 showPrevNext = false
 showReadTime = false
 show_article_options = false
@@ -25,9 +25,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-# Menu Animation with Squarespace 7.1
-
-Today I’m going to show you how you create a really cool staggered animation for your menu items.
+Today I’m going to show you how you create a really cool staggered animation for your menu in Squarespace 7.1.
 
 You'll be able to control the timing and the delay/offset for the animation.
 
@@ -37,17 +35,9 @@ Here's what we're going to be making:
 
 Rather than just have them fade in all at once, we’re going to add a slight transition/delay to each item in the menu so that elements animate one at a time instead of all at once. It’s a subtle effect but looks really cool.
 
-### Before
-
-((what does it look like when all elements animate at once))
-
-### After
-
-((what does it look like when all elements stagger animate))
-
 ### Compatibility/Requirements
 
-* Squarespace 7.1 (for best compatibility, may work with 7.0 templates but no guarantees)
+* Squarespace 7.1 (for best compatibility. May work with 7.0 templates but no guarantees)
 * Squarespace Business Plan
 
 _Why are we doing this with JavaScript? Can’t we just animate with CSS._
