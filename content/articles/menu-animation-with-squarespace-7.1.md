@@ -108,7 +108,9 @@ window.addEventListener('load', function() {
 
 Now we need to grab our links. We can write a simple variable to grab all of our header links.
 
-`var headerItems = document.querySelectorAll(‘header a')`
+```javascript
+var headerItems = document.querySelectorAll(‘header a');
+```
 
 This will grab all the links or `<a>` in the header as a **collection** and store them in the variable `headerItems`.
 
