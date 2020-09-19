@@ -130,18 +130,18 @@ This will animate the opacity of the links from 0 to 1, which will cause them to
 
 ```javascript
 function fadeIn(element, time, delay) {
- var keyframes = {
- opacity: [0,1]
-};
+    var keyframes = {
+      opacity: [0,1]
+    };
 
-var timing = {
-duration: time,
-fill: both,
-easing: ease,
-delay: delay
-}
+	var timing = {
+      duration: time,
+      fill: both,
+      easing: ease,
+      delay: delay
+	}
 
-element.animate(keyframes, timing)
+	element.animate(keyframes, timing)
 }
 ```
 
