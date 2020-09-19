@@ -39,6 +39,8 @@ Compare this this to how it looks when they all animate in at once:
 
 {{< embed/video src="/uploads/animation-before.mp4" >}}
 
+{{% embed/mailerlite form="video-update" %}}
+
 ### Compatibility/Requirements
 
 * Squarespace 7.1 (for best compatibility. May work with 7.0 templates but no guarantees)
@@ -236,9 +238,11 @@ animateHeader(headerItems, fadeIn, 1000, 300)
 There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the **animateHeader** function.
 
 If you want the fadeIn animation to take 1 second with a delay of 200ms between each you'd call the function like this.
+
 ```javascript
 animateHeader(headerItems, fadeIn, 1000, 200)
 ```
+
 ## Tips For Animation
 
 It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience.
@@ -256,9 +260,11 @@ Keeping the delay between animations short will give your animation a fluid appe
 How short? A good rule of thumb is between **100-300ms**.
 
 If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at **500ms**.
+
 ```javascript
 animateElements(headerElements,fadeIn,1000,500)
 ```
+
 {{< embed/video src="/uploads/animation-500ms.mp4" >}}
 
 Compare this to how it looks when we set the delay to 200ms.
