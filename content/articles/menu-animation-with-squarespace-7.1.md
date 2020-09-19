@@ -253,6 +253,8 @@ How short? A good rule of thumb is between 100-300ms.
 
 If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at 500ms. 
 
+{{< embed/video src="/uploads/animation-500ms.mp4" >}}
+
 ### Putting It All Together
 
 ```html
