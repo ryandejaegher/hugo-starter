@@ -154,8 +154,6 @@ You can also make it easier to read by putting each header on a new line.
 
 The benefit of this approach is that your code isn't scattered across multiple pages. You can see all the pages where this code is being applied and you can add/remove pages where you want the header hidden in one spot.
 
-{{< embed/video src="/uploads/animation-demo.mp4" >}}
-
 ### Questions or Feedback?
 
 If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
