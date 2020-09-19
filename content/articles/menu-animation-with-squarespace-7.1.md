@@ -218,7 +218,7 @@ It’d be like telling someone to count up to 10. Once they reach 10, they can s
 
 This is what we’re going to be doing with our links and animation. Our loop will apply the animation to all the header links and once it reaches the last one it will stop.
 
-Let’s create another function called **animateHeader** that will contain a loop that will take care of running the animation on all of our header links. 
+Let’s create another function called **animateHeader** that will contain a loop that will take care of running the animation on all of our header links.
 
 ```javascript
 function animateHeader(element, animation, time, delay) {
@@ -233,27 +233,35 @@ function animateHeader(element, animation, time, delay) {
 animateHeader(headerItems, fadeIn, 2000, 300)
 ```
 
-There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the animateHeader function. 
+There's a lot happening here, but the only part you have need to worry about is the last line which is where you finally run the animateHeader function.
 
 ## Tips For Animation
 
-It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience. 
+It's easy to get carried away with animations. Animations are most effective when they're subtle and don't interfere with the user experience.
 
-What would be an example of interfering with the user experience? In this case if the animation is really long (i.e. 10 seconds),the visitor would have to wait 10 seconds before the last link in the menu is visible. 
+What would be an example of interfering with the user experience? In this case if the animation is really long (i.e. 10 seconds),the visitor would have to wait 10 seconds before the last link in the menu is visible.
 
-Here's an example of an animation that's too long. Notice how long it takes for the last item in the navigation to appear. 
+Here's an example of an animation that's too long. Notice how long it takes for the last item in the navigation to appear.
 
 {{< embed/video src="/uploads/animation-slow.mp4" >}}
 
 ### Keep The delay Between Animations Short
 
-Keeping the delay between animations short will give your animation a fluid appearance. 
+Keeping the delay between animations short will give your animation a fluid appearance.
 
-How short? A good rule of thumb is between 100-300ms. 
+How short? A good rule of thumb is between **100-300ms**.
 
-If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at 500ms. 
+If the delay is too long between animations then it can give the appearance of stuttering or being slow. Here's an example with the delay set at **500ms**.
+
+    animateElements(headerElements,fadeIn,1000,500)
 
 {{< embed/video src="/uploads/animation-500ms.mp4" >}}
+
+Compare this to how it looks when we set the delay to 200ms.
+
+    animateElements(headerElements,fadeIn,1000,200)
+
+{{< embed/video src="/uploads/animation-200ms.mp4" >}}
 
 ### Putting It All Together
 
