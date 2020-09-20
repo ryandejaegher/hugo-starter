@@ -1,7 +1,7 @@
 +++
 draft = true
 layout = "blocks"
-title = ""
+title = "Wow"
 [[blocks]]
 background_color = ""
 cta_button = ""
