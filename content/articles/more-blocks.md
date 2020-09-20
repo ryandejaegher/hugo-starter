@@ -13,7 +13,7 @@ headline_color = ""
 template = "3-column-text"
 [[blocks.blocks.text_columns]]
 content = ""
-heading = ""
+heading = "Heading 1"
 link_text = ""
 link_url = ""
 [[blocks.blocks.text_columns]]
