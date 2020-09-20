@@ -1,15 +1,3 @@
-<h1>YO</h1>
-
-{{ range .Params.page_sections }}
-  {{ if eq "hero-section" .template }}
-    {{ partial "blocks/hero" . }}
-  {{ end }}
-  {{ if eq "call-to-action" .template }}
-    {{ partial "blocks/cta" . }}
-  {{ end }}
-{{ end }}
-
-
 {{ define "main" }}
     {{- range .Params.blocks -}}
         {{- if eq .template "hero-block" -}}{{ partial "blocks/hero-block.html" (dict "Params" .) }}{{- end -}}
