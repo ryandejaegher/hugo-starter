@@ -18,12 +18,12 @@ link_text = ""
 link_url = ""
 [[blocks.blocks.text_columns]]
 content = ""
-heading = ""
+heading = "Heading 2"
 link_text = ""
 link_url = ""
 [[blocks.blocks.text_columns]]
 content = ""
-heading = ""
+heading = "Heading 3"
 link_text = ""
 link_url = ""
 [[blocks.blocks]]
