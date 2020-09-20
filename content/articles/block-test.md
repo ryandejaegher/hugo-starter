@@ -43,5 +43,8 @@ content = "I'm the third content"
 heading = "I'm the third headline"
 link_text = ""
 link_url = ""
+[[blocks]]
+template = "3-column-text"
+text_columns = []
 
 +++
