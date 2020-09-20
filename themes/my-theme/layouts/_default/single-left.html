@@ -9,6 +9,9 @@
 		<div class="prose">
 			{{- .Content -}}
 		</div>
+		{{if .Params.show_table_of_contents}}
+		{{ partial "articles/table-of-contents.html" . }}
+		{{end}}
 	</article>
  {{ if ne .Section "pages" }}
 
