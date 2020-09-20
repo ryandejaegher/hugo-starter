@@ -20,6 +20,11 @@ fields:
     config: {}
     template: 3-column-text
     label: Column 3
+  - name: column_4
+    type: include
+    config: {}
+    template: 3-column-text
+    label: Column 4
   config:
     min: 
     max: 3
