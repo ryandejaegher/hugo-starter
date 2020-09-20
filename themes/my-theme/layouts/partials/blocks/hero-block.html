@@ -1,13 +1,6 @@
 {{$block := .Params}}
 
-<div class="py-64 flex items-center h-100 relative">
-    <div class="flex">
-        {{range $block.text_columns}}
-        <div class="flex-1 debug">
-            {{.heading}}
-        </div>
-        {{end}}
-    </div>
+<div class="py-64 flex items-center h-100 relative" style="background-color: {{$block.background_color}}">
 <div class="container flex mx-auto items-center {{ if $block.hero_size }}
     flex-row-reverse
 {{ end }}">

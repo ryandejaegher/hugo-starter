@@ -3,7 +3,7 @@ draft = true
 layout = "blocks"
 title = "Block Test"
 [[blocks]]
-background_color = "#BD10E0"
+background_color = ""
 content = "This is the main text content"
 cta_button = "Buy Now!"
 heading = "This is a big headline"
