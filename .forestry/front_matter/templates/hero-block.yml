@@ -34,29 +34,6 @@ fields:
   config:
     maxSize: 64
   label: Hero Image
-- name: text
-  type: include
-  config: {}
-  template: text-column
-  label: Text
-- name: '3'
-  type: include
-  config: {}
-  template: 3-column-text
-  label: '3'
-- name: test
-  type: field_group_list
-  fields:
-  - name: test
-    type: include
-    config: {}
-    template: text-column
-    label: test
-  config:
-    min: 
-    max: 3
-    labelField: 
-  label: test
 - name: background_color
   type: color
   config:
