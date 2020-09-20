@@ -12,7 +12,7 @@
 
 {{ define "main" }}
     {{- range .Params.blocks -}}
-        {{- if eq .template "hero-block" -}}{{ partial "blocks/hero-block" (dict "Params" .) }}{{- end -}}
+        {{- if eq .template "hero-block" -}}{{ partial "blocks/hero-block.html" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "call-to-action" -}}{{ partial "blocks/cta" (dict "Params" .) }}{{- end -}}
     {{- end -}}
 {{ end }}
