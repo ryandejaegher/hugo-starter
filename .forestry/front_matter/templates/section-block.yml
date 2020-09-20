@@ -1,4 +1,11 @@
 ---
-label: Section Block
+label: Section
 hide_body: true
-fields: []
+fields:
+- name: section_block
+  type: blocks
+  label: Section Block
+  template_types: []
+  config:
+    min: 
+    max: 
