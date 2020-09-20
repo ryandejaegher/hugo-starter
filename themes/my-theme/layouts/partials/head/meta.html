@@ -13,8 +13,8 @@
 <meta name="description" content="
     {{- if eq .Params.type "home" -}}
         {{ $.Site.Params.description }}
-    {{- else if .Params.description -}}
-        {{.Params.description}}
+    {{- else if .Params.excerpt -}}
+        {{.Params.excerpt}}
     {{- else -}}
         {{.Summary}}
     {{- end -}}">
