@@ -2,9 +2,9 @@
 label: Section
 hide_body: true
 fields:
-- name: section_block
+- name: section_blocks
   type: blocks
-  label: Section Block
+  label: Section Blocks
   template_types: []
   config:
     min: 
