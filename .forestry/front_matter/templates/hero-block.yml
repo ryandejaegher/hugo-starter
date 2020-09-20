@@ -44,3 +44,16 @@ fields:
   config: {}
   template: 3-column-text
   label: '3'
+- name: test
+  type: field_group_list
+  fields:
+  - name: test
+    type: include
+    config: {}
+    template: text-column
+    label: test
+  config:
+    min: 
+    max: 3
+    labelField: 
+  label: test
