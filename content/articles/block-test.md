@@ -45,6 +45,10 @@ link_text = ""
 link_url = ""
 [[blocks]]
 template = "3-column-text"
-text_columns = []
+[[blocks.text_columns]]
+content = ""
+heading = "Headline 1 Block"
+link_text = ""
+link_url = ""
 
 +++
