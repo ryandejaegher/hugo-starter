@@ -2,7 +2,7 @@
 label: Section
 hide_body: true
 fields:
-- name: section_blocks
+- name: blocks
   type: blocks
   label: Section Blocks
   template_types:
