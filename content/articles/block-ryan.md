@@ -50,5 +50,48 @@ heading = "Heading 5"
 link_text = ""
 link_url = ""
 text_color = ""
+[[sections]]
+section_background = "#FF0000"
+section_spacing = ""
+[[sections.section_blocks]]
+background_color = ""
+content_color = ""
+headline_color = ""
+template = "3-column-text"
+[[sections.section_blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[sections.section_blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[sections.section_blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[sections.section_blocks]]
+background_color = ""
+content_color = ""
+headline_color = ""
+template = "3-column-text"
+[[sections.section_blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[sections.section_blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[sections.section_blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
 
 +++
