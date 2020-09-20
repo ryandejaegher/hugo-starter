@@ -28,5 +28,5 @@ fields:
   config:
     min: 
     max: 3
-    labelField: 
+    labelField: heading
   label: Text columns
