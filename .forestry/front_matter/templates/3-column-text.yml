@@ -1,4 +1,27 @@
 ---
 label: 3 Column Text
 hide_body: true
-fields: []
+fields:
+- name: text_columns
+  type: field_group_list
+  fields:
+  - name: column_1
+    type: include
+    config: {}
+    template: text-column
+    label: column 1
+  - name: column
+    type: include
+    config: {}
+    template: text-column
+    label: Column_2
+  - name: column_3
+    type: include
+    config: {}
+    template: 3-column-text
+    label: Column 3
+  config:
+    min: 
+    max: 3
+    labelField: 
+  label: Text columns
