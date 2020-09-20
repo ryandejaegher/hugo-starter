@@ -39,3 +39,8 @@ fields:
   config: {}
   template: text-column
   label: Text
+- name: '3'
+  type: include
+  config: {}
+  template: 3-column-text
+  label: '3'
