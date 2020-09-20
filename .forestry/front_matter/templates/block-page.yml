@@ -12,6 +12,7 @@ fields:
   label: Blocks
   template_types:
   - hero-block
+  - 3-column-text
   config:
     min: 
     max: 
