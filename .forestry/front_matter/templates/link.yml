@@ -1,4 +1,14 @@
 ---
 label: link
 hide_body: true
-fields: []
+fields:
+- name: link_text
+  type: text
+  config:
+    required: false
+  label: Link Text
+- name: link_url
+  type: text
+  config:
+    required: false
+  label: Link URL
