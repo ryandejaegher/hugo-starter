@@ -5,7 +5,9 @@ fields:
 - name: section_blocks
   type: blocks
   label: Section Blocks
-  template_types: []
+  template_types:
+  - 3-column-text
+  - hero-block
   config:
     min: 
     max: 
