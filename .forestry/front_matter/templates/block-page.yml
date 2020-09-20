@@ -23,3 +23,5 @@ fields:
   label: layout
   default: blocks
   hidden: true
+pages:
+- content/articles/block-ryan.md
