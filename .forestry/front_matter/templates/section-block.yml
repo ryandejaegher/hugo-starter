@@ -11,3 +11,21 @@ fields:
   config:
     min: 
     max: 
+- name: section_background
+  type: color
+  label: Section Background
+  config:
+    required: false
+    color_format: Hex
+- name: section_spacing
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Section Spacing
