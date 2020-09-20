@@ -13,12 +13,36 @@ template = "hero-block"
 [[blocks]]
 template = "3-column-text"
 [[blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[blocks.text_columns]]
 content = "I'm the first heading"
 heading = "Heading 1"
 link_text = ""
 link_url = ""
 [[blocks]]
 template = "3-column-text"
-text_columns = []
+[[blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
+[[blocks.text_columns]]
+content = ""
+heading = ""
+link_text = ""
+link_url = ""
 
 +++
