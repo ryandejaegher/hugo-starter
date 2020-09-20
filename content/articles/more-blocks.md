@@ -3,7 +3,7 @@ draft = true
 layout = "blocks"
 title = "More Blocks"
 [[blocks]]
-section_background = "#FF0000"
+section_background = ""
 section_spacing = ""
 template = "section-block"
 [[blocks.blocks]]
