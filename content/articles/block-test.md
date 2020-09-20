@@ -61,8 +61,5 @@ content = ""
 heading = "Headline 3 Block"
 link_text = ""
 link_url = ""
-[[blocks]]
-template = "3-column-text"
-text_columns = []
 
 +++
