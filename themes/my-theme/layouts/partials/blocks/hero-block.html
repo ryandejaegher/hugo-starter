@@ -1,6 +1,19 @@
 {{$block := .Params}}
 
-<div class="h-full">
-    <img src="{{$block.hero_image}}" alt="">
-    <h1>{{$block.hero_headline}}</h1>
+<div class="py-64 flex items-center h-100 relative">
+
+
+<div class="container flex mx-auto items-center {{ if $block.hero_size }}
+    flex-row-reverse
+{{ end }}">
+<div class="cell flex-1 z-50">
+    <h1 class="font-black text-6xl">{{$block.hero_headline}}</h1>
+    <h3>{{$block.hero_subhead}}</h3>
+    <a href="#" class="bg-pink-300 px-8 py-4 inline-block">{{$block.cta_button}}</a>
+</div>
+<div class="cell flex-1">
+    <img src="https://source.unsplash.com/random?skateboard" class="absolute top-0 left-0 w-full h-full object-cover z-auto bg-gray-500 " alt="">
+</div>
+        
+</div>
 </div>
