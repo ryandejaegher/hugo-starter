@@ -44,11 +44,5 @@ heading = "Heading 5"
 link_text = ""
 link_url = ""
 text_color = ""
-[[blocks.text_columns]]
-content = ""
-heading = "Heading 6"
-link_text = ""
-link_url = ""
-text_color = ""
 
 +++
