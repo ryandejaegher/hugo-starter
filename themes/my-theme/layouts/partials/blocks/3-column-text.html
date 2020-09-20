@@ -1,0 +1,9 @@
+{{$block := .Params}}
+
+<div class="flex">
+    {{range $block.text_columns}}
+    <div class="flex-1 debug">
+        {{.heading}}
+    </div>
+    {{end}}
+</div>

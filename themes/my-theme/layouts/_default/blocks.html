@@ -1,6 +1,6 @@
 {{ define "main" }}
     {{- range .Params.blocks -}}
         {{- if eq .template "hero-block" -}}{{ partial "blocks/hero-block.html" (dict "Params" .) }}{{- end -}}
-        {{- if eq .template "call-to-action" -}}{{ partial "blocks/cta" (dict "Params" .) }}{{- end -}}
+        {{- if eq .template "3-column-text" -}}{{ partial "blocks/3-column-text.html" (dict "Params" .) }}{{- end -}}
     {{- end -}}
 {{ end }}

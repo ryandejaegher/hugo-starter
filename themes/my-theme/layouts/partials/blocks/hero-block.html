@@ -1,8 +1,13 @@
 {{$block := .Params}}
 
 <div class="py-64 flex items-center h-100 relative">
-
-
+    <div class="flex">
+        {{range $block.text_columns}}
+        <div class="flex-1 debug">
+            {{.heading}}
+        </div>
+        {{end}}
+    </div>
 <div class="container flex mx-auto items-center {{ if $block.hero_size }}
     flex-row-reverse
 {{ end }}">
@@ -12,7 +17,7 @@
     <a href="#" class="bg-pink-300 px-8 py-4 inline-block">{{$block.cta_button}}</a>
 </div>
 <div class="cell flex-1">
-    <img src="https://source.unsplash.com/random?skateboard" class="absolute top-0 left-0 w-full h-full object-cover z-auto bg-gray-500 " alt="">
+    {{/*  <img src="https://source.unsplash.com/random?skateboard" class="absolute top-0 left-0 w-full h-full object-cover z-auto bg-gray-500" alt="">  */}}
 </div>
         
 </div>
