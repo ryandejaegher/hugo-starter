@@ -11,6 +11,9 @@ hero_size = []
 hero_subhead = ""
 template = "hero-block"
 [[blocks]]
+background_color = "#9013FE"
+content_color = "#FFFFFF"
+headline_color = "#FFFFFF"
 template = "3-column-text"
 [[blocks.text_columns]]
 content = "Amet dui scelerisque lectus cras accumsan euismod faucibus netus, fringilla purus dignissim sagittis tristique neque efficitur hendrerit consequat, pharetra per non posuere arcu auctor ornare."
@@ -31,6 +34,9 @@ link_text = ""
 link_url = ""
 text_color = ""
 [[blocks]]
+background_color = ""
+content_color = ""
+headline_color = ""
 template = "3-column-text"
 [[blocks.text_columns]]
 content = ""
@@ -43,8 +49,6 @@ content = "Lectus elementum nisl facilisis dis cubilia eu, sollicitudin semper l
 heading = "Heading 5"
 link_text = ""
 link_url = ""
-
 text_color = ""
-
 
 +++
