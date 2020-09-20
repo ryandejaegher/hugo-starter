@@ -48,7 +48,7 @@ text_color = ""
 =======
 <<<<<<< HEAD
 =======
-text_color = ""
+
 [[blocks.text_columns]]
 content = ""
 heading = "Heading 6"
