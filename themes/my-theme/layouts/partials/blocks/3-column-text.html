@@ -4,10 +4,10 @@
 <div class="py-24 flex items-center relative" style="background-color: {{$block.background_color}}">
 
 
-<div class="container mx-auto flex">
+<div class="container mx-auto flex flex-col gap-24 md:flex-row">
     {{range $block.text_columns}}
-    <div class="flex-1 debug">
-        <h3>{{.heading}}</h3>
+    <div class="flex-1">
+        <h3 style="color: {{.text_color}}">{{.heading}}</h3>
         <p>{{.content}}</p>
     </div>
     {{end}}
