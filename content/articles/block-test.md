@@ -47,7 +47,7 @@ link_url = ""
 template = "3-column-text"
 [[blocks.text_columns]]
 content = ""
-heading = "Headline 3 Block"
+heading = "Headline 1 Block"
 link_text = ""
 link_url = ""
 [[blocks.text_columns]]
@@ -57,7 +57,7 @@ link_text = ""
 link_url = ""
 [[blocks.text_columns]]
 content = ""
-heading = "Headline 1 Block"
+heading = "Headline 3 Block"
 link_text = ""
 link_url = ""
 
