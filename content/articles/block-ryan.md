@@ -43,19 +43,8 @@ content = "Lectus elementum nisl facilisis dis cubilia eu, sollicitudin semper l
 heading = "Heading 5"
 link_text = ""
 link_url = ""
-<<<<<<< Updated upstream
-text_color = ""
-=======
-<<<<<<< HEAD
-=======
 
-[[blocks.text_columns]]
-content = ""
-heading = "Heading 6"
-link_text = ""
-link_url = ""
 text_color = ""
->>>>>>> 7d5959abfdbfad6dda2d8b8b2f05d8d472696296
->>>>>>> Stashed changes
+
 
 +++
