@@ -10,14 +10,26 @@ fields:
     config: {}
     template: text-column
     label: text column
-  - name: text_color
-    type: color
-    label: text color
-    config:
-      required: false
-      color_format: Hex
   config:
     min: 
     max: 3
     labelField: heading
   label: Text columns
+- name: headline_color
+  type: color
+  label: Headline Color
+  config:
+    required: false
+    color_format: Hex
+- name: content_color
+  type: color
+  config:
+    required: false
+    color_format: Hex
+  label: content_color
+- name: background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
