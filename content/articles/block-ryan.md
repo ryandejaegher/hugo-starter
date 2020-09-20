@@ -11,7 +11,7 @@ hero_size = []
 hero_subhead = ""
 template = "hero-block"
 [[blocks]]
-background_color = "#9013FE"
+background_color = "#222"
 content_color = "#FFFFFF"
 headline_color = "#FFFFFF"
 template = "3-column-text"
