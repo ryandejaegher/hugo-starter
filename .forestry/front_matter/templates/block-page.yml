@@ -23,5 +23,18 @@ fields:
   label: layout
   default: blocks
   hidden: true
+- name: sections
+  type: field_group_list
+  fields:
+  - name: section_block
+    type: include
+    config: {}
+    template: section-block
+    label: Section block
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sections
 pages:
 - content/articles/block-ryan.md
