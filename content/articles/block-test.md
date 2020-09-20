@@ -13,5 +13,20 @@ hero_subhead = ""
 link_text = "Link Text"
 link_url = "this is the link url"
 template = "hero-block"
+[[blocks.text_columns]]
+content = "I'm the the content"
+heading = "I'm the first column"
+link_text = ""
+link_url = ""
+[[blocks.text_columns]]
+content = "I'm the second content"
+heading = "I'm the second headline"
+link_text = ""
+link_url = ""
+[[blocks.text_columns]]
+content = "I'm the third content"
+heading = "I'm the third headline"
+link_text = ""
+link_url = ""
 
 +++
