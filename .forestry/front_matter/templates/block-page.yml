@@ -7,9 +7,9 @@ fields:
   config:
     required: false
   label: Title
-- name: blocks
+- name: page_blocks
   type: blocks
-  label: Blocks
+  label: Page Blocks
   template_types:
   - hero-block
   - 3-column-text
