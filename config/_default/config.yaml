@@ -60,3 +60,6 @@ imaging:
   quality: 80
   anchor: "smart"
   resampleFilter: "Gaussian"
+
+build: 
+  writeStats: true

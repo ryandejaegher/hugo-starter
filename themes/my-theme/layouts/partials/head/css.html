@@ -11,8 +11,12 @@
 
 
 {{/*  Tailwind CSS  */}}
-{{ $tailwind := resources.Get "css/styles.css" | resources.Fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $tailwind.RelPermalink}}">
+{{ $tailwind := resources.Get "css/styles.css" }}
+{{ $tailwind = $tailwind | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+{{ $tailwind = $tailwind | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<link href="{{ $tailwind.RelPermalink }}" rel="stylesheet" />
 
 
 {{ $templateStyle := resources.Get "tailwind/partials/forestry-theme.css" }}
