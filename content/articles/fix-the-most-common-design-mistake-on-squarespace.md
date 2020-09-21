@@ -25,43 +25,43 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-A very common problem I’ve seen on Squarespace sites is _realllly long lines_ of text i.e. line-length is too long.
+A very common problem I’ve seen on Squarespace sites is _realllly long lines_ of text i.e. **line-length is too long**.
 
 You’ll commonly see this on blog posts, but the issue can also appear on non-blog post pages.
 
 Today I'm going to show you why long line-lengths are a problem and how you can fix this in Squarespace 7.1.
 
-### What Causes Long Long Lengths
+### What Causes Long Line Lengths?
 
 The reason this happens is often from people setting a **wide page width**.
 
 This is often done because people are trying to create full width sections on their site but not realizing that this affects the blog content width.
 
-!\[\[Pasted image 6.png\]\]
+![](/uploads/people-usually-set-page-width-for-have-full-width-sections.png)
 
 Sometimes you can fix this with the content width settings in your blog. This can work but not always.
 
 So if the page width is really wide, even setting the content width to narrow may still not be enough to fix the issue. See the example below of the content width set to **narrow**
 
-!\[\[Pasted image 7.png\]\]
+![](/uploads/even-narrow-setting-may-not-be-enough.png)
 
 ### The Problem With Long Line-Lengths
 
 Having really long lines of text can impact the readability and scanability of text on your site.
 
-If line-lengths are really long then visitors eyes have to do more work because they have to travel longer distances across the page.
+If line-lengths are really long then the visitors eyes have to do more work because they have to travel longer distances across the screen.
 
 The opposite can also be problematic, if line lengths are too short, our eyes are working hard because they’re moving back and forth so quickly.
 
 This problem usually isn’t noticeable on mobile because the width of text is often constrained by the device size.
 
-!\[\[Pasted image 9.png\]\]
+![](/uploads/mobile-view-fine.png)
 
 The problem is more noticeable on **larger screens**.
 
 If there’s nothing to constrain the width of the text then it will stretch to fill the available size.
 
-!\[\[Pasted image 10.png\]\]
+![](/uploads/too-wide.png)
 
 ### The Solution: Constraining the Text Width
 
@@ -77,8 +77,9 @@ So the goal is to constrain our text width so that the line-length is between 40
 
 We can use CSS and the **EM** unit to set our text width relative to the font-size and get close to that character range.
 
-**What is the EM unit**?
-EMs are known as a relative length unit. It's value is based on the nearest element's font-size value.
+### What is the EM unit? 
+
+### EMs are known as a relative length unit. It's value is based on the nearest element's font-size value.
 
 So if the font size for the blog is **16px**, then **1em = 16px**.
 
