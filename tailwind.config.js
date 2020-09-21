@@ -3,7 +3,7 @@ module.exports = {
     content: ['./themes/my-theme/layouts/**/*.html'],
     options: {
       whitelist: ['font-mono', 'font-sans','font-serif','font-neue', 'font-minion', 'max-w-lg'],
-      whitelistPatterns: [/^text/,/^bg/,/border/,],
+      //whitelistPatterns: [/^text/,/^bg/,/border/,],
     }
   },
   theme: {
