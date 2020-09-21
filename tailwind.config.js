@@ -1,11 +1,11 @@
 module.exports = {
-  purge: {
-    content: ['./themes/my-theme/layouts/**/*.html'],
-    options: {
-      whitelist: ['font-mono', 'font-sans','font-serif','font-neue', 'font-minion', 'max-w-lg'],
-      //whitelistPatterns: [/^text/,/^bg/,/border/,],
-    }
-  },
+  // purge: {
+  //   content: ['./themes/my-theme/layouts/**/*.html'],
+  //   options: {
+  //     whitelist: ['font-mono', 'font-sans','font-serif','font-neue', 'font-minion', 'max-w-lg'],
+  //     //whitelistPatterns: [/^text/,/^bg/,/border/,],
+  //   }
+  // },
   theme: {
     typography: (theme) => ({
       default: {
