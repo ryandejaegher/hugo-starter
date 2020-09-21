@@ -71,13 +71,13 @@ Luckily Google's Material Design Guidelines can help us out with the ideal line-
 
 > Line lengths for body text are usually between 40 to 60 characters. In areas with wider line lengths, such as desktop, longer lines that contain up to 120 characters will need an increased line height from 20sp to 24sp.^^ - [Material Design](https://material.io/design/typography/understanding-typography.html#readability)
 
-!\[\[Pasted image 11.png\]\]
+![](/uploads/ideal-line-length-cc-material-design-google.png)
 
 So the goal is to constrain our text width so that the line-length is between 40-60 characters.
 
 We can use CSS and the **EM** unit to set our text width relative to the font-size and get close to that character range.
 
-### What is the EM unit? 
+### What is the EM unit?
 
 EMs are known as a relative length unit. It's value is based on the nearest element's font-size value.
 
@@ -87,7 +87,7 @@ So if the font size for the blog is **16px**, then **1em = 16px**.
 * **3em = 48px**
 * etc.
 
-The benefit of using EMs for controlling the text is that creates a relationship between the font-size and the text-width.
+The benefit of using EMs for controlling the text width is that creates a relationship between the font-size and the text-width.
 
 So if the font-size changes the text width will change as well.
 
