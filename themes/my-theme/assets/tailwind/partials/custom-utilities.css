@@ -69,16 +69,6 @@ html {
   --background: black;
 
 }
-/* 
-.theme-dark {
-  --primary: theme("colors.blue.500");
-  --secondary: #2a2e35;
-  --text-main: #eaeaea;
-  --text-secondary: #b8b8b9;
-  --primary-bg: theme("colors.gray.900");
-  --accent: #fc7753;
-} */
-
 
 @media (prefers-color-scheme: light) {
 [class*='theme'] {
@@ -106,6 +96,18 @@ html {
   --accent: #fc7753;
 }
 }
+/* 
+.theme-dark {
+  --primary: theme("colors.blue.500");
+  --secondary: #2a2e35;
+  --text-main: #eaeaea;
+  --text-secondary: #b8b8b9;
+  --primary-bg: theme("colors.gray.900");
+  --accent: #fc7753;
+} */
+
+
+
 
 /* .theme-brand {
   --primary: #12181b;
