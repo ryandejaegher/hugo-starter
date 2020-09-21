@@ -11,7 +11,7 @@ background_color = ""
 content_color = ""
 headline_color = ""
 template = "3-column-text"
-text_size = "xxl"
+text_size = "3xxl"
 theme_colors = "colors"
 [[blocks.blocks.text_columns]]
 content = ""
