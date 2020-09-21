@@ -29,7 +29,7 @@ A very common problem I’ve seen on Squarespace sites is _realllly long lines_ 
 
 You’ll commonly see this on blog posts, but the issue can also appear on non-blog post pages.
 
-Today I'm going to show you why long line-lengths are a problem and how you can fix this on Squarespace 7.1.
+Today I'm going to show you why long line-lengths are a problem and how you can fix this in Squarespace 7.1.
 
 ### What Causes Long Long Lengths
 
