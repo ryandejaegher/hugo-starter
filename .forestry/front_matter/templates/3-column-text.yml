@@ -33,8 +33,15 @@ fields:
   config:
     required: false
     color_format: Hex
-- name: themecolors
-  type: include
-  config: {}
-  template: theme-colors
-  label: Theme Colors
+- name: theme_colors
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: data
+      file: data/themeColors.yaml
+      path: 
+  label: Theme colors
