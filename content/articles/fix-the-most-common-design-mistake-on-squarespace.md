@@ -1,5 +1,5 @@
 +++
-articleFeatureImage = ""
+articleFeatureImage = "/uploads/fix-spacing-issue-squarespace.png"
 customize_seo = false
 date = 2020-08-17T16:32:51Z
 draft = true
