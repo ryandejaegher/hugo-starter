@@ -16,3 +16,5 @@ fields:
     max: 
     labelField: 
   label: Colors
+pages:
+- data/theme-colors.yaml
