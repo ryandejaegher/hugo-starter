@@ -42,5 +42,3 @@ fields:
     label: title
   config:
     labelField: fullName
-pages:
-- data/authors.yaml
