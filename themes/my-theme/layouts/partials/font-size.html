@@ -1,10 +1,9 @@
-{{$fontSize := ""}}
-{{$block := .Params}}
 
-{{ if eq $block.text_size "xl"}}
-{{$fontSize = "text-xl"}}
-{{else if eq $block.text_size "2xl"}}
-{{$fontSize = "text-2xl"}}
-{{end}}
+{{$block := .Params}}
+{{$fontSize:= ""}}
+
+{{ if $block.text_size }}
+{{$fontSize = (print "text-" $block.text_size)}}
+{{ end }}
 
 {{return $fontSize}}
