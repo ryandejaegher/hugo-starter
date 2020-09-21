@@ -118,8 +118,12 @@ The margin:0 auto ensures that the text container is centered. And the max-width
 
 According to this article from Simon Li, a good rule of thumb for the max-width on desktop is between 34-36em.
 
-### Fixed Line Length
+Once you've added the CSS to your site, the line-length for your blog content should be closer to the ideal range (between 40-60 characters). 
 
-!\[\[Pasted image 12.png\]\]
+![](/uploads/fix-line-lenght-2x.png)
+
+### Questions/Feedback?
+
+If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
 
 {{% embed/mailerlite form="squarespace" %}}
