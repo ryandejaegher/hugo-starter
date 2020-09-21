@@ -16,4 +16,7 @@
 {{ partial "javascript/lazyvideo.html" . }}
 {{end}}
 
-<script src="instantpage-5.1.0.js" type="module" defer></script>
+
+{{ $instantpage := resources.Get "js/instantpage-5.1.0.js" }}
+<script src="{{ $instantpage.RelPermalink }}"></script>
+
