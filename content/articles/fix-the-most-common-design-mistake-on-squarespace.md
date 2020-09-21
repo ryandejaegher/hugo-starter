@@ -1,7 +1,7 @@
 +++
 articleFeatureImage = "/uploads/fix-spacing-issue-squarespace.png"
 customize_seo = false
-date = 2020-08-17T16:32:51Z
+date = 2020-08-21T16:32:51Z
 excerpt = "Today I'm going to show you why long line-lengths are a problem and how you can fix them on Squarespace 7.1."
 facebook_description = ""
 facebook_image = ""
