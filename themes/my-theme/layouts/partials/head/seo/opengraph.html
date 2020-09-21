@@ -24,13 +24,12 @@
     <meta property="og:site_name" content="{{ .Site.Title }}">
 
     {{/*  Facebook Image  */}}
-    {{ with .Params.facebook_image }}
-        <!-- {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }} -->
-    {{- $path := resources.Get . -}}
-
+    {{ if .Params.facebook_image }}
+        {{- $path := resources.Get .Params.facebook_image -}}
     <meta property="og:image" content="{{$path.Permalink}}">
-    {{else}}
-    <meta property="og:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.articleFeatureImage }}">
+    {{else if .Params.articleFeatureImage}}
+        {{- $path := resources.Get .Params.articleFeatureImage -}}
+    <meta property="og:image" content="{{$path.Permalink}}">
     {{ end }}
 
 
