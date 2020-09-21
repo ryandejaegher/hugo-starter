@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{- range .Params.blocks -}}
+    {{- range .Params.page_blocks -}}
         {{- if eq .template "hero-block" -}}{{ partial "blocks/hero-block.html" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "3-column-text" -}}{{ partial "blocks/3-column-text.html" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "section-block" -}}{{ partial "blocks/section-block.html" (dict "Params" .) }}{{- end -}}

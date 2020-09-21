@@ -1,14 +1,7 @@
 {{$block := .Params}}
-
+{{ $fontSize := partial "font-size.html" . }}
 
 <div class="py-24 flex items-center relative" style="background-color: {{$block.background_color}}">
-
-{{ $fontSize := partial "font-size.html" . }}
-{{/*  {{ if eq $block.text_size "xl"}}
-{{$fontSize = "text-xl"}}
-{{else}}
-{{end}}  */}}
-
 <div class="container mx-auto flex flex-col gap-24 md:flex-row">
     {{range $block.text_columns}}
     <div class="flex-1 space-y-2">

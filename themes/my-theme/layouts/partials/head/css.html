@@ -11,7 +11,7 @@
 
 
 {{/*  Tailwind CSS  */}}
-{{ $tailwind := resources.Get "css/styles.css" | resources.Fingerprint  }}
+{{ $tailwind := resources.Get "css/styles.css" | resources.Fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $tailwind.RelPermalink}}">
 
 
