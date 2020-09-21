@@ -25,9 +25,11 @@
 {{end}}
 
 {{ if .Params.twitter_image }}
-<meta property="twitter:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.twitter_image }}">
-{{else}}
-<meta property="twitter:image" content="{{.Site.Params.cloudinary_url}}/{{ .Params.articlefeatureimage }}">
+{{- $path := resources.Get .Params.twitter_image -}}
+<meta property="twitter:image" content="{{$path.Permalink}}">
+{{else if .Params.articleFeatureImage}}
+{{- $path := resources.Get .Params.articleFeatureImage -}}
+<meta property="twitter:image" content="{{$path.Permalink}}">
 {{ end }}
 {{ "<!-- End of Twitter -->" | safeHTML }}
 
