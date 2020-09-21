@@ -121,3 +121,5 @@ According to this article from Simon Li, a good rule of thumb for the max-width 
 ### Fixed Line Length
 
 !\[\[Pasted image 12.png\]\]
+
+{{% embed/mailerlite form="squarespace" %}}
