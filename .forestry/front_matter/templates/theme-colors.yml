@@ -1,4 +1,18 @@
 ---
 label: Theme Colors
 hide_body: true
-fields: []
+fields:
+- name: colors
+  type: field_group_list
+  fields:
+  - name: theme_color
+    type: color
+    label: theme color
+    config:
+      required: false
+      color_format: Hex
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Colors
