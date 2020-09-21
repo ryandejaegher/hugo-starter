@@ -71,7 +71,7 @@ html {
 }
 
 @media (prefers-color-scheme: light) {
-[class*='theme'] {
+.theme {
   --primary-100: theme("colors.pink.500");
   --secondary: red;
   --text-main: theme("colors.gray.900");
@@ -87,7 +87,7 @@ html {
 }
 
 @media (prefers-color-scheme: dark){
-[class*='theme'] {
+.theme {
   --primary: theme("colors.blue.500");
   --secondary: #2a2e35;
   --text-main: #eaeaea;
