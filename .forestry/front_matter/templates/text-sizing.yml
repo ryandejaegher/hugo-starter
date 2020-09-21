@@ -13,6 +13,8 @@ fields:
     - large
     - xl
     - xxl
+    - 2xxl
+    - 3xxl
     source:
       type: simple
       section: 

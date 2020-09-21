@@ -1,13 +1,17 @@
 {{$block := .Params}}
-
+{{$fontSize := ""}}
 
 <div class="py-24 flex items-center relative" style="background-color: {{$block.background_color}}">
 
+{{ if eq $block.text_size "xl"}}
+{{$fontSize = "text-xl"}}
+{{else}}
+{{end}}
 
 <div class="container mx-auto flex flex-col gap-24 md:flex-row">
     {{range $block.text_columns}}
     <div class="flex-1 space-y-2">
-        <h3 class="font-black" style="color: {{$block.headline_color}}">{{.heading}}</h3>
+        <h3 class="font-black {{$fontSize}}" style="color: {{$block.headline_color}}">{{.heading}}</h3>
         <p style="color:{{$block.content_color}}">{{.content}}</p>
     </div>
     {{end}}
