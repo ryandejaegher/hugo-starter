@@ -25,7 +25,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-A very common problem I’ve seen on Squarespace sites is _realllly long lines_ of text i.e. **line-length is too long**.
+A very common problem I’ve seen on Squarespace sites is _realllly long lines_ of text i.e. the **line-length is too long**.
 
 You’ll commonly see this on blog posts, but the issue can also appear on non-blog post pages.
 
