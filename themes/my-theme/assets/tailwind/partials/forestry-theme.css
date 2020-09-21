@@ -1,3 +1,17 @@
-body {
-    border:8px solid red;
+:root {
+{{range .Site.Data.themeColors}}
+{{range $index, $color:= .}}
+--theme-color-{{$index}}: {{$color.theme_color}};
+{{end}}
+{{end}}    
+}
+
+{{range .Site.Data.themeColors}}
+{{range $index, $color:= .}}
+
+.theme-color-{{$index}} {
+color: var(--theme-color-{{$index}});
+} 
+{{end}}
+{{end}}    
 }
