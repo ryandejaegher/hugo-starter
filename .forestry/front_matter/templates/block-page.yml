@@ -24,3 +24,5 @@ fields:
   label: layout
   default: blocks
   hidden: true
+pages:
+- content/articles/another-block-test.md
