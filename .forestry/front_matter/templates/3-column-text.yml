@@ -33,3 +33,8 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: colors
+  type: include
+  config: {}
+  template: theme-colors
+  label: Colors
