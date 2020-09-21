@@ -24,5 +24,3 @@ fields:
   label: layout
   default: blocks
   hidden: true
-pages:
-- content/articles/more-blocks.md
