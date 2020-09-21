@@ -11,11 +11,11 @@
     {{with .NextInSection}}
         {{$align := "" }}
     {{if eq $.PrevInSection nil}}
-    {{$align = "text-left" }}
+    {{$align = "md:text-left" }}
     {{else}}
-    {{$align = "text-right" }}
+    {{$align = "md:text-right" }}
     {{end}}
-    <div class="text-center md:{{$align}}">
+    <div class="text-center {{$align}}">
         <span class="text-secondary-text text-sm block">next</span>
         <a class="hover:border-b-2 border-{{$themeText}}-400 self-start box-border font-medium text-main-text" href="{{.Permalink}}">{{.Title }}</a>
     </div>
