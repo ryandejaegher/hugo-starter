@@ -33,3 +33,8 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: text_size
+  type: include
+  config: {}
+  template: text-sizing
+  label: Text Size
