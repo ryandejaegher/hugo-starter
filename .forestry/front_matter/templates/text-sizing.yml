@@ -1,4 +1,21 @@
 ---
 label: Text Sizing
 hide_body: true
-fields: []
+fields:
+- name: text_size
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    - xl
+    - xxl
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Text Size
