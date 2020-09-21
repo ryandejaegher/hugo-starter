@@ -1,4 +1,5 @@
 +++
+draft = true
 layout = "blocks"
 title = "Another Block Test"
 [[page_blocks]]
