@@ -13,3 +13,8 @@
 {{/*  Tailwind CSS  */}}
 {{ $tailwind := resources.Get "css/styles.css" | resources.Fingerprint  }}
 <link rel="stylesheet" href="{{ $tailwind.RelPermalink}}">
+
+
+{{ $templateStyle := resources.Get "tailwind/partials/forestry-theme.css" }}
+{{ $style := $templateStyle | resources.ExecuteAsTemplate "css/template-style.css" . }}
+<link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
