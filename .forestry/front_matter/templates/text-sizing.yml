@@ -12,9 +12,8 @@ fields:
     - medium
     - large
     - xl
-    - xxl
-    - 2xxl
-    - 3xxl
+    - 2xl
+    - 3xl
     source:
       type: simple
       section: 
