@@ -14,7 +14,7 @@
 {{ $tailwind := resources.Get "css/styles.css" }}
 {{ $tailwind = $tailwind | resources.PostCSS }}
 {{ if hugo.IsProduction }}
-{{ $tailwind = $tailwind | fingerprint | resources.PostProcess }}
+{{ $tailwind = $tailwind | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 <link href="{{ $tailwind.RelPermalink }}" rel="stylesheet" />
 

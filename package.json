@@ -20,6 +20,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
     "autoprefixer": "^9.8.6",
+    "instant.page": "^5.1.0",
     "postcss-cli": "^7.1.2",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.1",

@@ -3,7 +3,7 @@
 {{ $pag := $.Paginator }}
 {{ if gt $pag.TotalPages 1 }}
 <nav aria-label="Page navigation">
-    <ul class="pagination flex justify-center">
+    <ul class="pagination flex justify-center text-main-text">
 
         {{ if $pag.HasPrev }}
         <li class="page-item p-2"><a href="{{ $pag.Prev.URL }}" rel="prev" class="page-prev"><</a></li>
