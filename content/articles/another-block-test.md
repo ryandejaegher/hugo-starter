@@ -10,7 +10,7 @@ background_color = ""
 content_color = ""
 headline_color = ""
 template = "3-column-text"
-text_size = "3xl"
+text_size = "small"
 [[page_blocks.blocks.text_columns]]
 content = ""
 heading = "Amazing"
