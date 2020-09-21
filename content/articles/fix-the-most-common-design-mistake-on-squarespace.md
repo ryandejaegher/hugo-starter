@@ -99,10 +99,6 @@ We're going to target the `.blog-item-content-wrapper`. This is the class in Squ
 
 We're going to set max-width and margin.
 
-If you want to easily fix this for all your blog posts by adding this CSS to your **Post Blog Item Code Injection**
-
-!\[\[Pasted image 8.png\]\]
-
 ```html
 <style>
 @media(min-width: 768px) {
@@ -114,7 +110,11 @@ If you want to easily fix this for all your blog posts by adding this CSS to you
 </style>
 ```
 
-The margin:0 auto ensures that the text is recentered. And the max-width is 36em.
+If you want to easily fix this for all your blog posts by adding this CSS to your **Post Blog Item Code Injection**
+
+![](/uploads/blog-page-code-injection-settings.png)
+
+The margin:0 auto ensures that the text container is centered. And the max-width is **36em**.
 
 According to this article from Simon Li, a good rule of thumb for the max-width on desktop is between 34-36em.
 
