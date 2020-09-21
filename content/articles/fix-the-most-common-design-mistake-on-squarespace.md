@@ -79,7 +79,7 @@ We can use CSS and the **EM** unit to set our text width relative to the font-si
 
 ### What is the EM unit? 
 
-### EMs are known as a relative length unit. It's value is based on the nearest element's font-size value.
+EMs are known as a relative length unit. It's value is based on the nearest element's font-size value.
 
 So if the font size for the blog is **16px**, then **1em = 16px**.
 
