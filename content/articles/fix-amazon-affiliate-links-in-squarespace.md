@@ -1,5 +1,5 @@
 +++
-articleFeatureImage = ""
+articleFeatureImage = "/uploads/fix-amazon-affiliate-links.png"
 customize_seo = false
 date = 2020-09-22T19:39:18Z
 excerpt = "Learn how to write a script that will automatically add ref=nofollow to all your Amazon Affiliate links and Amazon Product Blocks."
