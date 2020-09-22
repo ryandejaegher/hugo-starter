@@ -25,13 +25,11 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-# Fix Amazon Affiliate Links in Squarespace
-
-Recently there was a question about how to ensure that Amazon Links are setup correctly in Squarespace.
+Recently there was a question about how to ensure that Amazon Links are setup correctly in Squarespace:
 
 > Hi. Is there a way to make gallery click-through urls no follow in SQS? I have a blog and I want to add a summary block with affiliate product images to my posts. Someone recommended adding code specific to each vendor (Amazon, target etc) to the footer, which I did. But I need to be certain that's actually robust enough. I can't risk Google black-balling my blog down the road.
 
-Today I’m going to show you how to create a simple script that will ensure your Amazon Affiliate links are setup correctly. First I'll explain the issue with the Amazon Block in Squarespace.
+Today I’m going to show you how to create a simple script that will ensure your **Amazon Affiliate links** are setup correctly. First I'll explain the issue with the Amazon Block in Squarespace.
 
 ### Compatibility/Requirements
 
@@ -42,9 +40,9 @@ Today I’m going to show you how to create a simple script that will ensure you
 
 Squarespace has an Amazon Block which makes it easy to add affiliate products to your site. As long as you’ve added your Amazon Associates ID to Squarespace (*Settings -> Advanced -> External API Keys -> Amazon Associates ID *) it will automatically create an affiliate link for the product you’ve chosen in the Amazon Block.
 
-!\[\[Pasted image 20200922151227.png\]\]
+![](/uploads/add-amazon-associates-id-2x.png)
 
-![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fryandejaegher%2FrfE23tSOim.png?alt=media&token=2d0cc802-f821-4db9-86f5-fa9df4079f6c)
+![](/uploads/amazon-product-block-2x.png)
 
 However it doesn’t set the `target: _blank` and the `rel=nofollow` and this can cause problems with SEO.
 
