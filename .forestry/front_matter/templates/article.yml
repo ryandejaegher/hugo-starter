@@ -18,6 +18,7 @@ fields:
     schema:
       format: markdown
     max: 150
+    min: 90
   label: Excerpt
   description: "(optional) Write a brief article teaser/intro. This will be used for
     article previews, SEO and Social description"
