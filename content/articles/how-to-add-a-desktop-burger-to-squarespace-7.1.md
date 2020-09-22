@@ -62,7 +62,7 @@ These are the links that will appear when the burger overlay appears.
 
 Once you've setup your burger folder you can add the script that will add the desktop burger to your site.
 
-Add this code to Settings -> Advanced -> Code Injection -> Footer
+Add this code to _Settings -> Advanced -> Code Injection -> Footer_
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/ryandejaegher/better-burger@0.0.2/script.js"></script>
@@ -141,7 +141,7 @@ display: none;
 }
 ```
 
-What this does is targets any link in the navigation and if the link doesn't match your burger link it gets hidden, leaving you with just the desktop burger menu. This CSS won't affect your social links or the cart icon. 
+What this does is targets any link in the navigation and if the link doesn't match your burger link it gets hidden, leaving you with just the desktop burger menu. This CSS won't affect your social links or the cart icon.
 
 ![](/uploads/only-desktop-burger-visible.png)
 
