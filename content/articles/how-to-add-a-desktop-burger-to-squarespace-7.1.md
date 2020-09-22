@@ -71,6 +71,8 @@ Add this code to _Settings -> Advanced -> Code Injection -> Footer_
 
 Once you’ve added the burger you'll need to add the `<better-burger></better-burger>` element to your footer.
 
+![](/uploads/add-burger-script-2x.png)
+
 Save and reload the page and you should have a burger icon that has replaced the original text for your burger folder.
 
 #### Before Adding The Burger Script
