@@ -40,15 +40,15 @@ An alternative is to create a burger menu that’s specific to desktop. And that
 
 The first thing you need to do is add a folder to your Squarespace navigation. The links inside this folder is what the desktop burger will use.
 
+![](/uploads/add-folder.png)
+
 You can place the burger folder anywhere in your navigation and it will work but the ideal spot is the last spot in your navigation. Otherwise the burger icon will appear in the middle of your navigation links.
 
-!\[\[Pasted image 20200922120010.png\]\]
-
-You can name the page title and navigation title to whatever you want (Desktop Burger)
+You can name the page title and navigation title to whatever you want (i.e. Desktop Burger)
 
 However for the URL slug, be sure that it’s set to **/burger**. This is what the script requires to work properly
 
-!\[\[Pasted image 20200922115151.png\]\]
+![](/uploads/burger-menu-settings.png)
 
 ### Step 2: Add page and external links to your burger folder
 
@@ -56,7 +56,7 @@ Once you've created the folder you can start adding links inside the folder. The
 
 These are the links that will appear when the burger overlay appears.
 
-!\[\[Pasted image 20200922120505.png\]\]
+![](/uploads/burger-overlay-demo.png)
 
 ### Step 3: Add the burger script to your site
 
@@ -68,17 +68,17 @@ Once you’ve added the burger you'll need to add the `<better-burger></better-b
 
 Save and reload the page and you should have a burger icon that has replaced the original text for your burger folder.
 
-#### Before Script
+#### Before Adding The Burger Script
 
-!\[\[Pasted image 20200922121104.png\]\]
+![](/uploads/before-burger-2x.png)
 
-#### After Script
+#### After Adding The Burger Script
 
-!\[\[Pasted image 20200922121135.png\]\]
+![](/uploads/burger-after-2x.png)
 
 ### Step 4: Styling the Burger
 
-By default the burger icon will be black, and the background for the burger overlay will be white. You may need to change colors based on your header color. For example if you have a black menu background then you'll want to change the burger icon color to white.
+By default the burger icon will be black, and the background for the burger overlay will be white. You may need to change colors based on your header color. For example if your menu has a black background, then you'll want to change the burger icon color to white.
 
 If you need to change the burger styling you can add the CSS below to your custom CSS.
 
@@ -108,7 +108,7 @@ better-burger a {
 
 The desktop burger affect or replace the mobile hamburger menu. This means that your desktop burger links will still be visible in the mobile menu.
 
-!\[\[Pasted image 20200922121610.png\]\]
+![](/uploads/burger-links-visible-mobile.png)
 
 If you don't want the desktop burgers links to appear on mobile you can add the CSS below to hide them.
 
@@ -121,7 +121,7 @@ display: none;
 }
 ```
 
-!\[\[Pasted image 20200922121803.png\]\]
+![](/uploads/burger-links-hidden-mobile.png)
 
 ### Step 6. Only Show Desktop Burger
 
@@ -136,9 +136,9 @@ display: none;
 }
 ```
 
-What this does is targets any link in the navigation and if the link doesn't match your burger link it gets hidden.
+What this does is targets any link in the navigation and if the link doesn't match your burger link it gets hidden, leaving you with just the desktop burger menu. This CSS won't affect your social links or the cart icon. 
 
-!\[\[Pasted image 20200922122616.png\]\]
+![](/uploads/only-desktop-burger-visible.png)
 
 ### Questions/Feedback?
 
