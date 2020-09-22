@@ -82,11 +82,11 @@ link.target="_blank";
 </script>
 ```
 
-!\[\[Pasted image 20200922153826.png\]\]
+![](/uploads/amazon-links-in-script-2x.png)
 
 What does this script do?
 
-First it grabs any link that contains “amazon.com” in the href. It will also grab any links that contain “amzn.to” incase you already setup some affiliate links.
+First it grabs any link that contains “**amazon.com**” in the href. It will also grab any links that contain “**amzn.to**” incase you already setup some affiliate links.
 
 If it doesn’t find any Amazon links the script stops.
 
@@ -100,11 +100,17 @@ And with the Amazon Block it will apply it to the links that come from the produ
 
 If you click any of your Amazon links they should all open in a new tab. And to verify that the links **ref=nofollow** you can inspect the link by right-clicking and selecting "Inspect" on Chrome. This will open the source code and let you see the link and all of it's attribrutes (_href, ref, target etc._).
 
-!\[\[Pasted image 20200922153506.png\]\]
+![](/uploads/inspect-element.png)
 
 If the script is working correctly then your Amazon links should all have **target=_blank** and **ref=nofollow**.
 
-!\[\[Pasted image 20200922153744.png\]\]
+![](/uploads/verify-referrer-copy.png)
+
+### Summary
+
+Now you can use the Amazon Product Block to add your affiliate links and you don't have to worry about setting up your own Amazon Affiliate links again :).
+
+At any point you can remove this script and your links to revert to their default behaviour.
 
 ### Questions or Feedback?
 
