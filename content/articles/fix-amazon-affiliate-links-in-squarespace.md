@@ -52,7 +52,7 @@ According to **Christy Price**:
 
 Christy shows how you can get around this issue by creating your own links manually, but we can also set it and forget it with JavaScript.
 
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="[https://giphy.com/embed/1hMjJILpxoWpQad37L](https://giphy.com/embed/1hMjJILpxoWpQad37L "https://giphy.com/embed/1hMjJILpxoWpQad37L")" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="[https://giphy.com/gifs/billy-mayes-1hMjJILpxoWpQad37L](https://giphy.com/gifs/billy-mayes-1hMjJILpxoWpQad37L "https://giphy.com/gifs/billy-mayes-1hMjJILpxoWpQad37L")">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/1hMjJILpxoWpQad37L" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/billy-mayes-1hMjJILpxoWpQad37L">via GIPHY</a></p>
 
 ### The "Set It And Forget It" Script for Amazon Affiliate Links
 
