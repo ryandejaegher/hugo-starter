@@ -24,7 +24,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-A common question that comes up in the forum is how can you get a burger or mobile menu on desktop in Squarespace 7.1
+A common question that comes up in the forum is how can you get a burger or mobile menu on desktop in Squarespace 7.1.
 
 While it’s possible to make the mobile burger appear on desktop it requires overriding the media queries and trying to hide the desktop menu.
 
