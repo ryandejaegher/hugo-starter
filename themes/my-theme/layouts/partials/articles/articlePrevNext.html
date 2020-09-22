@@ -1,5 +1,6 @@
-{{if or .NextInSection | or .PrevInSection}}
 {{ $themeText := .Site.Data.theme.theme_color }}
+
+{{if or .NextInSection | or .PrevInSection}}
 <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between -mx-4 px-4 py-12 mt-16">
     {{with .PrevInSection}}
     <div class="text-center md:text-left">
