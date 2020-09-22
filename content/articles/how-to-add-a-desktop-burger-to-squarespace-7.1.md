@@ -64,6 +64,11 @@ Once you've setup your burger folder you can add the script that will add the de
 
 Add this code to Settings -> Advanced -> Code Injection -> Footer
 
+```html
+<script src="https://cdn.jsdelivr.net/gh/ryandejaegher/better-burger@0.0.2/script.js"></script>
+<better-burger></better-burger>
+```
+
 Once you’ve added the burger you'll need to add the `<better-burger></better-burger>` element to your footer.
 
 Save and reload the page and you should have a burger icon that has replaced the original text for your burger folder.
