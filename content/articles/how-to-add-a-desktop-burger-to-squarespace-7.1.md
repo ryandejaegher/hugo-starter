@@ -2,7 +2,6 @@
 articleFeatureImage = "/uploads/easy-desktop-burger-menu-squarespace-7-1.png"
 customize_seo = false
 date = 2020-09-22T16:37:07Z
-draft = true
 excerpt = "Learn how to add a burger/mobile menu specifically for desktop in Squarespace 7.1. This can also be used as a secondary menu."
 facebook_description = ""
 facebook_image = ""
