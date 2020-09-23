@@ -28,15 +28,15 @@ exports.handler = function(event, context, callback) {
      
        res.on("end", function () {
          const body = Buffer.concat(chunks);
-         formJSON = body;
+         formJSON = body;   
          console.log(body.toString());
        });
      });
      
      req.end();
 
-    callback(null, {
+    callback(null, {    
     statusCode: 200,
-    body: formJSON
+    body: 'hello'
     });
 }
