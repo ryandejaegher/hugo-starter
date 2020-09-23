@@ -18,12 +18,6 @@
 	{{ partial "articles/articlePrevNext.html" . }}
 {{end}}
 
-{{ $dataJ := getJSON "https://zerotovj.com/wp-json/wp/v2/posts?_fields=author,id,excerpt,title,link,content" }}
-
-{{ range $dataJ }}
-	<h2 class="font-bold">{{.title.rendered}}</h2>
-{{ end }}
-
 </main>
 {{ "<!-- End _default/single-left.html -->" | safeHTML }}
 {{ end }}
