@@ -5,12 +5,6 @@ baseURL: "https://ryandejaegher.com"
 caches:
   getjson:
     maxAge: "5m"
-
-menu:
-  main:
-  - url: 'https://apple.com'
-    name: Wow
-    weight: 10
     
 
 # The language code for the site
@@ -61,5 +55,15 @@ imaging:
   anchor: "smart"
   resampleFilter: "Gaussian"
 
+
+# This outputs a hugo_stats.json file in the root which can be used with PostCSS and PostProcess to Purge CSS
 build: 
   writeStats: true
+
+# Output formats
+outputs:
+  section:
+    - HTML
+    - AMP
+    - RSS
+

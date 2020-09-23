@@ -14,10 +14,11 @@
 		{{end}}
 	</article>
  {{ if ne .Section "pages" }}
-
 {{/*	{{ partial "articles/articleRelated.html" . }} */}}
 	{{ partial "articles/articlePrevNext.html" . }}
 {{end}}
+
+{{ partial "articles/netlify-form.html" . }}
 </main>
 {{ "<!-- End _default/single-left.html -->" | safeHTML }}
 {{ end }}
