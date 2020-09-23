@@ -17,6 +17,8 @@
 {{/*	{{ partial "articles/articleRelated.html" . }} */}}
 	{{ partial "articles/articlePrevNext.html" . }}
 {{end}}
+{{ $dataJ := getJSON "https://ryandejaegher.com/.netlify/functions/hello" }}
+
 
 </main>
 {{ "<!-- End _default/single-left.html -->" | safeHTML }}
