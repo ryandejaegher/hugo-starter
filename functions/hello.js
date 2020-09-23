@@ -1,4 +1,4 @@
-const http = require("https");
+const https = require("https");
 
 const options = {
   "method": "GET",
@@ -11,20 +11,8 @@ const options = {
   }
 };
 
-const req = http.request(options, function (res) {
-  const chunks = [];
 
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
 
-  res.on("end", function () {
-    const body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-});
-
-req.end();
 
 exports.handler = function(event, context, callback) {
 
