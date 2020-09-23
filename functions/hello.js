@@ -4,6 +4,8 @@ exports.handler = function(event, context, callback) {
          age: 31
      };
 
+     let formJSON;
+
      const http = require("https");
 
 const options = {
@@ -26,13 +28,15 @@ const req = http.request(options, function (res) {
 
   res.on("end", function () {
     const body = Buffer.concat(chunks);
+    formJSON = formJSON.toString()
     console.log(body.toString());
   });
 });
 
 req.end();
+
     callback(null, {
     statusCode: 200,
-    body: JSON.stringify(json)
+    body: formJSON
     });
 }
