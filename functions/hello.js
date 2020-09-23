@@ -28,7 +28,7 @@ const req = http.request(options, function (res) {
 
   res.on("end", function () {
     const body = Buffer.concat(chunks);
-    formJSON = formJSON.toString()
+    formJSON = body.toString()
     console.log(body.toString());
   });
 });
