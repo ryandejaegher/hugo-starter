@@ -17,10 +17,6 @@
 {{/*	{{ partial "articles/articleRelated.html" . }} */}}
 	{{ partial "articles/articlePrevNext.html" . }}
 {{end}}
-{{ $dataJ := getJSON "https://ryandejaegher.com/.netlify/functions/hello" }}
-{{range $dataJ}}
-{{.}}
-{{end}}
 
 
 </main>

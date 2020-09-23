@@ -28,7 +28,7 @@ exports.handler = function(event, context, callback) {
      
        res.on("end", function () {
          const body = Buffer.concat(chunks);
-         formJSON = body
+         formJSON = body;
          console.log(body.toString());
        });
      });
