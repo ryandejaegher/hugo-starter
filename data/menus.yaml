@@ -1,8 +1,6 @@
 ---
 menu_item:
+- menu_title: Tools
+  menu_url: https://gumroad.com/ryandejaegher
 - menu_title: Articles
   menu_url: "/articles"
-#- menu_title: About
-#  menu_url: "/about"
-# - menu_title: Home
-#   menu_url: "/"
