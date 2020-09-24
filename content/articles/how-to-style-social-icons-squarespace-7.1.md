@@ -39,9 +39,7 @@ Unlike a PNG image/icon, SVGs properties (width, height, fill and stroke) can al
 
 ![](/uploads/svg-vs-png.png)
 
-I’m going to show you the CSS for each of these today, let’s get started.
-
-What we're going to be creating.
+Today I'm going to be showing you the CSS to customize the SVG color and how to create an outlined social icon. Let's get started. 
 
 ### Compatibility/Requirements
 
