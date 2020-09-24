@@ -1,5 +1,5 @@
 +++
-articleFeatureImage = ""
+articleFeatureImage = "/uploads/style-social-icons-squarespace-7-1.png"
 customize_seo = false
 date = 2020-09-24T16:01:53Z
 draft = true
