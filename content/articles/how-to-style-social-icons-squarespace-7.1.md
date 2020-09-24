@@ -46,9 +46,9 @@ What we're going to be creating.
 * Squarespace 7.1
 * Business Plan
 
-### Step 1. Targeting the social icons
+### Step 1. Targeting the social icons 
 
-If you want to target the social icons in the header menu in Squarespace 7.1 you can use this class. This ensures it doesn’t affect other icons/SVGs on the page.
+If you want to target the social icons in the header menu in Squarespace 7.1 you can use this CSS class. This ensures it doesn’t affect other icons/SVGs on the page.
 
 ```css
 .header-actions-action--social svg {
