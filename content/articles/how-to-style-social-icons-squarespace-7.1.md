@@ -2,8 +2,7 @@
 articleFeatureImage = "/uploads/style-social-icons-squarespace-7-1.png"
 customize_seo = false
 date = 2020-09-24T16:01:53Z
-draft = true
-excerpt = "Learn a few cool ways to style your social icons in Squarespace 7.1. Change the color on hover or add a stroke!"
+excerpt = "Learn a few cool ways to style your social icons in Squarespace 7.1. Change the color on hover or create an outline icon with a stroke"
 facebook_description = ""
 facebook_image = ""
 facebook_title = ""
