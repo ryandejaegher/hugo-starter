@@ -3,8 +3,8 @@
 {{/*  Enables code highlighting with prism.js  */}}
 {{ with .Params.showCodeHighlighting }}
 <script>console.log('code highlighting active')</script>
-{{ $script := resources.Get "js/prism.js" }}
-<script src="{{ $script.RelPermalink }}"></script>
+{{ $prism := resources.Get "js/prism.js" }}
+<script src="{{ $prism.RelPermalink }}"></script>
 {{end}}
 
 {{/*  Displays   */}}
