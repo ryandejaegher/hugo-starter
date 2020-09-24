@@ -72,7 +72,7 @@ Let’s change the fill color of the SVG icons:
 
 Your fill icons should be blue now. You can’t do this with PNGs :)
 
-!\[\[Pasted image 20200924114656.png\]\]
+![](/uploads/svg-fill-color-blue.png)
 
 ### Step 3. Changing the SVG color on Hover
 
@@ -84,7 +84,7 @@ We can make our SVGs a little more interesting by adding a hover effect. You can
 }
 ```
 
-!\[\[SVG Hover Red.mp4\]\]
+{{< embed/video src="/uploads/svg-hover-red.mp4" >}}
 
 Whenever we’re animating things it’s a good idea to add a **transition** so that the change isn’t so jarring. You can add a transition to all the SVGs with this CSS:
 
@@ -117,19 +117,19 @@ In addition to the SVG fill color we can also add a stroke to turn them into out
 
 By default when you add a stroke, the stroke-width will be 1.
 
-!\[\[Pasted image 20200924114601.png\]\]
+![](/uploads/svg-outline-icons.png)
 
 Although you can make the stroke-width thicker, there’s a limit. If you make it too thick, then the parts of the stroke will start to overlap and the icon will lose it’s shape.
 
 For an obvious example, set the stroke-width:10.
 
-!\[\[Pasted image 20200924114547.png\]\]
+![](/uploads/svg-stroke-width-too-thick.png)
 
 If you have a really small-icon you’re limited by how thick you can make the stroke-width.
 
 ### Step 5. Turning SVGs into Outline Icons on Hover (or vice versa)
 
-Now that we know how to add a stroke to our SVGs lets add a cool hover effect where the fill color disappears and the stroke appears.
+Now that we know how to add a stroke to our SVGs, lets add a cool hover effect where the fill color disappears and the stroke appears.
 
 ```css
 .header-actions-action--social svg {
@@ -146,6 +146,8 @@ Now that we know how to add a stroke to our SVGs lets add a cool hover effect wh
 
 We have to set the stroke/fill to transparent. If we don’t set the stroke to transparent then when we stop hovering there will be a weird flash because the stroke doesn’t have a value to transition back to (i.e. transparent).
 
+{{< embed/video src="/uploads/svg-fill-to-strokehover.mp4" >}}
+
 We can also apply this effect in reverse. If we have outline icons and we want them to fill in on hover we can use this CSS
 
 ```css
@@ -160,5 +162,7 @@ We can also apply this effect in reverse. If we have outline icons and we want t
 	stroke: transparent !important;
 }
 ```
+
+{{< embed/video src="/uploads/svg-outline-to-fill.mp4" >}}
 
 ### Stay Tuned For Part 2
