@@ -224,9 +224,6 @@ socialIcons.forEach(icon => {
         
         socialIcons.forEach(icon => {
             icon.addEventListener('mouseenter', handleMouseEnter)
-        })
-        
-        socialIcons.forEach(icon => {
             icon.addEventListener('mouseleave', handleMouseLeave)
         })
 	})
