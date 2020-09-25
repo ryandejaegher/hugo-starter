@@ -2,7 +2,6 @@
 articleFeatureImage = "/uploads/frame-79.png"
 customize_seo = false
 date = 2020-09-25T19:59:29Z
-draft = true
 excerpt = "In todays tutorial we’re going to write a function that will animate the the social icons in Squarespace 7.1 when we hover over them"
 facebook_description = ""
 facebook_image = ""
