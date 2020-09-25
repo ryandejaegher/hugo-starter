@@ -84,17 +84,14 @@ We're animating 2 things: the icon fill color, and the **strokeDashoffset** (i.e
 
 ```javascript
         function handleMouseEnter(event) {
-            
             var use = event.target.querySelector('use');
             var useID = use.getAttribute('xlink:href');
             var symbol = document.querySelector(useID + ' path');
-
 			
             var svgPathLength = symbol.getTotalLength();
             var fillColor = getComputedStyle(use).fill;
             symbol.style.strokeDasharray = svgPathLength;
             symbol.style.stroke = 'black';
-
             
             var strokeKeyframes = {
                 strokeDashoffset: [svgPathLength,0]
@@ -127,7 +124,7 @@ We're animating 2 things: the icon fill color, and the **strokeDashoffset** (i.e
         }
 ```
 
-### Step 3. Create function to handle mouseleave event
+### Step 3. Create function to handle the mouseleave event
 
 Next we need to create a function that will reverse our drawing animation and return the icons to their default style when we stop hovering over the icon.
 
