@@ -164,7 +164,9 @@ socialIcons.forEach(icon => {
 
 ### Putting it all together
 
-We can combine everything and place it inside an load event listener on the window to ensure that the code only runs when the page is fully loaded.
+We can combine everything and place it inside an load event listener on the window to ensure that the code only runs when the page is fully loaded.  
+  
+Add this code to Settings -> Advanced -> Code Injection -> Footer
 
 ```html
 <script>
