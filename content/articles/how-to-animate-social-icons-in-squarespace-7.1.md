@@ -156,8 +156,8 @@ Since we assigned our social icons to a variable earlier, we can use that to run
 
 ```javascript
 socialIcons.forEach(icon => {
-	icon.addEventListener('mouseenter', handleMouseEnter)
-	icon.addEventListener('mouseleave', handleMouseLeave)
+  icon.addEventListener('mouseenter', handleMouseEnter)
+  icon.addEventListener('mouseleave', handleMouseLeave)
 })
 ```
 
