@@ -1,5 +1,5 @@
 +++
-articleFeatureImage = ""
+articleFeatureImage = "/uploads/frame-79.png"
 customize_seo = false
 date = 2020-09-25T19:59:29Z
 draft = true
