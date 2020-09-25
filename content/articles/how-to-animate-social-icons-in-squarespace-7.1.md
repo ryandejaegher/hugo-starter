@@ -60,6 +60,8 @@ If you're not concerned with the technical details lets get into it.
 
 Everything we're going to be doing will take place in Code Injection (_Settings -> Advanced -> Code Injection -> Footer_)
 
+{{% embed/mailerlite form="video-update" %}}
+
 ### Step 1. Get all the social icons
 
 The first thing we need to get is get all of our social media icons in the header. In Squarespace 7.1 this will grab all the social icons:
