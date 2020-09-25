@@ -29,8 +29,6 @@ In todays tutorial we’re going to write a function that will animate the the s
 
 When you hover over them you’ll get this cool effect
 
-{{demo video}}
-
 ### Compatibility/Requirements
 
 * Squarespace 7.1
@@ -54,15 +52,15 @@ If you’ve worked with Adobe Illustrator or have a background in design you’r
 
 The good news is that we can animate this path and make it appear as if it's being drawn.
 
-For a more in depth explanation of how animating lines/paths work, I'd recommend reading this article from [CSS-Tricks](https://css-tricks.com/svg-line-animation-works/)
+For a more in depth explanation of how animating lines/paths work, I'd recommend reading this article from [CSS-Tricks](https://css-tricks.com/svg-line-animation-works/).
 
 If you're not concerned with the technical details lets get into it.
 
-Everything we're going to be doing will take place in Code Injection (Settings -> Advanced -> Code Injection -> Footer)
+Everything we're going to be doing will take place in Code Injection (_Settings -> Advanced -> Code Injection -> Footer_)
 
 ### Step 1. Get all the social icons
 
-The first thing we need to get is get all of our social media icons in the header. In Squarespace 7.1 this will grab all the social icons.
+The first thing we need to get is get all of our social media icons in the header. In Squarespace 7.1 this will grab all the social icons:
 
 ```javascript
 var socialIcons = document.querySelectorAll('.header-actions-action--social svg')
