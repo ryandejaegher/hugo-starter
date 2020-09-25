@@ -11,14 +11,14 @@ layout = "single-left"
 publishdate = ""
 seo_description = ""
 seo_title = ""
-showCodeHighlighting = false
+showCodeHighlighting = true
 showPrevNext = false
 showReadTime = false
 show_article_options = false
 show_custom_social = false
 show_large_twitter_card = false
 show_table_of_contents = false
-tags = []
+tags = ["squarespace 7.1", "animation"]
 title = "How to Animate Social Icons in Squarespace 7.1"
 twitter_description = ""
 twitter_image = ""
@@ -74,15 +74,13 @@ In order for our animation to work we need to write a function that will run whe
 
 This function is going to do a few things:
 
-* it gets the current icon that we're hovering over
+* gets the current icon that we're hovering over
 * adds a stroke/outline
 * sets the strokeDasharray to the total length of the path (this causes the path to be hidden)
 * creates our animation settings and timing
 * finally it runs our animation on the icon that we're currently hovering over
 
 We're animating 2 things: the icon fill color, and the **strokeDashoffset** (i.e. _the stroke path_). When the strokeDashoffset is 0, the stroke is fully drawn, and when it's equal to the path length, it's fully erased.
-
-You may be familiar with `:hover` in CSS. But we’re going to use JavaScript instead.
 
 ```javascript
         function handleMouseEnter(event) {
@@ -131,7 +129,7 @@ You may be familiar with `:hover` in CSS. But we’re going to use JavaScript in
 
 ### Step 3. Create function to handle mouseleave event
 
-Next we need to create a function that will reverse our drawing animation and return the icons to their default style.
+Next we need to create a function that will reverse our drawing animation and return the icons to their default style when we stop hovering over the icon.
 
 The function for this is easier because we're simply pausing the animation and then running it in reverse when we stop hovering over the social icon.
 
@@ -146,18 +144,18 @@ The benefit of running the animation in reverse is that the "draw animation" wil
         }
 ```
 
-### Step 4. Add Event Listeners to your Icons
+### Step 4. Add event listeners to your icons
 
 Now that we have our functions the last thing we need to do is pair them with an event listener.
 
-Event listeners can be triggered based on certain actions. For example if we wanted something to happen when we ‘click’ a button, we could use the ‘click’ listener.
+Event listeners can be triggered based on certain actions or _events_. For example if we wanted something to happen when we ‘click’ a button, we would add a "click" listener to the button.
 
-JavaScript has several event listeners, we’re going to use 2 related to mouse movement.
+JavaScript has several event listeners, we’re going to use 2 related to mouse movement:
 
 1. **mouseenter**: this event will trigger when our mouse is hovering over a specific element, in our case it’s going to be the social icon
 2. **mouseleave**: this event will trigger when our mouse leaves or stops hovering over an element, again in this case it’s going to be the social icon.
 
-Since we assigned our social icons to variable earlier, we can use that to run a forEach loop and apply an event listener to each icon.
+Since we assigned our social icons to a variable earlier, we can use that to run a forEach loop and add event listener to each icon.
 
 ```javascript
 socialIcons.forEach(icon => {
