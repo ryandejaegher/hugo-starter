@@ -27,7 +27,7 @@ twitter_title = ""
 +++
 In todays tutorial we’re going to write a function that will animate the the social icons in Squarespace 7.1 so that they will get drawn/in when we hover over them.
 
-When you hover over them you’ll get this cool effect
+When you hover over them you’ll get this cool effect:
 
 {{< embed/video src="/uploads/animation-draw-in.mp4" >}}
 
