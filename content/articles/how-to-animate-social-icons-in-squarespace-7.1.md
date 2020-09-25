@@ -83,45 +83,45 @@ This function is going to do a few things:
 We're animating 2 things: the icon fill color, and the **strokeDashoffset** (i.e. _the stroke path_). When the strokeDashoffset is 0, the stroke is fully drawn, and when it's equal to the path length, it's fully erased.
 
 ```javascript
-        function handleMouseEnter(event) {
-            var use = event.target.querySelector('use');
-            var useID = use.getAttribute('xlink:href');
-            var symbol = document.querySelector(useID + ' path');
-			
-            var svgPathLength = symbol.getTotalLength();
-            var fillColor = getComputedStyle(use).fill;
-            symbol.style.strokeDasharray = svgPathLength;
-            symbol.style.stroke = 'black';
-            
-            var strokeKeyframes = {
-                strokeDashoffset: [svgPathLength,0]
-            };
-            
-            var strokeTiming = {
-                delay: 500,
-                duration: 1000,
-                fill:'both',
-                easing:'ease',
-            };
-            
-            var fillKeyframes = {
-                fill: [fillColor,'transparent']
-            };
-            
-            var fillTiming = {
-                duration: 500,
-                fill:'forwards',
-                easing:'ease',
-            };
-            
-            animateFill = symbol.animate(fillKeyframes, fillTiming);
-            animateStroke = symbol.animate(strokeKeyframes,strokeTiming);
-			
-            animateFill.pause();
-            animateStroke.pause();
-            animateFill.play();
-            animateStroke.play();
-        }
+function handleMouseEnter(event) {
+  var use = event.target.querySelector('use');
+  var useID = use.getAttribute('xlink:href');
+  var symbol = document.querySelector(useID + ' path');
+
+  var svgPathLength = symbol.getTotalLength();
+  var fillColor = getComputedStyle(use).fill;
+  symbol.style.strokeDasharray = svgPathLength;
+  symbol.style.stroke = 'black';
+
+  var strokeKeyframes = {
+    strokeDashoffset: [svgPathLength,0]
+  };
+
+  var strokeTiming = {
+    delay: 500,
+    duration: 1000,
+    fill:'both',
+    easing:'ease',
+  };
+
+  var fillKeyframes = {
+    fill: [fillColor,'transparent']
+  };
+
+  var fillTiming = {
+    duration: 500,
+    fill:'forwards',
+    easing:'ease',
+  };
+
+  animateFill = symbol.animate(fillKeyframes, fillTiming);
+  animateStroke = symbol.animate(strokeKeyframes,strokeTiming);
+
+  animateFill.pause();
+  animateStroke.pause();
+  animateFill.play();
+  animateStroke.play();
+}
 ```
 
 ### Step 3. Create function to handle the mouseleave event
@@ -133,12 +133,12 @@ The function for this is easier because we're simply pausing the animation and t
 The benefit of running the animation in reverse is that the "draw animation" will reverse from it's current position when you stop hovering over the social icon.
 
 ```javascript
-        function handleMouseLeave(event) {
-            animateStroke.pause();
-            animateFill.pause();
-            animateStroke.reverse();
-            animateFill.reverse();            
-        }
+function handleMouseLeave(event) {
+  animateStroke.pause();
+  animateFill.pause();
+  animateStroke.reverse();
+  animateFill.reverse();            
+}
 ```
 
 ### Step 4. Add event listeners to your icons
