@@ -40,7 +40,7 @@ When you hover over them you’ll get this cool effect
 
 Squarespace’s social icons are SVGs (Scaleable Vector Graphics). This gives us a lot of flexibility and control over their design.
 
-_Learn more about how you can style them here:_ [How To Style Social Icons Squarespace 7.1](https://ryandejaegher.com/how-to-style-social-icons-squarespace-7.1/)
+_Learn more about how you can style SVGs here:_ [How To Style Social Icons Squarespace 7.1](https://ryandejaegher.com/how-to-style-social-icons-squarespace-7.1/)
 
 We can change the color of the icons. We can add a stroke/outline to the icons. We can make them bigger/smaller without losing quality or sharpness.
 
