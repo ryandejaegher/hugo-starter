@@ -161,7 +161,9 @@ socialIcons.forEach(icon => {
 })
 ```
 
-### Final Script
+### Putting it all together
+
+We can combine everything and place it inside an load event listener on the window to ensure that the code only runs when the page is fully loaded.
 
 ```html
 <script>
