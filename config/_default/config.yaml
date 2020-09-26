@@ -64,6 +64,10 @@ build:
 outputs:
   section:
     - HTML
+    - AMP 
+    - RSS
+  page: 
+    - HTML
     - AMP
     - RSS
 

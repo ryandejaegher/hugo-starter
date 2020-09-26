@@ -20,6 +20,14 @@
 		<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed" href="{{ $.Site.Params.rssURL.main }}">
 		<link rel="feed" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed" href="{{ $.Site.Params.rssURL.main }}">
 
+	{{ with .OutputFormats.Get "rss" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
+
+	{{ range .AlternativeOutputFormats -}}
+		<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+	{{ end -}}
+
 		{{ partial "head/css.html" . }}
 	</head>
 
