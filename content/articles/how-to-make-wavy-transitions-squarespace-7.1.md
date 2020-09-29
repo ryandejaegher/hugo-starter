@@ -62,7 +62,7 @@ Last year Figma introduced a plugin ecosystem which lets developers create new t
 
 Figma now has a large plugin library. We're going to be using a free one called **Get Waves**.
 
-[Get Waves](https://www.figma.com/community/plugin/745619465174154496/Get-Waves) is a plugin from **zcreative labs**(link to the) that randomly generates **SVG waves**. There's a web based version but they also have a plugin for Figma which makes it really easy to use and keep all your work in your project, instead of downloading SVG files from the web app.
+[Get Waves](https://www.figma.com/community/plugin/745619465174154496/Get-Waves) is a plugin from [**zcreative labs**](https://zcreativelabs.com/) that randomly generates **SVG waves**. There's a web based version but they also have a plugin for Figma which makes it really easy to use and keep all your work in your project, instead of downloading SVG files from the web app.
 
 ### Why use this instead of creating an image with a wavy border already applied?
 
