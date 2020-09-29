@@ -80,15 +80,15 @@ You can see a demo below of how clip-paths work. We can take a shape like a circ
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fp9oqLcA0YLEhNWjvn23lKb%2FHugo%3Fnode-id%3D1165%253A28%26viewport%3D376%252C439%252C0.125%26scaling%3Dcontain&chrome=DOCUMENTATION" allowfullscreen></iframe>
 
-Flywheel also has a great visual to show how this works.
+Flywheel also has a great visual to show how clip-paths work. 
 
 ![](/uploads/flywheel-clip-path-visual.png)
 
-(source: Flywheel)
+_Source:_ [_Flywheel_](https://getflywheel.com/layout/css-svg-clipping-and-masking-techniques/)
 
 Now let's start creating waves in Figma.
 
-### Step 1. Creating a Wave In Figma
+### Step 1. Creating a wave in Figma
 
 After you've opened up Figma, you can install [Get Waves for free](https://www.figma.com/community/plugin/745619465174154496/Get-Waves).
 
