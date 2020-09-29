@@ -177,7 +177,7 @@ All you need to know for now is the formula you need to use for the `transform` 
 
 The formula is **1/viewBoxWidth, 1/viewBoxHeight**, in our case it would be 1/1920 and 1/120.
 
-_credit for this goes to [Eric Meyer](https://meyerweb.com/eric/thoughts/2017/02/24/scaling-svg-clipping-paths-for-css-use/)_
+_credit for this goes to_ [_Eric Meyer_](https://meyerweb.com/eric/thoughts/2017/02/24/scaling-svg-clipping-paths-for-css-use/)
 
 ```html
 <svg viewBox="0 0 1920 120">
@@ -199,7 +199,6 @@ This will make sure SVG and clipPath fully responsive.
 </svg>
 ```
 
-
 Now we're actually ready to add the SVG to our site. In order to make this SVG available across the entire site you'll need to add the code to *Settings -> Advanced -> Code Injection -> Footer *
 
 ### Step 5: Using the SVG on Psuedo Elements
@@ -216,11 +215,11 @@ position: relative
 }
 ```
 
-Next we’re going to create a psudo element after our sections. Psuedo elements let us create additional elements around existing elements. We can use these psuedo elements for styling purposes. This is what's going to actually make the wavy border.
-
-!\[\[CSS Tricks Psuedo Elements.png\]\] - CSS Tricks
+Next we’re going to create a psuedo element after our sections. Psuedo elements let us create additional elements around existing elements. We can use these psuedo elements for styling purposes. This is what's going to actually make the wavy border.
 
 ![](/uploads/css-tricks-psuedo-elements.png)
+
+_Source:_ [_CSS-Tricks_](https://css-tricks.com/pseudo-element-roundup/)
 
 To mask the pseudo element with our clip-path we can add a `clip-path` property and reference the ID from our SVGs clip-path.
 
@@ -239,19 +238,15 @@ clip-path: url(#waveDown);
 }
 ```
 
-By default we’ve added a background of black to the wave to make it visible.
-
-!\[\[Squarespace Black Wave Sections.png\]\]
+By default we’ve added a black background to the wave to make it visible.
 
 ![](/uploads/squarespace-black-wave-sections.png)
 
-So we know the wave is there but obviously this design doesn't work.
-
-Let's look at 2 design scenarios and how we can make our wave work.
+So we know the wave is there but obviously this design doesn't work. Let's look at 2 design scenarios and how we can make our wave work.
 
 ### Scenario 1: Color Section To Image Section (Easier)
 
-The first scenario is pretty straight forward, we have a section with a background color followed by a section with a background image. We want a wavy border between these 2 sections.
+The first scenario is pretty straight forward, we have a section with a background color followed by a section with a background image (the first 2 sections). We want a wavy border between these 2 sections.
 
 ![](/uploads/squarespace-blocky-sections.png)
 
@@ -259,7 +254,7 @@ To make this work we need to add a wave to the top of the second section and set
 
 Remember when I said you'd want to create 2 waves for each direction (up and down)? Here is where we want to use the wave that's pointing down.
 
-To apply the wave the second section you can either use the data-section-id or use an `nth-of-type` selector.
+To apply the wave the second section you can either use the data-section-id or use an `nth-of-type` selector. Since we're targeting the second section we can write **:nth-of-type(2)**
 
 ```css
 /* This will target the second section on the page */
@@ -281,15 +276,13 @@ To apply the wave the second section you can either use the data-section-id or u
 </style>
 ```
 
-Result
-
 ![](/uploads/squarespace-color-wave-to-image-section.png)
 
 ### Scenario 2: Wave Between 2 Image Sections
 
 The second design scenario we have is when we have 2 sections with background-images.
 
-In order to create a wavy border between these sections we need to add a wave to bottom of the first section that's **pointing up**, and then we need to add a wave to the top of second section that's **pointing down** and then we need their background color to match.
+In order to create a wavy border between these sections we need to add a wave to bottom of the first image section that's **pointing up**, and then we need to add a wave to the top of second section that's **pointing down** and then we need their background color to match.
 
 For this to work we'll need to have 2 SVG waves and we'll need slightly different CSS.
 
@@ -310,11 +303,11 @@ clip-path: url(#waveUp);
 }
 ```
 
-This takes care of positioning our wave on the bottom
+This takes care of positioning our wave on the bottom of the first image section.
 
 ![](/uploads/squarespace-section-wave-on-bottom.png)
 
-Now we need to add a wave to top of the second section. We'll need to use the SVG wave that's pointing down.
+Now we need to add a wave to top of the second image section. We'll need to use the SVG wave that's pointing down. Since it's actually the third section on the page we can use :nth-of-type(3) to target it.
 
 ```css
 [data-section-id]:nth-of-type(3):after {
