@@ -1,9 +1,9 @@
 +++
-articleFeatureImage = ""
+articleFeatureImage = "/uploads/wavy-section-squarespace.png"
 customize_seo = false
 date = 2020-09-29T16:09:03Z
 draft = true
-excerpt = "Commodo risus dolor posuere vitae gravida senectus lacus sodales turpis, arcu convallis vel nascetur nisl sit ut facilisis "
+excerpt = "In this tutorial I'm going to show you how you can create wavy transitions between sections and escape the blocky layout."
 facebook_description = ""
 facebook_image = ""
 facebook_title = ""
@@ -19,13 +19,13 @@ show_custom_social = false
 show_large_twitter_card = false
 show_table_of_contents = false
 tags = ["design", "squarespace 7.1"]
-title = "How to make wavy transitions Squarespace 7.1"
+title = "How To Make Wavy Section Transitions In Squarespace 7.1"
 twitter_description = ""
 twitter_image = ""
 twitter_title = ""
 
 +++
-At some point after designing some sites you’ve probably noticed that your designs are falling into a pattern.
+At some point after designing some Squarespace site you’ve probably noticed that your designs are falling into a pattern.
 
 Your site design is starting to feel “**blocky**".
 
@@ -354,3 +354,9 @@ You should now have a wave between your 2 sections with background images.
 	clip-path: url(#waveDown);
 }
 ```
+
+### Questions/Feedback?
+
+If you have questions or are running into issues with the script feel free to send me a message on [Facebook Messenger](https://m.me/dejaegherryan) or [email me](mailto:ryan@ryandejaegher.com).
+
+{{% embed/mailerlite form="squarespace" %}}
