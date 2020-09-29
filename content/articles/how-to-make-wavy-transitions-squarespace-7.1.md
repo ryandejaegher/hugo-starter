@@ -40,19 +40,13 @@ We can do this by introducing some wavy borders.
 
 So we go from having these straight edge sections to more organic transitions between sections.
 
-### Before
-
-![](/uploads/pasted-image-20200928134317.png)
-
-### After
-
 ![](/uploads/pasted-image-20200928134327.png)
 
 So today I'm going to show how you can create these **wavy borders** on your Squarespace site with CSS and an awesome design tool: **Figma**.
 
 ### What tools do you need?
 
-#### [Figma](figma.com) (free)
+#### [Figma](figma.com)
 
 Figma is an incredible design tool that can be used in the browser or on desktop. If you've been using something like Photoshop or Illustrator I'd highly recommend looking at Figma as your design tool.
 
@@ -86,7 +80,7 @@ You can see a demo below of how clip-paths work. We can take a shape like a circ
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fp9oqLcA0YLEhNWjvn23lKb%2FHugo%3Fnode-id%3D1165%253A28%26viewport%3D376%252C439%252C0.125%26scaling%3Dcontain&chrome=DOCUMENTATION" allowfullscreen></iframe>
 
-Flywheel also has a great visual to show how this works. 
+Flywheel also has a great visual to show how this works.
 
 ![](/uploads/flywheel-clip-path-visual.png)
 
