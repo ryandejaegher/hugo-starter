@@ -18,7 +18,7 @@ show_article_options = false
 show_custom_social = false
 show_large_twitter_card = false
 show_table_of_contents = false
-tags = []
+tags = ["design", "squarespace 7.1"]
 title = "How to make wavy transitions Squarespace 7.1"
 twitter_description = ""
 twitter_image = ""
@@ -112,9 +112,9 @@ You can start to adjust the settings and it will give you a live preview of your
 
 You can also change the direction of your wave: **up** or **down**.
 
-You'll want to create a wave for both directions. I'll explain why you need the waves for both directions later in the tutorial.
+You'll want to create a wave for both directions. This will let you have waves on the top and bottom of page sections.
 
-Once you click **create** you'll have an SVG wave added to your page.
+Once you click **create** you'll have a wave added to your page.
 
 Since the wave is an SVG you can easily resize it without effecting the quality of the image. You can also adjust the height.
 
