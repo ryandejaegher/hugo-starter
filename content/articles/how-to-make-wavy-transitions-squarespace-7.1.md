@@ -177,6 +177,8 @@ All you need to know for now is the formula you need to use for the `transform` 
 
 The formula is **1/viewBoxWidth, 1/viewBoxHeight**, in our case it would be 1/1920 and 1/120.
 
+_credit for this goes to [Eric Meyer](https://meyerweb.com/eric/thoughts/2017/02/24/scaling-svg-clipping-paths-for-css-use/)_
+
 ```html
 <svg viewBox="0 0 1920 120">
 	...
@@ -197,7 +199,6 @@ This will make sure SVG and clipPath fully responsive.
 </svg>
 ```
 
- [Eric Meyer](https://meyerweb.com/eric/thoughts/2017/02/24/scaling-svg-clipping-paths-for-css-use/)
 
 Now we're actually ready to add the SVG to our site. In order to make this SVG available across the entire site you'll need to add the code to *Settings -> Advanced -> Code Injection -> Footer *
 
