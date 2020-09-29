@@ -54,7 +54,7 @@ So today I'm going to show how you can create these **wavy borders** on your Squ
 
 #### [Figma](figma.com) (free)
 
-Figma is an incredile design tool that can be used in the browser or on desktop. If you've been using something like Photoshop or Illustrator I'd highly recommend looking at Figma as your design tool.
+Figma is an incredible design tool that can be used in the browser or on desktop. If you've been using something like Photoshop or Illustrator I'd highly recommend looking at Figma as your design tool.
 
 Last year Figma introduced a plugin ecosystem which lets developers create new tools that can easily be added to Figma. Which is what we'll look at next.
 
