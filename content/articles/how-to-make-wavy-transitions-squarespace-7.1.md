@@ -42,11 +42,11 @@ So we go from having these straight edge sections to more organic transitions be
 
 ### Before
 
-!\[\[Pasted image 20200928134317.png\]
+![](/uploads/pasted-image-20200928134317.png)
 
 ### After
 
-!\[Pasted image 20200928134327.png\]\]()
+![](/uploads/pasted-image-20200928134327.png)
 
 So today I'm going to show how you can create these **wavy borders** on your Squarespace site with CSS and an awesome design tool: **Figma**.
 
@@ -86,8 +86,11 @@ You can see a demo below of how clip-paths work. We can take a shape like a circ
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fp9oqLcA0YLEhNWjvn23lKb%2FHugo%3Fnode-id%3D1165%253A28%26viewport%3D376%252C439%252C0.125%26scaling%3Dcontain&chrome=DOCUMENTATION" allowfullscreen></iframe>
 
-Flywheel also has a great visual to show how this works.
-!\[\[Flywheel clip-path visual.png\]\] (source: Flywheel)
+Flywheel also has a great visual to show how this works. 
+
+![](/uploads/flywheel-clip-path-visual.png)
+
+(source: Flywheel)
 
 Now let's start creating waves in Figma.
 
@@ -97,19 +100,19 @@ After you've opened up Figma, you can install [Get Waves for free](https://www.f
 
 To start using the plugin you'll need to be working inside a file. You can create a new file by the "**+**" icon beside **Drafts** in the sidebar.
 
-!\[\[Create new draft in Figma.png\]\]
+![](/uploads/create-new-draft-in-figma.png)
 
 To access the plugin in your project you'll need to click the hamburger menu in the top left corner of Figma and click Get Waves inside the **Plugins folder.**
 
-!\[\[Figma Get Waves Plugin Location.png\]\]
+![](/uploads/figma-get-waves-plugin-location.png)
 
 **Quick tip:** if you're on a Mac you can press **⌘ + /**, and it will open the the Search Input and you can search "Get Waves"
 
-!\[\[Figma Get Waves Shortcut.png\]\]
+![](/uploads/figma-get-waves-shortcut.png)
 
 A pop up will open for Get Waves
 
-!\[\[Figma Get Waves Plugin.png\]\]
+![](/uploads/figma-get-waves-plugin.png)
 
 You can start to adjust the settings and it will give you a live preview of your wave. And you can easily get a new random wave by clicking the **dice icon**.
 
@@ -129,7 +132,7 @@ Figma makes it really easy to get the SVG code that you need. To get it simply r
 
 This will give you the code for the SVG to add to your site.
 
-!\[\[Figma Copy SVG.png\]\]
+![](/uploads/figma-copy-svg.png)
 
 You don’t have to worry about the color of the wave here because it doesn’t actually appear on the page. The colored part of wave is the part where our clipped element will be visible.
 
