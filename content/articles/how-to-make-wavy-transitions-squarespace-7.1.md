@@ -2,7 +2,7 @@
 articleFeatureImage = "/uploads/wavy-section-squarespace.png"
 customize_seo = false
 date = 2020-09-29T16:09:03Z
-excerpt = "In this tutorial I'm going to show you how you can create wavy transitions between sections and escape the blocky layout."
+excerpt = "In this tutorial I'm going to show you how you can create wavy transitions between sections and escape the blocky layout"
 facebook_description = ""
 facebook_image = ""
 facebook_title = ""
@@ -24,7 +24,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
-At some point after designing some Squarespace site you’ve probably noticed that your designs are falling into a pattern.
+At some point after designing some Squarespace sites you’ve probably noticed that your designs are falling into a pattern.
 
 Your site design is starting to feel “**blocky**".
 
