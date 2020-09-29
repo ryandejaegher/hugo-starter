@@ -2,7 +2,6 @@
 articleFeatureImage = "/uploads/wavy-section-squarespace.png"
 customize_seo = false
 date = 2020-09-29T16:09:03Z
-draft = true
 excerpt = "In this tutorial I'm going to show you how you can create wavy transitions between sections and escape the blocky layout."
 facebook_description = ""
 facebook_image = ""
