@@ -224,6 +224,8 @@ Next we’re going to create a psudo element after our sections. Psuedo elements
 
 !\[\[CSS Tricks Psuedo Elements.png\]\] - CSS Tricks
 
+![](/uploads/css-tricks-psuedo-elements.png)
+
 To mask the pseudo element with our clip-path we can add a `clip-path` property and reference the ID from our SVGs clip-path.
 
 ```css
@@ -245,15 +247,17 @@ By default we’ve added a background of black to the wave to make it visible.
 
 !\[\[Squarespace Black Wave Sections.png\]\]
 
+![](/uploads/squarespace-black-wave-sections.png)
+
 So we know the wave is there but obviously this design doesn't work.
 
-Lets look at 2 design scenarios and how we can make our wave work.
+Let's look at 2 design scenarios and how we can make our wave work.
 
 ### Scenario 1: Color Section To Image Section (Easier)
 
 The first scenario is pretty straight forward, we have a section with a background color followed by a section with a background image. We want a wavy border between these 2 sections.
 
-!\[\[Squarespace Blocky Sections.png\]\]
+![](/uploads/squarespace-blocky-sections.png)
 
 To make this work we need to add a wave to the top of the second section and set it's background-color to match the color from the previous section.
 
@@ -283,7 +287,7 @@ To apply the wave the second section you can either use the data-section-id or u
 
 Result
 
-!\[\[Squarespace Color Wave To Image Section.png\]\]
+![](/uploads/squarespace-color-wave-to-image-section.png)
 
 ### Scenario 2: Wave Between 2 Image Sections
 
@@ -312,7 +316,7 @@ clip-path: url(#waveUp);
 
 This takes care of positioning our wave on the bottom
 
-!\[\[Squarespace Section Wave On Bottom.png\]\]
+![](/uploads/squarespace-section-wave-on-bottom.png)
 
 Now we need to add a wave to top of the second section. We'll need to use the SVG wave that's pointing down.
 
@@ -331,9 +335,8 @@ Now we need to add a wave to top of the second section. We'll need to use the SV
 }
 ```
 
-You should now have a wave between your 2 sections with background images.
-
-!\[\[Pasted image 20200929115813.png\]\]
+You should now have a wave between your 2 sections with background images.  
+![](/uploads/waves-between-image-sections.png)
 
 ```css
 [data-section-id]:nth-of-type(2):after {
@@ -362,17 +365,3 @@ You should now have a wave between your 2 sections with background images.
 	clip-path: url(#waveDown);
 }
 ```
-
-We need to add a wave to the bottom of the first image section, and then we need to add a wave to the top of the following section.
-
-If we only added the wave to one we'd still end up with a sharp edge
-
-#### Bad
-
-!\[\[Squarespace Waves Between Image Sections.png\]\]
-
-#### Good
-
-!\[\[Squarespace Wavy Sections.png\]\]
-
-### Make Color Section "Drip" into the Next Section
