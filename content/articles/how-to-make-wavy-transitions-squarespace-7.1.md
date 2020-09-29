@@ -32,7 +32,7 @@ Your site design is starting to feel “**blocky**".
 You just have these sections or blocks stacked on top of each other. It starts to feel a little boring
 
 How can we change this?
-![[Squarespace Block Sections.png]]
+![/uploads/Squarespace Block Sections.png]
 
 We need a way to break up the monotony and make these sections feel a bit more dynamic. 
 
