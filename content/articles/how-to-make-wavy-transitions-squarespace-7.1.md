@@ -173,13 +173,15 @@ In order to make our SVG and clipPath responsive, we need to add a transform att
 
 The reason we have to do this has to do with the SVG viewBox and the path coordinates. That's a whole other topic that we won't dive into.
 
-All you need to know is the formula you need to use for the `transform` attribute on the clipPath.
+All you need to know for now is the formula you need to use for the `transform` attribute on the clipPath.
 
 The formula is **1/viewBoxWidth, 1/viewBoxHeight**, in our case it would be 1/1920 and 1/120.
 
 ```html
 <svg viewBox="0 0 1920 120">
+	...
 	<clipPath transform="scale(0.000520833 0.008333333)"
+    ....
 </svg>
 ```
 
