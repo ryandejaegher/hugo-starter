@@ -42,7 +42,7 @@ So we go from having these straight edge sections to more organic transitions be
 
 ### Before
 
-!\[\[Pasted image 20200928134317.png\]\]
+!\[\[Pasted image 20200928134317.png\]
 
 ### After
 
