@@ -39,8 +39,6 @@ Today I’m going to show you how to create a simple script that will ensure you
 
 Squarespace has an Amazon Block which makes it easy to add affiliate products to your site. As long as you’ve added your Amazon Associates ID to Squarespace (*Settings -> Advanced -> External API Keys -> Amazon Associates ID *) it will automatically create an affiliate link for the product you’ve chosen in the Amazon Block.
 
-![](/uploads/add-amazon-associates-id-2x.png)
-
 ![](/uploads/amazon-product-block-2x.png)
 
 However it doesn’t set the `target: _blank` and the `rel=nofollow` and this can cause problems with SEO.
