@@ -62,20 +62,22 @@ This will let you use the Amazon block and won’t require you to create your ow
 ```html
 <script>
 (function(){
-window.addEventListener('load', function() {
-var fixAmazonLinks = function() {
-var amazonLinks = document.querySelectorAll('a[href*="amazon.com"], a[href*="amzn.to"]');
-if (!amazonLinks instanceof NodeList) {
-return
-}
+	window.addEventListener('load', function() {
+		var fixAmazonLinks = function() {
+		var amazonLinks = document.querySelectorAll('a[href*="amazon.com"], a[href*="amzn.to"]');
+		
+        if (!amazonLinks instanceof NodeList) {
+			return;
+		}
 
-amazonLinks.forEach(link => {
-link.rel="nofollow"; 
-link.target="_blank";
-})
-} 
-})
-})()
+		amazonLinks.forEach(link => {
+			link.rel="nofollow"; 
+			link.target="_blank";
+		})
+		}
+        fixAmazonLinks();
+	})
+	})()
 </script>
 ```
 
