@@ -1,0 +1,14 @@
+
+{{/*  Only displays if the series front matter has been set  */}}
+{{ if .Params.Series }}
+
+<div class="max-w-lg bg-red-300 px-2 py-4">
+    <h4 class="font-bold">Other Articles In Series</h4>
+    {{ range where .Site.Pages "Params.series" .Params.series }}
+    <ul>
+        <li><a class="hover:border-b-2 border-pink-400 self-start box-border font-medium text-main-text" href="{{.Permalink}}">{{.Title}}</a></li>
+    </ul>
+    {{end}}
+</div>
+
+{{ end }}

@@ -3,7 +3,7 @@
     Source: https://discourse.gohugo.io/t/previous-in-series-and-next-in-series-links/2654/6  
 */}}
 
-{{ range where .Site.Pages.ByDate "Params.series" .Params.series }}
+{{ range where .Site.Pages "Params.series" .Params.series }}
 {{ if gt $.Date.Unix .Date.Unix }}
 {{ $.Scratch.Set "previous" .Permalink }}
 {{ end }}
