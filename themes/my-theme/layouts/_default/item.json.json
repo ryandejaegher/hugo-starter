@@ -1,4 +1,6 @@
 {
     "title": "{{ .Title }}",
-    "datePublished": "{{.Date}}"
+    "datePublished": "{{dateFormat "January 2, 2006" .Date}}",
+    "excerpt": "{{.Params.excerpt}}",
+    "featureImage": "{{.Params.articleFeatureImage | absURL}}"
 }
