@@ -65,8 +65,10 @@ outputs:
   section:
     - HTML
     - RSS
+    - JSON
   page: 
     - HTML
     - RSS
     - AMP
+    - JSON
 
