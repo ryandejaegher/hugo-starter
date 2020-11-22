@@ -8,7 +8,6 @@ layout:
 cascade:
 - _target:
     kind: page
-  banner: 'Hello World'
   layout: single-left
 
 ---
