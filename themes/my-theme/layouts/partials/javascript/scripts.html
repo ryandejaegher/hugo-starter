@@ -16,7 +16,25 @@
 {{ partial "javascript/lazyvideo.html" . }}
 {{end}}
 
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+
 
 {{ $instantpage := resources.Get "js/instantpage-5.1.0.js" }}
 <script src="{{ $instantpage.RelPermalink }}"></script>
+<script>
+   const search = instantsearch({
+      appId: 'VL58GALITD',
+      apiKey: '70620ddb35ad31191ca8a79b034ec4c4',
+      indexName: 'ryandejaegher',
+      routing: true
+    });
+    
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '#hits'
+      })
+    );
+  
+    search.start();
+</script>
 
