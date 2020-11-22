@@ -2,5 +2,6 @@
     "title": "{{ .Title }}",
     "datePublished": "{{dateFormat "January 2, 2006" .Date}}",
     "excerpt": "{{.Params.excerpt}}",
-    "featureImage": "{{.Params.articleFeatureImage | absURL}}"
+    "featureImage": "{{.Params.articleFeatureImage | absURL}}",
+    "tags": "{{range .Params.tags }}{{.}}{{end}}"
 }
