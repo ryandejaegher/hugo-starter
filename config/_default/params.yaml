@@ -11,3 +11,16 @@ tagline: Web Developer · Web Designer
 debugGrid: false
 siteDebug: 'true'
 themeText: pink
+algolia:
+  vars: 
+    - title
+    - summary
+    - date
+    - publishdate
+    - expirydate
+    - permalink
+  params:
+    - categories
+    - tags
+    - excerpt
+
