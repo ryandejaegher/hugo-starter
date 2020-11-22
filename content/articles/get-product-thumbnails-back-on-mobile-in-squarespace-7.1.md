@@ -22,8 +22,7 @@ title = "Get Product Thumbnails Back on Mobile in Squarespace 7.1"
 twitter_description = ""
 twitter_image = ""
 twitter_title = ""
-[cascade]
-	banner = "OH YO"
+
 
 +++
 There was a question in the Squarespace Customization Resource Group about how to get the thumbnails for products to be visible on mobile in Squarespace 7.1

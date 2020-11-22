@@ -6,8 +6,10 @@ excerpt: I write tutorials covering front-end development and platforms (Squares
 url: "/articles"
 layout: 
 cascade:
+- _target:
+    kind: page
+  banner: 'Hello World'
   layout: single-left
-  banner: 'AMAZING'
 
 ---
 I write tutorials covering front-end development and platforms (Squarespace, WordPress).
