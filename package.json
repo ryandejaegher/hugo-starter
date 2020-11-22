@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:css": "postcss themes/my-theme/assets/tailwind/tailwind.css -o themes/my-theme/assets/css/styles.css",
-    "watch": "watch 'npm run build:css' themes/my-theme/assets/tailwind"
+    "watch": "watch 'npm run build:css' themes/my-theme/assets/tailwind",
+    "algolia": "atomic-algolia"
   },
   "repository": {
     "type": "git",
