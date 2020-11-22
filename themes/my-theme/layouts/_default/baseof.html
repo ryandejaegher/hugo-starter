@@ -31,6 +31,7 @@
 
 
     {{ block "header" . }}
+
     {{ if .Site.Data.theme.show_menu }}
         {{ if eq .Site.Data.theme.menu_style "Centered" }}
             {{ partial "navigation/desktop-centered.html" . }}
