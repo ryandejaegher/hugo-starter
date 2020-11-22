@@ -22,6 +22,8 @@ title = "Fix Wide Text In Squarespace 7.1"
 twitter_description = ""
 twitter_image = ""
 twitter_title = ""
+[cascade]
+	banner = "OH YO"
 
 +++
 A very common problem I’ve seen on Squarespace sites is _realllly long lines_ of text i.e. the **line-length is too long**.

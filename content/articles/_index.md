@@ -7,6 +7,7 @@ url: "/articles"
 layout: 
 cascade:
   layout: single-left
+  banner: 'AMAZING'
 
 ---
 I write tutorials covering front-end development and platforms (Squarespace, WordPress).
