@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ryandejaegher/hugo-starter#readme",
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
+    "alpinejs": "^2.7.3",
     "atomic-algolia": "^0.3.19",
     "autoprefixer": "^9.8.6",
     "instant.page": "^5.1.0",
