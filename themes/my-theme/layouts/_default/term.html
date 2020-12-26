@@ -20,16 +20,18 @@ Page Type: {{.Type}}
 
 {{ end }}  */}}
 
-{{/*  Display a list of all site tags.*/}}
+{{/*  Display all posts under a taxonomy term. Example: show all posts tagged with "CSS" */}}
 <main class="">
+
 	<div class="container mx-auto mt-8 md:mt-24">
-		<h1 class="text-2xl font-bold text-black">{{.Title | title}}</h1>
+		<h1 class="text-2xl font-bold text-main-text">Tagged: {{.Title | title}}</h1>
 		<div class="text-gray-900 markdown mt-4">
 			{{.Content}}
 		</div>
 	</div>
 	{{/*  display pagination  */}}
-	{{range .Site.Taxonomies.tags}} {{.Page.Permalink}}{{.Count}}{{end}}
 	{{ partial "pagination/list-pagination.html" . }}
+
+
 </main>
 {{ end }}
