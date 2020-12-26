@@ -1,5 +1,8 @@
 {{/*  Changes the markdown output for images. Source: https://gohugo.io/getting-started/configuration-markup
 {{$cloudinary := "https://res.cloudinary.com/damfsuupo/image/upload"}}
+
+
+
 {{$image := resources.Get .Destination}}
 <figure class="md__image">
   <img
@@ -14,6 +17,10 @@
   </figure>  */}}
 
 {{$image := resources.Get .Destination}}
+
+
+
+
 
 {{ $320 := $image.Resize "320x jpg" }}
 {{ $512 := $image.Resize "512x jpg" }}
@@ -35,6 +42,8 @@
 
 <figure class="md__image">
         <img 
+        width="{{$1920.Width}}"
+        height="{{$1920.Height}}"
         sizes="100vw"
         srcset="
         {{ if ge $image.Width "320" }}
