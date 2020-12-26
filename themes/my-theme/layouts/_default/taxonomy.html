@@ -22,7 +22,7 @@ Page Type: {{.Type}}
 
 {{/*  Display a list of all site tags.*/}}
 <main class="">
-YYYYYY
+
 	<div class="container mx-auto mt-8 md:mt-24">
 		<h1 class="text-2xl font-bold text-black">{{.Title | title}}</h1>
 		<div class="text-gray-900 markdown mt-4">
@@ -30,8 +30,13 @@ YYYYYY
 		</div>
 	</div>
 	{{/*  display pagination  */}}
+
+{{$count := len .Pages}}
 	{{range .Pages}} 
-	{{.Title}}{{.Permalink}}
+	
+	{{$count}} - {{.Title}}
+	
+	
 	{{end}}
 
 </main>
