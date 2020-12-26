@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     extend: {
-        typography: {
+        typography: (theme) => ({
       DEFAULT: {
         css: {
           color: theme('colors.main-text'),
@@ -37,7 +37,7 @@ module.exports = {
           }
         }
       }
-    },
+    }),
       spacing: {
         "16/9": "56.25%",
         "1/1": "100%",
