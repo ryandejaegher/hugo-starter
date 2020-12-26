@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{$themeText := .Site.Data.theme.theme_color}}
-
+{{ if isset .Params "theme_color" }}
+	{{$themeText = .Params.theme_color}}
+{{ end }}
 
 {{ "<!-- Begin _default/single.html -->" | safeHTML }}
 <main class="container mx-auto mt-8">

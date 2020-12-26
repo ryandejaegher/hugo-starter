@@ -1,0 +1,5 @@
+{{$site:=.Site.Data.theme}}
+{{$theme := dict "theme_font" $site.theme_font "show_menu" $site.show_menu "theme_color" $site.theme_color}}
+
+
+{{return $theme}}

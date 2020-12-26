@@ -10,5 +10,6 @@ cascade:
     kind: page
   layout: single-left
 
+
 ---
 I write tutorials covering front-end development and platforms (Squarespace, WordPress).

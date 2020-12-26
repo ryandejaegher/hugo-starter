@@ -19,16 +19,18 @@
   },
   "homepage": "https://github.com/ryandejaegher/hugo-starter#readme",
   "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tailwindcss/typography": "^0.2.0",
     "alpinejs": "^2.7.3",
     "atomic-algolia": "^0.3.19",
     "autoprefixer": "^9.8.6",
     "instant.page": "^5.1.0",
     "instantsearch.js": "^4.8.7",
-    "postcss-cli": "^7.1.2",
-    "postcss-import": "^12.0.1",
+    "postcss": "^7.0.35",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
     "postcss-nesting": "^7.0.1",
-    "tailwindcss": "^1.9.6",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "watch": "^1.0.2"
   },
   "devDependencies": {

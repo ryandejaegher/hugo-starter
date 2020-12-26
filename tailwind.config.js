@@ -7,8 +7,14 @@ module.exports = {
   //   }
   // },
   theme: {
-    typography: (theme) => ({
-      default: {
+    container: {
+      padding: {
+        default: "1rem"
+      },
+    },
+    extend: {
+        typography: {
+      DEFAULT: {
         css: {
           color: theme('colors.main-text'),
           h2: {
@@ -31,13 +37,7 @@ module.exports = {
           }
         }
       }
-    }),
-    container: {
-      padding: {
-        default: "1rem"
-      },
     },
-    extend: {
       spacing: {
         "16/9": "56.25%",
         "1/1": "100%",

@@ -2,5 +2,7 @@
 menu_item:
 - menu_title: Articles
   menu_url: "/articles"
+- menu_title: Notes
+  menu_url: "/notes"
 - menu_title: Code Scripts And Tools
   menu_url: https://gumroad.com/ryandejaegher

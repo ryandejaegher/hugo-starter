@@ -1,0 +1,113 @@
+{
+  "main": {
+    "id": "6fa3b7ffc94c4e53",
+    "type": "split",
+    "children": [
+      {
+        "id": "35c84daca3bb13d9",
+        "type": "leaf",
+        "dimension": 57.64,
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled 1.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "a6f54b373d064958",
+        "type": "leaf",
+        "dimension": 42.36,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes/Untitled.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ad7e699bc437590",
+    "type": "split",
+    "children": [
+      {
+        "id": "826dd50d0850c814",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da387c4d6ba685d8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "daec13a0ae5e542c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 631
+  },
+  "right": {
+    "id": "583727588edd5663",
+    "type": "split",
+    "children": [
+      {
+        "id": "87ddf838b5df9c18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4190cb2eec8ddc7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Untitled 1.md",
+    "notes/Untitled.md",
+    "Untitled.md",
+    "notes/Template.md",
+    "articles/how-to-animate-social-icons-in-squarespace-7.1.md",
+    "articles/get-product-thumbnails-back-on-mobile-in-squarespace-7.1.md",
+    "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
+    "notes/_index.md",
+    "notes/wonderful.md",
+    "articles/_index.md"
+  ]
+}

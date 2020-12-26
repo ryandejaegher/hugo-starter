@@ -1,11 +1,13 @@
 {{ define "main" }}
 {{$themeText := .Site.Data.theme.theme_color}}
+{{ if isset .Params "theme_color" }}
+	{{$themeText = .Params.theme_color}}
+{{ end }}
 
 {{ "<!-- Begin _default/single-left.html -->" | safeHTML }}
 <main class="container mx-auto mt-8">
-
 	<article class="space-y-6">
-		{{ partial "articles/articleHeader.html" . }}
+		{{ partial "articles/articleHeader.html" (dict "dot" . "themeText" $themeText) }}
 		{{/*  Content  */}}
 		<div class="prose">
 			{{- .Content -}}

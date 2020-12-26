@@ -1,13 +1,11 @@
-{{$themeText := .Site.Data.theme.theme_color}}
-
-<header class="border-t-8 border-{{$themeText}}-500 py-8">
+<header class="border-t-8 border-{{.themeText}}-500 py-8">
 	<nav class="container mx-auto flex flex-col space-y-4 items-baseline">
-		<a href="{{ .Site.BaseURL }}">
-			<strong class="text-xl text-main-text">{{ .Site.Title }}</strong>
+		<a href="{{ .dot.Site.BaseURL }}">
+			<strong class="text-xl text-main-text">{{ .dot.Site.Title }}</strong>
 		</a>
 
 		<ul class="flex space-x-4">
-			{{ partial "navigation/nav-items.html" . }}
+			{{ partial "navigation/nav-items.html" (dict "dot" .dot "themeText" .themeText) }}
 		</ul>
 	</nav>
 </header>

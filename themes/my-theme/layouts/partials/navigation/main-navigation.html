@@ -1,0 +1,31 @@
+{{ if .Site.Data.theme.show_menu }}
+{{$menu := .Site.Data.theme.menu_style }}
+{{$themeText := .Site.Data.theme.theme_color}}
+
+
+{{ if isset .Params "theme_color" }}
+	{{$themeText = .Params.theme_color}}
+{{ end }}
+    {{ if isset .Params "menu_style" }}
+        {{$menu = .Params.menu_style}}
+    {{ end }}
+
+        {{ if eq $menu "Centered" }}
+            {{ partial "navigation/desktop-centered.html" . }}
+        {{ end }}
+
+        {{ if eq $menu  "Horizontal-Left" }}
+            {{ partial "navigation/nav-inline-left.html" . }}
+        {{ end }}
+
+        {{ if eq $menu  "Horizontal-Split" }}
+            {{ partial "navigation/nav-inline-split.html" . }}
+        {{ end }}
+
+        {{ if eq $menu "Stacked-Left" }}
+            {{ partial "navigation/nav-stacked-left.html" (dict "dot" . "themeText" $themeText) }}
+        {{ end }}
+    {{ end }}
+
+{{$theme := partial "test.html" . }}
+

@@ -20,6 +20,7 @@ theme: "my-theme"
 # See "content-management/permalinks"
 permalinks:
   articles: /:title/
+  notes: /:title/
   pages: /:title/
   developer-diary: /:title/
 
@@ -31,7 +32,7 @@ canonifyURLs: true
 disableKinds: ["hugoGeneratorInject", "404"]
 
 # Files to ignore while rendering
-ignoreFiles: []
+ignoreFiles: ['Template']
 
 # the length of text to show in a .Summary
 summaryLength: 5

@@ -1,12 +1,12 @@
-{{$themeText := .Site.Data.theme.theme_color}}
+
 
 <div class="flex space-x-4">
-        <time class="block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Date }}"
-            pubdate>{{ dateFormat "January 2, 2006" .Date }}</time>
+        <time class="block text-sm font-medium uppercase text-{{.themeText}}-600" datetime="{{ .dot.Date }}"
+            pubdate>{{ dateFormat "January 2, 2006" .dot.Date }}</time>
         
         {{/*  Only show Last Modified date if the dates aren't equal  */}}
-        {{if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod)}}
-        <time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}"
-            pubdate>Updated: {{ dateFormat "January 2, 2006" .Lastmod }}</time>
+        {{if ne (dateFormat "January 2, 2006" .dot.Date) (dateFormat "January 2, 2006" .dot.Lastmod)}}
+        <time class="italic block text-sm font-medium uppercase text-{{.themeText}}-600" datetime="{{ .dot.Lastmod }}"
+            pubdate>Updated: {{ dateFormat "January 2, 2006" .dot.Lastmod }}</time>
         {{end}}
 </div>

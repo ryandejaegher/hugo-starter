@@ -22,7 +22,7 @@ title = "Add Fixed Vertical Navigation To Squarespace"
 twitter_description = ""
 twitter_image = ""
 twitter_title = ""
-
+weight=2
 +++
 Looking for an easy way to add a fixed vertical navigation to your Squarespace site? Today I'm going to share a little script with you that you can use to easily add a vertical navigation to your entire site or to individual pages or both!
 

@@ -9,7 +9,7 @@
     {{ partial "head/icons.html" . }}
     {{ partial "head/css.html" . }}
 
-    {{ "<!-- Amp Test -->" |safeHTML }}
+    {{ "<!-- Amp Test -->" | safeHTML }}
     {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
     {{ end -}}
@@ -34,26 +34,8 @@
 
 
     {{ block "header" . }}
-    {{ partial "blocks/announcement-bar.html" . }}
-    {{ if .Site.Data.theme.show_menu }}
-        {{ if eq .Site.Data.theme.menu_style "Centered" }}
-            {{ partial "navigation/desktop-centered.html" . }}
-        {{ end }}
-
-        {{ if eq .Site.Data.theme.menu_style  "Horizontal-Left" }}
-            {{ partial "navigation/nav-inline-left.html" . }}
-        {{ end }}
-
-        {{ if eq .Site.Data.theme.menu_style  "Horizontal-Split" }}
-        {{ partial "navigation/nav-inline-split.html" . }}
-        {{ end }}
-
-        {{ if eq .Site.Data.theme.menu_style  "Stacked-Left" }}
-        {{ partial "navigation/nav-stacked-left.html" . }}
-    {{ end }}
-
-        {{ end }}
-       
+        {{ partial "blocks/announcement-bar.html" . }}
+        {{ partial "navigation/main-navigation" . }}
     {{ end }}
 
 
