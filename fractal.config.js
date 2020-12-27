@@ -4,7 +4,7 @@
 const fractal = module.exports = require('@frctl/fractal').create();
 
 /* Set the title of the project */
-fractal.set('project.title', 'FooCorp Component Library');
+fractal.set('project.title', 'Ryan Dejaegher Design System');
 
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/src/components');
