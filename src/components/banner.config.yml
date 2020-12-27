@@ -1,0 +1,17 @@
+title: Notification Banner
+status: ready
+collated: true
+context:
+  bgColor: gray
+  textColor: black
+  message: This is the default banner
+variants:
+- name: warning
+  context:
+    bgColor: yellow
+    message: This is a warning banner
+- name: success
+  status: prototype
+  context:
+    bgColor: green
+    message: This is a success banner
