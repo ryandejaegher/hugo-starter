@@ -18,3 +18,4 @@ cascade:
 
 Welcome to my notes page. Notes is where I share my early thoughts, ideas, learning and questions. Unlike my articles, notes are very messy and have a loose structure. 
 
+{{< squarespace>}}

@@ -20,4 +20,3 @@ cascade:
 I write tutorials covering front-end development and platforms (Squarespace, WordPress).
 
 
-{{<all-tags>}}
