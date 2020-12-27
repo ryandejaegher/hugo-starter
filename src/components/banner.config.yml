@@ -1,6 +1,5 @@
 title: Notification Banner
 status: ready
-collated: true
 context:
   bgColor: gray
   textColor: black
