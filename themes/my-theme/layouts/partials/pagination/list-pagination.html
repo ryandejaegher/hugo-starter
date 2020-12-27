@@ -18,8 +18,9 @@
                 {{.Summary}}        
             </p>
             {{ end }}
-
+{{if $.Params.show_date }}
             <time class="inline-block text-sm tracking-tight text-secondary-text" datetime="{{.Date}}">{{.Page.Date.Format "January 2, 2006" }}</time>
+{{end}}
         </article>
 
         {{ end }}

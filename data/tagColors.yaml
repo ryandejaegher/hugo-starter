@@ -2,3 +2,20 @@
 design: "bg-blue-300 text-blue-700"
 animation: "bg-green-300"
 squarespace 7.1: "bg-red-300"
+shopify:
+hugo:
+react:
+vue:
+javascript:
+roam:
+notion:
+html:
+css:
+gatsby:
+next:
+nuxt:
+figma:
+framer:
+wordpress:
+
+

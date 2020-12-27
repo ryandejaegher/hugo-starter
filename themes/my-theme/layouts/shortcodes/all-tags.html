@@ -2,12 +2,16 @@
 {{/*  This will display the site tags  */}}
 {{ $data := .Site.Data.tagColors}}
 
-
+{{$tags := slice}}
+{{ with .Site.GetPage "section" $.Page.Title }}
+{{ range .Pages }}
+  {{ $tags = $tags | append .Params.tags }}
+{{end}}
+{{$tags | uniq}}
+{{ end }}
 
 <ul>
     {{range .Site.Taxonomies.tags}}
-
-    
         <li class="{{index $data .Page.Title}}"><a class="text-current" href="{{.Page.RelPermalink}}">{{ .Page.Title}}{{if eq ($.Get "showCount") true}} {{.Count}}{{end}}</a></li>
     {{end}}
 </ul>

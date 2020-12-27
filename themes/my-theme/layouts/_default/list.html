@@ -7,23 +7,24 @@ Page Type: {{.Type}}
 
 {{$articleTitle := .Title}}
 
-	Title: {{$articleTitle}}
-	URL: {{.URL}}
-	Date: {{.Date}}
-	Date Formatted: {{.Date.Format "Jan 1, 2006" }}
-	Date Formatted: {{.Date.Format "2006-01-02" }}
-	
-	Date Modified: {{.Lastmod}}
-	ReadTime: {{.ReadingTime}}
-	Word Count: {{.WordCount}}
-	Next:{{.NextInSection}}
+Title: {{$articleTitle}}
+URL: {{.URL}}
+Date: {{.Date}}
+Date Formatted: {{.Date.Format "Jan 1, 2006" }}
+Date Formatted: {{.Date.Format "2006-01-02" }}
 
-{{ end }}  */}}
+Date Modified: {{.Lastmod}}
+ReadTime: {{.ReadingTime}}
+Word Count: {{.WordCount}}
+Next:{{.NextInSection}}
+
+{{ end }} */}}
 
 <main class="">
+
 	<div class="container mx-auto mt-8 md:mt-24">
 		<h1 class="text-2xl font-bold text-main-text">{{.Title | title}}</h1>
-		<div class="text-main-text markdown mt-4">
+	<div class="text-main-text markdown mt-4">
 			{{.Content}}
 		</div>
 	</div>

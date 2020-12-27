@@ -15,6 +15,7 @@ showPrevNext = false
 showReadTime = false
 show_article_options = false
 show_custom_social = true
+show_date = true
 show_large_twitter_card = false
 show_table_of_contents = false
 tags = ["squarespace 7.1", "animation"]

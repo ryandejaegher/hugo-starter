@@ -7,18 +7,18 @@ Page Type: {{.Type}}
 
 {{$articleTitle := .Title}}
 
-	Title: {{$articleTitle}}
-	URL: {{.URL}}
-	Date: {{.Date}}
-	Date Formatted: {{.Date.Format "Jan 1, 2006" }}
-	Date Formatted: {{.Date.Format "2006-01-02" }}
-	
-	Date Modified: {{.Lastmod}}
-	ReadTime: {{.ReadingTime}}
-	Word Count: {{.WordCount}}
-	Next:{{.NextInSection}}
+Title: {{$articleTitle}}
+URL: {{.URL}}
+Date: {{.Date}}
+Date Formatted: {{.Date.Format "Jan 1, 2006" }}
+Date Formatted: {{.Date.Format "2006-01-02" }}
 
-{{ end }}  */}}
+Date Modified: {{.Lastmod}}
+ReadTime: {{.ReadingTime}}
+Word Count: {{.WordCount}}
+Next:{{.NextInSection}}
+
+{{ end }} */}}
 
 {{/*  Display all posts under a taxonomy term. Example: show all posts tagged with "CSS" */}}
 <main class="">

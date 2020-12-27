@@ -9,7 +9,15 @@ cascade:
 - _target:
     kind: page
   layout: single-left
+  show_date: true
+- _target: 
+    kind: section
+  show_date: true
+
 
 
 ---
 I write tutorials covering front-end development and platforms (Squarespace, WordPress).
+
+
+{{<all-tags>}}
