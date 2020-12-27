@@ -13,31 +13,31 @@ module.exports = {
       },
     },
     extend: {
-        typography: (theme) => ({
-      DEFAULT: {
-        css: {
-          color: theme('colors.main-text'),
-          h2: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
             color: theme('colors.main-text'),
-          },
-          h3: {
-            color: theme('colors.main-text'),
-          },
-          code: {
-            color: theme('colors.main-text'),
-          },
-          strong: {
-            color: theme('colors.main-text')
-          },
-          a: {
-            color: theme('colors.main-text')
-          },
-          blockquote: {
-            color: theme('colors.main-text')
+            h2: {
+              color: theme('colors.main-text'),
+            },
+            h3: {
+              color: theme('colors.main-text'),
+            },
+            code: {
+              color: theme('colors.main-text'),
+            },
+            strong: {
+              color: theme('colors.main-text')
+            },
+            a: {
+              color: theme('colors.main-text')
+            },
+            blockquote: {
+              color: theme('colors.main-text')
+            }
           }
         }
-      }
-    }),
+      }),
       spacing: {
         "16/9": "56.25%",
         "1/1": "100%",
@@ -74,12 +74,12 @@ module.exports = {
         }
       },
       fontFamily: {
-      'neue': '"neue-haas-unica"',
-      'aktiv': '"aktiv-grotesk"',
-      'kabel': '"neue-kabel"',
-      'franklin': '"franklin-gothic-urw"',
-      'minion': '"minion-pro"',
-      'sofia': '"sofia-pro"'
+        'neue': '"neue-haas-unica"',
+        'aktiv': '"aktiv-grotesk"',
+        'kabel': '"neue-kabel"',
+        'franklin': '"franklin-gothic-urw"',
+        'minion': '"minion-pro"',
+        'sofia': '"sofia-pro"'
       },
     },
   },
@@ -87,11 +87,6 @@ module.exports = {
     borderWidth: ['responsive', 'hover', 'focus'],
     borderStyle: ['responsive', 'hover', 'focus'],
     borderColor: ['responsive', 'hover', 'focus']
-  },
-  experimental: {
-extendedFontSizeScale:true,
-extendedSpacingScale:true,
-uniformColorPalette:true
   },
   plugins: [
     require('@tailwindcss/typography')
