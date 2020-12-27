@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
-<title>Notification Banner | FooCorp Component Library</title>
+<title>Notification Banner | Ryan Dejaegher Design System</title>
 
 </head>
 <body>
@@ -50,7 +50,7 @@
 
         </div>
     </button>
-    <a href="../../index.html" class="Header-title" data-pjax>FooCorp Component Library</a>
+    <a href="../../index.html" class="Header-title" data-pjax>Ryan Dejaegher Design System</a>
 </div>
 
     </div>
@@ -179,8 +179,12 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js&quot;</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-bold text-black text-center py-2 md:py-4 md:text-xl bg-gray-200&quot;</span>&gt;</span>This is the default banner<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">x-data</span>=<span class="hljs-string">&quot;{active:false}&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;active = !active&quot;</span> <span class="hljs-attr">:class</span>=<span class="hljs-string">&quot;{&#x27;hidden&#x27; : active === true}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-bold text-black text-center py-2 md:py-4 md:text-xl bg-gray-200&quot;</span>&gt;</span>This is the default banner<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -188,9 +192,15 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-5d2ed30ab18e3d3da0c307df98da07cc-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js&quot;</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-bold text-</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">textColor</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> text-center py-2 md:py-4 md:text-xl bg-</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">bgColor</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">-200&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">message</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">x-data</span>=<span class="hljs-string">&quot;{active:false}&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;active = !active&quot;</span> <span class="hljs-attr">:class</span>=<span class="hljs-string">&quot;{&#x27;hidden&#x27; : active === true}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-bold text-</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">textColor</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> text-center py-2 md:py-4 md:text-xl bg-</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">bgColor</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">-200&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">message</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -484,7 +494,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-27T18:00:26.742Z">
+                            <time datetime="2020-12-27T19:01:10.801Z">
                                 12/27/2020
                             </time>
                         
