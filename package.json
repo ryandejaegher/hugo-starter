@@ -26,6 +26,7 @@
     "alpinejs": "^2.7.3",
     "atomic-algolia": "^0.3.19",
     "autoprefixer": "^9.8.6",
+    "gsap": "^3.5.1",
     "instant.page": "^5.1.0",
     "instantsearch.js": "^4.8.7",
     "postcss": "^7.0.35",
