@@ -11,3 +11,5 @@ node_modules
 ## Hugo
 public
 .env
+# Local Netlify folder
+.netlify
