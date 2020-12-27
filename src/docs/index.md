@@ -1,4 +1,4 @@
 ---
-title: FooCorp Components
+title: Ryan Dejaegher Design System
 ---
-This is the component library for FooCorp. **Feel free to look around!**
+This is the component library for ryandejaegher.com
