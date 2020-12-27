@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors');
+
+
 module.exports = {
   // purge: {
   //   content: ['./themes/my-theme/layouts/**/*.html'],
