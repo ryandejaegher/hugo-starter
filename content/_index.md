@@ -16,3 +16,7 @@ Hi there! I'm Ryan Dejaegher a Front End Web Developer living in Philadelphia, P
 
 I write articles and tutorials about web development to help you do more with your website. 
 
+<div x-data>
+    <div x-text="'yo'"></div>
+</div>
+

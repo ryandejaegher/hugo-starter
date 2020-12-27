@@ -1,10 +1,10 @@
-<header class="border-t-8 border-{{.themeText}}-500 py-8">
+<header x-data="{open: true}" class="border-t-8 border-{{.themeText}}-500 py-8">
 	<nav class="container mx-auto flex flex-col space-y-4 items-baseline">
 		<a href="{{ .dot.Site.BaseURL }}">
-			<strong class="text-xl text-main-text">{{ .dot.Site.Title }}</strong>
+			<strong class="text-xl font-black text-main-text">{{ .dot.Site.Title }}</strong>
 		</a>
-
-		<ul class="flex space-x-4">
+		<button class="hidden" @click="open = !open">Click Me</button>
+		<ul :class="{'hidden' : open === false}" class="flex space-x-4 flex-nowrap overflow-x-auto w-full">
 			{{ partial "navigation/nav-items.html" (dict "dot" .dot "themeText" .themeText) }}
 		</ul>
 	</nav>

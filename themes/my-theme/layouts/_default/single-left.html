@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{$themeText := .Site.Data.theme.theme_color}}
 {{ if isset .Params "theme_color" }}
-	{{$themeText = .Params.theme_color}}
+{{$themeText = .Params.theme_color}}
 {{ end }}
 
 {{ "<!-- Begin _default/single-left.html -->" | safeHTML }}
@@ -9,18 +9,18 @@
 	<article class="space-y-6">
 		{{ partial "articles/articleHeader.html" (dict "dot" . "themeText" $themeText) }}
 		{{/*  Content  */}}
-		<div class="prose">
+		<div class="prose prose-lg">
 			{{- .Content -}}
 		</div>
 		{{if .Params.show_table_of_contents}}
 		{{ partial "articles/table-of-contents.html" . }}
 		{{end}}
 	</article>
- {{ if ne .Section "pages" }}
-{{/*	{{ partial "articles/articleRelated.html" . }} */}}
+	{{ if ne .Section "pages" }}
+	{{/*	{{ partial "articles/articleRelated.html" . }} */}}
 	{{ partial "articles/articlePrevNext.html" . }}
-{{end}}
-{{ partial "articles/articleSeries.html" . }}
+	{{end}}
+	{{ partial "articles/articleSeries.html" . }}
 </main>
 {{ "<!-- End _default/single-left.html -->" | safeHTML }}
 {{ end }}
