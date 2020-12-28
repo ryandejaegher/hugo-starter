@@ -1,0 +1,3 @@
+<div x-data="{active:false}">
+    <div @click="active = !active" :class="{'hidden' : active === true}" class="font-bold text-{{textColor}} text-center py-2 md:py-4 md:text-xl bg-{{bgColor}}-200">{{message}}</div>
+</div>
