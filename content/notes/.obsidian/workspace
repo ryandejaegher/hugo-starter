@@ -4,15 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "40d2c3b8c4924cc3",
+        "id": "60c54223906ec61d",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "wonderful.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,9 +66,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wonderful.md",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -93,20 +89,20 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "wonderful.md"
-              }
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "lastOpenFiles": [
+    "Untitled 1.md",
     "Untitled.md",
-    "_index.md"
+    "_index.md",
+    "Template.md"
   ]
 }

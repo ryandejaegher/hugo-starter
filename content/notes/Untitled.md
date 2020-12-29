@@ -1,5 +1,5 @@
 ---
-title: 'title	'
+title: 'title'
 articleFeatureImage: 
 customize_seo: false
 date: 2020-12-23
@@ -83,3 +83,4 @@ What are some common things that get in the way of writing?
 		- Social share image (not required, but shared image results can vary based on the site)
 		- Requires an excerpt
 		- No constraints on word count which can be a curse or a blessing
+

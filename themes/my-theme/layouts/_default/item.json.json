@@ -2,6 +2,8 @@
     "title": "{{ .Title }}",
     "datePublished": "{{dateFormat "January 2, 2006" .Date}}",
     "excerpt": "{{.Params.excerpt}}",
+    "summary": "{{.Summary}}",
     "featureImage": "{{.Params.articleFeatureImage | absURL}}",
-    "tags": "{{range .Params.tags }}{{.}}{{end}}"
+    "tags": "{{range $index, $value:= .Params.tags }}{{if $index}}, {{end}}{{$value}}{{end}}",
+    "permalink": "{{.Permalink}}"
 }

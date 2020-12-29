@@ -73,6 +73,14 @@ outputs:
     - RSS
     - AMP
     - JSON
+  taxonomy: 
+    - HTML
+    - RSS
+    - JSON
+  term: 
+    - HTML
+    - RSS
+    - JSON
   home: 
     - HTML
     - RSS

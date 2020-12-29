@@ -9,11 +9,8 @@
         "dimension": 57.64,
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Untitled 1.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       },
       {
@@ -82,7 +79,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
