@@ -8,6 +8,7 @@ facebook_image = ""
 facebook_title = ""
 layout = "single-left"
 publishdate = ""
+series = "learn roam research"
 seo_description = ""
 seo_title = ""
 showCodeHighlighting = true
