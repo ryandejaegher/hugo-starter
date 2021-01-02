@@ -22,6 +22,8 @@
     {{ $gsap := resources.Get "js/gsap.js" | js.Build | resources.Minify }}
     <script src="{{ $alpine.RelPermalink }}"></script>
     <script src="{{ $gsap.RelPermalink }}" defer></script>
+
+
 </head>
 
 <body
@@ -43,7 +45,9 @@
     {{ end }}
 
 
+
     {{ block "main" . }}
+
     {{/*  <!-- The part of the page that begins to differ between templates -->  */}}
     {{ end }}
 
@@ -54,6 +58,9 @@
 
     {{/*  Adds JavaScript  */}}
     {{ partial "javascript/scripts.html" . }}
+
+
+
 
 </body>
 
