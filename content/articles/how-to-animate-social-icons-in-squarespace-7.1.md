@@ -181,6 +181,8 @@ Add this code to Settings -> Advanced -> Code Injection -> Footer
         }
         var svg = document.querySelector('[data-usage="social-icons-svg"]')
         svg.style.display = 'inline';
+        svg.style.height = '0px';
+        svg.style.position = 'absolute';
         
         function handleMouseEnter(event) {
             var use = event.target.querySelector('use');
