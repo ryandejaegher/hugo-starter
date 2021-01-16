@@ -12,7 +12,7 @@ cascade:
   show_date: true
 - _target: 
     kind: section
-  show_date: true
+  show_date: false
 
 
 
