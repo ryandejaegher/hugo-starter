@@ -21,6 +21,16 @@
 	{{ partial "articles/articlePrevNext.html" . }}
 	{{end}}
 	{{ partial "articles/articleSeries.html" . }}
+	<h2 class="text-center font-bold text-2xl">Comments</h2>
+	<div id="hyvor-talk-view"></div>
+	<script type="text/javascript">
+		var HYVOR_TALK_WEBSITE = 2999; // DO NOT CHANGE THIS
+		var HYVOR_TALK_CONFIG = {
+			url: false,
+			id: false
+		};
+	</script>
+	<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
 </main>
 {{ "<!-- End _default/single-left.html -->" | safeHTML }}
 {{ end }}

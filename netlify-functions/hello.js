@@ -14,8 +14,7 @@ exports.handler = async function (event, context) {
         method: 'GET',
         headers: {
             'X-MailerLite-ApiKey': process.env.MAILERLITE_API,
-            'Content-Type': 'application/json',
-            cookie: '__cfduid=dad2df4050816509a1c800f83de36ac9e1610460936; PHPSESSID=5da696f5fa0b60cb7b4010863c1ffc3f; '
+            'Content-Type': 'application/json'
         }
     };
     response = await fetch(url, options)
