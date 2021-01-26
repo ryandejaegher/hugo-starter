@@ -52,7 +52,7 @@ What I’m going to talk about
 ----------------------------
 - Overcoming fears around livestreaming  
 - The before/during/after of the livestream experiment  
-- What I’d do differently?
+- What I’d do differently
 - Suggestions/tips for doing your first livestream  
 - Should you use livestreaming to build an audience?
 
