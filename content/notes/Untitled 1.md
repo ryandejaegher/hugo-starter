@@ -19,6 +19,8 @@ show_custom_social: false
 show_large_twitter_card: false
 show_table_of_contents: false
 tags:
+- livestreaming
+- youtube
 twitter_description: ''
 twitter_image: ''
 twitter_title: ''
