@@ -6,23 +6,32 @@
       {
         "id": "35c84daca3bb13d9",
         "type": "leaf",
-        "dimension": 57.64,
         "active": true,
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
-      },
-      {
-        "id": "a6f54b373d064958",
-        "type": "leaf",
-        "dimension": 42.36,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Untitled.md",
+            "file": "notes/Untitled 1.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "897564d9b4d0e7e0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes/Untitled 1.md",
             "mode": "preview"
           }
+        }
+      },
+      {
+        "id": "f244695cbdbc33b7",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -63,7 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 631
+    "width": 481
   },
   "right": {
     "id": "583727588edd5663",
@@ -79,31 +88,42 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "notes/Untitled 1.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "7a5d8b0e4f75e131",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/Untitled 1.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "lastOpenFiles": [
-    "Untitled 1.md",
-    "notes/Untitled.md",
+    "notes/Untitled 1.md",
     "Untitled.md",
+    "404.md",
+    "notes/Untitled.md",
     "notes/Template.md",
+    "Untitled 1.md",
     "articles/how-to-animate-social-icons-in-squarespace-7.1.md",
     "articles/get-product-thumbnails-back-on-mobile-in-squarespace-7.1.md",
     "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
-    "notes/_index.md",
-    "notes/wonderful.md",
-    "articles/_index.md"
+    "notes/_index.md"
   ]
 }
