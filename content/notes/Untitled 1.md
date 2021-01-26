@@ -419,15 +419,13 @@ Should you livestream to build an audience from scratch?
 --------------------------------
 if you’re in a similar position (basically 0 audience), there are probably more effective ways to build your audience that are way less pressure than a livestream. 
 
-If you have a big engaged audience I think that a livestream can work in your favor.  
-
 As a beginner you’re adding a lot of pressure to make it engaging and there’s less tolerance from people because you’re unknown. 
 
 Every second that you’re not being engaging or delivering value increases the chance someone will drop off.  
 
 Monica Lent of Blogging for Devs mentioned listening to a podcast about livestreaming being more suitable for people that already have an engaged audience.  
 
-And I think this makes sense. By the time someone has a large audience this usually means that the access to that person is more scarce.  
+This makes sense. By the time someone has a large audience this usually means that the access to that person is more scarce.  
 
 So they’re able to promote the livestream and anchor it against their paid offerings or personal access. _Chris Do is doing a free 1 hour livestream! Spots are limited!_  
 
@@ -442,7 +440,7 @@ You can also use livestreaming as an accountability tool. You can use that feeli
 
 After all if you’re goofing off, someone could see it.
 
-#### Livestreaming: High effort, low reward for beginners
+### Livestreaming: High effort, low reward for beginners
 Livestreams can be great for established audiences but it concentrates a lot of pressure in one place.  
 
 You’re effectively doing improv and performing in addition to teaching something.  
