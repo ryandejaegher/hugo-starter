@@ -48,13 +48,13 @@ Who is this not for?
 - You’ve already been livestreaming and you’re quite comfortable being on camera  
 - You already have an audience of your own (a group, a mailing list)
 
-What I’m going to talk about
-----------------------------
-- Overcoming fears around livestreaming  
-- The before/during/after of the livestream experiment  
-- What I’d do differently
-- Suggestions/tips for doing your first livestream  
-- Should you use livestreaming to build an audience?
+	What I’m going to talk about
+	----------------------------
+	- Overcoming fears around livestreaming  
+	- The before/during/after of the livestream experiment  
+	- What I’d do differently
+	- Suggestions/tips for doing your first livestream  
+	- Should you use livestreaming to build an audience?
 
 What I’m not going to talk about
 --------------------------------

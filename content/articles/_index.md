@@ -10,6 +10,7 @@ cascade:
     kind: page
   layout: single-left
   show_date: true
+  show_related: true
 - _target: 
     kind: section
   show_date: false

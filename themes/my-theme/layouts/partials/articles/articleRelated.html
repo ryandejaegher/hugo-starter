@@ -1,9 +1,16 @@
-{{ $related := .Site.RegularPages.RelatedIndices . }}
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ $themeText := .Site.Data.theme.theme_color }}
+
 {{ with $related }}
-<h3>See Also</h3>
-<ul>
+<h3 class="font-bold text-2xl mt-8">You might also like</h3>
+<div class="space-y-8 mt-8">
 	{{ range . }}
-	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+
+	<article class="space-y-1">
+		{{ partial "articles/meta/tags.html" . }}
+		<h3 class="text-main-text text-xl"><a href="{{ .RelPermalink }}"
+				class="hover:border-b-2 border-{{$themeText}}-400">{{ .Title }}</a></h3>
+	</article>
 	{{ end }}
-</ul>
+</div>
 {{ end }}

@@ -17,7 +17,10 @@
 		{{end}}
 	</article>
 	{{ if ne .Section "pages" }}
-	{{/*	{{ partial "articles/articleRelated.html" . }} */}}
+
+	{{ if .Params.show_related }}
+	{{ partial "articles/articleRelated.html" . }}
+	{{ end }}
 	{{ partial "articles/articlePrevNext.html" . }}
 	{{end}}
 	{{ partial "articles/articleSeries.html" . }}
