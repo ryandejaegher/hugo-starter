@@ -65,7 +65,7 @@ Once you've setup your burger folder you can add the script that will add the de
 Add this code to _Settings -> Advanced -> Code Injection -> Footer_
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/ryandejaegher/better-burger@0.0.2/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ryandejaegher/better-burger@latest/script.js"></script>
 <better-burger></better-burger>
 ```
 

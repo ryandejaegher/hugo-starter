@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Untitled 1.md",
+            "file": "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md",
             "mode": "source"
           }
         }
@@ -24,14 +24,6 @@
             "file": "notes/Untitled 1.md",
             "mode": "preview"
           }
-        }
-      },
-      {
-        "id": "f244695cbdbc33b7",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
         }
       }
     ],
@@ -88,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Untitled 1.md",
+                "file": "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Untitled 1.md"
+                "file": "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md"
               }
             }
           }
@@ -112,9 +104,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "lastOpenFiles": [
+    "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md",
     "notes/Untitled 1.md",
     "notes/Untitled.md",
     "Untitled.md",
@@ -123,7 +117,6 @@
     "Untitled 1.md",
     "articles/how-to-animate-social-icons-in-squarespace-7.1.md",
     "articles/get-product-thumbnails-back-on-mobile-in-squarespace-7.1.md",
-    "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
-    "notes/_index.md"
+    "articles/how-to-make-wavy-transitions-squarespace-7.1.md"
   ]
 }

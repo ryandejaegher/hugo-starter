@@ -95,3 +95,4 @@ outputFormats:
     notAlternative: true
 
 
+enableInlineShortcodes: true
