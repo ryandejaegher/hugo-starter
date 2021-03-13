@@ -1,5 +1,5 @@
 ---
-title: 'title'
+title: 'Yo'
 articleFeatureImage: 
 customize_seo: false
 date: 2020-12-23

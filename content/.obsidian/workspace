@@ -10,18 +10,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Untitled 1.md",
+            "file": "notes/making-code-components-in-framer.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "897564d9b4d0e7e0",
+        "id": "e5b736107e67c412",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Untitled 1.md",
+            "file": "notes/making-code-components-in-framer.md",
             "mode": "preview"
           }
         }
@@ -80,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Untitled 1.md",
+                "file": "notes/making-code-components-in-framer.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Untitled 1.md"
+                "file": "notes/making-code-components-in-framer.md"
               }
             }
           }
@@ -108,15 +108,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "notes/making-code-components-in-framer.md",
     "notes/Untitled 1.md",
     "notes/Untitled.md",
+    "notes/Untitled 2.md",
     "notes/Template.md",
     "notes/_index.md",
     "articles/the-context-gap-design-c.md",
     "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md",
     "Untitled.md",
-    "404.md",
-    "Untitled 1.md",
-    "articles/how-to-animate-social-icons-in-squarespace-7.1.md"
+    "404.md"
   ]
 }
