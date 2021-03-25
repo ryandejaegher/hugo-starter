@@ -1,5 +1,11 @@
 {{/*  Add your JS scripts that will go before the </body> tag  */}}
 
+{{/*  Snipcart  */}}
+{{ if .HasShortcode "snipcart-button"}}
+<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+<div id="snipcart" data-config-modal-style="side" data-api-key="Yjk3ZGQ2MjYtNmVhZC00ODU2LTliZmUtZmZhMmQxZmY2YzBkNjM3MjE3MDgwOTkyOTE3MTc5" hidden></div>
+{{end}}
+
 {{/*  Enables code highlighting with prism.js  */}}
 {{ with .Params.showCodeHighlighting }}
 <script>

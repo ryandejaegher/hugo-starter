@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "data"
+		},
+		{
+			"path": "content"
+		},
+		{
+			"path": "themes/my-theme/layouts"
+		}
+	],
+	"settings": {
+		"gitdoc.enabled": false
+	}
+}

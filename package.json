@@ -4,9 +4,10 @@
   "description": "A barebones starter project and theme for learning Hugo. https://gohugo.io",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss themes/my-theme/assets/tailwind/tailwind.css -o themes/my-theme/assets/css/styles.css",
-    "watch": "watch 'npm run build:css' themes/my-theme/assets/tailwind",
-    "algolia": "atomic-algolia"
+    "build:css": "postcss themes/my-theme/assets/tailwind/tailwind.css -o themes/my-theme/assets/css/styles.css --verbose",
+    "watch": "watch 'npm run build:css' content",
+    "algolia": "atomic-algolia",
+    "test": "TAILWIND_MODE=build hugo serve"
   },
   "repository": {
     "type": "git",
@@ -25,17 +26,19 @@
     "@tailwindcss/typography": "^0.3.1",
     "alpinejs": "^2.7.3",
     "atomic-algolia": "^0.3.19",
-    "autoprefixer": "^9.8.6",
     "gsap": "^3.5.1",
     "instant.page": "^5.1.0",
     "instantsearch.js": "^4.8.7",
     "node-fetch": "^2.6.1",
-    "postcss": "^7.0.35",
-    "postcss-cli": "^7.1.2",
-    "postcss-import": "^12.0.0",
-    "postcss-nesting": "^7.0.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "postcss-import": "^14.0.0",
     "watch": "^1.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.1",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "postcss-nesting": "^7.0.1",
+    "tailwindcss": "^2.0.3"
+  }
 }

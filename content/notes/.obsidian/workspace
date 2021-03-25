@@ -6,11 +6,12 @@
       {
         "id": "60c54223906ec61d",
         "type": "leaf",
+        "dimension": 39.315642458100555,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 1.md",
+            "file": "Drafts/Untitled.md",
             "mode": "source"
           }
         },
@@ -19,6 +20,7 @@
       {
         "id": "f11c340b734fde83",
         "type": "leaf",
+        "dimension": 27.51396648044693,
         "state": {
           "type": "empty",
           "state": {}
@@ -27,10 +29,11 @@
       {
         "id": "f92839f7371efb93",
         "type": "leaf",
+        "dimension": 33.17039106145251,
         "state": {
           "type": "outline",
           "state": {
-            "file": "Untitled 1.md"
+            "file": "Drafts/Untitled.md"
           }
         },
         "group": "8573acb914c4e365"
@@ -89,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Drafts/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled 1.md"
+                "file": "Drafts/Untitled.md"
               }
             }
           }
@@ -127,12 +130,14 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "Untitled 1.md",
+    "Drafts/Untitled.md",
+    "making-code-components-in-framer.md",
+    "_index.md",
+    "Template.md",
     "Untitled.md",
+    "Untitled 1.md",
     "cool.md",
     "Untitled 3.md",
-    "Untitled 2.md",
-    "_index.md",
-    "Template.md"
+    "Untitled 2.md"
   ]
 }

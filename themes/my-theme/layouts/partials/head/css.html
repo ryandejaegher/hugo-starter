@@ -14,7 +14,7 @@
 {{ $tailwind := resources.Get "css/styles.css" }}
 {{ $tailwind = $tailwind | resources.PostCSS }}
 {{ if hugo.IsProduction }}
-{{ $tailwind = $tailwind | minify | resources.PostProcess }}
+  {{ $tailwind = $tailwind | minify | resources.PostProcess }}
 {{ end }}
 <link href="{{ $tailwind.RelPermalink }}" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
@@ -24,3 +24,10 @@
 {{ $templateStyle := resources.Get "tailwind/partials/forestry-theme.css" }}
 {{ $style := $templateStyle | resources.ExecuteAsTemplate "css/template-style.css" . }}
 <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+
+{{/*  Snipcart  */}}
+{{if .HasShortcode "snipcart-button"}}
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+{{end}}

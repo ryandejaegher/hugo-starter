@@ -2,6 +2,7 @@
 - element: blog title
   selector: '.summary'
   description: Used for changing the title
-  useCase: 
-    - Change the color
-    - Change the font size
+  useCase:
+      - Change the color
+      - Change the font size
+- element:

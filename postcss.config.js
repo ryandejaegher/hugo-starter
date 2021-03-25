@@ -1,6 +1,6 @@
 const purgecss = require('@fullhuman/postcss-purgecss')({
     content: ['./hugo_stats.json'],
-    defaultExtractor: (content) => {
+    defaultExtractor: content => {
         let els = JSON.parse(content).htmlElements;
         return els.tags.concat(els.classes, els.ids);
     }
@@ -14,4 +14,9 @@ module.exports = {
         require('postcss-nesting'),
         ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])
     ]
-}
+    // plugins: {
+    //     '@tailwindcss/jit': {},
+    //     autoprefixer: {}
+    //     // 'postcss-import'
+    // }
+};
