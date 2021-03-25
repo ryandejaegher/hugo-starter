@@ -29,6 +29,7 @@
     "gsap": "^3.5.1",
     "instant.page": "^5.1.0",
     "instantsearch.js": "^4.8.7",
+    "json-parse-better-errors": "^1.0.2",
     "node-fetch": "^2.6.1",
     "postcss-import": "^14.0.0",
     "watch": "^1.0.2"
