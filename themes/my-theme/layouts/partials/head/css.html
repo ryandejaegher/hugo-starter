@@ -14,7 +14,7 @@
 {{ $tailwind := resources.Get "css/styles.css" }}
 {{ $tailwind = $tailwind | resources.PostCSS }}
 {{ if hugo.IsProduction }}
-  {{ $tailwind = $tailwind | minify | resources.PostProcess }}
+  {{ $tailwind = $tailwind | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 <link href="{{ $tailwind.RelPermalink }}" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
