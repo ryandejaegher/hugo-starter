@@ -1,43 +1,12 @@
-{{ define "main" }}
-
-{{/*  Page Title: {{.Title}}
-Page Kind: {{.Kind}}
-Page Type: {{.Type}}
-{{/*  {{ range .Pages  }}
-
-{{$articleTitle := .Title}}
-
-	Title: {{$articleTitle}}
-	URL: {{.URL}}
-	Date: {{.Date}}
-	Date Formatted: {{.Date.Format "Jan 1, 2006" }}
-	Date Formatted: {{.Date.Format "2006-01-02" }}
-	
-	Date Modified: {{.Lastmod}}
-	ReadTime: {{.ReadingTime}}
-	Word Count: {{.WordCount}}
-	Next:{{.NextInSection}}
-
-{{ end }}  */}}
-
-{{/*  Display a list of all site tags.*/}}
+{{ define "main" }} {{/* Page Title: {{.Title}} Page Kind: {{.Kind}} Page Type: {{.Type}} {{/* {{ range .Pages }}
+{{$articleTitle := .Title}} Title: {{$articleTitle}} URL: {{.URL}} Date: {{.Date}} Date Formatted: {{.Date.Format "Jan
+1, 2006" }} Date Formatted: {{.Date.Format "2006-01-02" }} Date Modified: {{.Lastmod}} ReadTime: {{.ReadingTime}} Word
+Count: {{.WordCount}} Next:{{.NextInSection}} {{ end }} */}} {{/* Display a list of all site tags.*/}}
 <main class="">
-
-	<div class="container mx-auto mt-8 md:mt-24">
-		<h1 class="text-2xl font-bold text-black">{{.Title | title}}</h1>
-		<div class="text-gray-900 markdown mt-4">
-			{{.Content}}
-		</div>
-	</div>
-	{{/*  display pagination  */}}
-
-{{$count := len .Pages}}
-	{{range .Pages}} 
-	
-	{{$count}} - {{.Title}}
-	
-	
-	{{end}}
-
+    <div class="container mx-auto mt-8 md:mt-24">
+        <h1 class="text-2xl font-bold text-black">{{.Title | title}}</h1>
+        <div class="text-gray-900 markdown mt-4">{{.Content}}</div>
+    </div>
+    {{/* display pagination */}} {{$count := len .Pages}} {{range .Pages}} {{$count}} - {{.Title}} {{end}}
 </main>
 {{ end }}

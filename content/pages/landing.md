@@ -1,9 +1,17 @@
 ---
-title: "Landing"
-date: 2018-01-11T16:03:33-05:00
+title: Landing
+date: 2021-03-26T16:11:28.222Z
 draft: true
 noTitle: true
-layout: single-landing
+layout: landing
 ---
 
-{{< blocks/banner >}}
+# You're a Designer, Not A Developer
+
+# Stop Fighting With Squarespace
+
+# Contact
+
+# Testimonials
+
+# Pricing

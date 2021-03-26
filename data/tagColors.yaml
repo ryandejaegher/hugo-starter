@@ -1,7 +1,7 @@
 ---
 design: "bg-blue-300 text-blue-700"
 animation: "bg-green-300"
-squarespace 7.1: "bg-red-300"
+squarespace 7.1: "blue"
 shopify:
 hugo:
 react:
