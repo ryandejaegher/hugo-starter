@@ -1,11 +1,2 @@
-{{$themeText := .Site.Data.theme.theme_color}} 
-{{ if isset $.Params "theme_color" }}
-{{$themeText = .Params.theme_color}}
-{{ end }}
-<ul class="flex space-x-2">
-
-    {{ range (.GetTerms "tags") }}
-    <li><a class="bg-{{$themeText}}-200 inline-block px-2 text-xs font-medium rounded"
-            href="{{ .Permalink }}">{{ .LinkTitle | lower }}</a></li>
-    {{ end }}
-</ul>
+{{$themeText := .Site.Data.theme.theme_color}} {{ if isset $.Params "theme_color" }} {{$themeText =
+.Params.theme_color}} {{ end }}

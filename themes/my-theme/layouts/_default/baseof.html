@@ -18,10 +18,13 @@
     {{ partial "head/google-tag-manager.html" . }}
     {{ end }}
 
-    {{ $alpine := resources.Get "js/alpine.js" | js.Build | resources.Minify }}
-    {{ $gsap := resources.Get "js/gsap.js" | js.Build | resources.Minify }}
-    <script src="{{ $alpine.RelPermalink }}"></script>
-    <script src="{{ $gsap.RelPermalink }}" defer></script>
+    {{/*
+    
+        {{ $alpine := resources.Get "js/alpine.js" | js.Build | resources.Minify }}
+        {{ $gsap := resources.Get "js/gsap.js" | js.Build | resources.Minify }}
+        <script src="{{ $alpine.RelPermalink }}"></script>
+        <script src="{{ $gsap.RelPermalink }}" defer></script>
+    */}}
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="37790695-56de-48ac-a9f5-10cbe408213c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 
