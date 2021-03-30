@@ -369,7 +369,7 @@ You should now have a wave between your 2 sections with background images.
 ```
 
 ### Fix: Removing Blank Space At End of Page
-When you add the SVG wave to your site you may notice a blank space at the bottom of your site. Even though you can't see the wave, the SVG is still taking up height to fix this you'll need to add this to your custom CSS:
+When you add the SVG wave to your site you may notice a blank space at the bottom of your site. Even though you can't see the wave, the SVG is still taking up height. To fix this you'll need to add this to your custom CSS:
 
 ```css
 .wave {
