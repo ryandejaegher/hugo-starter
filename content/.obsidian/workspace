@@ -11,7 +11,18 @@
           "type": "markdown",
           "state": {
             "file": "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
-            "mode": "source"
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "502ce117ac5384b6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes/Untitled 2.md",
+            "mode": "preview"
           }
         }
       }
@@ -53,7 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 481
+    "width": 393
   },
   "right": {
     "id": "583727588edd5663",
@@ -98,11 +109,11 @@
   },
   "lastOpenFiles": [
     "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
-    "notes/making-code-components-in-framer.md",
-    "notes/Untitled 1.md",
-    "notes/Untitled.md",
     "notes/Untitled 2.md",
+    "notes/Untitled 1.md",
     "notes/Template.md",
+    "notes/making-code-components-in-framer.md",
+    "notes/Untitled.md",
     "notes/_index.md",
     "articles/the-context-gap-design-c.md",
     "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md",

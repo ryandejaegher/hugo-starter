@@ -17,9 +17,10 @@
   {{ $tailwind = $tailwind | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 <link href="{{ $tailwind.RelPermalink }}" rel="stylesheet" />
+{{/*
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
-
+*/}}
 
 {{ $templateStyle := resources.Get "tailwind/partials/forestry-theme.css" }}
 {{ $style := $templateStyle | resources.ExecuteAsTemplate "css/template-style.css" . }}
