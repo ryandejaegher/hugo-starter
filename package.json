@@ -37,9 +37,9 @@
   "devDependencies": {
     "@tailwindcss/jit": "^0.1.1",
     "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.8",
+    "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
     "postcss-nesting": "^7.0.1",
-    "tailwindcss": "^2.0.4"
+    "tailwindcss": "^2.1.1"
   }
 }
