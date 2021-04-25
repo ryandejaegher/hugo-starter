@@ -27,4 +27,3 @@ twitter_image: ''
 twitter_title: ''
 ---
 
-This is a draft that's in a folder

@@ -3,7 +3,7 @@ var age = process.env.age;
 
 
 const fetch = require('node-fetch');
-let url = 'https://api.mailerlite.com/api/v2/stats';
+let url = 'https://bigcatcreative.com/shop-templates?format=json-pretty';
 
 
 exports.handler = async function (event, context) {
@@ -13,12 +13,12 @@ exports.handler = async function (event, context) {
     let options = {
         method: 'GET',
         headers: {
-            'X-MailerLite-ApiKey': process.env.MAILERLITE_API,
             'Content-Type': 'application/json'
         }
     };
     response = await fetch(url, options)
         .then(data => data.json())
+        
 
 
     return {

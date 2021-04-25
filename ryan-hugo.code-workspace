@@ -8,6 +8,15 @@
 		},
 		{
 			"path": "themes/my-theme/layouts"
+		},
+		{
+			"path": "netlify-functions"
+		},
+		{
+			"path": "config"
+		},
+		{
+			"path": "themes/my-theme/assets"
 		}
 	],
 	"settings": {

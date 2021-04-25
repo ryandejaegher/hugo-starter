@@ -1,0 +1,46 @@
+{
+  "name": "hugo-starter",
+  "version": "1.0.0",
+  "description": "A barebones starter project and theme for learning Hugo. https://gohugo.io",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss themes/my-theme/assets/tailwind/tailwind.css -o themes/my-theme/assets/css/styles.css",
+    "watch": "watch 'npm run build:css' content",
+    "algolia": "atomic-algolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryandejaegher/hugo-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryandejaegher/hugo-starter/issues"
+  },
+  "homepage": "https://github.com/ryandejaegher/hugo-starter#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.2",
+    "@fullhuman/postcss-purgecss": "^3.1.3",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/typography": "^0.3.1",
+    "algoliasearch": "^3.35.1",
+    "alpinejs": "^2.7.3",
+    "atomic-algolia": "^0.3.19",
+    "caller-path": "^3.0.0",
+    "gsap": "^3.5.1",
+    "instant.page": "^5.1.0",
+    "instantsearch.js": "^4.8.7",
+    "json-parse-better-errors": "^1.0.2",
+    "node-fetch": "^2.6.1",
+    "postcss-import": "^14.0.0",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.1",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "postcss-nesting": "^7.0.1",
+    "tailwindcss": "^2.1.1"
+  }
+}

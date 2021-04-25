@@ -6,12 +6,11 @@
       {
         "id": "c4e63a8aa26e6887",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
-            "mode": "preview"
+            "file": "notes/Drafts/Untitled.md",
+            "mode": "source"
           }
         }
       },
@@ -80,10 +79,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
+                "file": "notes/Drafts/Untitled.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -95,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/how-to-make-wavy-transitions-squarespace-7.1.md"
+                "file": "notes/Drafts/Untitled.md"
               }
             }
           }
@@ -107,7 +108,9 @@
     "width": 300,
     "collapsed": true
   },
+  "active": "c4e63a8aa26e6887",
   "lastOpenFiles": [
+    "notes/Drafts/Untitled.md",
     "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
     "notes/Untitled 2.md",
     "notes/Untitled 1.md",
@@ -116,7 +119,6 @@
     "notes/Untitled.md",
     "notes/_index.md",
     "articles/the-context-gap-design-c.md",
-    "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md",
-    "Untitled.md"
+    "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md"
   ]
 }

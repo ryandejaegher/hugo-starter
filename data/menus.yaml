@@ -8,3 +8,5 @@ menu_item:
       menu_url: '#'
     - menu_title: Code Scripts And Tools
       menu_url: https://gumroad.com/ryandejaegher
+    - menu_title: Squarespace Search
+      menu_url: '/squarespace-search'

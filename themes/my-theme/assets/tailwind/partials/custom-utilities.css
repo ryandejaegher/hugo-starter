@@ -49,6 +49,35 @@
   border: 0;
 }
 
+mark {
+  background: none;
+  border-bottom: 2px solid #ec4999;
+}
+
+.aspect-16-9 {
+  padding-bottom: 56.25%;
+}
+
+.aspect-9-16 {
+  padding-bottom: 177.78%;
+}
+
+.aspect-1-1 {
+  padding-bottom: 100%;
+}
+
+.aspect-3-2 {
+  padding-bottom: 66.67%;
+}
+
+.aspect-4-3 {
+  padding-bottom: 75%;
+}
+
+.aspect-2-1 {
+  padding-bottom: 50%;
+}
+
 html {
   scroll-behavior: smooth;
 }

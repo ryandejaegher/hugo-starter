@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{$themeText := .Site.Data.theme.theme_color}}
+{{ if isset .Params "theme_color" }}
+{{$themeText = .Params.theme_color}}
+{{ end }}
+
+{{ "<!-- Begin _default/single-left.html -->" | safeHTML }}
+<main class="container mx-auto mt-8">
+	<article class="space-y-6">
+		{{ partial "articles/articleHeader.html" (dict "dot" . "themeText" $themeText) }}
+		{{/*  Content  */}}
+		<div class="">
+			{{- .Content -}}
+		</div>
+		{{if .Params.show_table_of_contents}}
+		{{ partial "articles/table-of-contents.html" . }}
+		{{end}}
+	</article>
+	
+	{{ if ne .Section "pages" }}
+
+	{{ if .Params.show_related }}
+	{{ partial "articles/articleRelated.html" . }}
+	{{ end }}
+	{{ partial "articles/articlePrevNext.html" . }}
+	{{end}}
+	{{ partial "articles/articleSeries.html" . }}
+
+	{{/*    
+	<h2 class="text-center font-bold text-2xl">Comments</h2>
+	<div id="hyvor-talk-view"></div>
+	<script type="text/javascript">
+		var HYVOR_TALK_WEBSITE = 2999; // DO NOT CHANGE THIS
+		var HYVOR_TALK_CONFIG = {
+			url: false,
+			id: false
+		};
+	</script>
+	<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+	*/}}
+</main>
+{{ "<!-- End _default/single-left.html -->" | safeHTML }}
+{{ end }}
