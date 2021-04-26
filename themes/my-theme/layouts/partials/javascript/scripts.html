@@ -24,7 +24,9 @@
 {{ partial "javascript/lazyvideo.html" . }}
 {{end}}
 
-
+{{if .HasShortcode "algolia"}}
+{{ partial "javascript/algolia.html" . }}
+{{end}}
   
   
 
