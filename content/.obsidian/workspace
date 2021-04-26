@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Drafts/Untitled.md",
+            "file": "articles/how-to-hide-the-header-on-squarespace.md",
             "mode": "source"
           }
         }
@@ -63,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 393
+    "width": 284
   },
   "right": {
     "id": "583727588edd5663",
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Drafts/Untitled.md",
+                "file": "articles/how-to-hide-the-header-on-squarespace.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Drafts/Untitled.md"
+                "file": "articles/how-to-hide-the-header-on-squarespace.md"
               }
             }
           }
@@ -110,15 +110,15 @@
   },
   "active": "c4e63a8aa26e6887",
   "lastOpenFiles": [
-    "notes/Drafts/Untitled.md",
+    "articles/how-to-hide-the-header-on-squarespace.md",
     "articles/how-to-make-wavy-transitions-squarespace-7.1.md",
+    "articles/how-to-animate-social-icons-in-squarespace-7.1.md",
+    "notes/Drafts/Untitled.md",
     "notes/Untitled 2.md",
     "notes/Untitled 1.md",
     "notes/Template.md",
     "notes/making-code-components-in-framer.md",
     "notes/Untitled.md",
-    "notes/_index.md",
-    "articles/the-context-gap-design-c.md",
-    "articles/how-to-add-a-desktop-burger-to-squarespace-7.1.md"
+    "notes/_index.md"
   ]
 }

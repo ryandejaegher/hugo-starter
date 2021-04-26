@@ -1,7 +1,7 @@
 ---
 title: "Squarespace Search"
 date: 2021-04-25T08:43:43-06:00
-draft: true
+draft: false
 layout: single-left-no-prose 
 showPrevNext: false
 ---
