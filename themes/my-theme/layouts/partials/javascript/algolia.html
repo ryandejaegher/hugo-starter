@@ -28,7 +28,7 @@
       showLoadingIndicator: true,
       cssClasses: {
         root: 'mySearch',
-        input: ['px-4','py-2','border-2','rounded','bg-gray-100','max-w-md','w-full','mx-auto','block'],
+        input: ['px-4','py-2','border-2','rounded','bg-gray-100','max-w-md','w-full','mx-auto','block','text-lg'],
         loadingIndicator:['text-center'],
         loadingIcon: ['mx-auto','mt-4']
       }
@@ -60,15 +60,15 @@
   
               {{#priceMoney}}
               {{#onSale}}
-                <span class="regular-price onSale line-through">\${{priceMoney.value}}</span>
-                <span class="sale-price">\${{salePriceMoney.value}}</span>
+                <span class="regular-price onSale line-through">${{priceMoney.value}}</span>
+                <span class="sale-price">${{salePriceMoney.value}}</span>
                 {{/onSale}}
                 {{^onSale}}
                 {{#variants.0}}
-                <span class="regular-price">\${{priceMoney.value}}</span>
+                <span class="regular-price">${{priceMoney.value}}</span>
                 {{/variants.0}}
                 {{^variants.0}}
-                <span class="regular-price">\${{priceMoney.value}}</span>
+                <span class="regular-price">${{priceMoney.value}}</span>
               {{/variants.0}}
   
               {{/onSale}}
