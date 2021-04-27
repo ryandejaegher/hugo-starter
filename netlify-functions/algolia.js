@@ -19,7 +19,8 @@ var squarespace = [
   'https://www.will-myers.com/products',
   'https://www.squarestylist.com/shop',
   'https://www.squarewebsites.org/products',
-  'https://squarestud.io/shop'
+  'https://squarestud.io/shop',
+  'https://www.sqsmods.com/store'
 ];
 
 var cleanSquarespaceData = function(data) {
