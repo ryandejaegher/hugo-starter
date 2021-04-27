@@ -34,6 +34,12 @@ In addition to **Framer** adding web embed I also want to experiment with embedd
 
 The question is why would you want to do this? Wouldn't it be better to embed a static image/mockup or in the case of Descript, export a video, upload to YouTube, and embed that video?
 
+<!-- Embed Descript video @id -->
+{{% embed/descript id="4zXIA9AYAOo" %}}
+
+<!-- Embed Framer @src -->
+{{% embed/framer src="https://framer.com/embed/wCIEkHIkVa6k06NOMlsh/i82JJq0To" %}}
+
 What would be the advantage of embedding a **live prototype or project?** 
 
 - We want to share our work in progress
