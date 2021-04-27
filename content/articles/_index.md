@@ -15,7 +15,7 @@ cascade:
       #theme_color: blue
     - _target:
           kind: section
-      show_date: false
+      show_date: true
       #theme_color: blue
 ---
 

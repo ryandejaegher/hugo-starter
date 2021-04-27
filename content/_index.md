@@ -15,5 +15,3 @@ type: page
 Hi there! I'm Ryan Dejaegher a Front End Web Developer living in Philadelphia, PA.
 
 I write articles and tutorials about web development to help you do more with your website.
-
-
