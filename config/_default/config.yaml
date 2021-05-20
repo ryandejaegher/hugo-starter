@@ -1,36 +1,34 @@
 # hostname (and path) to the root
-baseURL: "https://ryandejaegher.com"
+baseURL: 'https://ryandejaegher.com'
 
 # Caches
 caches:
-  getjson:
-    maxAge: "5m"
-    
+    getjson:
+        maxAge: '5m'
 
 # The language code for the site
-languageCode: "en-us"
+languageCode: 'en-us'
 
 # Site title
-title: "Ryan Dejaegher"
+title: 'Ryan Dejaegher'
 
 # theme to use (located by default in /themes/THEMENAME/)
-theme: "my-theme"
+theme: 'my-theme'
 
 # Permalinks
 # See "content-management/permalinks"
 permalinks:
-  articles: /:title/
-  notes: /:title/
-  pages: /:title/
-  developer-diary: /:title/
+    articles: /:slug/
+    notes: /:title/
+    pages: /:title/
+    developer-diary: /:title/
 
 # Use absolute URLs
 canonifyURLs: true
 
 # Allows you to disable all page types and will render nothing related to 'kind';
 # values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
-disableKinds: ["hugoGeneratorInject"]
-
+disableKinds: ['hugoGeneratorInject']
 
 # Files to ignore while rendering
 ignoreFiles: ['Template']
@@ -40,7 +38,7 @@ summaryLength: 5
 
 # Pagination
 paginate: 10
-paginatePath: "/"
+paginatePath: '/'
 
 # Syntax Highlighting
 pygmentsCodefences: true
@@ -49,50 +47,47 @@ pygmentsUseClasses: true
 # Enable to get file modification date from Github
 enableGitInfo: true
 
-metaDataFormat: "yaml"
+metaDataFormat: 'yaml'
 
 # Image Processing Options
 imaging:
-  quality: 80
-  anchor: "smart"
-  resampleFilter: "Gaussian"
-
+    quality: 80
+    anchor: 'smart'
+    resampleFilter: 'Gaussian'
 
 # This outputs a hugo_stats.json file in the root which can be used with PostCSS and PostProcess to Purge CSS
-build: 
-  writeStats: true
+build:
+    writeStats: true
 
 # Output formats
 outputs:
-  section:
-    - HTML
-    - RSS
-    - JSON
-  page: 
-    - HTML
-    - RSS
-    - AMP
-    - JSON
-  taxonomy: 
-    - HTML
-    - RSS
-    - JSON
-  term: 
-    - HTML
-    - RSS
-    - JSON
-  home: 
-    - HTML
-    - RSS
-    - Algolia
-
+    section:
+        - HTML
+        - RSS
+        - JSON
+    page:
+        - HTML
+        - RSS
+        - AMP
+        - JSON
+    taxonomy:
+        - HTML
+        - RSS
+        - JSON
+    term:
+        - HTML
+        - RSS
+        - JSON
+    home:
+        - HTML
+        - RSS
+        - Algolia
 
 outputFormats:
-  Algolia:
-    baseName: "algolia"
-    isPlainText: true
-    mediaType: "application/json"
-    notAlternative: true
-
+    Algolia:
+        baseName: 'algolia'
+        isPlainText: true
+        mediaType: 'application/json'
+        notAlternative: true
 
 enableInlineShortcodes: true

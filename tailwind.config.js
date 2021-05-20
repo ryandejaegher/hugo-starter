@@ -47,7 +47,10 @@ module.exports = {
             spacing: {
                 '16/9': '56.25%',
                 '1/1': '100%',
-                '3/2': '66.7%'
+                '3/2': '66.7%',
+                '4/3' : '75%',
+                '9/16': '177.78%',
+                '2/3': '150%'
             },
             colors: {
                 primary: 'var(--primary)',
@@ -55,6 +58,7 @@ module.exports = {
                 'secondary-text': 'var(--secondary)',
                 'main-text': 'var(--text-main)',
                 'secondary-text': 'var(--text-secondary)',
+                test: colors.indigo,
                 primary: {
                     100: 'var(--primary-100)',
                     200: 'var(--primary-200)',
