@@ -1,7 +1,7 @@
 ---
 title: Easily Add Anchor Links to Squarespace 7.1 (Without Code Blocks!)
 excerpt: "Here's a quick code snippet that you can use to easily create anchor links on your Squarespace 7.1 site"
-articleFeatureImage: '/uploads/easy-anchor-links-squarespace-7.1'
+articleFeatureImage: '/uploads/easy-anchor-links-squarespace-7.1.png'
 tags:
     - squarespace
 date: 2021-05-20T14:04:34.031Z
