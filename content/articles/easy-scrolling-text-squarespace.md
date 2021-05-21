@@ -1,6 +1,7 @@
 ---
 title: Easy Scrolling Text In Squarespace (one line of code!)
 excerpt: Today I'm going to share a code snippet to easily create scrolling text in Squarespace. This works in Squarespace 7.0 and Squarespace 7.1.
+articleFeatureImage: '/uploads/easy-scrolling-text-squarespace.png'
 tags:
     - squarespace
     - web components
@@ -46,7 +47,7 @@ To get the `<x-marquee>` element you'll need to add a script to code injection.
 Add this code to _Settings -> Advanced -> Code Injection -> Footer_
 
 ```html
-<script src="https://gist.githack.com/ryandejaegher/b278035bc3b8ace5c225e8f26d023649/raw/d1e215af0db3eb7fb54e74b664ef2d17208ff670/script.js"></script>
+<script src="https://ryandejaegher.com/js/marquee.js" defer></script>
 ```
 
 ### Using the `<x-marquee>` element
