@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const { borderRadius } = require('tailwindcss/defaultTheme');
 
 module.exports = {
     // purge: {
@@ -40,6 +41,13 @@ module.exports = {
                         },
                         blockquote: {
                             color: theme('colors.main-text')
+                        },
+                        'code::before': false,
+                        'code::after': false,
+                        code: {
+                            background: theme('colors.gray.200'),
+                            padding: theme('spacing.1'),
+                            borderRadius: theme('borderRadius.lg')
                         }
                     }
                 }
@@ -48,7 +56,7 @@ module.exports = {
                 '16/9': '56.25%',
                 '1/1': '100%',
                 '3/2': '66.7%',
-                '4/3' : '75%',
+                '4/3': '75%',
                 '9/16': '177.78%',
                 '2/3': '150%'
             },

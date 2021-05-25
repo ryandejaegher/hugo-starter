@@ -25,9 +25,10 @@ twitter_image = ""
 twitter_title = ""
 
 +++
+
 I'm a big fan of CSS Tricks and one thing I like about their articles is that you can see the original publish date and the last time a post has been updated/modified. This is especially important for a topic like web development where things are constantly changing and best practices are shifting.
 
-\[\[tk: CSS tricks image\]\]
+[[tk: CSS tricks image]]
 
 From the creators perspective, this gives you the best of both worlds. You benefit from publishing strong evergreen content and then update it as required without the content appearing outdated.
 
@@ -41,7 +42,7 @@ Whenever you edit an existing post and commit it to Git, the `{{ .Lastmod }}` va
 
 ## Questions/Problems:
 
-Before jumping right into the solution there are  questions to consider when adding this feature.
+Before jumping right into the solution there are questions to consider when adding this feature.
 
 ### Should We Show The Date Modified If The Dates Match?
 
@@ -49,7 +50,7 @@ For my use case I'm formatting the date as **_Month Day, Year _**(_July, 14, 202
 
 If you don't do this then by default the modified date will display and be the same as the publish date which would look a little goofy.
 
-\[\[tk: add publish date and modified date image\]\]
+[[tk: add publish date and modified date image]]
 
 ### When Should You Show Date & Time?
 
@@ -57,8 +58,8 @@ If you're a news organization or covering something like a live event (i.e. Appl
 
 This makes it easier for readers to see how current the content is.
 
-* By default when posts are published the publish date and the modified date will match? Should this
-* Should we make it optional to show the modified date? Or should it show intelligently without require user input?
+-   By default when posts are published the publish date and the modified date will match? Should this
+-   Should we make it optional to show the modified date? Or should it show intelligently without require user input?
 
 Requirements:
 
@@ -72,7 +73,7 @@ Hugo gives
 
 ```go
 {{ if ne (dateFormat "January 2, 2006" .Date) (dateFormat "January 2, 2006" .Lastmod) }}
-    
+
     <time class="italic block text-sm font-medium uppercase text-{{$themeText}}-600" datetime="{{ .Lastmod }}" pubdate>
     Updated: {{ dateFormat "January 2, 2006" .Lastmod }}
     </time>

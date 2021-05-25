@@ -24,6 +24,7 @@ twitter_image = ""
 twitter_title = ""
 
 +++
+
 Looking for an easy way to add a fixed vertical navigation to your Squarespace site? Today I'm going to share a little script with you that you can use to easily add a vertical navigation to your entire site or to individual pages or both!
 
 ![](/uploads/pixelsnap-2020-09-15-at-12-01-40-2x.png)
@@ -105,9 +106,9 @@ Once you've added the code block simply add your vertical-navigation and set the
 
 Remember how you can choose set the vertical-nav to a specific side? This opens up some interesting possibilities for how you can use the vertical-nav element.
 
-* You could have 2 vertical navigations across your entire site
-* You could have 2 vertical navigations on a single page
-* You can also have 1 vertical navigation across the entire site and then vertical navigation that is specific to each page.
+-   You could have 2 vertical navigations across your entire site
+-   You could have 2 vertical navigations on a single page
+-   You can also have 1 vertical navigation across the entire site and then vertical navigation that is specific to each page.
 
 If that last option interests you, you'll need to add a `<vertical-nav>` element to the Site Code Injection and to a code block on the page you want to use.
 
