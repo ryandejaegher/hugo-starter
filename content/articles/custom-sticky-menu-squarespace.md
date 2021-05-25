@@ -1,7 +1,7 @@
 ---
 title: Create A Custom Sticky Menu With Squarespace
 excerpt: Learn how to create a custom sticky menu in Squarespace.
-articleFeatureImage: null
+articleFeatureImage: '/uploads/custom-sticky-header-squarespace.png'
 tags:
     - Squarespace
     - css
