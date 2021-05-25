@@ -1,5 +1,5 @@
 ---
-title: null
+title: Create A Custom Sticky Menu With Squarespace
 excerpt: null
 articleFeatureImage:
 tags:
@@ -24,9 +24,11 @@ twitter_title: null
 slug: null
 ---
 
-Today I am going to show you how you can position the menu after the first section on the page and then make the menu sticky so that it will automatically stick to the top of the screen when you reach it..
+Today I am going to show you how you can position the menu after the first section on the page and then make the menu sticky so that it will automatically stick to the top of the screen when you reach it.
 
-Recently I was working on a project where the client wanted to have the menu positioned below the very first section on the page. You could try to recreate this as a section but it’s more trouble than it’s worth. Instead we can use a simple script to move the header below the first section.
+Here is what it will look like:
+
+This idea came from a project where the client wanted to have the menu positioned below the very first section on the page. You could try to recreate this as a section but it’s more trouble than it’s worth. Instead we can use a simple script to move the header below the first section.
 
 ### Adding the code to move the header/how does this work?
 

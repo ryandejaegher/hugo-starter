@@ -1,6 +1,6 @@
 ---
 title: Update CSS Variables on CSS Selectors With JavaScript
-excerpt: null
+excerpt: Learn how to update CSS variables on the :root or a selector using JavaScript
 tags:
     - CSS
     - JavaScript
