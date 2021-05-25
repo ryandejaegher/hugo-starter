@@ -80,13 +80,11 @@ header {
 
 ### What Is The Difference Between Fixed and Sticky?
 
-Squarespace gives you the option to toggle the header to _Fixed Position_ in the _Site Header_ settings.
+Squarespace gives you the option to toggle the header to _Fixed Position_ in the _Site Header_ settings:
 
 ![Squarespace Fixed Header](/uploads/squarespace-fixed-header.png)
 
-###What's the difference between fixed and sticky?
-
-_Fixed_ takes the element out of the document flow and positions it based on the _top, bottom, left, right_ properties. The scroll position doesn't really affect elements that are fixed, they'll remain in the same position regardless of where you scroll.
+_Fixed_ takes the element out of the document flow and positions it based on the _top, bottom, left, right_ properties. The scroll position doesn't affect elements that are fixed, they'll remain in the same position regardless of where you scroll.
 
 _Sticky_ keeps the elements order in the document flow and only takes effect when the element reaches a specific position based on the _top, bottom, left, right_ properties.
 
@@ -97,6 +95,8 @@ Setting `bottom:0` will cause the element to stick to the bottom of the window.
 That's a little tricky to follow, the best way to understand is to see a demo. In the CodePen demo below we have 2 layouts. The one on the left has a header that's using `position:sticky` and the one on the right is using `position:fixed`.
 
 If you pay attention to the HTML you'll notice that the _fixed nav_ is below the first section but it appears at the very top of the page. This demonstrates the effect that `position:fixed` has an on element.
+
+Another thing to note is when using _sticky nav_ your elements can overlap. When you scroll the demo you'll notice when you reach other sticky elements they'll begin to overlap. This isn't possible with _fixed elements_ because they'll always overlap regardless of the scroll position.
 
 <!-- Embeds a CodePen @id -->
 
