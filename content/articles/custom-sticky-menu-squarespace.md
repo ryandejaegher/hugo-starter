@@ -72,8 +72,8 @@ _Add this code to Design -> Custom CSS_
 
 ```css
 header {
-    position: sticky;
-    position: -webkit-sticky;
+    position: sticky !important;
+    position: -webkit-sticky !important;
     top: 0;
 }
 ```
