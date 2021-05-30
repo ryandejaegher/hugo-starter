@@ -1,6 +1,6 @@
 ---
 title: Avoid Errors With document.querySelector and document.querySelectorAll
-excerpt: null
+excerpt: Learn how to avoid errors in your JavaScript when using document.querySelector and document.querySelectorAll
 tags:
     - JavaScript
     - Debugging
