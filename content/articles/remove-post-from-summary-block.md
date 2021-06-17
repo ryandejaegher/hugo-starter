@@ -24,6 +24,8 @@ twitter_title: null
 slug: remove-current-post-summary-block-squarespace
 ---
 
+_Update: Typo in code snippet has been fixed_
+
 When using the summary block to display "related posts" at the end of a blog post, Squarespace will often include the current post. This doesn't make sense, we're already on this page! So how can you remove the current post from the related posts section?
 
 ![Duplicate post in related section](/uploads/duplicate-post-in-related-section.png)
