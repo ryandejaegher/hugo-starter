@@ -47,7 +47,7 @@ Add this code to _Settings -> Advanced -> Code Injection -> Footer_:
 
             var matchingSummaryItem = document.querySelector(`[href="${currentPath}]"`);
 
-            if (!summaryItem) return;
+            if (!matchingSummaryItem) return;
 
             var summaryParent = matchingSummaryItem.closest('.summary-item');
 
