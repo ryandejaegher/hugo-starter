@@ -47,7 +47,7 @@ Add this code to _Settings -> Advanced -> Code Injection -> Footer_:
         function removeMatchingPageFromRelatedPosts() {
             var currentPath = window.location.pathname;
 
-            var matchingSummaryItem = document.querySelector(`[href="${currentPath}]"`);
+            var matchingSummaryItem = document.querySelector(`[href="${currentPath}"]`);
 
             if (!matchingSummaryItem) return;
 
